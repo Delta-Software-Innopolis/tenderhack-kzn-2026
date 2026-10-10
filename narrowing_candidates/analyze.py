@@ -1,7 +1,7 @@
 from narrow import known_chars
 from funnel import run_funnel
 from hints import make_hints
-
+from conflict_hints import make_conflict_hints, make_indistinguishable_hint
 
 def analyze(candidates, facts):
     known = known_chars(candidates)   # считаем до сужения

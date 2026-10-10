@@ -27,12 +27,18 @@ def convert_candidates(api_candidates):
                 elif value["type"] == "number":
                     values.append({
                         "kind": "number",
-                        "number": value["value"],
+                        "value": value["value"],
+                        "unit": value.get("unit"),
                     })
                 elif value["type"] == "interval":
+                    interval = value["value"]
                     values.append({
-                        "kind": "interval",
-                        **value["value"],
+                        "kind": "range",
+                        "lo": interval["min"],
+                        "lo_incl": interval["min_inclusive"],
+                        "hi": interval["max"],
+                        "hi_incl": interval["max_inclusive"],
+                        "unit": value.get("unit"),
                     })
 
             chars[char["name"]] = {"values": values}
