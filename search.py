@@ -441,6 +441,7 @@ def search(
             "status": row["status"],
             "okpd2_code": row["okpd2_code"],
             "rrf_score": rrf[row["ktru_code"]],
+            "is_template": bool(row["is_template"])
         }
         for row in rows
     ]
