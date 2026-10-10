@@ -3,7 +3,9 @@ import Catalogue from './components/Catalogue'
 import CatalogueItemRoute from './components/CatalogueItemRoute'
 import { type Category } from './components/CategoryFilters'
 import SearchBar from './components/SearchBar'
+import SearchResults from './components/SearchResults'
 import ThemeSwitcher, { type ThemePreference } from './components/ThemeSwitcher'
+import { useSearch } from './hooks/useSearch'
 
 const categoryByQueryValue: Record<string, Category> = {
   instruments: 'tools',
@@ -44,6 +46,7 @@ export default function App() {
   const [systemTheme, setSystemTheme] = useState<'light' | 'dark'>(() =>
     window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light',
   )
+  const search = useSearch()
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
@@ -80,7 +83,15 @@ export default function App() {
   }, [])
 
   const handleSearch = () => {
-    // Search results and API integration are introduced in later steps.
+    const normalizedQuery = query.trim()
+    if (!normalizedQuery) return
+    search.mutate(normalizedQuery, {
+      onSuccess: () => {
+        window.setTimeout(() => {
+          document.getElementById('search-form')?.scrollIntoView({ behavior: 'smooth' })
+        }, 0)
+      },
+    })
   }
 
   const handleCategoryChange = (nextCategory: Category) => {
@@ -135,25 +146,44 @@ export default function App() {
       <main className="page-main">
         <div className="container">
           <section className="hero" aria-labelledby="page-title">
-            <p className="eyebrow">Умный поиск по каталогу</p>
-            <h1 id="page-title">Найдите подходящую позицию КТРУ</h1>
-            <p className="hero__description">
-              Опишите нужный товар обычными словами — сервис поможет определить
-              категорию и подобрать характеристики.
-            </p>
+            <div className="hero__intro">
+              <div className="hero__copy">
+                <p className="eyebrow">Умный поиск по каталогу</p>
+                <h1 id="page-title">Найдите подходящую позицию КТРУ</h1>
+                <p className="hero__description">
+                  Опишите нужный товар обычными словами — сервис поможет определить
+                  категорию и подобрать характеристики.
+                </p>
+              </div>
+              <img
+                className="hero__mascot"
+                src="/rembo-slim.png"
+                alt="Робот-помощник Рэмбо"
+              />
+            </div>
 
             <SearchBar
               value={query}
               onChange={setQuery}
               onSubmit={handleSearch}
+              isLoading={search.isPending}
             />
           </section>
+
+          {search.isError && (
+            <div className="search-error" role="alert">
+              <strong>Не удалось выполнить поиск.</strong>
+              <span>{search.error.message}</span>
+            </div>
+          )}
+
+          {search.data && <SearchResults result={search.data} />}
 
           <section className="catalogue-section" id="catalogue" aria-labelledby="catalogue-title">
             <div className="catalogue-section__heading">
               <div>
-                <p className="eyebrow">Каталог КТРУ</p>
-                <h2 id="catalogue-title">Позиции каталога</h2>
+                {/* <p className="eyebrow"></p> */}
+                <h2 id="catalogue-title">Каталог КТРУ</h2>
               </div>
               <p className="catalogue-section__description">
                 Данные API · постраничная загрузка
@@ -170,6 +200,21 @@ export default function App() {
         </div>
       </main>
       )}
+      <footer className="site-footer">
+        <div className="container site-footer__inner">
+          <span>Команда <strong>SL</strong></span>
+          <a
+            href="https://github.com/Delta-Software-Innopolis/tenderhack-kzn-2026"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.56 4.93.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </footer>
     </div>
   )
 }

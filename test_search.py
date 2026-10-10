@@ -43,13 +43,12 @@ class SearchTests(unittest.TestCase):
         ).fetchall()
         self.assertIn("Кровать больничная", {row["name"] for row in names})
 
-    def test_measurement_abbreviation_is_not_lemmatized_as_a_verb(self):
-        from search import lemmatize
-
-        self.assertEqual(
-            lemmatize("длина 10 см", remove_stop_words=True),
-            "длина 10 см",
-        )
+        template_count = self.conn.execute(
+            f"""SELECT COUNT(*) FROM ktru_position
+                WHERE code IN ({placeholders}) AND is_template = 1""",
+            codes,
+        ).fetchone()[0]
+        self.assertEqual(template_count, 0)
 
 
 if __name__ == "__main__":

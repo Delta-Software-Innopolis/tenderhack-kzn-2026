@@ -212,7 +212,8 @@ def _position_text(conn: sqlite3.Connection, code: str, name: str, okpd2_name: s
 def rebuild_search_documents(conn: sqlite3.Connection) -> int:
     ensure_search_schema(conn)
     rows = conn.execute(
-        "SELECT code, name, okpd2_name FROM ktru_position ORDER BY code"
+        """SELECT code, name, okpd2_name FROM ktru_position
+           WHERE is_template = 0 ORDER BY code"""
     ).fetchall()
     conn.execute("DELETE FROM ktru_position_search")
     for row in rows:
@@ -244,7 +245,7 @@ def _fts_query(query: str, operator: str = "AND") -> str:
 def _active_clause(alias: str = "p") -> tuple[str, list[str]]:
     today = date.today().isoformat()
     return (
-        f"{alias}.status = 'ACTIVE' AND {alias}.actual = 1 "
+        f"{alias}.status = 'ACTIVE' AND {alias}.actual = 1 AND {alias}.is_template = 0 "
         f"AND ({alias}.application_date_start IS NULL OR {alias}.application_date_start <= ?) "
         f"AND ({alias}.application_date_end IS NULL OR {alias}.application_date_end >= ?)",
         [today, today],
@@ -267,7 +268,9 @@ def _bm25_search_mode(
             SELECT s.position_code AS code
             FROM ktru_position_fts f
             JOIN ktru_position_search s ON s.rowid = f.rowid
+            JOIN ktru_position p ON p.code = s.position_code
             WHERE ktru_position_fts MATCH ?
+              AND p.is_template = 0
             ORDER BY bm25(ktru_position_fts)
             LIMIT ?
             """,
@@ -315,7 +318,10 @@ def semantic_search(
     if np is None or query_embedding is None:
         return []
     rows = conn.execute(
-        "SELECT position_code, embedding FROM ktru_position_embedding"
+        """SELECT e.position_code, e.embedding
+           FROM ktru_position_embedding e
+           JOIN ktru_position p ON p.code = e.position_code
+           WHERE p.is_template = 0"""
     ).fetchall()
     if not rows:
         return []
@@ -358,9 +364,10 @@ def populate_embeddings(
         """
         SELECT s.position_code, s.normalized_text
         FROM ktru_position_search s
+        JOIN ktru_position p ON p.code = s.position_code
         LEFT JOIN ktru_position_embedding e ON e.position_code = s.position_code
             AND e.model_name = ? AND e.model_version = ?
-        WHERE e.position_code IS NULL OR ? = 1
+        WHERE p.is_template = 0 AND (e.position_code IS NULL OR ? = 1)
         ORDER BY s.position_code
         """,
         (model_name, model_version, int(force)),

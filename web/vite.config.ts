@@ -11,6 +11,11 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
+      '/search-api': {
+        target: 'http://100.98.102.6:8003',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/search-api/, ''),
+      },
     },
   },
 })

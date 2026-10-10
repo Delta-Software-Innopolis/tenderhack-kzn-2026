@@ -19,7 +19,7 @@ export default function SearchBar({
   }
 
   return (
-    <form className="search-form" role="search" onSubmit={handleSubmit}>
+    <form className="search-form" id="search-form" role="search" onSubmit={handleSubmit}>
       <label className="search-form__label" htmlFor="catalogue-search">
         Что вы ищете?
       </label>

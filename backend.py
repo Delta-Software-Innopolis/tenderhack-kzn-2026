@@ -157,11 +157,14 @@ def category_codes(category: str) -> str:
 
 
 def category_filter(category: str | None) -> tuple[str, list[str]]:
-    """Общий фильтр категории для списка товаров и подсчёта их количества."""
+    """Исключить шаблоны и применить общий фильтр категории."""
     if category is None:
-        return "", []
+        return "WHERE p.is_template = 0", []
     # JSON-массив занимает один SQL-параметр независимо от размера категории.
-    return "WHERE p.code IN (SELECT value FROM json_each(?))", [category_codes(category)]
+    return (
+        "WHERE p.is_template = 0 AND p.code IN (SELECT value FROM json_each(?))",
+        [category_codes(category)],
+    )
 
 
 def serialize_items(conn: sqlite3.Connection, rows: list[sqlite3.Row]) -> list[dict]:
@@ -253,7 +256,8 @@ def get_item(
     """
     with closing(connect_db()) as conn:
         row = conn.execute(
-            f"SELECT {POSITION_FIELDS} FROM ktru_position p WHERE p.code = ?",
+            f"""SELECT {POSITION_FIELDS} FROM ktru_position p
+                WHERE p.code = ? AND p.is_template = 0""",
             (item_id,),
         ).fetchone()
         if row is None:
@@ -294,7 +298,7 @@ def get_items(
 ):
     """Список полных карточек, отсортированных по коду КТРУ.
 
-    Без category выборка включает все позиции базы, в том числе неактивные.
+    Без category выборка включает все нешаблонные позиции базы, в том числе неактивные.
     offset и limit применяются после фильтрации по категории хакатона.
     Категория определяется по исходной XML-выгрузке, а не по рубрике КТРУ.
     Если offset выходит за пределы выборки, возвращается пустой массив с HTTP 200.
@@ -334,7 +338,7 @@ def count_items(
         examples=["мебель"],
     ),
 ):
-    """Считает позиции КТРУ в базе, включая неактивные, без загрузки карточек.
+    """Считает нешаблонные позиции КТРУ, включая неактивные, без загрузки карточек.
 
     Фильтр категории совпадает с фильтром GET /items/; пагинация не применяется.
     Если подходящих товаров нет, возвращается {"count": 0} с HTTP 200.
