@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react'
 import Catalogue from './components/Catalogue'
-import CatalogueItemPage from './components/CatalogueItemPage'
+import CatalogueItemRoute from './components/CatalogueItemRoute'
 import CategoryFilters, { type Category } from './components/CategoryFilters'
 import SearchBar from './components/SearchBar'
 import ThemeSwitcher, { type ThemePreference } from './components/ThemeSwitcher'
-import { mockCatalogue } from './data/mockCatalogue'
 
 const categoryByQueryValue: Record<string, Category> = {
   instruments: 'tools',
@@ -25,6 +24,11 @@ function getCategoryFromUrl(): Category {
   return value ? categoryByQueryValue[value.toLowerCase()] ?? 'all' : 'all'
 }
 
+function getPageFromUrl(): number {
+  const value = Number(new URLSearchParams(window.location.search).get('page'))
+  return Number.isInteger(value) && value > 0 ? value : 1
+}
+
 function getInitialTheme(): ThemePreference {
   const savedTheme = localStorage.getItem('ktru-theme')
   if (savedTheme === 'light' || savedTheme === 'dark' || savedTheme === 'system') return savedTheme
@@ -34,6 +38,7 @@ function getInitialTheme(): ThemePreference {
 export default function App() {
   const [query, setQuery] = useState('')
   const [category, setCategory] = useState<Category>(getCategoryFromUrl)
+  const [page, setPage] = useState(getPageFromUrl)
   const [routeHash, setRouteHash] = useState(window.location.hash)
   const [themePreference, setThemePreference] = useState<ThemePreference>(getInitialTheme)
   const [systemTheme, setSystemTheme] = useState<'light' | 'dark'>(() =>
@@ -62,7 +67,10 @@ export default function App() {
 
   useEffect(() => {
     const handleHashChange = () => setRouteHash(window.location.hash)
-    const handlePopState = () => setCategory(getCategoryFromUrl())
+    const handlePopState = () => {
+      setCategory(getCategoryFromUrl())
+      setPage(getPageFromUrl())
+    }
     window.addEventListener('hashchange', handleHashChange)
     window.addEventListener('popstate', handlePopState)
     return () => {
@@ -84,18 +92,24 @@ export default function App() {
       url.searchParams.set('category', queryValueByCategory[nextCategory])
     }
 
+    url.searchParams.delete('page')
     window.history.pushState({}, '', url)
     setCategory(nextCategory)
+    setPage(1)
   }
 
-  const visibleItems = category === 'all'
-    ? mockCatalogue
-    : mockCatalogue.filter((item) => item.category === category)
+  const handlePageChange = (nextPage: number) => {
+    const url = new URL(window.location.href)
+    if (nextPage <= 1) url.searchParams.delete('page')
+    else url.searchParams.set('page', String(nextPage))
+    window.history.pushState({}, '', url)
+    setPage(Math.max(1, nextPage))
+    document.getElementById('catalogue')?.scrollIntoView({ behavior: 'smooth' })
+  }
 
-  const selectedItemId = routeHash.startsWith('#/catalogue/')
+  const selectedItemCode = routeHash.startsWith('#/catalogue/')
     ? decodeURIComponent(routeHash.slice('#/catalogue/'.length))
     : null
-  const selectedItem = mockCatalogue.find((item) => item.id === selectedItemId)
 
   return (
     <div className="app-shell">
@@ -115,8 +129,8 @@ export default function App() {
         </div>
       </header>
 
-      {selectedItem ? (
-        <CatalogueItemPage item={selectedItem} />
+      {selectedItemCode ? (
+        <CatalogueItemRoute code={selectedItemCode} />
       ) : (
       <main className="page-main">
         <div className="container">
@@ -142,13 +156,12 @@ export default function App() {
                 <h2 id="catalogue-title">Позиции каталога</h2>
               </div>
               <p className="catalogue-section__description">
-                Демонстрационные данные · {visibleItems.length}{' '}
-                {visibleItems.length === 1 ? 'позиция' : 'позиций'}
+                Данные API · постраничная загрузка
               </p>
             </div>
 
             <CategoryFilters value={category} onChange={handleCategoryChange} />
-            <Catalogue items={visibleItems} />
+            <Catalogue category={category} page={page} onPageChange={handlePageChange} />
           </section>
         </div>
       </main>
