@@ -8,7 +8,16 @@ from typing import Literal
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi import Path as PathParameter
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
+
+# Разрешённые origins фронтенда: схема, хост и порт, без пути и завершающего слеша.
+CORS_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:4173",
+    "http://127.0.0.1:4173",
+]
 
 app = FastAPI(
     title="API каталога КТРУ",
@@ -25,6 +34,13 @@ app = FastAPI(
         {"name": "Сервис", "description": "Служебные эндпоинты."},
     ],
 )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=CORS_ORIGINS,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 DB_PATH = Path(__file__).with_name("ktru.db")
 RAW_DATA_PATH = Path(__file__).with_name("raw_data")
 CATEGORY_DIRECTORIES = {
