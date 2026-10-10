@@ -43,6 +43,14 @@ class SearchTests(unittest.TestCase):
         ).fetchall()
         self.assertIn("Кровать больничная", {row["name"] for row in names})
 
+    def test_measurement_abbreviation_is_not_lemmatized_as_a_verb(self):
+        from search import lemmatize
+
+        self.assertEqual(
+            lemmatize("длина 10 см", remove_stop_words=True),
+            "длина 10 см",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

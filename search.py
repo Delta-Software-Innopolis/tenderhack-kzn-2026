@@ -18,6 +18,11 @@ except ImportError:  # Semantic search is optional until embeddings are installe
 STOP_WORDS = frozenset(
     "и в на с по для из к о от до не ни но а или что как это тот весь свой".split()
 )
+# Short units and domain abbreviations are often interpreted as ordinary words
+# by pymorphy3 (for example, "см" becomes "смотреть").
+PRESERVED_TOKENS = frozenset(
+    "мм см м км м2 см2 мм2 м3 см3 кг г мг т л мл шт %".split()
+)
 # Values must be copied from ktru_position.name, not invented generic labels.
 # Add a user expression only when the target exists in the loaded KTRU database.
 CANONICAL_ALIASES = {
@@ -85,7 +90,7 @@ def lemmatize(
     normalized = _expand_synonyms(normalize(text), aliases)
     lemmas = []
     for token in normalized.split():
-        lemma = _MORPH.parse(token)[0].normal_form
+        lemma = token if token in PRESERVED_TOKENS else _MORPH.parse(token)[0].normal_form
         if not remove_stop_words or lemma not in STOP_WORDS:
             lemmas.append(lemma)
     return " ".join(lemmas)
