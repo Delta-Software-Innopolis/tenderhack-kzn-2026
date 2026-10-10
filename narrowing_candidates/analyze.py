@@ -24,7 +24,12 @@ def analyze(candidates, facts):
                 culprit = step["step"]
                 break
 
-    hints = make_hints(left, facts, known) if status == "ambiguous" else []
+    hints = []
+    if status == "conflict":
+        hints = make_conflict_hints(candidates, facts, known)
+    elif status == "ambiguous":
+        hints = make_hints(left, facts, known)
+        hints += make_indistinguishable_hint(left, facts, known, hints)
 
     return {
         "funnel": funnel,
