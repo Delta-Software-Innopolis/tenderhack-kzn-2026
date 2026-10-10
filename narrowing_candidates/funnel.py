@@ -17,6 +17,8 @@ def run_funnel(candidates, facts, known):
     funnel = []
 
     for fact in facts:
+        print("FACT")
+        print(fact)
         before = len(left)
         left = narrow(left, fact, known)
         funnel.append({

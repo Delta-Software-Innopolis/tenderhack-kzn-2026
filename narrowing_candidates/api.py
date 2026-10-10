@@ -9,61 +9,27 @@ app = FastAPI()
 
 DB = "../ktru.db"
 
-def convert_candidates(api_candidates):
-    result = []
+def convert_facts(api_result):
+    facts = []
 
-    for candidate in api_candidates:
-        chars = {}
+    for attribute in api_result["attributes"]:
+        if attribute.get("status") != "resolved":
+            continue
 
-        for char in candidate["characteristics"]:
-            values = []
+        value = attribute.get("normalized_value")
+        name = attribute.get("characteristic_name")
 
-            for value in char["values"]:
-                if value["type"] == "string":
-                    values.append({
-                        "kind": "text",
-                        "text": value["value"],
-                    })
-                elif value["type"] == "number":
-                    values.append({
-                        "kind": "number",
-                        "value": value["value"],
-                        "unit": value.get("unit"),
-                    })
-                elif value["type"] == "interval":
-                    interval = value["value"]
-                    values.append({
-                        "kind": "range",
-                        "lo": interval["min"],
-                        "lo_incl": interval["min_inclusive"],
-                        "hi": interval["max"],
-                        "hi_incl": interval["max_inclusive"],
-                        "unit": value.get("unit"),
-                    })
+        if not value or not name:
+            continue
 
-            chars[char["name"]] = {"values": values}
-
-        result.append({
-            "code": candidate["code"],
-            "name": candidate["name"],
-            "chars": chars,
+        facts.append({
+            "name": name,
+            "type": value["type"],
+            "value": value["value"],
+            "unit": value.get("unit"),
         })
 
-    return result
-
-def convert_facts(api_result):
-    result = []
-
-    for char in api_result["chars"]:
-        for value in char["values"]:
-            result.append({
-                "name": char["name"],
-                "type": value["type"],
-                "value": value["value"],
-                "unit": value["unit"],
-            })
-
-    return result
+    return facts
 
 class AnalyzeRequest(BaseModel):
     query: str
@@ -79,7 +45,7 @@ def analyze_query(request: AnalyzeRequest):
         search_response.raise_for_status()
         search_result = search_response.json()
         extract_response = requests.post(
-            "http://100.106.102.97:8001/extract/from-search",
+            "http://100.106.102.97:8002/extract",
             json=search_result,
             timeout=60,
         )
@@ -91,7 +57,17 @@ def analyze_query(request: AnalyzeRequest):
             detail=f"Ошибка при обращении к другому сервису: {e}",
         )
 
-    candidates = convert_candidates(api_result["candidates"])
+    candidate_codes = [
+        candidate["ktru_code"]
+        for candidate in search_result["candidates"]
+    ]
+
+    candidates = load_positions(DB, codes=candidate_codes)
     facts = convert_facts(api_result)
 
-    return analyze(candidates, facts)
+    result = analyze(candidates, facts)
+
+    return {
+        **result,
+        "attributes": api_result["attributes"],
+    }

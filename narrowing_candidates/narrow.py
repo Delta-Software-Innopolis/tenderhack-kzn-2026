@@ -10,6 +10,7 @@ def known_chars(positions):
 
 def narrow(candidates, fact, known):
     name = fact["name"]
+    print("Name!", name)
 
     # характеристика неадекватна для этого товара: отсеиваем всё
     if name not in known:
@@ -18,8 +19,13 @@ def narrow(candidates, fact, known):
     result = []
     for p in candidates:
         ch = p["chars"].get(name)
+        # print("CH!", ch)
         if ch is None or not ch["values"]:
+            print(1)
             result.append(p)          # у позиции нет ограничений по этой характеристике
         elif any(value_matches(fact, v) for v in ch["values"]):
+            print("бурмалда")
+            print(ch["values"])
+            print(2)
             result.append(p)          # подошло хотя бы одно допустимое значение
     return result

@@ -38,4 +38,5 @@ def analyze(candidates, facts):
         "result_code": result_code,
         "culprit": culprit,
         "hints": hints,
+        # "hints": [],
     }
