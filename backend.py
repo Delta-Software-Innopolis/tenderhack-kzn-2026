@@ -50,10 +50,10 @@ CATEGORY_DIRECTORIES = {
 }
 SQLITE_MAX_INTEGER = 2**63 - 1
 
-# Поля полнотекстового индекса нужны поиску, но не клиенту каталога.
+# Сохраняем имена дат в API, читая их из актуальных колонок базы.
 POSITION_FIELDS = """
-    p.code, p.version, p.version_code, p.name, p.okpd2_code, p.okpd2_name,
-    p.status, p.is_template, p.publish_date, p.update_date, p.date_start, p.date_end
+    p.code, p.name, p.okpd2_code, p.okpd2_name, p.status, p.actual, p.is_template,
+    p.application_date_start AS date_start, p.application_date_end AS date_end
 """
 
 
@@ -71,6 +71,7 @@ class CharacteristicValue(BaseModel):
     quality_description: str | None = Field(description="Текстовое значение", examples=["Круглый"])
     okei_code: str | None = Field(description="Код единицы измерения по ОКЕИ", examples=["003"])
     okei_name: str | None = Field(description="Название единицы измерения", examples=["Миллиметр"])
+    value_format: str | None = Field(description="Формат значения из исходной выгрузки КТРУ")
     min_value: float | None = Field(description="Нижняя граница диапазона", examples=[100.0])
     min_notation: str | None = Field(
         description="Условие нижней границы: greater (>) или greaterOrEqual (>=)",
@@ -89,9 +90,11 @@ class Characteristic(BaseModel):
 
     id: int = Field(description="Внутренний идентификатор характеристики в базе")
     code: str | None = Field(description="Код характеристики КТРУ")
-    name: str | None = Field(description="Название характеристики", examples=["Длина рукоятки"])
+    name: str = Field(description="Название характеристики", examples=["Длина рукоятки"])
     type: int | None = Field(description="Тип: 1 — качественная, 2 — количественная")
-    is_required: int | None = Field(description="Обязательность: 1 — обязательная, 0 — необязательная")
+    kind: int | None = Field(description="Код вида характеристики из исходной выгрузки КТРУ")
+    is_required: int = Field(description="Обязательность: 1 — обязательная, 0 — необязательная")
+    choice_type: int | None = Field(description="Код типа выбора значений из исходной выгрузки КТРУ")
     values: list[CharacteristicValue] = Field(description="Допустимые значения; пустой массив, если их нет")
 
 
@@ -99,15 +102,12 @@ class Item(BaseModel):
     """Полная карточка позиции КТРУ без служебных полей поискового индекса."""
 
     code: str = Field(description="Полный код КТРУ", examples=["25.73.30.141-00000012"])
-    version: int = Field(description="Номер версии позиции", examples=[2])
-    version_code: str | None = Field(description="Код версии позиции")
-    name: str | None = Field(description="Наименование товара", examples=["Молоток"])
+    name: str = Field(description="Наименование товара", examples=["Молоток"])
     okpd2_code: str | None = Field(description="Код ОКПД2", examples=["25.73.30.141"])
     okpd2_name: str | None = Field(description="Наименование по ОКПД2", examples=["Молотки"])
     status: str | None = Field(description="Статус позиции: ACTIVE, INACTIVE или TERMINATED", examples=["ACTIVE"])
+    actual: int = Field(description="Признак актуальности: 1 — актуальная, 0 — неактуальная позиция")
     is_template: int = Field(description="Признак шаблона: 1 — шаблон, 0 — обычная позиция")
-    publish_date: str | None = Field(description="Дата публикации в исходном формате КТРУ", examples=["2026-06-03T13:07:16+03:00"])
-    update_date: str | None = Field(description="Дата обновления в исходном формате КТРУ")
     date_start: str | None = Field(description="Дата начала применения в исходном формате КТРУ")
     date_end: str | None = Field(description="Дата окончания применения в исходном формате КТРУ")
     rubrics: list[Rubric] = Field(description="Рубрики КТРУ; пустой массив, если их нет")
@@ -175,7 +175,7 @@ def serialize_items(conn: sqlite3.Connection, rows: list[sqlite3.Row]) -> list[d
         batch = codes[start:start + 500]
         placeholders = ",".join("?" for _ in batch)
         for row in conn.execute(
-            f"""SELECT position_code, code, name FROM ktru_rubric
+            f"""SELECT position_code, code, name FROM ktru_rubricator
                 WHERE position_code IN ({placeholders})
                 ORDER BY position_code, code, name""",
             batch,
@@ -186,7 +186,7 @@ def serialize_items(conn: sqlite3.Connection, rows: list[sqlite3.Row]) -> list[d
 
         characteristics = {}
         for row in conn.execute(
-            f"""SELECT id, position_code, code, name, type, is_required
+            f"""SELECT id, position_code, code, name, type, kind, is_required, choice_type
                 FROM ktru_characteristic
                 WHERE position_code IN ({placeholders}) ORDER BY id""",
             batch,
@@ -198,10 +198,14 @@ def serialize_items(conn: sqlite3.Connection, rows: list[sqlite3.Row]) -> list[d
             by_code[position_code]["characteristics"].append(characteristic)
 
         for row in conn.execute(
-            f"""SELECT v.* FROM ktru_char_value v
+            f"""SELECT v.characteristic_id, v.value_code, v.quality_description,
+                       v.okei_code, v.okei_name, v.value_format,
+                       v.min_value, v.min_notation, v.max_value, v.max_notation,
+                       v.concrete_value
+                FROM ktru_characteristic_value v
                 JOIN ktru_characteristic c ON c.id = v.characteristic_id
                 WHERE c.position_code IN ({placeholders})
-                ORDER BY c.id, v.rowid""",
+                ORDER BY c.id, v.id""",
             batch,
         ):
             value = dict(row)
