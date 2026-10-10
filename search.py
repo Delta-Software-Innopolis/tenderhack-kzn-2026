@@ -37,6 +37,8 @@ THOUSANDS_RE = re.compile(r"(?<=\d),(?=\d{3}\b)")
 _MORPH = pymorphy3.MorphAnalyzer()
 DEFAULT_EMBEDDING_MODEL = "intfloat/multilingual-e5-small"
 DEFAULT_EMBEDDING_VERSION = "1"
+BM25_CANDIDATE_LIMIT = 50
+BM25_MIN_STRICT_RESULTS = 10
 
 
 @dataclass(frozen=True)
@@ -226,10 +228,12 @@ def rebuild_search_documents(conn: sqlite3.Connection) -> int:
     return len(rows)
 
 
-def _fts_query(query: str) -> str:
+def _fts_query(query: str, operator: str = "AND") -> str:
+    if operator not in {"AND", "OR"}:
+        raise ValueError("FTS operator must be 'AND' or 'OR'")
     terms = [term for term in lemmatize(query, remove_stop_words=True).split() if term]
     escaped = [term.replace('"', '""') for term in terms]
-    return " AND ".join(f'"{term}"' for term in escaped)
+    return f" {operator} ".join(f'"{term}"' for term in escaped)
 
 
 def _active_clause(alias: str = "p") -> tuple[str, list[str]]:
@@ -242,8 +246,13 @@ def _active_clause(alias: str = "p") -> tuple[str, list[str]]:
     )
 
 
-def bm25_search(conn: sqlite3.Connection, query: str, limit: int = 50) -> list[str]:
-    match = _fts_query(canonicalize_query(conn, query))
+def _bm25_search_mode(
+    conn: sqlite3.Connection,
+    query: str,
+    operator: str,
+    limit: int,
+) -> list[str]:
+    match = _fts_query(query, operator)
     if not match:
         return []
     return [
@@ -260,6 +269,39 @@ def bm25_search(conn: sqlite3.Connection, query: str, limit: int = 50) -> list[s
             (match, limit),
         )
     ]
+
+
+def _merge_ranked_codes(*ranked_lists: list[str], limit: int) -> list[str]:
+    """Fuse ranked lists while preserving evidence from every search mode."""
+    scores: dict[str, float] = {}
+    for ranked in ranked_lists:
+        for rank, code in enumerate(ranked, 1):
+            scores[code] = scores.get(code, 0.0) + 1 / (60 + rank)
+    return [
+        code
+        for code, _ in sorted(scores.items(), key=lambda item: (-item[1], item[0]))
+    ][:limit]
+
+
+def bm25_search(
+    conn: sqlite3.Connection,
+    query: str,
+    limit: int = BM25_CANDIDATE_LIMIT,
+    min_strict_results: int = BM25_MIN_STRICT_RESULTS,
+) -> list[str]:
+    """Search with strict AND first, then broaden to OR if needed.
+
+    The OR fallback is only used when the strict result set is smaller than
+    ``min_strict_results``. Results from both passes are rank-fused, so exact
+    matches retain their evidence while partial matches fill the candidate set.
+    """
+    canonical_query = canonicalize_query(conn, query)
+    strict = _bm25_search_mode(conn, canonical_query, "AND", limit)
+    if len(strict) >= min_strict_results or len(strict) >= limit:
+        return strict[:limit]
+
+    broad = _bm25_search_mode(conn, canonical_query, "OR", limit)
+    return _merge_ranked_codes(strict, broad, limit=limit)
 
 
 def semantic_search(
