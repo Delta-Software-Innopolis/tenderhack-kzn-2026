@@ -6,3 +6,4 @@ very_raw_data
 .env
 *.db-shm
 *.db-wal
+.DS_Store
