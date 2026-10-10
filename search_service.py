@@ -11,7 +11,14 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from search import canonicalize_query, lemmatize, search
+from search import (
+    DEFAULT_EMBEDDING_MODEL,
+    DEFAULT_EMBEDDING_VERSION,
+    canonicalize_query,
+    encode_query,
+    lemmatize,
+    search,
+)
 
 DB_PATH = Path(__file__).with_name("ktru.db")
 DEFAULT_CORS_ORIGINS = (
@@ -30,7 +37,7 @@ def cors_origins() -> list[str]:
 app = FastAPI(
     title="KTRU Search Service",
     version="0.1.0",
-    description="Поиск кандидатов КТРУ по пользовательскому тексту.",
+    description="Гибридный BM25 и семантический поиск кандидатов КТРУ.",
 )
 app.add_middleware(
     CORSMiddleware,
@@ -74,8 +81,27 @@ def health() -> dict[str, str]:
 )
 def search_candidates(request: SearchRequest) -> SearchResponse:
     with closing(connect_db()) as conn:
+        embeddings_available = conn.execute(
+            """SELECT 1 FROM ktru_position_embedding
+               WHERE model_name = ? AND model_version = ? LIMIT 1""",
+            (DEFAULT_EMBEDDING_MODEL, DEFAULT_EMBEDDING_VERSION),
+        ).fetchone()
+        if embeddings_available is None:
+            raise HTTPException(
+                status_code=503,
+                detail="Эмбеддинги не найдены; запустите populate_embeddings.py",
+            )
         canonical_query = canonicalize_query(conn, request.query)
-        candidates = search(conn, request.query, limit=request.limit)
+        try:
+            query_embedding = encode_query(canonical_query)
+        except RuntimeError as exc:
+            raise HTTPException(status_code=503, detail=str(exc)) from exc
+        candidates = search(
+            conn,
+            request.query,
+            limit=request.limit,
+            query_embedding=query_embedding,
+        )
         return SearchResponse(
             query=request.query,
             canonical_query=canonical_query,

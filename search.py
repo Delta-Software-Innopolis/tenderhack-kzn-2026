@@ -7,6 +7,7 @@ import re
 import sqlite3
 from dataclasses import dataclass
 from datetime import date
+from functools import lru_cache
 
 import pymorphy3
 
@@ -313,7 +314,11 @@ def bm25_search(
 
 
 def semantic_search(
-    conn: sqlite3.Connection, query_embedding, limit: int = 50
+    conn: sqlite3.Connection,
+    query_embedding,
+    limit: int = 50,
+    model_name: str = DEFAULT_EMBEDDING_MODEL,
+    model_version: str = DEFAULT_EMBEDDING_VERSION,
 ) -> list[str]:
     if np is None or query_embedding is None:
         return []
@@ -321,7 +326,9 @@ def semantic_search(
         """SELECT e.position_code, e.embedding
            FROM ktru_position_embedding e
            JOIN ktru_position p ON p.code = e.position_code
-           WHERE p.is_template = 0"""
+           WHERE p.is_template = 0
+             AND e.model_name = ? AND e.model_version = ?""",
+        (model_name, model_version),
     ).fetchall()
     if not rows:
         return []
@@ -334,7 +341,9 @@ def semantic_search(
     return [codes[index] for index in np.argsort(-scores)[:limit]]
 
 
+@lru_cache(maxsize=2)
 def _load_embedding_model(model_name: str = DEFAULT_EMBEDDING_MODEL):
+    """Load each embedding model once per process and reuse it across requests."""
     try:
         from sentence_transformers import SentenceTransformer
     except ImportError as exc:
