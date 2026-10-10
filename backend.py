@@ -102,6 +102,10 @@ class ErrorResponse(BaseModel):
     detail: str = Field(description="Описание ошибки")
 
 
+class ItemsCountResponse(BaseModel):
+    count: int = Field(ge=0, description="Количество товаров с учётом фильтра категории", examples=[2763])
+
+
 class RootResponse(BaseModel):
     message: str = Field(description="Приветственное сообщение", examples=["Hello World"])
 
@@ -134,6 +138,14 @@ def category_codes(category: str) -> str:
                     codes.add(code.strip())
                 element.clear()
     return json.dumps(sorted(codes))
+
+
+def category_filter(category: str | None) -> tuple[str, list[str]]:
+    """Общий фильтр категории для списка товаров и подсчёта их количества."""
+    if category is None:
+        return "", []
+    # JSON-массив занимает один SQL-параметр независимо от размера категории.
+    return "WHERE p.code IN (SELECT value FROM json_each(?))", [category_codes(category)]
 
 
 def serialize_items(conn: sqlite3.Connection, rows: list[sqlite3.Row]) -> list[dict]:
@@ -268,18 +280,48 @@ def get_items(
     Если offset выходит за пределы выборки, возвращается пустой массив с HTTP 200.
     Также поддерживается путь /items без завершающего слеша.
     """
-    where = ""
-    parameters = []
-    if category is not None:
-        # JSON-массив занимает один SQL-параметр независимо от размера категории.
-        where = "WHERE p.code IN (SELECT value FROM json_each(?))"
-        parameters.append(category_codes(category))
-    parameters.extend((limit, offset))
+    where, parameters = category_filter(category)
 
     with closing(connect_db()) as conn:
         rows = conn.execute(
             f"""SELECT {POSITION_FIELDS} FROM ktru_position p
                 {where} ORDER BY p.code LIMIT ? OFFSET ?""",
-            parameters,
+            [*parameters, limit, offset],
         ).fetchall()
         return serialize_items(conn, rows)
+
+
+@app.get("/items/count/", response_model=ItemsCountResponse, include_in_schema=False)
+@app.get(
+    "/items/count",
+    response_model=ItemsCountResponse,
+    tags=["Каталог"],
+    summary="Получить количество товаров",
+    operation_id="countItems",
+    response_description="Количество товаров в базе с учётом выбранной категории",
+    responses={
+        503: {
+            "model": ErrorResponse,
+            "description": "Исходные XML выбранной категории отсутствуют на сервере",
+            "content": {"application/json": {"example": {"detail": "Исходные данные категории недоступны"}}},
+        },
+    },
+)
+def count_items(
+    category: Literal["мебель", "одежда", "инструменты"] | None = Query(
+        default=None,
+        description="Категория хакатона. Не передавайте параметр для подсчёта всего каталога.",
+        examples=["мебель"],
+    ),
+):
+    """Считает позиции КТРУ в базе, включая неактивные, без загрузки карточек.
+
+    Фильтр категории совпадает с фильтром GET /items/; пагинация не применяется.
+    Если подходящих товаров нет, возвращается {"count": 0} с HTTP 200.
+    """
+    where, parameters = category_filter(category)
+    with closing(connect_db()) as conn:
+        count = conn.execute(
+            f"SELECT COUNT(*) FROM ktru_position p {where}", parameters,
+        ).fetchone()[0]
+        return {"count": count}
