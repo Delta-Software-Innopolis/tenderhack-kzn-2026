@@ -1,5 +1,5 @@
--- Схема для поиска позиции КТРУ по текстовому запросу.
--- Храним только то, что нужно для поиска и отдачи кода; остальное из XML сознательно пропущено.
+-- Сырые данные КТРУ из выгрузки nsiKTRUNew (без лемматизации и полнотекстового индекса).
+-- Храним позиции, рубрики, характеристики и их значения; остальное из XML сознательно пропущено.
 
 PRAGMA journal_mode = WAL;
 PRAGMA synchronous = NORMAL;
@@ -18,12 +18,7 @@ CREATE TABLE IF NOT EXISTS ktru_position (
     publish_date   TEXT,
     update_date    TEXT,
     date_start     TEXT,                  -- applicationDateStart
-    date_end       TEXT,                  -- applicationDateEnd
-    -- Леммы для FTS (заполняет загрузчик): название отдельно, остальное отдельно,
-    -- чтобы совпадение в названии весило больше.
-    name_lemmas    TEXT NOT NULL DEFAULT '',
-    extra_lemmas   TEXT NOT NULL DEFAULT '',
-    values_lemmas  TEXT NOT NULL DEFAULT ''   -- леммы значений характеристик ("чугунный", "20", "сантиметр")
+    date_end       TEXT                   -- applicationDateEnd
 );
 
 CREATE INDEX IF NOT EXISTS idx_position_status ON ktru_position(status);
@@ -63,14 +58,3 @@ CREATE TABLE IF NOT EXISTS ktru_char_value (
     concrete_value      REAL
 );
 CREATE INDEX IF NOT EXISTS idx_value_char ON ktru_char_value(characteristic_id);
-
--- Полнотекстовый индекс по леммам. Контент берётся из ktru_position (external content),
--- поэтому после загрузки нужен один 'rebuild' (делает load.py).
-CREATE VIRTUAL TABLE IF NOT EXISTS ktru_fts USING fts5(
-    name_lemmas,
-    extra_lemmas,
-    values_lemmas,
-    content='ktru_position',
-    content_rowid='rowid',
-    tokenize='unicode61 remove_diacritics 2'
-);

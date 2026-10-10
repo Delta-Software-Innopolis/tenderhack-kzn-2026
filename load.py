@@ -10,8 +10,6 @@ from pathlib import Path
 
 from lxml import etree
 
-from textutil import lemma_string
-
 SCHEMA = Path(__file__).with_name("schema.sql")
 
 
@@ -39,11 +37,6 @@ def to_float(v):
         return float(v.replace(",", "."))
     except (AttributeError, ValueError):
         return None
-
-
-def fmt_num(v):
-    """20.0 -> '20', 0.5 -> '0.5' (для текста, по которому ищем)."""
-    return None if v is None else f"{v:g}"
 
 
 def parse_values(ch) -> list[dict]:
@@ -89,13 +82,6 @@ def parse_position(pos) -> dict | None:
          "values": parse_values(c)}
         for c in data.findall("{*}characteristics/{*}characteristic")
     ]
-    # Текст значений для поиска: слова, числа и единица измерения.
-    value_texts = []
-    for c in chars:
-        for v in c["values"]:
-            value_texts += [v.get("quality_description"), v.get("okei_name"),
-                            fmt_num(v.get("min_value")), fmt_num(v.get("max_value")),
-                            fmt_num(v.get("concrete_value"))]
 
     name = text(data, "{*}name")
     okpd2_name = text(data, "{*}OKPD2/{*}name")
@@ -112,9 +98,6 @@ def parse_position(pos) -> dict | None:
         "update_date": text(data, "{*}updateDate"),
         "date_start": text(data, "{*}applicationDateStart"),
         "date_end": text(data, "{*}applicationDateEnd"),
-        "name_lemmas": lemma_string(name),
-        "extra_lemmas": lemma_string(okpd2_name, *(r[1] for r in rubrics), *(c["name"] for c in chars)),
-        "values_lemmas": lemma_string(*value_texts),
         "rubrics": rubrics,
         "chars": chars,
     }
@@ -134,10 +117,9 @@ def store(cur, p: dict) -> str:
     cur.execute(
         """INSERT INTO ktru_position
            (code, version, version_code, name, okpd2_code, okpd2_name, status, is_template,
-            publish_date, update_date, date_start, date_end, name_lemmas, extra_lemmas, values_lemmas)
+            publish_date, update_date, date_start, date_end)
            VALUES (:code, :version, :version_code, :name, :okpd2_code, :okpd2_name, :status,
-                   :is_template, :publish_date, :update_date, :date_start, :date_end,
-                   :name_lemmas, :extra_lemmas, :values_lemmas)""",
+                   :is_template, :publish_date, :update_date, :date_start, :date_end)""",
         p,
     )
     cur.executemany(
@@ -202,9 +184,6 @@ def main(src: str, db_path: str = "ktru.db"):
         conn.commit()  # один коммит на файл
         print("  ", stats)
 
-    print("Перестраиваю FTS-индекс...")
-    conn.execute("INSERT INTO ktru_fts(ktru_fts) VALUES ('rebuild')")
-    conn.commit()
     conn.close()
     print("Готово:", stats)
 
