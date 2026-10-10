@@ -2,12 +2,14 @@ import sqlite3
 from pathlib import Path
 import sys
 from lxml import etree
+from search import ensure_search_schema, rebuild_search_documents
 
 DB_PATH = Path("ktru.db")
 SCHEMA_PATH = Path("schema.sql")
 
 
-def connect(db_path: Path = DB_PATH, init: bool = False) -> sqlite3.Connection:
+def connect(db_path: Path | str = DB_PATH, init: bool = False) -> sqlite3.Connection:
+    db_path = Path(db_path)
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
 
@@ -187,6 +189,7 @@ def main(root_dir: str, db_path: str = "ktru.db"):
     print(f"Найдено XML-файлов: {len(xml_files)}")
 
     conn = connect(db_path, init=True)
+    ensure_search_schema(conn)
     counters = {"positions": 0}
 
     for i, xml_path in enumerate(xml_files, 1):
@@ -205,8 +208,10 @@ def main(root_dir: str, db_path: str = "ktru.db"):
 
     print("Строим FTS-индексы...")
     rebuild_fts(conn)
+    print("Строим гибридный поисковый индекс...")
+    indexed = rebuild_search_documents(conn)
 
-    print(f"Итого позиций: {counters['positions']}")
+    print(f"Итого позиций: {counters['positions']}; в поисковом индексе: {indexed}")
     conn.close()
     print("Готово.")
 
