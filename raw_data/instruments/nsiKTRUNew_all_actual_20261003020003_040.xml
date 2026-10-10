@@ -1,0 +1,603 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>25.71.11.110-00000005</oos:code>
+        <oos:versionCode>25.71.11.110-000000051</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2018-12-17T18:08:25+03:00</oos:inclusionDate>
+        <oos:publishDate>2018-12-17T18:08:25+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T14:45:00+03:00</oos:updateDate>
+        <oos:name>Ножи специальные</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.71.11.110</oos:code>
+            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-01-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.71.11.110</oos:code>
+                            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>45695ff3-5</oos:code>
+                <oos:name>Материал клинка</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>56ba8567-1</oos:valueCode>
+                        <oos:qualityDescription>Сталь</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7a6c2d66-d</oos:valueCode>
+                        <oos:qualityDescription>Керамика</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7c5a7021-6</oos:valueCode>
+                        <oos:qualityDescription>Нержавеющая сталь</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>5e57164e-f</oos:valueCode>
+                        <oos:qualityDescription>Титан</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=C994F68641EC4E5E9630EA8AF6BF5C82</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>260C0ACF0B2F4E75BF30F2C72B898B31</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.71.11.110-00000004</oos:code>
+        <oos:versionCode>25.71.11.110-000000041</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2018-12-17T18:08:24+03:00</oos:inclusionDate>
+        <oos:publishDate>2018-12-17T18:08:24+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T14:45:00+03:00</oos:updateDate>
+        <oos:name>Ножи специальные</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.71.11.110</oos:code>
+            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-01-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.71.11.110</oos:code>
+                            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>45695ff3-5</oos:code>
+                <oos:name>Материал клинка</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>ef81b635-1</oos:valueCode>
+                        <oos:qualityDescription>Сталь</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>25.71.11.110-00000005</oos:code>
+            <oos:version>1</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=2B884760EF8C4F6F9DE10E9D5D4DE4B9</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>8C2BADFFAE1D4EC6835EB6F23488834B</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.71.11.110-00000003</oos:code>
+        <oos:versionCode>25.71.11.110-000000031</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2018-12-17T18:08:24+03:00</oos:inclusionDate>
+        <oos:publishDate>2018-12-17T18:08:24+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:00:00+03:00</oos:updateDate>
+        <oos:name>Ножи специальные</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.71.11.110</oos:code>
+            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-01-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.71.11.110</oos:code>
+                            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>45695ff3-5</oos:code>
+                <oos:name>Материал клинка</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>ade0185c-c</oos:valueCode>
+                        <oos:qualityDescription>Керамика</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>25.71.11.110-00000005</oos:code>
+            <oos:version>1</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=10CD25F9BD9A49CC84C2A87F4CBDF4B8</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>8595616424F04F559D346016353AF837</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.71.11.110-00000002</oos:code>
+        <oos:versionCode>25.71.11.110-000000021</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2018-12-17T18:08:23+03:00</oos:inclusionDate>
+        <oos:publishDate>2018-12-17T18:08:23+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T14:30:00+03:00</oos:updateDate>
+        <oos:name>Ножи специальные</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.71.11.110</oos:code>
+            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-01-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.71.11.110</oos:code>
+                            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>45695ff3-5</oos:code>
+                <oos:name>Материал клинка</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>6a040ce0-d</oos:valueCode>
+                        <oos:qualityDescription>Нержавеющая сталь</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>25.71.11.110-00000005</oos:code>
+            <oos:version>1</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=5230A18BFA5D42AB834C1D4140EF0150</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>A4A9EA647D2B40179657AAA37B5E50B2</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.71.11.110-00000006</oos:code>
+        <oos:versionCode>25.71.11.110-000000064</oos:versionCode>
+        <oos:version>4</oos:version>
+        <oos:inclusionDate>2018-12-17T18:11:43+03:00</oos:inclusionDate>
+        <oos:publishDate>2021-02-19T10:50:07+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T20:15:00+03:00</oos:updateDate>
+        <oos:name>Ножи хозяйственные </oos:name>
+        <oos:OKPD2>
+            <oos:code>25.71.11.110</oos:code>
+            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2020-01-15T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.71.11.110</oos:code>
+                            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>728bdaa6-8</oos:code>
+                <oos:name>Материал клинка</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>63312c13-f</oos:valueCode>
+                        <oos:qualityDescription>Керамика</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7a47deb5-4</oos:valueCode>
+                        <oos:qualityDescription>Нержавеющая сталь</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>5df92bca-3</oos:valueCode>
+                        <oos:qualityDescription>Титан</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>25b2c0b3-a</oos:valueCode>
+                        <oos:qualityDescription>Сталь</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>744bb704-b</oos:code>
+                <oos:name>Вид</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>4304a9bc-9</oos:valueCode>
+                        <oos:qualityDescription>Хлеборезный</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>f0db4ab3-4</oos:valueCode>
+                        <oos:qualityDescription>Овощной</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:cancelInfo>
+            <oos:cancelDate>2021-02-19T10:49:35+03:00</oos:cancelDate>
+            <oos:cancelReason>Переутверждение ЭС</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>true</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=E4446423AC4D466EB61E1D3B8DF65C50</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>449D29CC58D2436C86B019F1ADF83BF1</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.71.11.110-00000008</oos:code>
+        <oos:versionCode>25.71.11.110-000000084</oos:versionCode>
+        <oos:version>4</oos:version>
+        <oos:inclusionDate>2018-12-17T18:11:44+03:00</oos:inclusionDate>
+        <oos:publishDate>2021-02-19T10:48:37+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T19:54:46+03:00</oos:updateDate>
+        <oos:name>Ножи хозяйственные </oos:name>
+        <oos:OKPD2>
+            <oos:code>25.71.11.110</oos:code>
+            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2020-01-15T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.71.11.110</oos:code>
+                            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>728bdaa6-8</oos:code>
+                <oos:name>Материал клинка</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>eedc6759-c</oos:valueCode>
+                        <oos:qualityDescription>Сталь</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>a737e9c3-a</oos:valueCode>
+                        <oos:qualityDescription>Керамика</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>da14e702-3</oos:valueCode>
+                        <oos:qualityDescription>Нержавеющая сталь</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>fd8a4e37-3</oos:valueCode>
+                        <oos:qualityDescription>Титан</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>744bb704-b</oos:code>
+                <oos:name>Вид</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>4304a9bc-9</oos:valueCode>
+                        <oos:qualityDescription>Хлеборезный</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:cancelInfo>
+            <oos:cancelDate>2021-02-19T10:48:14+03:00</oos:cancelDate>
+            <oos:cancelReason>Переутверждение ЭС</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>25.71.11.110-00000006</oos:code>
+            <oos:version>3</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=F032667A682046F39399899E423E1FDA</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>66EE130B00F4473DA142B9DE6A230351</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.71.11.110-00000007</oos:code>
+        <oos:versionCode>25.71.11.110-000000074</oos:versionCode>
+        <oos:version>4</oos:version>
+        <oos:inclusionDate>2018-12-17T18:11:44+03:00</oos:inclusionDate>
+        <oos:publishDate>2021-02-19T10:51:31+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T20:00:00+03:00</oos:updateDate>
+        <oos:name>Ножи хозяйственные </oos:name>
+        <oos:OKPD2>
+            <oos:code>25.71.11.110</oos:code>
+            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2020-01-15T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.71.11.110</oos:code>
+                            <oos:name>Ножи (кроме ножей для машин)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>728bdaa6-8</oos:code>
+                <oos:name>Материал клинка</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>fc363794-6</oos:valueCode>
+                        <oos:qualityDescription>Сталь</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>648ff61a-9</oos:valueCode>
+                        <oos:qualityDescription>Керамика</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>0ed89805-b</oos:valueCode>
+                        <oos:qualityDescription>Нержавеющая сталь</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d5be7ed2-8</oos:valueCode>
+                        <oos:qualityDescription>Титан</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>744bb704-b</oos:code>
+                <oos:name>Вид</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>f0db4ab3-4</oos:valueCode>
+                        <oos:qualityDescription>Овощной</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:cancelInfo>
+            <oos:cancelDate>2021-02-19T10:51:09+03:00</oos:cancelDate>
+            <oos:cancelReason>Переутверждение ЭС</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>25.71.11.110-00000006</oos:code>
+            <oos:version>3</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=D6BDC74CA9494551AF169212B3C94973</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>5B6C298D13E9484AADA0744262579DEB</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+</nsiKTRUs></export>

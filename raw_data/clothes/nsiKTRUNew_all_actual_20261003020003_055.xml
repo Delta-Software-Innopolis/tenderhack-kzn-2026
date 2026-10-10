@@ -1,0 +1,1120 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>22.19.60.119-00000011</oos:code>
+        <oos:versionCode>22.19.60.119-000000111</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-20T14:49:40+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-20T14:49:40+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:30:00+03:00</oos:updateDate>
+        <oos:name>Перчатки смотровые/процедурные нитриловые, неопудренные, антибактериальные</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.19.60.119</oos:code>
+            <oos:name>Перчатки резиновые прочие</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>22.19.60.119</oos:code>
+                            <oos:name>Перчатки резиновые прочие</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>320790</oos:code>
+                            <oos:name>Перчатки смотровые/процедурные нитриловые, неопудренные, антибактериальные</oos:name>
+                            <oos:descriptionValue>"Нестерильное изделие, изготавливаемое из нитрила для использования в качестве защитного барьера на руках медицинского работника во время осмотра/лечения пациента или для других санитарных целей; внутренняя поверхность перчаток неопудрена, изделие содержит антибактериальные или противовирусные вещества/обладает антибактериальными или противовирусными свойствами. Используется, главным образом, как двухсторонний барьер для защиты пациента/персонала от различной контаминации и минимизации риска аллергии на латекс. Изделие должно иметь соответствующие характеристики в отношении осязания/удобства использования, а также соответствующие физические свойства (например, прочность, эластичность) и однотипные размеры (т.е., сопоставимость размеров). Это изделие для одноразового использования."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Нестерильное изделие, изготавливаемое из нитрила для использования в качестве защитного барьера на руках медицинского работника во время осмотра/лечения пациента или для других санитарных целей; внутренняя поверхность перчаток неопудрена, изделие содержит антибактериальные или противовирусные вещества/обладает антибактериальными или противовирусными свойствами. Используется, главным образом, как двухсторонний барьер для защиты пациента/персонала от различной контаминации и минимизации риска аллергии на латекс. Изделие должно иметь соответствующие характеристики в отношении осязания/удобства использования, а также соответствующие физические свойства (например, прочность, эластичность) и однотипные размеры (т.е., сопоставимость размеров). Это изделие для одноразового использования.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=CFAE4B042A7948EF829325619217BE4D</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>B052968F345743FA82E85933660383F7</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>22.19.60.119-00000012</oos:code>
+        <oos:versionCode>22.19.60.119-000000121</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-20T15:54:54+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-20T15:54:54+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:30:00+03:00</oos:updateDate>
+        <oos:name>Перчатки смотровые/процедурные полиизопреновые, неопудренные</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.19.60.119</oos:code>
+            <oos:name>Перчатки резиновые прочие</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>22.19.60.119</oos:code>
+                            <oos:name>Перчатки резиновые прочие</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>321530</oos:code>
+                            <oos:name>Перчатки смотровые/процедурные полиизопреновые, неопудренные</oos:name>
+                            <oos:descriptionValue>"Нестерильное изделие, изготовленное из полиизопрена и предназначенное для ипсользования в качестве защитного барьера на руках медицинского работника во время осмотра/лечения пациента или для других санитарных целей; внутренняя поверхность перчаток неопудрена, и они не обладают антибактериальными свойствами. Обычно используются в качестве двухстороннего барьера для защиты пациента и персонала от загрязнений и при возможной аллергии на латекс. Имеют соответствующие характеристики по тактильности и комфортности применения и должны иметь соответствующие физические свойства (например, прочность на растяжение, стойкость к прокалыванию, эластичность) и однотипные размеры (т. е., системность размеров). Это изделие одноразового применения."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Нестерильное изделие, изготовленное из полиизопрена и предназначенное для ипсользования в качестве защитного барьера на руках медицинского работника во время осмотра/лечения пациента или для других санитарных целей; внутренняя поверхность перчаток неопудрена, и они не обладают антибактериальными свойствами. Обычно используются в качестве двухстороннего барьера для защиты пациента и персонала от загрязнений и при возможной аллергии на латекс. Имеют соответствующие характеристики по тактильности и комфортности применения и должны иметь соответствующие физические свойства (например, прочность на растяжение, стойкость к прокалыванию, эластичность) и однотипные размеры (т. е., системность размеров). Это изделие одноразового применения.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=CDA068BE3BFC4E77877A84E7C0FA946F</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>F8CEE8466421416988CFA202C25F710C</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.190-00000025</oos:code>
+        <oos:versionCode>14.12.30.190-000000252</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-22T13:16:41+03:00</oos:inclusionDate>
+        <oos:publishDate>2022-08-09T16:29:41+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T21:00:00+03:00</oos:updateDate>
+        <oos:name>Комбинезон гигиенический для посетителей</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.190</oos:code>
+            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2022-09-08T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>288670</oos:code>
+                            <oos:name>Комбинезон гигиенический для посетителей</oos:name>
+                            <oos:descriptionValue>Нестерильная одежда для посетителей или персонала, которую следует носить в медицинском учреждении в качестве временной чистой одежды, когда находишься вместе с пациентами в нестерильном помещении, где может требоваться повышенный уровень гигиены по сравнению с обычной больничной палатой [например, в палате интенсивной терапии, послеоперационной палате]. Известен под названием полукомбинезона. Это цельный костюм с рукавами, штанинами и застежками, который необходимо надевать поверх обычной одежды для создания барьера, чтобы предотвратить перекрестное загрязнение возбудителями инфекции между посетителем и пациентами. Это приспособление одноразового применения.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.190</oos:code>
+                            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.32.120</oos:code>
+                            <oos:name>Одежда из нетканых материалов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=FE536104EF4A4F7A936FFE3A34AACC35</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>EEA3A3F0C6D54F4A9CB595CB92ACECCA</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.190-00000024</oos:code>
+        <oos:versionCode>14.12.30.190-000000242</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-22T13:16:41+03:00</oos:inclusionDate>
+        <oos:publishDate>2022-08-09T16:27:14+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T21:00:00+03:00</oos:updateDate>
+        <oos:name>Набор гигиенической одежды для посетителей</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.190</oos:code>
+            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2022-09-08T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>288680</oos:code>
+                            <oos:name>Набор гигиенической одежды для посетителей</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.190</oos:code>
+                            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.32.120</oos:code>
+                            <oos:name>Одежда из нетканых материалов</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=36816D0ECE244C76BE4302506DA0965D</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>9253E66B9C6149A785C381DB1FD16AA9</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>22.19.60.119-00000014</oos:code>
+        <oos:versionCode>22.19.60.119-000000142</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-21T13:10:06+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-21T18:50:40+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Перчатки смотровые/процедурные нитриловые, неопудренные, стерильные&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.19.60.119</oos:code>
+            <oos:name>Перчатки резиновые прочие</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>329770</oos:code>
+                            <oos:name>Перчатки смотровые/процедурные нитриловые, неопудренные, стерильные</oos:name>
+                            <oos:descriptionValue>"Стерильное изделие, изготавливаемое из нитрила для использования в качестве защитного барьера на руках медицинского работника во время осмотра/лечения пациента или для других санитарных целей; внутренняя поверхность перчаток неопудрена, и они не содержат антибактериальных веществ/материалов. Используется, главным образом, как двухсторонний барьер для защиты пациента/персонала от различной контаминации и минимизации риска аллергии на латекс. Изделие должно иметь соответствующие характеристики в отношении осязания и удобства использования, а также соответствующие физические свойства (например, прочность на растяжение, устойчивость к проколам, эластичность) и однотипные размеры (т.е., сопоставимость размеров). Это изделие для одноразового использования."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>22.19.71.190</oos:code>
+                            <oos:name>Изделия из резины, кроме твердой резины (эбонита), гигиенические или фармацевтические прочие</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>22.19.60.119</oos:code>
+                            <oos:name>Перчатки резиновые прочие</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Стерильное изделие, изготавливаемое из нитрила для использования в качестве защитного барьера на руках медицинского работника во время осмотра/лечения пациента или для других санитарных целей; внутренняя поверхность перчаток неопудрена, и они не содержат антибактериальных веществ/материалов. Используется, главным образом, как двухсторонний барьер для защиты пациента/персонала от различной контаминации и минимизации риска аллергии на латекс. Изделие должно иметь соответствующие характеристики в отношении осязания и удобства использования, а также соответствующие физические свойства (например, прочность на растяжение, устойчивость к проколам, эластичность) и однотипные размеры (т.е., сопоставимость размеров). Это изделие для одноразового использования.&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=EAA3079B6B5B4B5897B490268614F86D</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>5897BEE85F8147A691F269D486205E9D</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.190-00000018</oos:code>
+        <oos:versionCode>14.12.30.190-000000181</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-21T12:24:22+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-21T12:24:22+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Набор одежды/белья для врача/пациента, многоразового использования&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.190</oos:code>
+            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.190</oos:code>
+                            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>330740</oos:code>
+                            <oos:name>Набор одежды/белья для врача/пациента, многоразового использования</oos:name>
+                            <oos:descriptionValue>Набор предметов одежды и/или белья, предназначенных для врача и/или пациента при проведении медицинских процедур или для ношения во время нахождения в больнице. Это изделие многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Набор предметов одежды и/или белья, предназначенных для врача и/или пациента при проведении медицинских процедур или для ношения во время нахождения в больнице. Это изделие многоразового использования.&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=B7500A275F6A44129B7BBCF8A3AC01F2</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>513A0D6A5E884FA39E0CA6CBA4632D9E</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00000683</oos:code>
+        <oos:versionCode>32.50.50.190-000006831</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-21T12:24:19+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-21T12:24:19+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Бахилы токонепроводящие, стерильные</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>333670</oos:code>
+                            <oos:name>Бахилы токонепроводящие, стерильные</oos:name>
+                            <oos:descriptionValue>Стерильное изделие, изготавливаемое из непроводящих нетканых синтетических материалов, предназначенное для ношения медицинскими работниками поверх обуви, как правило, во время хирургической процедуры для поддержания гигиены и предотвращения перекрестного заражения микроорганизмами и загрязнения физиологическими жидкостями и твердыми частицами между пациентом и персоналом. Это изделие для одноразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Стерильное изделие, изготавливаемое из непроводящих нетканых синтетических материалов, предназначенное для ношения медицинскими работниками поверх обуви, как правило, во время хирургической процедуры для поддержания гигиены и предотвращения перекрестного заражения микроорганизмами и загрязнения физиологическими жидкостями и твердыми частицами между пациентом и персоналом. Это изделие для одноразового использования.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=A41CBCA9CB4D42C687C27D11B5287F0C</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>77818CD0AD75479E925D1479EEA5FF8C</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.190-00000017</oos:code>
+        <oos:versionCode>14.12.30.190-000000172</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-21T12:24:06+03:00</oos:inclusionDate>
+        <oos:publishDate>2022-08-09T16:16:08+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T21:00:00+03:00</oos:updateDate>
+        <oos:name>Шапочка хирургическая, одноразового использования, стерильная&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.190</oos:code>
+            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2022-09-08T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>330870</oos:code>
+                            <oos:name>Шапочка хирургическая, одноразового использования, стерильная</oos:name>
+                            <oos:descriptionValue>Стерильное покрытие для головы, которое хирургический персонал/пациент носит во время операции для защиты от попадания микроорганизмов, биологических жидкостей и твердых частиц. Обычно изготавливается из нетканых материалов. Изделие одноразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.190</oos:code>
+                            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.32.120</oos:code>
+                            <oos:name>Одежда из нетканых материалов</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=6EABD7CF25E84D96BA85470958D59A8F</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>C48D58C8AF9F48A484738779356FF9A4</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.190-00000016</oos:code>
+        <oos:versionCode>14.12.30.190-000000163</oos:versionCode>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2019-03-21T12:24:05+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-03-28T14:59:46+03:00</oos:publishDate>
+        <oos:updateDate>2025-03-28T14:59:46+03:00</oos:updateDate>
+        <oos:name>Сорочка хирургическая для пациента, стерильная&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.190</oos:code>
+            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2022-09-08T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>330890</oos:code>
+                            <oos:name>Сорочка хирургическая для пациента, стерильная</oos:name>
+                            <oos:descriptionValue>Стерильная одежда из натурального и/или синтетического материала (например, бумаги, ткани, пластика), которую надевает пациент на верхнюю часть тела для комфортности и сохранения тепла перед, во время и после хирургического вмешательства. Обычно она имеет короткие рукава, ее можно застегивать при помощи шнурков на спине/на боку. Это изделие одноразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.190</oos:code>
+                            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.32.120</oos:code>
+                            <oos:name>Одежда из нетканых материалов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2025-03-28T15:03:54+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:nsiDescription>&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0195DC9F60427D5799CC11B50D4D5A98</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0195DC9F60427D5799CC11B50D4D5A99</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00000660</oos:code>
+        <oos:versionCode>32.50.50.190-000006601</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-21T12:23:58+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-21T12:23:58+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Бахилы токопроводящие, нестерильные</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>293810</oos:code>
+                            <oos:name>Бахилы токопроводящие, нестерильные</oos:name>
+                            <oos:descriptionValue>Нестерильное изделие, изготавливаемое из проводящего материала, разработанное для снижения риска нарастания статического электричества и предназначенное для использования в качестве физического барьера на обуви для предотвращения перекрестного заражения между обувью и окружающей средой. Это изделие для одноразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Нестерильное изделие, изготавливаемое из проводящего материала, разработанное для снижения риска нарастания статического электричества и предназначенное для использования в качестве физического барьера на обуви для предотвращения перекрестного заражения между обувью и окружающей средой. Это изделие для одноразового использования.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=3111A1DE8D00461BAE24C830213F578E</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>C6E03679C8FB431DAC371B93194ED087</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.190-00000021</oos:code>
+        <oos:versionCode>14.12.30.190-000000212</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-21T19:27:18+03:00</oos:inclusionDate>
+        <oos:publishDate>2022-08-09T16:08:47+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T21:00:00+03:00</oos:updateDate>
+        <oos:name>Набор одежды хирургический/смотровой&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.190</oos:code>
+            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2022-09-08T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.190</oos:code>
+                            <oos:name>Одежда производственная и профессиональная прочая, не включенная в другие группировки</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.32.120</oos:code>
+                            <oos:name>Одежда из нетканых материалов</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>332470</oos:code>
+                            <oos:name>Набор одежды хирургический/смотровой</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=5DD6CEA581AA4C829E5E433AE8075D46</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>38AE0BB8201A4652A757F751A0AF3B03</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>22.19.60.119-00000013</oos:code>
+        <oos:versionCode>22.19.60.119-000000131</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-20T19:41:21+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-20T19:41:21+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:15:00+03:00</oos:updateDate>
+        <oos:name>Перчатки смотровые/процедурные из гваюлового латекса, неопудренные</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.19.60.119</oos:code>
+            <oos:name>Перчатки резиновые прочие</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>298450</oos:code>
+                            <oos:name>Перчатки смотровые/процедурные из гваюлового латекса, неопудренные</oos:name>
+                            <oos:descriptionValue>"Нестерильное изделие, изготавливаемое из натурального гваюлового латекса, носимое на руках медицинскими работниками при проведении осмотра/процедур или для других санитарных целей и предназначенное для использования в качестве защитного барьера; внутренняя поверхность изделия не покрыта порошком талька и не содержит антибактериальные вещества/материалы. Используется, главным образом, как двухсторонний барьер для защиты как пациента, так и персонала от различной контаминации и минимизации риска аллергии на латекс гевеи. Изделие должно иметь соответствующие характеристики в отношении осязания/удобства использования, а также соответствующие физические свойства (например, прочность, эластичность) и одинаковые размеры. Это изделие для одноразового использования."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>22.19.60.119</oos:code>
+                            <oos:name>Перчатки резиновые прочие</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Нестерильное изделие, изготавливаемое из натурального гваюлового латекса, носимое на руках медицинскими работниками при проведении осмотра/процедур или для других санитарных целей и предназначенное для использования в качестве защитного барьера; внутренняя поверхность изделия не покрыта порошком талька и не содержит антибактериальные вещества/материалы. Используется, главным образом, как двухсторонний барьер для защиты как пациента, так и персонала от различной контаминации и минимизации риска аллергии на латекс гевеи. Изделие должно иметь соответствующие характеристики в отношении осязания/удобства использования, а также соответствующие физические свойства (например, прочность, эластичность) и одинаковые размеры. Это изделие для одноразового использования.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=6A6021EEF1FA457884BEB1CB020BCD2A</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>7DF87046F8D54A6E9D8DCE7D282D2996</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>22.19.60.119-00000016</oos:code>
+        <oos:versionCode>22.19.60.119-000000161</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-21T19:26:55+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-21T19:26:55+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Перчатки смотровые/процедурные виниловые, неопудренные, стерильные</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.19.60.119</oos:code>
+            <oos:name>Перчатки резиновые прочие</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>335670</oos:code>
+                            <oos:name>Перчатки смотровые/процедурные виниловые, неопудренные, стерильные</oos:name>
+                            <oos:descriptionValue>"Стерильное изделие, изготовленное из винила в качестве защитного барьера при ношении на руках медицинских работников во время обследования/лечения пациента или для других санитарных целей; его внутренняя поверхность не покрыта порошком талька. Используется, главным образом, как двухсторонний барьер для защиты пациента и персонала от различных загрязнителей и риска аллергии на латекс. Изделие должно иметь соответствующие характеристики в отношении осязания и удобства в использовании, а также должно обладать соответствующими физическими свойствами (например, прочностью на растяжение, сопротивлением прокалыванию, эластичностью) и иметь одинаковые размеры (т.е., совместимость размеров). Это изделие разового использования."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>22.19.60.119</oos:code>
+                            <oos:name>Перчатки резиновые прочие</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Стерильное изделие, изготовленное из винила в качестве защитного барьера при ношении на руках медицинских работников во время обследования/лечения пациента или для других санитарных целей; его внутренняя поверхность не покрыта порошком талька. Используется, главным образом, как двухсторонний барьер для защиты пациента и персонала от различных загрязнителей и риска аллергии на латекс. Изделие должно иметь соответствующие характеристики в отношении осязания и удобства в использовании, а также должно обладать соответствующими физическими свойствами (например, прочностью на растяжение, сопротивлением прокалыванию, эластичностью) и иметь одинаковые размеры (т.е., совместимость размеров). Это изделие разового использования.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=AE98558EB2D74873A571904AE6CACE86</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>41E85FA4B9BE4D0AAC4B4E1AB2E74CD4</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>22.19.60.119-00000015</oos:code>
+        <oos:versionCode>22.19.60.119-000000151</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-21T19:26:52+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-21T19:26:52+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Перчатки смотровые/процедурные виниловые, опудренные, стерильные</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.19.60.119</oos:code>
+            <oos:name>Перчатки резиновые прочие</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>22.19.60.119</oos:code>
+                            <oos:name>Перчатки резиновые прочие</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>335680</oos:code>
+                            <oos:name>Перчатки смотровые/процедурные виниловые, опудренные, стерильные</oos:name>
+                            <oos:descriptionValue>"Стерильное изделие, изготовленное из винила и предназначенное для использования в качестве защитного барьера при ношении на руках медицинских работников во время обследования/лечения пациента или для других санитарных целей; его внутренняя поверхность покрыта порошком талька с целью облегчения надевания/снятия. Используется, главным образом, как двухсторонний барьер для защиты пациента и персонала от различных загрязнителей и минимизации риска аллергии на латекс. Изделие должно иметь соответствующие характеристики в отношении осязания и удобства в использовании и должно обладать соответствующими физическими свойствами (например, прочностью на растяжение, сопротивлением прокалыванию, эластичностью) и иметь одинаковые размеры (т.е., совместимость размеров). Это изделие разового использования."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Стерильное изделие, изготовленное из винила и предназначенное для использования в качестве защитного барьера при ношении на руках медицинских работников во время обследования/лечения пациента или для других санитарных целей; его внутренняя поверхность покрыта порошком талька с целью облегчения надевания/снятия. Используется, главным образом, как двухсторонний барьер для защиты пациента и персонала от различных загрязнителей и минимизации риска аллергии на латекс. Изделие должно иметь соответствующие характеристики в отношении осязания и удобства в использовании и должно обладать соответствующими физическими свойствами (например, прочностью на растяжение, сопротивлением прокалыванию, эластичностью) и иметь одинаковые размеры (т.е., совместимость размеров). Это изделие разового использования.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=4723E48A9424431687C7F7BE5E51971E</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>D535DE6721434C5E8E831CD06E1629CC</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>22.19.60.111-00000006</oos:code>
+        <oos:versionCode>22.19.60.111-000000061</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-22T14:57:20+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-22T14:57:20+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Перчатки хирургические из полихлорпрена, опудренные</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.19.60.111</oos:code>
+            <oos:name>Перчатки хирургические резиновые</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>22.19.60.111</oos:code>
+                            <oos:name>Перчатки хирургические резиновые</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>335690</oos:code>
+                            <oos:name>Перчатки хирургические из полихлорпрена, опудренные</oos:name>
+                            <oos:descriptionValue>"Стерильное изделие из полихлорпрена (неопрена), которое используется как защитный барьер на руках медицинского работника в хирургическом поле; внутренняя поверхность перчаток опудрена для более легкого надевания/снимания. Обычно используется в качестве двухстороннего барьера для защиты пациента и персонала от микроорганизмов и при возможной аллергии на латекс. Имеют соответствующие характеристики по тактильности и комфортности применения, должны выпонять соответствующие требования стерильности и должны иметь соответствующие физические свойства (например, прочность на растяжение, эластичность) и однотипные размеры (т.е., системность размеров). Это изделие одноразового применения."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Стерильное изделие из полихлорпрена (неопрена), которое используется как защитный барьер на руках медицинского работника в хирургическом поле; внутренняя поверхность перчаток опудрена для более легкого надевания/снимания. Обычно используется в качестве двухстороннего барьера для защиты пациента и персонала от микроорганизмов и при возможной аллергии на латекс. Имеют соответствующие характеристики по тактильности и комфортности применения, должны выпонять соответствующие требования стерильности и должны иметь соответствующие физические свойства (например, прочность на растяжение, эластичность) и однотипные размеры (т.е., системность размеров). Это изделие одноразового применения.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=95CBE59DA7DF415A841542B6CEEAC4B7</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>2AC54317E9234EB9920CD3BF8DE5B949</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00001019</oos:code>
+        <oos:versionCode>32.50.50.190-000010191</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-22T14:57:09+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-22T14:57:09+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:15:00+03:00</oos:updateDate>
+        <oos:name>Жилет защитный&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>280410</oos:code>
+                            <oos:name>Жилет защитный</oos:name>
+                            <oos:descriptionValue>Изделие, разработанное для ношения на передней части грудной клетки, мягкий предмет одежды для защиты грудной клетки от повреждений, которые могут быть получены в результате падения на предметы, из-за чего могут возникнуть ушибы и/или повреждения ребер. Как правило, сделано из мягких объемных материалов, имеет форму жилета и удерживается на месте с помощью лент или ремней, закрепляемых на плечах или спине. Обычно используется людьми, которые подвержены частым падениям (например, из-за потери контроля над опорно-двигательной системой) и травмам грудной клетки. Это изделие, пригодное для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Изделие, разработанное для ношения на передней части грудной клетки, мягкий предмет одежды для защиты грудной клетки от повреждений, которые могут быть получены в результате падения на предметы, из-за чего могут возникнуть ушибы и/или повреждения ребер. Как правило, сделано из мягких объемных материалов, имеет форму жилета и удерживается на месте с помощью лент или ремней, закрепляемых на плечах или спине. Обычно используется людьми, которые подвержены частым падениям (например, из-за потери контроля над опорно-двигательной системой) и травмам грудной клетки. Это изделие, пригодное для многоразового использования.&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=4F1F6647541A4EBE9CD6D94F808DB542</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>C50A802C1CCD4066914F67A88B43839F</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+</nsiKTRUs></export>

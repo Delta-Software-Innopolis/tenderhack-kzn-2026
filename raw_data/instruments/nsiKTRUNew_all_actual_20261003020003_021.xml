@@ -1,0 +1,620 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>28.24.10.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:51:13+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-19T16:20:08+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-19T16:20:08+03:00</oos:updateDate>
+        <oos:name>Инструменты ручные электрические; инструменты ручные прочие с механизированным приводом</oos:name>
+        <oos:OKPD2>
+            <oos:code>28.24.1</oos:code>
+            <oos:name>Инструменты ручные электрические; инструменты ручные прочие с механизированным приводом</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>28.24.1</oos:code>
+                            <oos:name>Инструменты ручные электрические; инструменты ручные прочие с механизированным приводом</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>28.24.20.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:51:12+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-19T16:21:17+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-19T16:21:17+03:00</oos:updateDate>
+        <oos:name>Части ручных инструментов с механизированным приводом</oos:name>
+        <oos:OKPD2>
+            <oos:code>28.24.2</oos:code>
+            <oos:name>Части ручных инструментов с механизированным приводом</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>28.24.2</oos:code>
+                            <oos:name>Части ручных инструментов с механизированным приводом</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.73.10.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:54:30+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-18T15:41:36+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-18T15:41:36+03:00</oos:updateDate>
+        <oos:name>Инструмент ручной, используемый в сельском хозяйстве, садоводстве или лесном хозяйстве</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.73.1</oos:code>
+            <oos:name>Инструмент ручной, используемый в сельском хозяйстве, садоводстве или лесном хозяйстве</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.73.1</oos:code>
+                            <oos:name>Инструмент ручной, используемый в сельском хозяйстве, садоводстве или лесном хозяйстве</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.73.10.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:54:29+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-18T15:41:10+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-18T15:41:10+03:00</oos:updateDate>
+        <oos:name>Инструмент ручной, используемый в сельском хозяйстве, садоводстве или лесном хозяйстве</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.73.1</oos:code>
+            <oos:name>Инструмент ручной, используемый в сельском хозяйстве, садоводстве или лесном хозяйстве</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>704</oos:code>
+                <oos:name>Набор</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.73.1</oos:code>
+                            <oos:name>Инструмент ручной, используемый в сельском хозяйстве, садоводстве или лесном хозяйстве</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.73.20.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:54:28+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-18T15:42:42+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-18T15:42:42+03:00</oos:updateDate>
+        <oos:name>Пилы ручные; части рабочие для пил всех типов</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.73.2</oos:code>
+            <oos:name>Пилы ручные; части рабочие для пил всех типов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.73.2</oos:code>
+                            <oos:name>Пилы ручные; части рабочие для пил всех типов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.73.20.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:54:27+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-18T15:42:22+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-18T15:42:22+03:00</oos:updateDate>
+        <oos:name>Пилы ручные; части рабочие для пил всех типов</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.73.2</oos:code>
+            <oos:name>Пилы ручные; части рабочие для пил всех типов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>704</oos:code>
+                <oos:name>Набор</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.73.2</oos:code>
+                            <oos:name>Пилы ручные; части рабочие для пил всех типов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.73.30.000-00000002</oos:code>
+        <oos:versionCode>25.73.30.000-000000029</oos:versionCode>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:57:29+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-09-23T11:30:00+03:00</oos:publishDate>
+        <oos:updateDate>2025-09-23T11:30:00+03:00</oos:updateDate>
+        <oos:name>Инструмент ручной прочий</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.73.3</oos:code>
+            <oos:name>Инструмент ручной прочий</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.73.3</oos:code>
+                            <oos:name>Инструмент ручной прочий</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>25.73.30</oos:code>
+                            <oos:name>Инструмент ручной прочий</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=019975B1A8E47A548B26AAA2D37F7982</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>019975B1A8E47A548B26AAA2D37F7983</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.73.30.000-00000001</oos:code>
+        <oos:versionCode>25.73.30.000-000000019</oos:versionCode>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:57:28+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-09-23T11:29:14+03:00</oos:publishDate>
+        <oos:updateDate>2025-09-23T11:29:14+03:00</oos:updateDate>
+        <oos:name>Инструмент ручной прочий</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.73.3</oos:code>
+            <oos:name>Инструмент ручной прочий</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>704</oos:code>
+                <oos:name>Набор</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.73.3</oos:code>
+                            <oos:name>Инструмент ручной прочий</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>25.73.30</oos:code>
+                            <oos:name>Инструмент ручной прочий</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=019975B0F2EF7D1D857458B31A382B00</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>019975B0F2EF7D1D857458B31A382B01</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.73.40.000-00000002</oos:code>
+        <oos:versionCode>25.73.40.000-000000029</oos:versionCode>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:57:27+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-09-23T14:09:02+03:00</oos:publishDate>
+        <oos:updateDate>2025-09-23T14:09:02+03:00</oos:updateDate>
+        <oos:name>Инструменты рабочие сменные для станков или для ручного инструмента (с механическим приводом или без него)</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.73.4</oos:code>
+            <oos:name>Инструменты рабочие сменные для станков или для ручного инструмента (с механическим приводом или без него)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.73.40</oos:code>
+                            <oos:name>Инструменты рабочие сменные для станков или для ручного инструмента (с механическим приводом или без него)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>25.73.4</oos:code>
+                            <oos:name>Инструменты рабочие сменные для станков или для ручного инструмента (с механическим приводом или без него)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=019976433F6076408CA7EF9E5FAFAE12</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>019976433F6076408CA7EF9E5FAFAE13</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.73.40.000-00000001</oos:code>
+        <oos:versionCode>25.73.40.000-000000019</oos:versionCode>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:57:24+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-09-23T14:08:24+03:00</oos:publishDate>
+        <oos:updateDate>2025-09-23T14:08:24+03:00</oos:updateDate>
+        <oos:name>Инструменты рабочие сменные для станков или для ручного инструмента (с механическим приводом или без него)</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.73.4</oos:code>
+            <oos:name>Инструменты рабочие сменные для станков или для ручного инструмента (с механическим приводом или без него)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>704</oos:code>
+                <oos:name>Набор</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.73.40</oos:code>
+                            <oos:name>Инструменты рабочие сменные для станков или для ручного инструмента (с механическим приводом или без него)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>25.73.4</oos:code>
+                            <oos:name>Инструменты рабочие сменные для станков или для ручного инструмента (с механическим приводом или без него)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=01997642ACAA7B4DBAE71453C6D8ECF9</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>01997642ACAA7B4DBAE71453C6D8ECFA</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.73.60.000-00000002</oos:code>
+        <oos:versionCode>25.73.60.000-000000029</oos:versionCode>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:57:20+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-09-23T14:58:00+03:00</oos:publishDate>
+        <oos:updateDate>2025-09-23T14:58:00+03:00</oos:updateDate>
+        <oos:name>Инструмент прочий</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.73.6</oos:code>
+            <oos:name>Инструмент прочий</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.73.60</oos:code>
+                            <oos:name>Инструмент прочий</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>25.73.6</oos:code>
+                            <oos:name>Инструмент прочий</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0199767015B47CF5AEC1FC183D6D5F59</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0199767015B47CF5AEC1FC183D6D5F5A</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>25.73.60.000-00000001</oos:code>
+        <oos:versionCode>25.73.60.000-000000019</oos:versionCode>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:57:19+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-09-23T14:57:29+03:00</oos:publishDate>
+        <oos:updateDate>2025-09-23T14:57:29+03:00</oos:updateDate>
+        <oos:name>Инструмент прочий</oos:name>
+        <oos:OKPD2>
+            <oos:code>25.73.6</oos:code>
+            <oos:name>Инструмент прочий</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>704</oos:code>
+                <oos:name>Набор</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>25.73.60</oos:code>
+                            <oos:name>Инструмент прочий</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>25.73.6</oos:code>
+                            <oos:name>Инструмент прочий</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0199766FA0EE7E7D96012F9B422E874A</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0199766FA0EE7E7D96012F9B422E874B</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+</nsiKTRUs></export>

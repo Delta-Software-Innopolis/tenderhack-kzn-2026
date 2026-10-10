@@ -1,0 +1,366 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>31.01.10.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:58:48+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-20T11:46:00+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-20T11:46:00+03:00</oos:updateDate>
+        <oos:name>Мебель для офисов и предприятий торговли</oos:name>
+        <oos:OKPD2>
+            <oos:code>31.01.1</oos:code>
+            <oos:name>Мебель для офисов и предприятий торговли</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>31.01.1</oos:code>
+                            <oos:name>Мебель для офисов и предприятий торговли</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>128</oos:code>
+                <oos:name>Мебель</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>31.02.10.000-00000001</oos:code>
+        <oos:versionCode>31.02.10.000-0000000110</oos:versionCode>
+        <oos:version>10</oos:version>
+        <oos:inclusionDate>2018-09-04T21:58:43+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-09-25T16:21:27+03:00</oos:publishDate>
+        <oos:updateDate>2025-09-25T16:21:27+03:00</oos:updateDate>
+        <oos:name>Мебель кухонная</oos:name>
+        <oos:OKPD2>
+            <oos:code>31.02.1</oos:code>
+            <oos:name>Мебель кухонная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>31.02.10</oos:code>
+                            <oos:name>Мебель кухонная</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>31.02.1</oos:code>
+                            <oos:name>Мебель кухонная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>128</oos:code>
+                <oos:name>Мебель</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0199810947D473A98E2271925927B0B7</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0199810947D473A98E2271925927B0B8</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>31.03.10.000-00000001</oos:code>
+        <oos:versionCode>31.03.10.000-000000014</oos:versionCode>
+        <oos:version>4</oos:version>
+        <oos:inclusionDate>2018-09-04T21:58:38+03:00</oos:inclusionDate>
+        <oos:publishDate>2020-10-14T16:13:03+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T19:15:00+03:00</oos:updateDate>
+        <oos:name>Матрасы</oos:name>
+        <oos:OKPD2>
+            <oos:code>31.03.1</oos:code>
+            <oos:name>Матрасы</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2021-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>31.03.1</oos:code>
+                            <oos:name>Матрасы</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2020-10-14T16:11:11+03:00</oos:cancelDate>
+            <oos:cancelReason>Переутверждение ЭС</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=710B5FEAC7CC41C1844AC1C40F44944D</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>4581C9129334401F9E0E4F00E4EF55AD</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>31.09.10.000-00000001</oos:code>
+        <oos:versionCode>31.09.10.000-000000019</oos:versionCode>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:58:34+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-09-25T16:22:58+03:00</oos:publishDate>
+        <oos:updateDate>2025-09-25T16:22:58+03:00</oos:updateDate>
+        <oos:name>Мебель прочая</oos:name>
+        <oos:OKPD2>
+            <oos:code>31.09.1</oos:code>
+            <oos:name>Мебель прочая</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>31.09.1</oos:code>
+                            <oos:name>Мебель прочая</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>31.09.12</oos:code>
+                            <oos:name>Мебель деревянная для спальни, столовой и гостиной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0199810A96DE743AA18DC4E85632D01E</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0199810A96DE743AA18DC4E85632D01F</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.000-00000003</oos:code>
+        <oos:versionCode>32.50.30.000-000000032</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2018-09-04T22:00:15+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-04-16T15:02:06+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T17:00:00+03:00</oos:updateDate>
+        <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную; парикмахерские кресла и аналогичные кресла, и их части</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.3</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную; парикмахерские кресла и аналогичные кресла, и их части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.3</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную; парикмахерские кресла и аналогичные кресла, и их части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2019-04-16T15:01:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Утверждение новой редакции на экспертном совете</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=1F91912B19DE493D9F5BCB403AA7ED8E</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>5FB275B30FD04CA2BA59B2BB0DA2DC1B</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.000-00000002</oos:code>
+        <oos:versionCode>32.50.30.000-000000022</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2018-09-04T22:00:14+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-04-16T15:04:17+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную; парикмахерские кресла и аналогичные кресла, и их части</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.3</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную; парикмахерские кресла и аналогичные кресла, и их части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>704</oos:code>
+                <oos:name>Набор</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.3</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную; парикмахерские кресла и аналогичные кресла, и их части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2019-04-16T15:03:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Утверждение новой редакции на экспертном совете</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=8626B76F84374E8D816C79DD94D24968</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>1E1FA07DD926423EABB266260540D43E</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.000-00000001</oos:code>
+        <oos:versionCode>32.50.30.000-000000012</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2018-09-04T22:00:13+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-04-16T14:59:58+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную; парикмахерские кресла и аналогичные кресла, и их части</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.3</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную; парикмахерские кресла и аналогичные кресла, и их части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.3</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную; парикмахерские кресла и аналогичные кресла, и их части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2019-04-16T14:59:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Утверждение новой редакции на экспертном совете</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=8E348B85D6D1445FAFE54549D3D6A00C</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>E4940F0B340B4A399A8265791E09EDEB</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+</nsiKTRUs></export>

@@ -1,0 +1,941 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.130-00000007</oos:code>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2020-09-17T11:20:07+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-05-26T12:14:32+03:00</oos:publishDate>
+        <oos:updateDate>2026-05-26T12:14:33+03:00</oos:updateDate>
+        <oos:name>Фартук профессиональный</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.130</oos:code>
+            <oos:name>Юбки, халаты, блузки, фартуки, жилеты, платья и сорочки производственные и профессиональные</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-06-25T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.029-76 "Фартуки специальные. Технические условия (с Изменениями № 1, 2, 3)"</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>Решение Комиссии Таможенного союза от 09.12.2011 № 878 "О принятии технического регламента Таможенного союза "О безопасности средств индивидуальной защиты" (вместе с "ТР ТС 019/2011. Технический регламент Таможенного союза. О безопасности средств индивидуальной защиты")</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.130</oos:code>
+                            <oos:name>Юбки, халаты, блузки, фартуки, жилеты, платья и сорочки производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.30.131</oos:code>
+                            <oos:name>Халаты, фартуки, жилеты и сорочки мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.30.132</oos:code>
+                            <oos:name>Юбки, халаты, блузки, фартуки, жилеты, платья и сорочки женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>403f89fa-4</oos:code>
+                <oos:name>Половой признак</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>f9f69674-1</oos:valueCode>
+                        <oos:qualityDescription>Женский</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>f38e5c2f-9</oos:valueCode>
+                        <oos:qualityDescription>Мужской</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>5c93b357-c</oos:code>
+                <oos:name>Назначение изделия</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>6065003d-a</oos:valueCode>
+                        <oos:qualityDescription>Защита передней части работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>43baca51-f</oos:valueCode>
+                        <oos:qualityDescription>Защита передней и боковых частей работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>a3daa9a5-f</oos:valueCode>
+                        <oos:qualityDescription>Защита передней, боковых и плечевых частей работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>ecf5e236-c</oos:valueCode>
+                        <oos:qualityDescription>Защита нижней части работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>8f8fef35-9</oos:valueCode>
+                        <oos:qualityDescription>Фартук - сарафан</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4e12badd-f</oos:code>
+                <oos:name>Вид защиты</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>c5d3c51b-7</oos:valueCode>
+                        <oos:qualityDescription>От воды и растворов нетоксичных веществ</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>1db48330-6</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот выше 80%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>960f0f01-e</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот от 50 до 80%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>8df89bd2-6</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот от 20 до 50%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>bc7bd222-f</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот до 20%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9b3941bf-e</oos:valueCode>
+                        <oos:qualityDescription>От растворов щелочей</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>f485d0b4-d</oos:valueCode>
+                        <oos:qualityDescription>От нефти, нефтепродуктов, масел и жиров</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9148f6fa-e</oos:valueCode>
+                        <oos:qualityDescription>От повышенных температур</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b0a90a8f-c</oos:valueCode>
+                        <oos:qualityDescription>От искр и брызг расплавленного металла</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4eff6887-5</oos:code>
+                <oos:name>Рост</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>c8f5bc45-6</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>146</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>164</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>8e98bcd1-f</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>164</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>176</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c48b1d65-a</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>176</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>188</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>e32049e3-d</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>188</oos:min>
+                                <oos:maxMathNotation>lessOrEqual</oos:maxMathNotation>
+                                <oos:max>200</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>1292a49f-6</oos:code>
+                <oos:name>Обхват бедер</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>4facd7bc-0</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>90</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>106</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>e0f534d4-b</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>106</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>118</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>55ac1880-a</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>118</oos:min>
+                                <oos:maxMathNotation>lessOrEqual</oos:maxMathNotation>
+                                <oos:max>130</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>e11380a9-a</oos:code>
+                <oos:name>Тип материала</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>5c07125d-f</oos:valueCode>
+                        <oos:qualityDescription>Текстиль</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>ae4da690-5</oos:valueCode>
+                        <oos:qualityDescription>Полотно нетканое</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.130-00000006</oos:code>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2020-09-17T11:19:40+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-05-26T12:15:46+03:00</oos:publishDate>
+        <oos:updateDate>2026-05-26T12:15:47+03:00</oos:updateDate>
+        <oos:name>Фартук профессиональный</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.130</oos:code>
+            <oos:name>Юбки, халаты, блузки, фартуки, жилеты, платья и сорочки производственные и профессиональные</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-06-25T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.029-76 "Фартуки специальные. Технические условия (с Изменениями № 1, 2, 3)"</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>Решение Комиссии Таможенного союза от 09.12.2011 № 878 "О принятии технического регламента Таможенного союза "О безопасности средств индивидуальной защиты" (вместе с "ТР ТС 019/2011. Технический регламент Таможенного союза. О безопасности средств индивидуальной защиты")</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.130</oos:code>
+                            <oos:name>Юбки, халаты, блузки, фартуки, жилеты, платья и сорочки производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.30.131</oos:code>
+                            <oos:name>Халаты, фартуки, жилеты и сорочки мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.30.132</oos:code>
+                            <oos:name>Юбки, халаты, блузки, фартуки, жилеты, платья и сорочки женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>403f89fa-4</oos:code>
+                <oos:name>Половой признак</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>e93d3efb-9</oos:valueCode>
+                        <oos:qualityDescription>Женский</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>5c93b357-c</oos:code>
+                <oos:name>Назначение изделия</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0a8131fb-6</oos:valueCode>
+                        <oos:qualityDescription>Защита передней части работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>275b7157-c</oos:valueCode>
+                        <oos:qualityDescription>Защита передней и боковых частей работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>2a17ae92-5</oos:valueCode>
+                        <oos:qualityDescription>Защита передней, боковых и плечевых частей работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>8a47af8a-8</oos:valueCode>
+                        <oos:qualityDescription>Защита нижней части работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>1a03c051-c</oos:valueCode>
+                        <oos:qualityDescription>Фартук - сарафан</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4e12badd-f</oos:code>
+                <oos:name>Вид защиты</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>6d4e3297-3</oos:valueCode>
+                        <oos:qualityDescription>От искр и брызг расплавленного металла</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>054b3936-c</oos:valueCode>
+                        <oos:qualityDescription>От повышенных температур</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>713820a0-6</oos:valueCode>
+                        <oos:qualityDescription>От воды и растворов нетоксичных веществ</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>cdadd626-6</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот выше 80%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>43cd7fad-1</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот от 50 до 80%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>97a7afee-4</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот от 20 до 50%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b718501f-6</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот до 20%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>df4c4a17-8</oos:valueCode>
+                        <oos:qualityDescription>От растворов щелочей</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>dda054b5-b</oos:valueCode>
+                        <oos:qualityDescription>От нефти, нефтепродуктов, масел и жиров</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4eff6887-5</oos:code>
+                <oos:name>Рост</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>7a9667ad-0</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>146</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>164</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>78df5b57-a</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>164</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>176</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>dd1af1d6-c</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>176</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>188</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>72bb3f53-a</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>188</oos:min>
+                                <oos:maxMathNotation>lessOrEqual</oos:maxMathNotation>
+                                <oos:max>200</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>1292a49f-6</oos:code>
+                <oos:name>Обхват бедер</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>6eaca4d5-c</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>90</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>106</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>be2fa29a-7</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>106</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>118</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d02d395b-c</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>118</oos:min>
+                                <oos:maxMathNotation>lessOrEqual</oos:maxMathNotation>
+                                <oos:max>130</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>e11380a9-a</oos:code>
+                <oos:name>Тип материала</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>fade4f92-5</oos:valueCode>
+                        <oos:qualityDescription>Текстиль</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d02219f5-1</oos:valueCode>
+                        <oos:qualityDescription>Полотно нетканое</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.130-00000007</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.130-00000005</oos:code>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2020-09-17T11:19:39+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-05-26T12:15:23+03:00</oos:publishDate>
+        <oos:updateDate>2026-05-26T12:15:23+03:00</oos:updateDate>
+        <oos:name>Фартук профессиональный</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.130</oos:code>
+            <oos:name>Юбки, халаты, блузки, фартуки, жилеты, платья и сорочки производственные и профессиональные</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-06-25T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.029-76 "Фартуки специальные. Технические условия (с Изменениями № 1, 2, 3)"</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>Решение Комиссии Таможенного союза от 09.12.2011 № 878 "О принятии технического регламента Таможенного союза "О безопасности средств индивидуальной защиты" (вместе с "ТР ТС 019/2011. Технический регламент Таможенного союза. О безопасности средств индивидуальной защиты")</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.130</oos:code>
+                            <oos:name>Юбки, халаты, блузки, фартуки, жилеты, платья и сорочки производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.30.131</oos:code>
+                            <oos:name>Халаты, фартуки, жилеты и сорочки мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.30.132</oos:code>
+                            <oos:name>Юбки, халаты, блузки, фартуки, жилеты, платья и сорочки женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>403f89fa-4</oos:code>
+                <oos:name>Половой признак</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>dadb1995-6</oos:valueCode>
+                        <oos:qualityDescription>Мужской</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>5c93b357-c</oos:code>
+                <oos:name>Назначение изделия</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>a6ac77b0-8</oos:valueCode>
+                        <oos:qualityDescription>Защита передней части работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>05c5374c-1</oos:valueCode>
+                        <oos:qualityDescription>Защита передней и боковых частей работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4dd719de-e</oos:valueCode>
+                        <oos:qualityDescription>Защита передней, боковых и плечевых частей работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>333f33ce-4</oos:valueCode>
+                        <oos:qualityDescription>Защита нижней части работающего</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>e46173c7-f</oos:valueCode>
+                        <oos:qualityDescription>Фартук - сарафан</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4e12badd-f</oos:code>
+                <oos:name>Вид защиты</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>3e5d9c81-0</oos:valueCode>
+                        <oos:qualityDescription>От искр и брызг расплавленного металла</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>0b2cefa1-f</oos:valueCode>
+                        <oos:qualityDescription>От повышенных температур</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>da2128ff-0</oos:valueCode>
+                        <oos:qualityDescription>От воды и растворов нетоксичных веществ</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b0faac6c-b</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот выше 80%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7536f158-a</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот от 50 до 80%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>f18f5c4d-e</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот от 20 до 50%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4ece0ef7-c</oos:valueCode>
+                        <oos:qualityDescription>От растворов с массовой долей кислот до 20%</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>49a27200-1</oos:valueCode>
+                        <oos:qualityDescription>От растворов щелочей</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>bbf28721-a</oos:valueCode>
+                        <oos:qualityDescription>От нефти, нефтепродуктов, масел и жиров</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4eff6887-5</oos:code>
+                <oos:name>Рост</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>86678515-1</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>146</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>164</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4836a774-e</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>164</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>176</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>29e0db96-0</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>176</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>188</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>db66f695-2</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>188</oos:min>
+                                <oos:maxMathNotation>lessOrEqual</oos:maxMathNotation>
+                                <oos:max>200</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>1292a49f-6</oos:code>
+                <oos:name>Обхват бедер</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>833eab23-a</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>90</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>106</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>56aaf20a-5</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>106</oos:min>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>118</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>5f2fc199-a</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>004</oos:code>
+                            <oos:name>Сантиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>118</oos:min>
+                                <oos:maxMathNotation>lessOrEqual</oos:maxMathNotation>
+                                <oos:max>130</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>e11380a9-a</oos:code>
+                <oos:name>Тип материала</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>123f0586-0</oos:valueCode>
+                        <oos:qualityDescription>Текстиль</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>74da1f02-d</oos:valueCode>
+                        <oos:qualityDescription>Полотно нетканое</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.130-00000007</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+    </oos:data>
+</oos:position>
+</nsiKTRUs></export>

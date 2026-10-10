@@ -1,0 +1,196 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>22.19.60.000-00000002</oos:code>
+        <oos:versionCode>22.19.60.000-000000022</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2018-09-04T21:48:03+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-04-16T11:53:17+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Предметы одежды и ее аксессуары из вулканизированной резины, кроме твердой резины (эбонита)</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.19.6</oos:code>
+            <oos:name>Предметы одежды и ее аксессуары из вулканизированной резины, кроме твердой резины (эбонита)</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>22.19.6</oos:code>
+                            <oos:name>Предметы одежды и ее аксессуары из вулканизированной резины, кроме твердой резины (эбонита)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2019-04-16T11:53:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=A10E81D89207427F9D76E9918D74E14D</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>D8B2956FDA7F4EE382A5CDCD067FCEB7</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>22.19.60.000-00000001</oos:code>
+        <oos:versionCode>22.19.60.000-000000012</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2018-09-04T21:48:02+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-04-16T11:51:08+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Предметы одежды и ее аксессуары из вулканизированной резины, кроме твердой резины (эбонита)</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.19.6</oos:code>
+            <oos:name>Предметы одежды и ее аксессуары из вулканизированной резины, кроме твердой резины (эбонита)</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>22.19.6</oos:code>
+                            <oos:name>Предметы одежды и ее аксессуары из вулканизированной резины, кроме твердой резины (эбонита)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2019-04-16T11:50:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=64D5220D4D0B4F66AB4806ED5BB84212</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>32FFC3C412B64EEE835FEAE628440BE6</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>22.29.10.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:47:18+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-14T16:06:56+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-14T16:06:56+03:00</oos:updateDate>
+        <oos:name>Одежда и ее аксессуары, включая пластмассовые перчатки</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.29.1</oos:code>
+            <oos:name>Одежда и ее аксессуары, включая пластмассовые перчатки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>22.29.1</oos:code>
+                            <oos:name>Одежда и ее аксессуары, включая пластмассовые перчатки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>22.29.10.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:47:17+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-14T16:07:15+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-14T16:07:15+03:00</oos:updateDate>
+        <oos:name>Одежда и ее аксессуары, включая пластмассовые перчатки</oos:name>
+        <oos:OKPD2>
+            <oos:code>22.29.1</oos:code>
+            <oos:name>Одежда и ее аксессуары, включая пластмассовые перчатки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>22.29.1</oos:code>
+                            <oos:name>Одежда и ее аксессуары, включая пластмассовые перчатки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+</nsiKTRUs></export>

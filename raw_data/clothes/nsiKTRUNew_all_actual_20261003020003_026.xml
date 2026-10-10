@@ -1,0 +1,372 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.000-00000260</oos:code>
+        <oos:versionCode>32.50.50.000-000002603</oos:versionCode>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2018-09-05T20:14:23+03:00</oos:inclusionDate>
+        <oos:publishDate>2018-11-09T16:10:42+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:00:00+03:00</oos:updateDate>
+        <oos:name>Перчатки компрессионные</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.000</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-02-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>8-09-12</oos:code>
+                            <oos:name>Бандаж ортопедический на верхнюю конечность для улучшения лимфовенозного оттока, в том числе после ампутации молочной железы</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>262930</oos:code>
+                            <oos:name>Перчатки компрессионные</oos:name>
+                            <oos:descriptionValue>"Изделие в форме перчаток, которые надевают на руку(и) пациента для небольшой компрессии. Обычно выполняются из хлопка или синтетического эластичного материала (например, лайкры и спандекса), который сжимает руки. Часто представлены в форме с открытыми кончиками пальцев для лучшей чувствительности и/или с рукавами, которые могут достигать запястья, локтя или даже подмышки. Швы как правило выведены на внешнюю сторону перчаток; также есть бесшовный вариант перчаток. Они применяются для контролирования отека и/или рубцевания, опухоли в результате артрита или травм и для контролирования лимфатического отека. Это изделие многократного использования."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.000</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2018-11-09T16:10:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=7E81CDA568EA4595BE27CDF3ACA28198</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>AEE89516832C45C7AC14CBDBEAD23E49</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.31.10.249-00000001</oos:code>
+        <oos:versionCode>14.31.10.249-000000013</oos:versionCode>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2018-09-05T20:14:28+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-11-12T14:20:36+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T14:00:00+03:00</oos:updateDate>
+        <oos:name>Носки-чулки компрессионные многоразового использования</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.31.10.249</oos:code>
+            <oos:name>Изделия чулочно-носочные прочие, применяемые в медицинских целях</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-02-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.31.10.249</oos:code>
+                            <oos:name>Изделия чулочно-носочные прочие, применяемые в медицинских целях</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>8-09-20</oos:code>
+                            <oos:name>Бандаж компрессионный на нижнюю конечность</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>154040</oos:code>
+                            <oos:name>Носки/чулки компрессионные, многоразового использования</oos:name>
+                            <oos:descriptionValue>Трубчатый предмет одежды, изготавливаемый из эластичного материала (например, это может быть кругловязаное изделие из нейлона или спандекса), воздействующее давлением на конечность, на которую оно надето (как правило, ногу, но некоторые модели могут использоваться на руке), в первую очередь, для улучшения венозного возврата с целью лечения/профилактики одного или нескольких нарушений кровообращения (например, отеков, тромбоза глубоких вен, варикоза). Изделие может быть известно как компрессионный носок и может предназначаться для воздействия градуированным давлением на конечность, однако, изделие не предназначено для поддержки травмированного сустава. Изделие обычно свободно отпускается без рецепта врача для использования в домашних условиях и/или для госпитализированных пациентов. Это изделие, пригодное для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2024-11-12T14:20:02+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0193201AB896782988F009919CD98CE3</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0193201AB896782988F009919CD98CE4</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.23.000-00004138</oos:code>
+        <oos:versionCode>32.50.23.000-000041381</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2021-02-11T09:55:33+03:00</oos:inclusionDate>
+        <oos:publishDate>2021-02-11T09:55:33+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T12:35:43+03:00</oos:updateDate>
+        <oos:name>Одежда для водных процедур адаптационная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.23.000</oos:code>
+            <oos:name>Части и принадлежности протезов и ортопедических приспособлений</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2021-03-13T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>277030</oos:code>
+                            <oos:name>Одежда для водных процедур адаптационная</oos:name>
+                            <oos:descriptionValue>Предмет одежды, специально разработанный/адаптированный для ношения человеком с ограниченными возможностями во время принятия водных процедур. Изделие, как правило, выполнено с рядом особенностей, которые облегчают процесс надевания, застегивания и снятия (например, с широкими рукавами или штанинами, липучками или застежками-молниями). Оно также может использоваться во время гидротерапии и может включать в себя брюки с функцией защиты от недержания.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>8-09-21</oos:code>
+                            <oos:name>Бюстгальтер (лиф-крепление) и/или грация (полуграция) для фиксации экзопротеза молочной железы</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.23.190</oos:code>
+                            <oos:name>Части и принадлежности протезов и ортопедических приспособлений прочие</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:isTemplate>true</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=B3C245EAA1C74678B7051F053D0D472E</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>8298507D449D4B8B9481E9D5D8C780B4</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.126-00000006</oos:code>
+        <oos:versionCode>32.50.22.126-000000063</oos:versionCode>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2018-09-05T20:14:28+03:00</oos:inclusionDate>
+        <oos:publishDate>2018-11-09T16:26:32+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T14:30:00+03:00</oos:updateDate>
+        <oos:name>Одежда для водных процедур адаптационная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.126</oos:code>
+            <oos:name>Бандажи и изделия к протезно-ортопедической продукции</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-02-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>8-09-21</oos:code>
+                            <oos:name>Бюстгальтер (лиф-крепление) и/или грация (полуграция) для фиксации экзопротеза молочной железы</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>277030</oos:code>
+                            <oos:name>Одежда для водных процедур адаптационная</oos:name>
+                            <oos:descriptionValue>Предмет одежды, специально разработанный/адаптированный для ношения человеком с ограниченными возможностями во время принятия водных процедур. Изделие, как правило, выполнено с рядом особенностей, которые облегчают процесс надевания, застегивания и снятия (например, с широкими рукавами или штанинами, липучками или застежками-молниями). Оно также может использоваться во время гидротерапии и может включать в себя брюки с функцией защиты от недержания.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.126</oos:code>
+                            <oos:name>Бандажи и изделия к протезно-ортопедической продукции</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2018-11-09T16:26:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.23.000-00004138</oos:code>
+            <oos:version>1</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=FA2DC4CA14324FB386116928149CC4F1</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>91A9CA9453544BE88030154882FAA463</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.39.10.000-00000001</oos:code>
+        <oos:version>10</oos:version>
+        <oos:inclusionDate>2018-09-06T16:40:42+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-10T16:00:32+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-10T16:00:32+03:00</oos:updateDate>
+        <oos:name>Джемперы, пуловеры, кардиганы, жилеты и аналогичные изделия трикотажные или вязаные</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.39.1</oos:code>
+            <oos:name>Джемперы, пуловеры, кардиганы, жилеты и аналогичные изделия трикотажные или вязаные</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.39.10.190</oos:code>
+                            <oos:name>Изделия аналогичные трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.39.1</oos:code>
+                            <oos:name>Джемперы, пуловеры, кардиганы, жилеты и аналогичные изделия трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.39.10.140</oos:code>
+                            <oos:name>Жилеты трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.39.10.110</oos:code>
+                            <oos:name>Джемперы трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.39.10.130</oos:code>
+                            <oos:name>Кардиганы трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.39.10.120</oos:code>
+                            <oos:name>Пуловеры трикотажные или вязаные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+</nsiKTRUs></export>

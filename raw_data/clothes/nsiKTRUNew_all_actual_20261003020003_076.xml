@@ -1,0 +1,497 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.13.000-00000001</oos:code>
+        <oos:versionCode>14.19.13.000-000000012</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2023-03-01T11:58:15+03:00</oos:inclusionDate>
+        <oos:publishDate>2023-03-15T13:58:00+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T21:45:00+03:00</oos:updateDate>
+        <oos:name>Перчатки, рукавицы (варежки) бытового назначения</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.13.000</oos:code>
+            <oos:name>Перчатки, рукавицы (варежки) и митенки трикотажные или вязаные</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2023-06-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.13</oos:code>
+                            <oos:name>Перчатки, рукавицы (варежки) и митенки трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.23.140</oos:code>
+                            <oos:name>Перчатки из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.31.110</oos:code>
+                            <oos:name>Перчатки, рукавицы, варежки, митенки из натуральной или композиционной кожи</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.31.120</oos:code>
+                            <oos:name>Перчатки, рукавицы из натуральной кожи, подкладка меховая</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.13.000</oos:code>
+                            <oos:name>Перчатки, рукавицы (варежки) и митенки трикотажные или вязаные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2023-03-15T14:02:45+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=969598B9FC9D499B8796FC34BAEE528C</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>02750931AD6D4A878046EE1172B915D5</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.13.000-00000003</oos:code>
+        <oos:versionCode>14.19.13.000-000000031</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2023-03-15T14:06:25+03:00</oos:inclusionDate>
+        <oos:publishDate>2023-03-15T14:06:25+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T21:45:00+03:00</oos:updateDate>
+        <oos:name>Перчатки, рукавицы (варежки) бытового назначения</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.13.000</oos:code>
+            <oos:name>Перчатки, рукавицы (варежки) и митенки трикотажные или вязаные</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2023-06-15T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.23.140</oos:code>
+                            <oos:name>Перчатки из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.13</oos:code>
+                            <oos:name>Перчатки, рукавицы (варежки) и митенки трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.31.110</oos:code>
+                            <oos:name>Перчатки, рукавицы, варежки, митенки из натуральной или композиционной кожи</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.31.120</oos:code>
+                            <oos:name>Перчатки, рукавицы из натуральной кожи, подкладка меховая</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.13.000</oos:code>
+                            <oos:name>Перчатки, рукавицы (варежки) и митенки трикотажные или вязаные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>6c9012b7-b</oos:code>
+                <oos:name>Вид</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>2d4ba805-d</oos:valueCode>
+                        <oos:qualityDescription>Перчатки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b815921f-b</oos:valueCode>
+                        <oos:qualityDescription>Рукавицы</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>faa86857-4</oos:valueCode>
+                        <oos:qualityDescription>Варежки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>796eaf16-1</oos:valueCode>
+                        <oos:qualityDescription>Митенки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>2d63012a-5</oos:code>
+                <oos:name>Половой признак</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>20d76682-d</oos:valueCode>
+                        <oos:qualityDescription>Женские</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>45d007dd-0</oos:valueCode>
+                        <oos:qualityDescription>Мужские</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>cdc708e4-c</oos:valueCode>
+                        <oos:qualityDescription>Детские</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9b03d813-e</oos:valueCode>
+                        <oos:qualityDescription>Подростковые</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>cac4c299-a</oos:code>
+                <oos:name>Сезон</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>948cd708-e</oos:valueCode>
+                        <oos:qualityDescription>Зима</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>f3705ba2-d</oos:valueCode>
+                        <oos:qualityDescription>Лето</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6aebae32-0</oos:valueCode>
+                        <oos:qualityDescription>Демисезон</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>a49ab150-d</oos:code>
+                <oos:name>Материал</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>32061715-1</oos:valueCode>
+                        <oos:qualityDescription>Кожа натуральная</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d4b98b4e-3</oos:valueCode>
+                        <oos:qualityDescription>Кожа искусственная</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>2e8cfcd5-7</oos:valueCode>
+                        <oos:qualityDescription>Полотно трикотажное</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9eae243-9</oos:valueCode>
+                        <oos:qualityDescription>Мех искусственный</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>96394b93-7</oos:valueCode>
+                        <oos:qualityDescription>Байка</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>e0f05423-c</oos:valueCode>
+                        <oos:qualityDescription>Мех натуральный</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=1E715EEB6A10403E96E2FACB4EA58F53</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>14E2C0DD7E1A42679C8226E239B5BBE6</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.13.000-00000002</oos:code>
+        <oos:versionCode>14.19.13.000-000000021</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2023-03-15T14:06:02+03:00</oos:inclusionDate>
+        <oos:publishDate>2023-03-15T14:06:02+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T22:00:02+03:00</oos:updateDate>
+        <oos:name>Перчатки, рукавицы (варежки) бытового назначения</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.13.000</oos:code>
+            <oos:name>Перчатки, рукавицы (варежки) и митенки трикотажные или вязаные</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2023-06-15T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.23.140</oos:code>
+                            <oos:name>Перчатки из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.13</oos:code>
+                            <oos:name>Перчатки, рукавицы (варежки) и митенки трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.31.110</oos:code>
+                            <oos:name>Перчатки, рукавицы, варежки, митенки из натуральной или композиционной кожи</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.31.120</oos:code>
+                            <oos:name>Перчатки, рукавицы из натуральной кожи, подкладка меховая</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.13.000</oos:code>
+                            <oos:name>Перчатки, рукавицы (варежки) и митенки трикотажные или вязаные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>6c9012b7-b</oos:code>
+                <oos:name>Вид</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>2d4ba805-d</oos:valueCode>
+                        <oos:qualityDescription>Перчатки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b815921f-b</oos:valueCode>
+                        <oos:qualityDescription>Рукавицы</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>faa86857-4</oos:valueCode>
+                        <oos:qualityDescription>Варежки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>796eaf16-1</oos:valueCode>
+                        <oos:qualityDescription>Митенки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>2d63012a-5</oos:code>
+                <oos:name>Половой признак</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>20d76682-d</oos:valueCode>
+                        <oos:qualityDescription>Женские</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>45d007dd-0</oos:valueCode>
+                        <oos:qualityDescription>Мужские</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>cdc708e4-c</oos:valueCode>
+                        <oos:qualityDescription>Детские</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9b03d813-e</oos:valueCode>
+                        <oos:qualityDescription>Подростковые</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>cac4c299-a</oos:code>
+                <oos:name>Сезон</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>948cd708-e</oos:valueCode>
+                        <oos:qualityDescription>Зима</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>f3705ba2-d</oos:valueCode>
+                        <oos:qualityDescription>Лето</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6aebae32-0</oos:valueCode>
+                        <oos:qualityDescription>Демисезон</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>a49ab150-d</oos:code>
+                <oos:name>Материал</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>32061715-1</oos:valueCode>
+                        <oos:qualityDescription>Кожа натуральная</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d4b98b4e-3</oos:valueCode>
+                        <oos:qualityDescription>Кожа искусственная</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>2e8cfcd5-7</oos:valueCode>
+                        <oos:qualityDescription>Полотно трикотажное</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9eae243-9</oos:valueCode>
+                        <oos:qualityDescription>Мех искусственный</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>96394b93-7</oos:valueCode>
+                        <oos:qualityDescription>Байка</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>e0f05423-c</oos:valueCode>
+                        <oos:qualityDescription>Мех натуральный</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.19.13.000-00000003</oos:code>
+            <oos:version>1</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=6D581230D17B457FBD3927ADD99058BE</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>73C968ECF20D46BC98DF90E9823EC013</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00002927</oos:code>
+        <oos:versionCode>32.50.50.190-000029271</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2023-06-30T09:20:50+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-12-25T12:59:53+03:00</oos:publishDate>
+        <oos:updateDate>2025-12-25T12:59:53+03:00</oos:updateDate>
+        <oos:name>Бахилы водонепроницаемые</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2023-07-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>269290</oos:code>
+                            <oos:name>Бахилы водонепроницаемые</oos:name>
+                            <oos:descriptionValue>Нестерильное изделие, изготавливаемое из водонепроницаемого материала, предназначенное для использования в качестве физического барьера на обуви для защиты обуви от загрязнения жидкостью. Это изделие для одноразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2025-12-25T01:02:52+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+</nsiKTRUs></export>

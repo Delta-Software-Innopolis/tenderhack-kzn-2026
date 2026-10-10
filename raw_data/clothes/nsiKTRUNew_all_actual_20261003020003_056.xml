@@ -1,0 +1,137 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00001415</oos:code>
+        <oos:versionCode>32.50.50.190-000014152</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-25T13:48:40+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-30T12:46:02+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-30T12:46:02+03:00</oos:updateDate>
+        <oos:name>Рубашка/блуза адаптационная&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>278050</oos:code>
+                            <oos:name>Рубашка/блуза адаптационная</oos:name>
+                            <oos:descriptionValue>Предмет одежды, специально разработанный/адаптированный для ношения на туловище, обычно нижнее белье, человеком с ограниченными возможностями. Изделие, как правило, выполнено с рядом особенностей, которые облегчают процесс надевания, застегивания и снятия (например, с широким воротником и/или рукавами, большими карманами, большими пуговицами, липучками или застежками-молниями).</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2025-05-30T01:01:15+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:nsiDescription>Предмет одежды, специально разработанный/адаптированный для ношения на туловище, обычно нижнее белье, человеком с ограниченными возможностями. Изделие, как правило, выполнено с рядом особенностей, которые облегчают процесс надевания, застегивания и снятия (например, с широким воротником и/или рукавами, большими карманами, большими пуговицами, липучками или застежками-молниями).</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=01972095928E7971969C7DBBF25E46A9</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>01972095928E7971969C7DBBF25E46AA</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00001413</oos:code>
+        <oos:versionCode>32.50.50.190-000014131</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-25T13:48:37+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-25T13:48:37+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Обувь адаптационная&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>277610</oos:code>
+                            <oos:name>Обувь адаптационная</oos:name>
+                            <oos:descriptionValue>Изделие специально разработанное/ приспособленное для ношения на ногах человека с инвалидностью, для прогулок и иной деятельности (например: занятие спортом). Изделие, как правило, обладает особенностями, которые облегчают надевания, застегивание, и снятие (например: специальная форма).</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Изделие специально разработанное/ приспособленное для ношения на ногах человека с инвалидностью, для прогулок и иной деятельности (например: занятие спортом). Изделие, как правило, обладает особенностями, которые облегчают надевания, застегивание, и снятие (например: специальная форма).&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=633481754B8B4A6084A893DA30AA1D53</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>76306AF07AD24C59A4E0AC29F3315673</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+</nsiKTRUs></export>

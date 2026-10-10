@@ -1,0 +1,134 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.119-00000001</oos:code>
+        <oos:versionCode>32.50.30.119-000000011</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2024-07-15T13:36:26+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-07-15T13:36:26+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T13:00:00+03:00</oos:updateDate>
+        <oos:name>Тумбочка складная для оснащения медицинских объектов в полевых условиях</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.119</oos:code>
+            <oos:name>Мебель медицинская прочая, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2024-10-16T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.119</oos:code>
+                            <oos:name>Мебель медицинская прочая, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>370490</oos:code>
+                            <oos:name>Тумбочка складная для оснащения медицинских объектов в полевых условиях</oos:name>
+                            <oos:descriptionValue>Складная тумбочка, предназначенная для размещения и хранения медицинского и личного имущества в мобильных и стационарных медицинских комплексах различного профиля. Изделие, как правило, предназначено для использования в медицине катастроф, подразделениях военной и экстремальной медицины, учреждениях амбулаторной медицины.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=ADCC97D9A4B3456EA084847B4F2A4F5F</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>02D7F00AC8524D79B8057E4DF277AA6D</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.119-00000002</oos:code>
+        <oos:versionCode>32.50.30.119-000000021</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2024-07-15T13:51:41+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-07-15T13:51:41+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T13:00:00+03:00</oos:updateDate>
+        <oos:name>Стол для инструментов складной для оснащения медицинских объектов в полевых условиях</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.119</oos:code>
+            <oos:name>Мебель медицинская прочая, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2024-10-16T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>370510</oos:code>
+                            <oos:name>Стол для инструментов складной для оснащения медицинских объектов в полевых условиях</oos:name>
+                            <oos:descriptionValue>Складной столик, предназначенный для размещения хирургического инструмента, перевязочного материала и лечебных средств во время проведения медицинских мероприятий в мобильных и стационарных медицинских комплексах различного профиля. Изделие может быть оснащено колесами. Изделие, как правило, предназначено для использования в медицине катастроф, подразделениях военной и экстремальной медицины, учреждениях амбулаторной медицины.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.119</oos:code>
+                            <oos:name>Мебель медицинская прочая, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=BC39A832D9414937B44A0E8DD468599E</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>989A8C1A3C07412DBBB02CF67A0F42D8</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+</nsiKTRUs></export>

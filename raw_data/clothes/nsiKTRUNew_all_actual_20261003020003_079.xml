@@ -1,0 +1,3505 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.150-00000024</oos:code>
+        <oos:versionCode>32.50.22.150-000000242</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-04-09T16:44:49+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-20T17:51:52+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-20T17:51:52+03:00</oos:updateDate>
+        <oos:name>Обувь ортопедическая, стандартная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.150</oos:code>
+            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>9-02-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-03</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-03</oos:code>
+                            <oos:name>Ортопедическая обувь на протезы при двусторонней ампутации нижних конечностей (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-05</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>250220</oos:code>
+                            <oos:name>Обувь ортопедическая, стандартная</oos:name>
+                            <oos:descriptionValue>Предварительно изготовленная (стандартная) обувь, представляющая собой туфли, предназначенные для поддержки, выравнивания, предотвращения и компенсации или исправления деформаций стопы для улучшения функции и/или для послеоперационной терапии. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.157</oos:code>
+                            <oos:name>Вкладные корригирующие элементы для ортопедической обуви (в том числе стельки, полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.156</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.151</oos:code>
+                            <oos:name>Обувь ортопедическая для взрослых, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.150</oos:code>
+                            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.155</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.154</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.153</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.152</oos:code>
+                            <oos:name>Обувь ортопедическая для детей, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>b32177f6-f</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>87c14c60-9</oos:valueCode>
+                        <oos:qualityDescription>Пинетки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d4ee75d5-6</oos:valueCode>
+                        <oos:qualityDescription>Ясельный возраст</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>39ecfbdb-5</oos:valueCode>
+                        <oos:qualityDescription>Малодетская</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>5f030241-1</oos:valueCode>
+                        <oos:qualityDescription>Дошкольная</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>ea9d21a7-1</oos:valueCode>
+                        <oos:qualityDescription>Мальчики-школьники</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4c89e1d2-7</oos:valueCode>
+                        <oos:qualityDescription>Девочки-школьницы</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>ab155d9a-d</oos:valueCode>
+                        <oos:qualityDescription>Девочки-подростки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>499b38d1-c</oos:valueCode>
+                        <oos:qualityDescription>Мальчики-подростки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>1027eced-1</oos:valueCode>
+                        <oos:qualityDescription>Женская</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>223ff105-3</oos:valueCode>
+                        <oos:qualityDescription>Мужская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f7db50e1-6</oos:code>
+                <oos:name>Вид обуви</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>99073049-6</oos:valueCode>
+                        <oos:qualityDescription>Пинетки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>0e1df354-3</oos:valueCode>
+                        <oos:qualityDescription>Сапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9009595-a</oos:valueCode>
+                        <oos:qualityDescription>Ботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>107e7621-8</oos:valueCode>
+                        <oos:qualityDescription>Полуботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7215b026-7</oos:valueCode>
+                        <oos:qualityDescription>Туфли</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>00beea6a-3</oos:valueCode>
+                        <oos:qualityDescription>Сандалии, босоножки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d3f3c985-c</oos:valueCode>
+                        <oos:qualityDescription>Туфли комнатные</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>14db09df-d</oos:valueCode>
+                        <oos:qualityDescription>Кроссовки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>984d9cbd-9</oos:valueCode>
+                        <oos:qualityDescription>Полусапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>bb27f2b6-9</oos:valueCode>
+                        <oos:qualityDescription>Сабо</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>da15e1e5-e</oos:code>
+                <oos:name>Размер</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>f0560d47-5</oos:valueCode>
+                        <oos:qualityDescription>16 - 17</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>28971636-2</oos:valueCode>
+                        <oos:qualityDescription>17.5 - 20</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>58fb2e03-6</oos:valueCode>
+                        <oos:qualityDescription>17 - 19.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6e29130b-b</oos:valueCode>
+                        <oos:qualityDescription>20 - 22.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>0d4916fe-d</oos:valueCode>
+                        <oos:qualityDescription>23 - 24</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>2cfde100-2</oos:valueCode>
+                        <oos:qualityDescription>24.5 - 26</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>50da0bf6-d</oos:valueCode>
+                        <oos:qualityDescription>27 - 29</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>febde20b-6</oos:valueCode>
+                        <oos:qualityDescription>29.5 - 31.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>2038ea6a-d</oos:valueCode>
+                        <oos:qualityDescription>32 - 34</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>fb1b0cfb-9</oos:valueCode>
+                        <oos:qualityDescription>34.5 - 36</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>fe683c0c-b</oos:valueCode>
+                        <oos:qualityDescription>36.5 - 37.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>eccb46bf-f</oos:valueCode>
+                        <oos:qualityDescription>35 - 37</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>49ee362b-d</oos:valueCode>
+                        <oos:qualityDescription>37.5 - 39</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>3d7f1380-f</oos:valueCode>
+                        <oos:qualityDescription>39.5 - 40.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>552f9a16-9</oos:valueCode>
+                        <oos:qualityDescription>38 - 40</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9a41cb12-1</oos:valueCode>
+                        <oos:qualityDescription>40.5 - 42</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c2b3e1da-d</oos:valueCode>
+                        <oos:qualityDescription>42.5 - 43.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>f29b0af4-a</oos:valueCode>
+                        <oos:qualityDescription>33 - 36</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7c3e5c59-2</oos:valueCode>
+                        <oos:qualityDescription>36.5 - 39</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>0d9cd2e4-7</oos:valueCode>
+                        <oos:qualityDescription>39.5 - 41.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>8e85008c-c</oos:valueCode>
+                        <oos:qualityDescription>42 - 44</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9cfa24f0-a</oos:valueCode>
+                        <oos:qualityDescription>42.5 - 44.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4c1ce8d6-2</oos:valueCode>
+                        <oos:qualityDescription>45 - 47</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0196EE2DFA5F7CDD842264C317C14B8A</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0196EE2DFA5F7CDD842264C317C14B8B</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.150-00000023</oos:code>
+        <oos:versionCode>32.50.22.150-000000232</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-04-09T16:44:01+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-20T17:58:40+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-20T17:58:40+03:00</oos:updateDate>
+        <oos:name>Обувь ортопедическая, стандартная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.150</oos:code>
+            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.157</oos:code>
+                            <oos:name>Вкладные корригирующие элементы для ортопедической обуви (в том числе стельки, полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.156</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.151</oos:code>
+                            <oos:name>Обувь ортопедическая для взрослых, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.150</oos:code>
+                            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.155</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.154</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.153</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.152</oos:code>
+                            <oos:name>Обувь ортопедическая для детей, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>9-02-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-03</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-03</oos:code>
+                            <oos:name>Ортопедическая обувь на протезы при двусторонней ампутации нижних конечностей (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-05</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>250220</oos:code>
+                            <oos:name>Обувь ортопедическая, стандартная</oos:name>
+                            <oos:descriptionValue>Предварительно изготовленная (стандартная) обувь, представляющая собой туфли, предназначенные для поддержки, выравнивания, предотвращения и компенсации или исправления деформаций стопы для улучшения функции и/или для послеоперационной терапии. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>b32177f6-f</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>87c14c60-9</oos:valueCode>
+                        <oos:qualityDescription>Пинетки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f7db50e1-6</oos:code>
+                <oos:name>Вид обуви</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>99073049-6</oos:valueCode>
+                        <oos:qualityDescription>Пинетки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>da15e1e5-e</oos:code>
+                <oos:name>Размер</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>f0560d47-5</oos:valueCode>
+                        <oos:qualityDescription>16 - 17</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>28971636-2</oos:valueCode>
+                        <oos:qualityDescription>17.5 - 20</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.22.150-00000024</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0196EE34356A724FBD13F3072D65F3E7</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0196EE34356A724FBD13F3072D65F3E8</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.150-00000022</oos:code>
+        <oos:versionCode>32.50.22.150-000000222</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-04-09T16:44:00+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-20T17:57:45+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-20T17:57:45+03:00</oos:updateDate>
+        <oos:name>Обувь ортопедическая, стандартная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.150</oos:code>
+            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>9-02-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-03</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-03</oos:code>
+                            <oos:name>Ортопедическая обувь на протезы при двусторонней ампутации нижних конечностей (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-05</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>250220</oos:code>
+                            <oos:name>Обувь ортопедическая, стандартная</oos:name>
+                            <oos:descriptionValue>Предварительно изготовленная (стандартная) обувь, представляющая собой туфли, предназначенные для поддержки, выравнивания, предотвращения и компенсации или исправления деформаций стопы для улучшения функции и/или для послеоперационной терапии. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.157</oos:code>
+                            <oos:name>Вкладные корригирующие элементы для ортопедической обуви (в том числе стельки, полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.156</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.151</oos:code>
+                            <oos:name>Обувь ортопедическая для взрослых, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.150</oos:code>
+                            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.155</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.154</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.153</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.152</oos:code>
+                            <oos:name>Обувь ортопедическая для детей, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>b32177f6-f</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>d4ee75d5-6</oos:valueCode>
+                        <oos:qualityDescription>Ясельный возраст</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f7db50e1-6</oos:code>
+                <oos:name>Вид обуви</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0e1df354-3</oos:valueCode>
+                        <oos:qualityDescription>Сапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9009595-a</oos:valueCode>
+                        <oos:qualityDescription>Ботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>107e7621-8</oos:valueCode>
+                        <oos:qualityDescription>Полуботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7215b026-7</oos:valueCode>
+                        <oos:qualityDescription>Туфли</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>00beea6a-3</oos:valueCode>
+                        <oos:qualityDescription>Сандалии, босоножки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d3f3c985-c</oos:valueCode>
+                        <oos:qualityDescription>Туфли комнатные</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>14db09df-d</oos:valueCode>
+                        <oos:qualityDescription>Кроссовки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>da15e1e5-e</oos:code>
+                <oos:name>Размер</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>58fb2e03-6</oos:valueCode>
+                        <oos:qualityDescription>17 - 19.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6e29130b-b</oos:valueCode>
+                        <oos:qualityDescription>20 - 22.5</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.22.150-00000024</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0196EE335DE47B81997AD94EA361930C</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0196EE335DE47B81997AD94EA361930D</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.150-00000021</oos:code>
+        <oos:versionCode>32.50.22.150-000000212</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-04-09T16:43:59+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-20T17:57:17+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-20T17:57:17+03:00</oos:updateDate>
+        <oos:name>Обувь ортопедическая, стандартная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.150</oos:code>
+            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>250220</oos:code>
+                            <oos:name>Обувь ортопедическая, стандартная</oos:name>
+                            <oos:descriptionValue>Предварительно изготовленная (стандартная) обувь, представляющая собой туфли, предназначенные для поддержки, выравнивания, предотвращения и компенсации или исправления деформаций стопы для улучшения функции и/или для послеоперационной терапии. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>9-02-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-03</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-03</oos:code>
+                            <oos:name>Ортопедическая обувь на протезы при двусторонней ампутации нижних конечностей (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-05</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.157</oos:code>
+                            <oos:name>Вкладные корригирующие элементы для ортопедической обуви (в том числе стельки, полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.156</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.151</oos:code>
+                            <oos:name>Обувь ортопедическая для взрослых, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.150</oos:code>
+                            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.155</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.154</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.153</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.152</oos:code>
+                            <oos:name>Обувь ортопедическая для детей, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>b32177f6-f</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>39ecfbdb-5</oos:valueCode>
+                        <oos:qualityDescription>Малодетская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f7db50e1-6</oos:code>
+                <oos:name>Вид обуви</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0e1df354-3</oos:valueCode>
+                        <oos:qualityDescription>Сапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9009595-a</oos:valueCode>
+                        <oos:qualityDescription>Ботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>107e7621-8</oos:valueCode>
+                        <oos:qualityDescription>Полуботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7215b026-7</oos:valueCode>
+                        <oos:qualityDescription>Туфли</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>00beea6a-3</oos:valueCode>
+                        <oos:qualityDescription>Сандалии, босоножки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d3f3c985-c</oos:valueCode>
+                        <oos:qualityDescription>Туфли комнатные</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>14db09df-d</oos:valueCode>
+                        <oos:qualityDescription>Кроссовки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>984d9cbd-9</oos:valueCode>
+                        <oos:qualityDescription>Полусапоги</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>da15e1e5-e</oos:code>
+                <oos:name>Размер</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0d4916fe-d</oos:valueCode>
+                        <oos:qualityDescription>23 - 24</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>2cfde100-2</oos:valueCode>
+                        <oos:qualityDescription>24.5 - 26</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.22.150-00000024</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0196EE32F19D7962B0465006DF2307A6</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0196EE32F19D7962B0465006DF2307A7</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.150-00000020</oos:code>
+        <oos:versionCode>32.50.22.150-000000202</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-04-09T16:43:58+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-20T17:56:12+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-20T17:56:12+03:00</oos:updateDate>
+        <oos:name>Обувь ортопедическая, стандартная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.150</oos:code>
+            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>9-02-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-03</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-03</oos:code>
+                            <oos:name>Ортопедическая обувь на протезы при двусторонней ампутации нижних конечностей (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-05</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>250220</oos:code>
+                            <oos:name>Обувь ортопедическая, стандартная</oos:name>
+                            <oos:descriptionValue>Предварительно изготовленная (стандартная) обувь, представляющая собой туфли, предназначенные для поддержки, выравнивания, предотвращения и компенсации или исправления деформаций стопы для улучшения функции и/или для послеоперационной терапии. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.157</oos:code>
+                            <oos:name>Вкладные корригирующие элементы для ортопедической обуви (в том числе стельки, полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.156</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.151</oos:code>
+                            <oos:name>Обувь ортопедическая для взрослых, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.150</oos:code>
+                            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.155</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.154</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.153</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.152</oos:code>
+                            <oos:name>Обувь ортопедическая для детей, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>b32177f6-f</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>5f030241-1</oos:valueCode>
+                        <oos:qualityDescription>Дошкольная</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f7db50e1-6</oos:code>
+                <oos:name>Вид обуви</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0e1df354-3</oos:valueCode>
+                        <oos:qualityDescription>Сапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9009595-a</oos:valueCode>
+                        <oos:qualityDescription>Ботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>107e7621-8</oos:valueCode>
+                        <oos:qualityDescription>Полуботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7215b026-7</oos:valueCode>
+                        <oos:qualityDescription>Туфли</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>00beea6a-3</oos:valueCode>
+                        <oos:qualityDescription>Сандалии, босоножки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d3f3c985-c</oos:valueCode>
+                        <oos:qualityDescription>Туфли комнатные</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>14db09df-d</oos:valueCode>
+                        <oos:qualityDescription>Кроссовки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>984d9cbd-9</oos:valueCode>
+                        <oos:qualityDescription>Полусапоги</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>da15e1e5-e</oos:code>
+                <oos:name>Размер</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>50da0bf6-d</oos:valueCode>
+                        <oos:qualityDescription>27 - 29</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>febde20b-6</oos:valueCode>
+                        <oos:qualityDescription>29.5 - 31.5</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.22.150-00000024</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0196EE31F14875FCBC6E685BF94C6335</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0196EE31F14875FCBC6E685BF94C6336</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.150-00000019</oos:code>
+        <oos:versionCode>32.50.22.150-000000192</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-04-09T16:43:57+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-20T17:55:40+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-20T17:55:40+03:00</oos:updateDate>
+        <oos:name>Обувь ортопедическая, стандартная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.150</oos:code>
+            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>250220</oos:code>
+                            <oos:name>Обувь ортопедическая, стандартная</oos:name>
+                            <oos:descriptionValue>Предварительно изготовленная (стандартная) обувь, представляющая собой туфли, предназначенные для поддержки, выравнивания, предотвращения и компенсации или исправления деформаций стопы для улучшения функции и/или для послеоперационной терапии. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>9-02-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-03</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-03</oos:code>
+                            <oos:name>Ортопедическая обувь на протезы при двусторонней ампутации нижних конечностей (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-05</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.157</oos:code>
+                            <oos:name>Вкладные корригирующие элементы для ортопедической обуви (в том числе стельки, полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.156</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.151</oos:code>
+                            <oos:name>Обувь ортопедическая для взрослых, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.150</oos:code>
+                            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.155</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.154</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.153</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.152</oos:code>
+                            <oos:name>Обувь ортопедическая для детей, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>b32177f6-f</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>ea9d21a7-1</oos:valueCode>
+                        <oos:qualityDescription>Мальчики-школьники</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4c89e1d2-7</oos:valueCode>
+                        <oos:qualityDescription>Девочки-школьницы</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f7db50e1-6</oos:code>
+                <oos:name>Вид обуви</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0e1df354-3</oos:valueCode>
+                        <oos:qualityDescription>Сапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9009595-a</oos:valueCode>
+                        <oos:qualityDescription>Ботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>107e7621-8</oos:valueCode>
+                        <oos:qualityDescription>Полуботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7215b026-7</oos:valueCode>
+                        <oos:qualityDescription>Туфли</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>00beea6a-3</oos:valueCode>
+                        <oos:qualityDescription>Сандалии, босоножки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d3f3c985-c</oos:valueCode>
+                        <oos:qualityDescription>Туфли комнатные</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>14db09df-d</oos:valueCode>
+                        <oos:qualityDescription>Кроссовки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>984d9cbd-9</oos:valueCode>
+                        <oos:qualityDescription>Полусапоги</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>da15e1e5-e</oos:code>
+                <oos:name>Размер</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>2038ea6a-d</oos:valueCode>
+                        <oos:qualityDescription>32 - 34</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>fb1b0cfb-9</oos:valueCode>
+                        <oos:qualityDescription>34.5 - 36</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>fe683c0c-b</oos:valueCode>
+                        <oos:qualityDescription>36.5 - 37.5</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.22.150-00000024</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0196EE317685762397270AEA2FC9994C</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0196EE317685762397270AEA2FC9994D</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.150-00000018</oos:code>
+        <oos:versionCode>32.50.22.150-000000182</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-04-09T16:43:56+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-20T17:54:45+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-20T17:54:45+03:00</oos:updateDate>
+        <oos:name>Обувь ортопедическая, стандартная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.150</oos:code>
+            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>9-02-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-03</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-03</oos:code>
+                            <oos:name>Ортопедическая обувь на протезы при двусторонней ампутации нижних конечностей (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-05</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>250220</oos:code>
+                            <oos:name>Обувь ортопедическая, стандартная</oos:name>
+                            <oos:descriptionValue>Предварительно изготовленная (стандартная) обувь, представляющая собой туфли, предназначенные для поддержки, выравнивания, предотвращения и компенсации или исправления деформаций стопы для улучшения функции и/или для послеоперационной терапии. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.157</oos:code>
+                            <oos:name>Вкладные корригирующие элементы для ортопедической обуви (в том числе стельки, полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.156</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.151</oos:code>
+                            <oos:name>Обувь ортопедическая для взрослых, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.150</oos:code>
+                            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.155</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.154</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.153</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.152</oos:code>
+                            <oos:name>Обувь ортопедическая для детей, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>b32177f6-f</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>ab155d9a-d</oos:valueCode>
+                        <oos:qualityDescription>Девочки-подростки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f7db50e1-6</oos:code>
+                <oos:name>Вид обуви</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0e1df354-3</oos:valueCode>
+                        <oos:qualityDescription>Сапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9009595-a</oos:valueCode>
+                        <oos:qualityDescription>Ботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>107e7621-8</oos:valueCode>
+                        <oos:qualityDescription>Полуботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7215b026-7</oos:valueCode>
+                        <oos:qualityDescription>Туфли</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>00beea6a-3</oos:valueCode>
+                        <oos:qualityDescription>Сандалии, босоножки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d3f3c985-c</oos:valueCode>
+                        <oos:qualityDescription>Туфли комнатные</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>14db09df-d</oos:valueCode>
+                        <oos:qualityDescription>Кроссовки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>984d9cbd-9</oos:valueCode>
+                        <oos:qualityDescription>Полусапоги</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>da15e1e5-e</oos:code>
+                <oos:name>Размер</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>eccb46bf-f</oos:valueCode>
+                        <oos:qualityDescription>35 - 37</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>49ee362b-d</oos:valueCode>
+                        <oos:qualityDescription>37.5 - 39</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>3d7f1380-f</oos:valueCode>
+                        <oos:qualityDescription>39.5 - 40.5</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.22.150-00000024</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0196EE309E2877948774A3A73D37CB73</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0196EE309E2877948774A3A73D37CB74</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.150-00000017</oos:code>
+        <oos:versionCode>32.50.22.150-000000172</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-04-09T16:43:55+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-20T17:54:18+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-20T17:54:18+03:00</oos:updateDate>
+        <oos:name>Обувь ортопедическая, стандартная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.150</oos:code>
+            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.157</oos:code>
+                            <oos:name>Вкладные корригирующие элементы для ортопедической обуви (в том числе стельки, полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.156</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.151</oos:code>
+                            <oos:name>Обувь ортопедическая для взрослых, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.150</oos:code>
+                            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.155</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.154</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.153</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.152</oos:code>
+                            <oos:name>Обувь ортопедическая для детей, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>9-02-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-03</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-03</oos:code>
+                            <oos:name>Ортопедическая обувь на протезы при двусторонней ампутации нижних конечностей (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-05</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>250220</oos:code>
+                            <oos:name>Обувь ортопедическая, стандартная</oos:name>
+                            <oos:descriptionValue>Предварительно изготовленная (стандартная) обувь, представляющая собой туфли, предназначенные для поддержки, выравнивания, предотвращения и компенсации или исправления деформаций стопы для улучшения функции и/или для послеоперационной терапии. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>b32177f6-f</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>499b38d1-c</oos:valueCode>
+                        <oos:qualityDescription>Мальчики-подростки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f7db50e1-6</oos:code>
+                <oos:name>Вид обуви</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0e1df354-3</oos:valueCode>
+                        <oos:qualityDescription>Сапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9009595-a</oos:valueCode>
+                        <oos:qualityDescription>Ботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>107e7621-8</oos:valueCode>
+                        <oos:qualityDescription>Полуботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7215b026-7</oos:valueCode>
+                        <oos:qualityDescription>Туфли</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>00beea6a-3</oos:valueCode>
+                        <oos:qualityDescription>Сандалии, босоножки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d3f3c985-c</oos:valueCode>
+                        <oos:qualityDescription>Туфли комнатные</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>14db09df-d</oos:valueCode>
+                        <oos:qualityDescription>Кроссовки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>984d9cbd-9</oos:valueCode>
+                        <oos:qualityDescription>Полусапоги</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>da15e1e5-e</oos:code>
+                <oos:name>Размер</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>552f9a16-9</oos:valueCode>
+                        <oos:qualityDescription>38 - 40</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9a41cb12-1</oos:valueCode>
+                        <oos:qualityDescription>40.5 - 42</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c2b3e1da-d</oos:valueCode>
+                        <oos:qualityDescription>42.5 - 43.5</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.22.150-00000024</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0196EE303570772A8342501DA3C57C3B</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0196EE303570772A8342501DA3C57C3C</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.150-00000016</oos:code>
+        <oos:versionCode>32.50.22.150-000000162</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-04-09T16:43:54+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-20T17:53:28+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-20T17:53:28+03:00</oos:updateDate>
+        <oos:name>Обувь ортопедическая, стандартная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.150</oos:code>
+            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>250220</oos:code>
+                            <oos:name>Обувь ортопедическая, стандартная</oos:name>
+                            <oos:descriptionValue>Предварительно изготовленная (стандартная) обувь, представляющая собой туфли, предназначенные для поддержки, выравнивания, предотвращения и компенсации или исправления деформаций стопы для улучшения функции и/или для послеоперационной терапии. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>9-02-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-03</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-03</oos:code>
+                            <oos:name>Ортопедическая обувь на протезы при двусторонней ампутации нижних конечностей (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-05</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.157</oos:code>
+                            <oos:name>Вкладные корригирующие элементы для ортопедической обуви (в том числе стельки, полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.156</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.151</oos:code>
+                            <oos:name>Обувь ортопедическая для взрослых, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.150</oos:code>
+                            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.155</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.154</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.153</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.152</oos:code>
+                            <oos:name>Обувь ортопедическая для детей, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>b32177f6-f</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>1027eced-1</oos:valueCode>
+                        <oos:qualityDescription>Женская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f7db50e1-6</oos:code>
+                <oos:name>Вид обуви</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0e1df354-3</oos:valueCode>
+                        <oos:qualityDescription>Сапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9009595-a</oos:valueCode>
+                        <oos:qualityDescription>Ботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>107e7621-8</oos:valueCode>
+                        <oos:qualityDescription>Полуботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7215b026-7</oos:valueCode>
+                        <oos:qualityDescription>Туфли</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>00beea6a-3</oos:valueCode>
+                        <oos:qualityDescription>Сандалии, босоножки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d3f3c985-c</oos:valueCode>
+                        <oos:qualityDescription>Туфли комнатные</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>14db09df-d</oos:valueCode>
+                        <oos:qualityDescription>Кроссовки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>984d9cbd-9</oos:valueCode>
+                        <oos:qualityDescription>Полусапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>bb27f2b6-9</oos:valueCode>
+                        <oos:qualityDescription>Сабо</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>da15e1e5-e</oos:code>
+                <oos:name>Размер</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>f29b0af4-a</oos:valueCode>
+                        <oos:qualityDescription>33 - 36</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7c3e5c59-2</oos:valueCode>
+                        <oos:qualityDescription>36.5 - 39</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>0d9cd2e4-7</oos:valueCode>
+                        <oos:qualityDescription>39.5 - 41.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>8e85008c-c</oos:valueCode>
+                        <oos:qualityDescription>42 - 44</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.22.150-00000024</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0196EE2F70B6717A85EF9DF1FABEC388</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0196EE2F70B6717A85EF9DF1FABEC389</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.22.150-00000015</oos:code>
+        <oos:versionCode>32.50.22.150-000000152</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-04-09T16:43:53+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-05-20T17:52:57+03:00</oos:publishDate>
+        <oos:updateDate>2025-05-20T17:52:57+03:00</oos:updateDate>
+        <oos:name>Обувь ортопедическая, стандартная</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.22.150</oos:code>
+            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>9-02-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-01</oos:code>
+                            <oos:name>Ортопедическая обувь сложная без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-02</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на сохраненную конечность и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-02-03</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат на утепленной подкладке (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-03</oos:code>
+                            <oos:name>Ортопедическая обувь на протезы при двусторонней ампутации нижних конечностей (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-04</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>9-01-05</oos:code>
+                            <oos:name>Ортопедическая обувь сложная на аппарат и обувь на протез без утепленной подкладки (пара)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>250220</oos:code>
+                            <oos:name>Обувь ортопедическая, стандартная</oos:name>
+                            <oos:descriptionValue>Предварительно изготовленная (стандартная) обувь, представляющая собой туфли, предназначенные для поддержки, выравнивания, предотвращения и компенсации или исправления деформаций стопы для улучшения функции и/или для послеоперационной терапии. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.22.157</oos:code>
+                            <oos:name>Вкладные корригирующие элементы для ортопедической обуви (в том числе стельки, полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.156</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.151</oos:code>
+                            <oos:name>Обувь ортопедическая для взрослых, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.150</oos:code>
+                            <oos:name>Обувь ортопедическая и вкладные корригирующие элементы (в том числе стельки и полустельки)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.155</oos:code>
+                            <oos:name>Обувь ортопедическая малосложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.154</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для детей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.153</oos:code>
+                            <oos:name>Обувь ортопедическая сложная для взрослых</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.22.152</oos:code>
+                            <oos:name>Обувь ортопедическая для детей, кроме ортопедической обуви сложной и малосложной</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>b32177f6-f</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>223ff105-3</oos:valueCode>
+                        <oos:qualityDescription>Мужская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f7db50e1-6</oos:code>
+                <oos:name>Вид обуви</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0e1df354-3</oos:valueCode>
+                        <oos:qualityDescription>Сапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c9009595-a</oos:valueCode>
+                        <oos:qualityDescription>Ботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>107e7621-8</oos:valueCode>
+                        <oos:qualityDescription>Полуботинки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7215b026-7</oos:valueCode>
+                        <oos:qualityDescription>Туфли</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>00beea6a-3</oos:valueCode>
+                        <oos:qualityDescription>Сандалии, босоножки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d3f3c985-c</oos:valueCode>
+                        <oos:qualityDescription>Туфли комнатные</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>14db09df-d</oos:valueCode>
+                        <oos:qualityDescription>Кроссовки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>984d9cbd-9</oos:valueCode>
+                        <oos:qualityDescription>Полусапоги</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>bb27f2b6-9</oos:valueCode>
+                        <oos:qualityDescription>Сабо</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>da15e1e5-e</oos:code>
+                <oos:name>Размер</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>552f9a16-9</oos:valueCode>
+                        <oos:qualityDescription>38 - 40</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9a41cb12-1</oos:valueCode>
+                        <oos:qualityDescription>40.5 - 42</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9cfa24f0-a</oos:valueCode>
+                        <oos:qualityDescription>42.5 - 44.5</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4c1ce8d6-2</oos:valueCode>
+                        <oos:qualityDescription>45 - 47</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.22.150-00000024</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0196EE2EFB4778DEB902D83BD79256DB</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0196EE2EFB4778DEB902D83BD79256DC</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000634</oos:code>
+        <oos:versionCode>14.12.30.160-000006341</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2025-04-29T11:40:33+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-04-29T11:40:33+03:00</oos:publishDate>
+        <oos:updateDate>2025-04-29T11:40:33+03:00</oos:updateDate>
+        <oos:name>Воротник для защиты от излучения</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>130400</oos:code>
+                            <oos:name>Воротник для защиты от излучения</oos:name>
+                            <oos:descriptionValue>Индивидуальное защитное изделие, предназначенное для защиты области шеи, в том числе задней части шеи, горла и щитовидной железы человека (оператора устройства или другого обслуживающего лица) от нежелательного воздействия излучения во время диагностических или терапевтических медицинских и стоматологических процедур. Воротники, используемые в рентгеновской и ядерной медицине, обычно имеют непроницаемое для жидкости внешнее покрытие, нанесенное на тонкую пластину из свинца (Pb) или эквивалентного свинцу материала. Воротники, предназначенные для ослабления нейтронного излучения, состоят из водородсодержащих материалов вместо свинца; воротники, которые используются в смешанном поле бета-гамма-излучения, могут состоять из слоев как водородсодержащих, так и эквивалентных свинцу материалов. Это изделие многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>4d9c059f-7</oos:code>
+                <oos:name>Свинцовый эквивалент, мм Pb</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>64a40279-1</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>0.3</oos:min>
+                                <oos:maxMathNotation>lessOrEqual</oos:maxMathNotation>
+                                <oos:max>0.35</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d863982a-8</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>0.5</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=019680B47C5171D586A38913FA97FB7E</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>019680B47C5171D586A38913FA97FB7F</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000633</oos:code>
+        <oos:versionCode>14.12.30.160-000006331</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2025-04-29T11:39:57+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-04-29T11:39:57+03:00</oos:publishDate>
+        <oos:updateDate>2025-04-29T11:39:57+03:00</oos:updateDate>
+        <oos:name>Воротник для защиты от излучения</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>130400</oos:code>
+                            <oos:name>Воротник для защиты от излучения</oos:name>
+                            <oos:descriptionValue>Индивидуальное защитное изделие, предназначенное для защиты области шеи, в том числе задней части шеи, горла и щитовидной железы человека (оператора устройства или другого обслуживающего лица) от нежелательного воздействия излучения во время диагностических или терапевтических медицинских и стоматологических процедур. Воротники, используемые в рентгеновской и ядерной медицине, обычно имеют непроницаемое для жидкости внешнее покрытие, нанесенное на тонкую пластину из свинца (Pb) или эквивалентного свинцу материала. Воротники, предназначенные для ослабления нейтронного излучения, состоят из водородсодержащих материалов вместо свинца; воротники, которые используются в смешанном поле бета-гамма-излучения, могут состоять из слоев как водородсодержащих, так и эквивалентных свинцу материалов. Это изделие многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>4d9c059f-7</oos:code>
+                <oos:name>Свинцовый эквивалент, мм Pb</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>64a40279-1</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>0.3</oos:min>
+                                <oos:maxMathNotation>lessOrEqual</oos:maxMathNotation>
+                                <oos:max>0.35</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000634</oos:code>
+            <oos:version>1</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=019680B3EFEB7728A3F981656BC55A0B</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>019680B3EFEB7728A3F981656BC55A0C</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000632</oos:code>
+        <oos:versionCode>14.12.30.160-000006321</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2025-04-29T11:39:56+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-04-29T11:39:56+03:00</oos:publishDate>
+        <oos:updateDate>2025-04-29T11:39:56+03:00</oos:updateDate>
+        <oos:name>Воротник для защиты от излучения</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2025-06-30T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>130400</oos:code>
+                            <oos:name>Воротник для защиты от излучения</oos:name>
+                            <oos:descriptionValue>Индивидуальное защитное изделие, предназначенное для защиты области шеи, в том числе задней части шеи, горла и щитовидной железы человека (оператора устройства или другого обслуживающего лица) от нежелательного воздействия излучения во время диагностических или терапевтических медицинских и стоматологических процедур. Воротники, используемые в рентгеновской и ядерной медицине, обычно имеют непроницаемое для жидкости внешнее покрытие, нанесенное на тонкую пластину из свинца (Pb) или эквивалентного свинцу материала. Воротники, предназначенные для ослабления нейтронного излучения, состоят из водородсодержащих материалов вместо свинца; воротники, которые используются в смешанном поле бета-гамма-излучения, могут состоять из слоев как водородсодержащих, так и эквивалентных свинцу материалов. Это изделие многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>4d9c059f-7</oos:code>
+                <oos:name>Свинцовый эквивалент, мм Pb</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>d863982a-8</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>0.5</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000634</oos:code>
+            <oos:version>1</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=019680B3EFEB7728A3F981656BC55A0B</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>019680B3EC4079648A0B65789AE267C1</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00003067</oos:code>
+        <oos:version>4</oos:version>
+        <oos:inclusionDate>2025-05-14T11:02:45+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-02-26T10:58:46+03:00</oos:publishDate>
+        <oos:updateDate>2026-02-26T10:58:47+03:00</oos:updateDate>
+        <oos:name>Бахилы водонепроницаемые</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-03-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>269290</oos:code>
+                            <oos:name>Бахилы водонепроницаемые</oos:name>
+                            <oos:descriptionValue>Нестерильное изделие, изготавливаемое из водонепроницаемого материала, предназначенное для использования в качестве физического барьера на обуви для предотвращения перекрестного заражения микроорганизмами и загрязнения физиологическими жидкостями и твердыми частицами между пациентом и персоналом. Это изделие для одноразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>2bcd7015-f</oos:code>
+                <oos:name>Длина</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>aa242fb0-2</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>003</oos:code>
+                            <oos:name>Миллиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>350</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9fa1ca33-e</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>003</oos:code>
+                            <oos:name>Миллиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>350</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>adb44526-2</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>003</oos:code>
+                            <oos:name>Миллиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>400</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>2a12da9e-2</oos:code>
+                <oos:name>Толщина подошвы бахилы, мкм</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>06d3397c-e</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>4</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>5895a142-5</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>10</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>3cdd625c-a</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>15</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6e3c6c14-1</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>20</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b14202e5-2</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>25</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>487585c5-9</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>30</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>590d9894-3</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>40</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>2587fbfa-6</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>60</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>cd13dc4b-2</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>80</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f45670f6-0</oos:code>
+                <oos:name>Количество слоев</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>bb6a852d-4</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>796</oos:code>
+                            <oos:name>Штука</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>1</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4a2e0442-c</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>796</oos:code>
+                            <oos:name>Штука</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>2</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>79e19030-4</oos:code>
+                <oos:name>Двойная резинка</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>cb5e4f08-c</oos:valueCode>
+                        <oos:qualityDescription>Да</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>58875c6f-0</oos:valueCode>
+                        <oos:qualityDescription>Нет</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>7c4df623-6</oos:code>
+                <oos:name>Материал</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>bee66675-0</oos:valueCode>
+                        <oos:qualityDescription>Полиэтилен низкого давления</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6aa6fa29-4</oos:valueCode>
+                        <oos:qualityDescription>Полиэтилен высокого давления</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6ba8014a-5</oos:valueCode>
+                        <oos:qualityDescription>Хлорполиэтилен</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00003066</oos:code>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2025-05-14T11:02:08+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-02-26T11:00:42+03:00</oos:publishDate>
+        <oos:updateDate>2026-02-26T11:00:43+03:00</oos:updateDate>
+        <oos:name>Бахилы водонепроницаемые</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-03-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>269290</oos:code>
+                            <oos:name>Бахилы водонепроницаемые</oos:name>
+                            <oos:descriptionValue>Нестерильное изделие, изготавливаемое из водонепроницаемого материала, предназначенное для использования в качестве физического барьера на обуви для предотвращения перекрестного заражения микроорганизмами и загрязнения физиологическими жидкостями и твердыми частицами между пациентом и персоналом. Это изделие для одноразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>2bcd7015-f</oos:code>
+                <oos:name>Длина</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>aa242fb0-2</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>003</oos:code>
+                            <oos:name>Миллиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:maxMathNotation>less</oos:maxMathNotation>
+                                <oos:max>350</oos:max>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9fa1ca33-e</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>003</oos:code>
+                            <oos:name>Миллиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>350</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>adb44526-2</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>003</oos:code>
+                            <oos:name>Миллиметр</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>400</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>2a12da9e-2</oos:code>
+                <oos:name>Толщина подошвы бахилы, мкм</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>06d3397c-e</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>4</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>5895a142-5</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>10</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>3cdd625c-a</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>15</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6e3c6c14-1</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>20</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b14202e5-2</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>25</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>487585c5-9</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>30</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>590d9894-3</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>40</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>2587fbfa-6</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>60</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>cd13dc4b-2</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:rangeSet>
+                            <oos:valueRange>
+                                <oos:minMathNotation>greaterOrEqual</oos:minMathNotation>
+                                <oos:min>80</oos:min>
+                            </oos:valueRange>
+                        </oos:rangeSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>f45670f6-0</oos:code>
+                <oos:name>Количество слоев</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>bb6a852d-4</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>796</oos:code>
+                            <oos:name>Штука</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>1</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4a2e0442-c</oos:valueCode>
+                        <oos:OKEI>
+                            <oos:code>796</oos:code>
+                            <oos:name>Штука</oos:name>
+                        </oos:OKEI>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>2</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>79e19030-4</oos:code>
+                <oos:name>Двойная резинка</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>cb5e4f08-c</oos:valueCode>
+                        <oos:qualityDescription>Да</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>58875c6f-0</oos:valueCode>
+                        <oos:qualityDescription>Нет</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>7c4df623-6</oos:code>
+                <oos:name>Материал</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>bee66675-0</oos:valueCode>
+                        <oos:qualityDescription>Полиэтилен низкого давления</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6aa6fa29-4</oos:valueCode>
+                        <oos:qualityDescription>Полиэтилен высокого давления</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6ba8014a-5</oos:valueCode>
+                        <oos:qualityDescription>Хлорполиэтилен</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>32.50.50.190-00003067</oos:code>
+            <oos:version>4</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.12.000-00000007</oos:code>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2025-06-05T09:51:26+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-02-26T16:35:47+03:00</oos:publishDate>
+        <oos:updateDate>2026-02-26T16:35:48+03:00</oos:updateDate>
+        <oos:name>Костюм спортивный</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.12</oos:code>
+            <oos:name>Костюмы спортивные, костюмы лыжные, костюмы купальные и прочая одежда трикотажные или вязаные</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-03-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ТР ТС 017/2011 Технический регламент Таможенного союза "О безопасности продукции легкой промышленности (с изменениями на 9 августа 2016 года)"</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ 31410-2009 "Межгосударственный стандарт. Изделия трикотажные верхние для мужчин и мальчиков. Общие технические условия"</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ 25295-2003 "Одежда верхняя пальтово-костюмного ассортимента. Общие технические условия (с Поправкой, с Изменением № 1)"</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ 31409-2009 "Межгосударственный стандарт. Изделия трикотажные верхние для женщин и девочек. Общие технические условия"</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.12</oos:code>
+                            <oos:name>Костюмы спортивные, костюмы лыжные, костюмы купальные и прочая одежда трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.12.110</oos:code>
+                            <oos:name>Костюмы спортивные трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.22.110</oos:code>
+                            <oos:name>Костюмы спортивные из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>c1da8c31-4</oos:code>
+                <oos:name>Российский размер</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>c2662b91-c</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>38</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>aa71a0ce-d</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>40</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d0894a72-4</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>42</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b21f70af-6</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>44</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>67d8bb71-7</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>46</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>55f47e62-5</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>48</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>ca501813-7</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>50</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>1fd3d434-1</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>52</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b7527856-2</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>54</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>cab14ff6-d</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>56</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>434217fd-9</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>58</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9da327c1-b</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>60</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>e4b9a89b-1</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>62</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>eef96173-f</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>64</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>91f64ea6-8</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>66</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7e570c76-f</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>68</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>96b60c59-f</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>70</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>8a9017fa-f</oos:code>
+                <oos:name>Назначение</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>f537b28b-d</oos:valueCode>
+                        <oos:qualityDescription>Универсальный</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>02149ae2-f</oos:code>
+                <oos:name>Тип ткани/трикотажного полотна</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>6ca5c1f5-f</oos:valueCode>
+                        <oos:qualityDescription>Натуральная</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c6840cfc-e</oos:valueCode>
+                        <oos:qualityDescription>Синтетическая</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>f9ed82b5-4</oos:valueCode>
+                        <oos:qualityDescription>Смесовая</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.19.12.000-00000003</oos:code>
+            <oos:version>5</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+</nsiKTRUs></export>

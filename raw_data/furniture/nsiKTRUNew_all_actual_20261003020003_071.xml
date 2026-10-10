@@ -1,0 +1,60 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000143</oos:code>
+        <oos:versionCode>32.50.30.110-000001431</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2021-01-25T16:03:24+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-03-24T10:53:27+03:00</oos:publishDate>
+        <oos:updateDate>2026-03-24T10:53:28+03:00</oos:updateDate>
+        <oos:name>Кресло стоматологическое, механическое</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2021-04-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>119390</oos:code>
+                            <oos:name>Кресло стоматологическое, механическое</oos:name>
+                            <oos:descriptionValue>"Ручное или с гидравлическим приводом устройство, предназначенное для расположения пациента в сидячем положении с целью проведения стоматологического обследования, лечения и/или незначительных хирургических процедур. обычно регулируется по высоте, что позволяет обслуживающему персоналу проводить процедуры стоя. Изделие обычно включает подголовник и подлокотники, откидываемую назад спинку, которая может быть приведена из вертикального положения в горизонтальное, и может вращаться; некоторые типы могут быть запрограммированы на несколько стандартных положений. Устройства, предназначенные для стоматологического обследования и/или лечения (например, осветительные приборы, ирригация), могут крепиться в качестве компонентов этого кресла или стоять отдельно в качестве автонномных, настенных или потолочных установок."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2026-03-24T10:59:57+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+</nsiKTRUs></export>

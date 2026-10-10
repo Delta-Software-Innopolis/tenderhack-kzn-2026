@@ -1,0 +1,320 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.000-00000272</oos:code>
+        <oos:versionCode>32.50.50.000-000002723</oos:versionCode>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2018-09-05T20:27:00+03:00</oos:inclusionDate>
+        <oos:publishDate>2018-11-09T16:44:59+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T14:30:00+03:00</oos:updateDate>
+        <oos:name> Матрас противопролежневый с наполнителем из пеноматериала</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.000</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-02-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>167990</oos:code>
+                            <oos:name>Наматрасник противопролежневый с наполнителем из пеноматериала</oos:name>
+                            <oos:descriptionValue>Наполненная пеноматериалом подстилка или тонкий матрас, обычно соответствующий длине тела пациента, помещаемый поверх матраса кровати для распределения веса лежащего человека по большой поверхности, обычно для уменьшения давления на точки пережатия для обеспечения комфорта и предотвращения возникновения пролежней. Изделие широко используется для пожилых обездвиженных (особенно в случае наличия пролежней) пациентов с ограниченными физическими возможностями или у пациентов с низким уровнем жира в организме. Это изделие многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>10-01-01</oos:code>
+                            <oos:name>Противопролежневый матрац полиуретановый</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.000</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2018-11-09T16:44:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=377D78A3B61F4332A7C36CC96EE1D26B</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>53C556BF07AB4E62BE0EC4B08BD0CA60</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.000-00000271</oos:code>
+        <oos:versionCode>32.50.50.000-000002713</oos:versionCode>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2018-09-05T20:26:59+03:00</oos:inclusionDate>
+        <oos:publishDate>2018-11-09T16:47:57+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T14:30:00+03:00</oos:updateDate>
+        <oos:name> Матрас противопролежневый с гелевым наполнителем</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.000</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-02-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>10-01-02</oos:code>
+                            <oos:name>Противопролежневый матрац гелевый</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>168020</oos:code>
+                            <oos:name>Наматрасник противопролежневый с гелевым наполнителем</oos:name>
+                            <oos:descriptionValue>Наполненная гелем подстилка или матрас, обычно соответствующий длине тела пациента, помещаемый поверх матраса кровати для распределения веса лежащего человека по большой поверхности, обычно для уменьшения давления на точки пережатия для обеспечения комфорта и предотвращения возникновения пролежней. Изделие широко используется для пожилых обездвиженных (особенно в случае наличия пролежней) пациентов с ограниченными физическими возможностями или у пациентов с низким уровнем жира в организме. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.000</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2018-11-09T16:47:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=1C3462018D6845CFB12BD24F2104B7D4</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>98DAB0B85C24469B854B65FDFB9840AD</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000001</oos:code>
+        <oos:versionCode>32.50.30.110-000000013</oos:versionCode>
+        <oos:version>4</oos:version>
+        <oos:inclusionDate>2018-09-05T20:26:53+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-01-16T10:31:17+03:00</oos:publishDate>
+        <oos:updateDate>2026-01-16T10:31:17+03:00</oos:updateDate>
+        <oos:name>Стул эргономичный адаптационный, с ручной регулировкой</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2024-03-31T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>232160</oos:code>
+                            <oos:name>Стул эргономичный адаптационный, с ручной регулировкой</oos:name>
+                            <oos:descriptionValue>Неэлектрическое изделие, которое может включать в себя пневматические функции, предназначенное для поддержки и размещения пациента (человека с ограниченными возможностями или с недомоганием) в сидячем положении при выполнении работ или в своей повседневной деятельности, включая работу. Оно имеет управляемые вручную эргономичные регулировки (например, регулировки высоты и положения), чтобы обеспечить лучшие условия для положения тела и/или помочь предотвратить/уменьшить физические проблемы, связанные с сидячей работой или деятельностью. Не является креслом-коляской.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.30.119</oos:code>
+                            <oos:name>Мебель медицинская прочая, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>6-07-01</oos:code>
+                            <oos:name>Опора для сидения для детей-инвалидов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2026-01-16T10:00:19+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000004</oos:code>
+        <oos:versionCode>32.50.30.110-000000043</oos:versionCode>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2018-09-07T14:22:43+03:00</oos:inclusionDate>
+        <oos:publishDate>2018-11-09T18:08:27+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:45:00+03:00</oos:updateDate>
+        <oos:name>Кресло-туалет</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-02-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>23-01-01</oos:code>
+                            <oos:name>Кресло-стул с санитарным оснащением (с колесами)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>23-01-04</oos:code>
+                            <oos:name>Кресло-стул с санитарным оснащением с дополнительной фиксацией (поддержкой) головы и тела, в том числе, для больных ДЦП</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>23-01-02</oos:code>
+                            <oos:name>Кресло-стул с санитарным оснащением (без колес)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>23-01-05</oos:code>
+                            <oos:name>Кресло-стул с санитарным оснащением активного типа</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>23-01-03</oos:code>
+                            <oos:name>Кресло-стул с санитарным оснащением пассивного типа повышенной грузоподъемности (без колес)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>220280</oos:code>
+                            <oos:name>Кресло-туалет</oos:name>
+                            <oos:descriptionValue>Специальный стул со встроенным отсеком под выносное ведро для кала/мочи, предназначенный для сбора испражнений инвалидов. К этой общей категории относятся также кресла-каталки с санитарно-гигиеническими модулями и туалеты для душевых комнат. Могут монтироваться на колёсных шасси (например, поворотных мебельных).</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2018-11-09T18:08:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=E52BFF6A6C364A5B96D1E038AA9BB3B7</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>66B96DA9C77746FE8FE7D71ED6975BEE</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+</nsiKTRUs></export>

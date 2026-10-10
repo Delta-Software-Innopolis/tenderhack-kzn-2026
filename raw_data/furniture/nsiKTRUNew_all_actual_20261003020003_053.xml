@@ -1,0 +1,1417 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000020</oos:code>
+        <oos:versionCode>32.50.30.110-000000202</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-16T15:23:59+03:00</oos:inclusionDate>
+        <oos:publishDate>2021-03-09T14:18:59+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T19:54:46+03:00</oos:updateDate>
+        <oos:name>Стол операционный универсальный, электромеханический, с питанием от батареи</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>162210</oos:code>
+                            <oos:name>Стол операционный универсальный, электромеханический, с питанием от батареи</oos:name>
+                            <oos:descriptionValue>"Передвижной стол с двигателем и электропитанием, который регулируется во время хирургических вмешательств разного типа. Поверхность стола состоит из нескольких шарнирных секций, которые можно поднимать или опускать для создания различных анатомических положений (например, вся поверхность стола может быть отрегулирована и установлена в положение цельной наклонной поверхности), или может быть предназначена для использования совместно со специальными принадлежностями (например, позиционерами, тракционными устройствами), таким образом удовлетворяя многие клинические требования; изделие может обладать рентгенопрозрачными свойствами."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:nsiDescription>Передвижной стол с двигателем и электропитанием, который регулируется во время хирургических вмешательств разного типа. Поверхность стола состоит из нескольких шарнирных секций, которые можно поднимать или опускать для создания различных анатомических положений (например, вся поверхность стола может быть отрегулирована и установлена в положение цельной наклонной поверхности), или может быть предназначена для использования совместно со специальными принадлежностями (например, позиционерами, тракционными устройствами), таким образом удовлетворяя многие клинические требования; изделие может обладать рентгенопрозрачными свойствами.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=1AF6936C9280465E9316C4E46AEA18F6</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>9FE14CC1B91E4F27B6C365995C463437</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000021</oos:code>
+        <oos:versionCode>32.50.30.110-000000212</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-16T15:24:00+03:00</oos:inclusionDate>
+        <oos:publishDate>2021-05-31T09:44:57+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T20:00:00+03:00</oos:updateDate>
+        <oos:name>Стол операционный универсальный, с гидравлическим приводом</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>162290</oos:code>
+                            <oos:name>Стол операционный универсальный, с гидравлическим приводом</oos:name>
+                            <oos:descriptionValue>Передвижной стол с ручным гидравлическим приводом, который регулируется во время хирургических вмешательств разного типа. Поверхность стола состоит из нескольких шарнирных секций, которые можно поднимать или опускать для создания различных анатомических положений (например, вся поверхность стола может быть отрегулирована и установлена в положение цельной наклонной поверхности), таким образом выполняются многие клинические требования. Обычно работает от встроенной педали управления, которая регулируется положение стола.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2021-05-31T09:44:31+03:00</oos:cancelDate>
+            <oos:cancelReason>Переутверждение ЭС</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:nsiDescription>Передвижной стол с ручным гидравлическим приводом, который регулируется во время хирургических вмешательств разного типа. Поверхность стола состоит из нескольких шарнирных секций, которые можно поднимать или опускать для создания различных анатомических положений (например, вся поверхность стола может быть отрегулирована и установлена в положение цельной наклонной поверхности), таким образом выполняются многие клинические требования. Обычно работает от встроенной педали управления, которая регулируется положение стола.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=037EE3C3080A4E6190BABF933288AED5</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>907C886DAA6841C898EBB4FA4D2943D7</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000049</oos:code>
+        <oos:versionCode>32.50.30.110-000000491</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-20T18:22:24+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-20T18:22:24+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:45:00+03:00</oos:updateDate>
+        <oos:name>Шкаф для стоматологических инструментов</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>119180</oos:code>
+                            <oos:name>Шкаф для стоматологических инструментов</oos:name>
+                            <oos:descriptionValue>Предмет мебели, предназначенный для использования в стоматологической клинике или во время хирургической операции, а также для хранения и демонстрации стоматологических инструментов и других изделий/продуктов, чтобы их было удобно использовать во время стоматологических процедур.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Предмет мебели, предназначенный для использования в стоматологической клинике или во время хирургической операции, а также для хранения и демонстрации стоматологических инструментов и других изделий/продуктов, чтобы их было удобно использовать во время стоматологических процедур.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=CF15F09DEF5F41F19071B02BBC2F3750</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>5EC37DD814EC400DBC7DF4377A23D028</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000048</oos:code>
+        <oos:versionCode>32.50.30.110-000000482</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-20T18:22:17+03:00</oos:inclusionDate>
+        <oos:publishDate>2021-01-25T16:00:13+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T19:15:00+03:00</oos:updateDate>
+        <oos:name>Кресло стоматологическое, механическое</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>119390</oos:code>
+                            <oos:name>Кресло стоматологическое, механическое</oos:name>
+                            <oos:descriptionValue>"Ручное или с гидравлическим приводом устройство, предназначенное для расположения пациента в сидячем положении с целью проведения стоматологического обследования, лечения и/или незначительных хирургических процедур. обычно регулируется по высоте, что позволяет обслуживающему персоналу проводить процедуры стоя. Изделие обычно включает подголовник и подлокотники, откидываемую назад спинку, которая может быть приведена из вертикального положения в горизонтальное, и может вращаться; некоторые типы могут быть запрограммированы на несколько стандартных положений. Устройства, предназначенные для стоматологического обследования и/или лечения (например, осветительные приборы, ирригация), могут крепиться в качестве компонентов этого кресла или стоять отдельно в качестве автонномных, настенных или потолочных установок."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2021-01-25T15:59:47+03:00</oos:cancelDate>
+            <oos:cancelReason>Переутверждение ЭС</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:nsiDescription>Ручное или с гидравлическим приводом устройство, предназначенное для расположения пациента в сидячем положении с целью проведения стоматологического обследования, лечения и/или незначительных хирургических процедур. обычно регулируется по высоте, что позволяет обслуживающему персоналу проводить процедуры стоя. Изделие обычно включает подголовник и подлокотники, откидываемую назад спинку, которая может быть приведена из вертикального положения в горизонтальное, и может вращаться; некоторые типы могут быть запрограммированы на несколько стандартных положений. Устройства, предназначенные для стоматологического обследования и/или лечения (например, осветительные приборы, ирригация), могут крепиться в качестве компонентов этого кресла или стоять отдельно в качестве автонномных, настенных или потолочных установок.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=B6954625193B4EB7A1E157AE155F2F39</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>59065463A2A34C45AA4195CBCED1B2FD</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00000456</oos:code>
+        <oos:versionCode>32.50.50.190-000004561</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-19T20:15:32+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-19T20:15:32+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:45:00+03:00</oos:updateDate>
+        <oos:name>Стеллаж для сушки&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>229750</oos:code>
+                            <oos:name>Стеллаж для сушки</oos:name>
+                            <oos:descriptionValue>Сетка для хранения и сушки других изделий, бутылок, одежды, эндоскопов.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Сетка для хранения и сушки других изделий, бутылок, одежды, эндоскопов.&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=9ABEBCEDC1544520B8ACC181E75883F3</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>73CA9F21460D47759EED6E9253288789</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000075</oos:code>
+        <oos:versionCode>32.50.30.110-000000752</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-23T16:30:21+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-03-01T11:11:43+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T12:30:00+03:00</oos:updateDate>
+        <oos:name>Стул эргономичный, для медицинского работника&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2024-03-31T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.30.119</oos:code>
+                            <oos:name>Мебель медицинская прочая, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>232140</oos:code>
+                            <oos:name>Стул эргономичный, для медицинского работника</oos:name>
+                            <oos:descriptionValue>Специальное кресло, предназначенное для хирургического/медицинского персонала, который в сидячем положении производит хирургическое вмешательство или операцию на пациенте. Кресло имеет эргономическую конструкцию и продвинутые функции пользователя, например, контроль высоты/положения, дистанционное управление другими изделиями.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=35EB16C372E14E53A5CCADF72C8D4665</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>9AC67840A3214C47BA5F9036A74A6623</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000074</oos:code>
+        <oos:versionCode>32.50.30.110-000000741</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-23T16:30:20+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-23T16:30:20+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:45:00+03:00</oos:updateDate>
+        <oos:name>Стол рабочий эргономичный, с электропитанием&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>232150</oos:code>
+                            <oos:name>Стол рабочий эргономичный, с электропитанием</oos:name>
+                            <oos:descriptionValue>"Стол с питанием от сети электроснабжения (на переменном токе), разработанный с учетом эргономичных корректировок, чтобы обеспечить улучшенную руботу на рабочем месте и предотвращает / уменьшает физические проблемы, связанные с сидячей работой. Он предназначен для использования в работе или обучения, как правило, у пациентов с проблемами позвоночника или инвалидностью. Он обычно включает в себя моторизованный регулируемый блок по высоте столешницы и может включать функцию откидывая или поднятия края стола; он обычно используется для работы с компьютером и письменной работой в офисе, школе или дома."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Стол с питанием от сети электроснабжения (на переменном токе), разработанный с учетом эргономичных корректировок, чтобы обеспечить улучшенную руботу на рабочем месте и предотвращает / уменьшает физические проблемы, связанные с сидячей работой. Он предназначен для использования в работе или обучения, как правило, у пациентов с проблемами позвоночника или инвалидностью. Он обычно включает в себя моторизованный регулируемый блок по высоте столешницы и может включать функцию откидывая или поднятия края стола; он обычно используется для работы с компьютером и письменной работой в офисе, школе или дома.&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=32C3527BBFF04FE8A07A0728AC509A8C</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>2ED6BF65324D4DD885707B6147C2B052</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000073</oos:code>
+        <oos:versionCode>32.50.30.110-000000731</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-23T16:30:19+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-23T16:30:19+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:45:00+03:00</oos:updateDate>
+        <oos:name>Стол рабочий эргомоничный, механический&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>232170</oos:code>
+                            <oos:name>Стол рабочий эргомоничный, механический</oos:name>
+                            <oos:descriptionValue>Специальный стол для обеспечения возможностей для работы/обучения инвалидов. Имеет специальные функции, позволяющие приспосабливать его к индивидуальным нуждам и потребностям конкретного лица (например, регулироваться по высоте и углу наклона столешницы, иметь бортики по периметру и т. п.). Может также использоваться, например, в качестве компьютерного стола, стола для пишущей машинки или учебной парты.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Специальный стол для обеспечения возможностей для работы/обучения инвалидов. Имеет специальные функции, позволяющие приспосабливать его к индивидуальным нуждам и потребностям конкретного лица (например, регулироваться по высоте и углу наклона столешницы, иметь бортики по периметру и т. п.). Может также использоваться, например, в качестве компьютерного стола, стола для пишущей машинки или учебной парты.&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=A3C48BFFBEA74D4496F67AC06E71A4B8</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>C9180602D40C46C2BEEC28F66A601D45</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000072</oos:code>
+        <oos:versionCode>32.50.30.110-000000721</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-23T16:30:16+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-23T16:30:16+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:30:00+03:00</oos:updateDate>
+        <oos:name>Стол для диагностической визуализации универсальный&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>232480</oos:code>
+                            <oos:name>Стол для диагностической визуализации универсальный</oos:name>
+                            <oos:descriptionValue>Работающее от сети (сети переменного тока) универсальное изделие, предназначенное для поддержки и позиционирования пациента во время проведения различных процедур диагностической визуализации (например, рентгеновских, ультразвуковых процедур, процедур ядерной медицины). Может содержать любое количество шарнирных сочленений для обеспечения позиционирования пациента и имеет встроенные электронные элементы управления или программное обеспечение для регулировки высоты стола, его движений и/или расположения деки.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Работающее от сети (сети переменного тока) универсальное изделие, предназначенное для поддержки и позиционирования пациента во время проведения различных процедур диагностической визуализации (например, рентгеновских, ультразвуковых процедур, процедур ядерной медицины). Может содержать любое количество шарнирных сочленений для обеспечения позиционирования пациента и имеет встроенные электронные элементы управления или программное обеспечение для регулировки высоты стола, его движений и/или расположения деки.&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=13FB1A2CADF340BF880E4F881805C6EF</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>4C3EBDC5A47546F2A895F397CB518EC0</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00001228</oos:code>
+        <oos:versionCode>32.50.50.190-000012281</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-23T16:30:11+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-23T16:30:11+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:30:00+03:00</oos:updateDate>
+        <oos:name>Матрас противопролежневый  надувной с регулируемым давлением, многоразового использования</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>266680</oos:code>
+                            <oos:name>Наматрасник противопролежневый  надувной с регулируемым давлением, многоразового использования</oos:name>
+                            <oos:descriptionValue>Подстилка или тонкий матрас, обычно соответствующий длине тела пациента, помещаемый поверх матраса кровати и имеющий параллельные камеры, которые поочередно заполняются нагнетаемым воздухом для активного изменения точек соприкосновения лежащего с кроватью, как правило, для уменьшения давления на точки пережатия для обеспечения комфорта и предотвращения возникновения пролежней. Изделие широко используется для пожилых обездвиженных пациентов (особенно в случае наличия пролежней), пациентов с ограниченными физическими возможностями или у пациентов с низким уровнем жира в организме. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Подстилка или тонкий матрас, обычно соответствующий длине тела пациента, помещаемый поверх матраса кровати и имеющий параллельные камеры, которые поочередно заполняются нагнетаемым воздухом для активного изменения точек соприкосновения лежащего с кроватью, как правило, для уменьшения давления на точки пережатия для обеспечения комфорта и предотвращения возникновения пролежней. Изделие широко используется для пожилых обездвиженных пациентов (особенно в случае наличия пролежней), пациентов с ограниченными физическими возможностями или у пациентов с низким содержанием жировой ткани. Это изделие, пригодное для многоразового использования.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=CF8A4E9FCBBD426AAB5248B214802626</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>02ABB9FFA7B5492BB8E2682489B95C43</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00001225</oos:code>
+        <oos:versionCode>32.50.50.190-000012252</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-23T16:30:05+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-10-23T14:54:43+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T14:00:00+03:00</oos:updateDate>
+        <oos:name>Табурет для поддержания человека с ограниченными возможностями в положении стоя</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>147120</oos:code>
+                            <oos:name>Табурет для поддержания человека с ограниченными возможностями в положении стоя</oos:name>
+                            <oos:descriptionValue>Высокое изделие, состоящее из платформы для сидения на одной или нескольких ножках, разработанное для обеспечения поддержки находящегося на нем человеку с ограниченными физическими возможностями в положении стоя или полустоя на протяжении длительного времени. Изделие не имеет опоры для спины или рук (хотя его иногда и называют стулом). Также к данному виду медицинских изделий относится рабочий табурет.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2024-10-23T15:00:38+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:nsiDescription>Высокое изделие, состоящее из платформы для сидения на одной или нескольких ножках, разработанное для обеспечения поддержки находящегося на нем человеку с ограниченными физическими возможностями в положении стоя или полустоя на протяжении длительного времени. Изделие не имеет опоры для спины или рук (хотя его иногда и называют стулом). Также к данному виду медицинских изделий относится рабочий табурет.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0192B93AADC675BAA710DC45577BDACF</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>0192B93AADC675BAA710DC45577BDAD0</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.50.190-00001196</oos:code>
+        <oos:versionCode>32.50.50.190-000011961</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-23T14:53:41+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-23T14:53:41+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:45:00+03:00</oos:updateDate>
+        <oos:name>Матрас противопролежневый надувной&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.50.190</oos:code>
+            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>168030</oos:code>
+                            <oos:name>Наматрасник противопролежневый надувной</oos:name>
+                            <oos:descriptionValue>Надуваемая статическим воздухом подстилка или матрас, обычно соответствующий длине тела пациента, помещаемый поверх матраса кровати для распределения веса лежащего человека по большой поверхности, обычно для уменьшения давления на точки пережатия для обеспечения комфорта и предотвращения возникновения пролежней. Изделие широко используется для пожилых обездвиженных (особенно в случае наличия пролежней) пациентов с ограниченными физическими возможностями или у пациентов с низким содержанием жировой ткани. Это изделие для многоразового использования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.50.190</oos:code>
+                            <oos:name>Изделия медицинские, в том числе хирургические, прочие, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Надуваемая статическим воздухом подстилка или матрас, обычно соответствующий длине тела пациента, помещаемый поверх матраса кровати для распределения веса лежащего человека по большой поверхности, как правило, для уменьшения давления на точки пережатия для обеспечения комфорта и предотвращения возникновения пролежней. Изделие широко используется для пожилых обездвиженных (особенно в случае наличия пролежней) пациентов с ограниченными физическими возможностями или у пациентов с низким содержанием жировой ткани. Это изделие, пригодное для многоразового использования.&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=C737D51E550D42F999BA14C849D5942C</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>9100EFF05B594608A795CD0F80DDBCAB</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000071</oos:code>
+        <oos:versionCode>32.50.30.110-000000711</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-23T14:53:34+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-23T14:53:34+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:00:00+03:00</oos:updateDate>
+        <oos:name>Стол для аутопсии</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>257340</oos:code>
+                            <oos:name>Стол для аутопсии</oos:name>
+                            <oos:descriptionValue>Стол, специально предназначенный для использования в качестве поверхности для вскрытия трупа или препарирования тела, для сбора и дренажа жидкости из трупа, а также для облегчения чистки и дезинфекции стола, чтобы предотвратить скапливание микроорганизмов. Обычно имеет соответствующую поверхность, гладкую и отшлифованную, например, из нержавеющей стали, без щелей, трещин, винтов или заклепок, поднятые ободки, закругленные углы и плоскую поверхность, которая наклонена к дренажному устройству стола или раковине.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Стол, специально предназначенный для использования в качестве поверхности для вскрытия трупа или препарирования тела, для сбора и дренажа жидкости из трупа, а также для облегчения чистки и дезинфекции стола, чтобы предотвратить скапливание микроорганизмов. Обычно имеет соответствующую поверхность, гладкую и отшлифованную, например, из нержавеющей стали, без щелей, трещин, винтов или заклепок, поднятые ободки, закругленные углы и плоскую поверхность, которая наклонена к дренажному устройству стола или раковине.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=B118312B662D47F19041C048E2D10F0C</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>BD8901A8D74A4E9795FB814DFAFD4220</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000083</oos:code>
+        <oos:versionCode>32.50.30.110-000000832</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-25T12:13:42+03:00</oos:inclusionDate>
+        <oos:publishDate>2021-11-25T16:14:08+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T20:45:00+03:00</oos:updateDate>
+        <oos:name>Стол пеленальный&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>233010</oos:code>
+                            <oos:name>Стол пеленальный</oos:name>
+                            <oos:descriptionValue>Стол, специально предназначенный для ухода за новорожденными, например, мытья или замены пеленок. Может быть оборудован раковиной, обычно из мягкого материала (прорезиненной ткани) и поверхностью, на которую кладут ребенка, чтобы высушить его полотенцем.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2021-11-25T16:15:06+03:00</oos:cancelDate>
+            <oos:cancelReason>Переутверждение ЭС</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:nsiDescription>Стол, специально предназначенный для ухода за новорожденными, например, мытья или замены пеленок. Может быть оборудован раковиной, обычно из мягкого материала (прорезиненной ткани) и поверхностью, на которую кладут ребенка, чтобы высушить его полотенцем.&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=BFB15157C5B94EA3891BDAFEDE30C15C</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>11E7803DC45B4625A8583A0FEE3A3243</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000082</oos:code>
+        <oos:versionCode>32.50.30.110-000000821</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-25T12:13:28+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-25T12:13:28+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:45:00+03:00</oos:updateDate>
+        <oos:name>Стол операционный гинекологический, электромеханический, с питанием от сети</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>151540</oos:code>
+                            <oos:name>Стол операционный гинекологический, электромеханический, с питанием от сети</oos:name>
+                            <oos:descriptionValue>"Передвижной стол с моторизованной регулировкой высоты с питанием от сети, предназначенный для размещения пациента во время гинекологических хирургических процедур. Поверхность стола состоит из соединенных шарнирами частей, которые можно поднимать или опускать для лучшего контакта с поверхностью тела или снимать для обеспечения различных анатомических позиций; также в комплект входят регулируемые опоры/стремена для ног, которые прикреплены непосредственно к столу или к его подвижным боковым поручням."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Передвижной стол с моторизованной регулировкой высоты с питанием от сети, предназначенный для размещения пациента во время гинекологических хирургических процедур. Поверхность стола состоит из соединенных шарнирами частей, которые можно поднимать или опускать для лучшего контакта с поверхностью тела или снимать для обеспечения различных анатомических позиций; также в комплект входят регулируемые опоры/стремена для ног, которые прикреплены непосредственно к столу или к его подвижным боковым поручням.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=A3259837CA7F48AABC0341A0BA7B7268</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>70FFB1C1BAA745658B40BC8FD3D8DB08</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000081</oos:code>
+        <oos:versionCode>32.50.30.110-000000811</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-25T12:13:26+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-25T12:13:26+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T17:00:00+03:00</oos:updateDate>
+        <oos:name>Стол операционный гинекологический, с электрогидравлическим приводом</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>151570</oos:code>
+                            <oos:name>Стол операционный гинекологический, с электрогидравлическим приводом</oos:name>
+                            <oos:descriptionValue>"Передвижной стол с гидравлическим механизмом с питанием от электросети (с использованием источника напряжения переменного тока),предназначенный для размещения пациента во время гинекологических хирургических процедур.Поверхность стола состоит из соединенных шарнирами частей, которые можно поднимать, опускать  для лучшего контакта с поверхностью тела или снимать для обеспечения различных анатомических позиций; также в комплект входят регулируемые опоры/стремена для ног, которые прикреплены непосредственно к столу или к его подвижным боковым поручням."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Передвижной стол с гидравлическим механизмом с питанием от электросети (с использованием источника напряжения переменного тока),предназначенный для размещения пациента во время гинекологических хирургических процедур.Поверхность стола состоит из соединенных шарнирами частей, которые можно поднимать, опускать  для лучшего контакта с поверхностью тела или снимать для обеспечения различных анатомических позиций; также в комплект входят регулируемые опоры/стремена для ног, которые прикреплены непосредственно к столу или к его подвижным боковым поручням.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0669BCB21D07435B9217C67C512321B0</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>91B9F8CD152D4DA6AFF90A574794450B</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000080</oos:code>
+        <oos:versionCode>32.50.30.110-000000801</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-25T12:13:25+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-25T12:13:25+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:45:00+03:00</oos:updateDate>
+        <oos:name>Стол операционный гинекологический, с гидравлическим приводом</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>151580</oos:code>
+                            <oos:name>Стол операционный гинекологический, с гидравлическим приводом</oos:name>
+                            <oos:descriptionValue>"Передвижной стол с  ручными гидравлическими механизмами, предназначенный для размещения пациента во время гинекологических хирургических процедур. Поверхность стола состоит из соединенных шарнирами частей, которые можно поднимать, опускать  для лучшего контакта с поверхностью тела или снимать для обеспечения различных анатомических позиций; также в комплект входят регулируемые опоры/стремена для ног, которые прикреплены непосредственно к столу или к его подвижным боковым поручням."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Передвижной стол с  ручными гидравлическими механизмами, предназначенный для размещения пациента во время гинекологических хирургических процедур. Поверхность стола состоит из соединенных шарнирами частей, которые можно поднимать, опускать  для лучшего контакта с поверхностью тела или снимать для обеспечения различных анатомических позиций; также в комплект входят регулируемые опоры/стремена для ног, которые прикреплены непосредственно к столу или к его подвижным боковым поручням.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=8571C4E01A8648E9AF1ACF37C3E87347</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>4D833C233D394B17A2981D77CF2D4AAE</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000079</oos:code>
+        <oos:versionCode>32.50.30.110-000000792</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-25T12:13:14+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-03-01T10:15:49+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T12:00:00+03:00</oos:updateDate>
+        <oos:name>Стол для офтальмологических инструментов, с питанием от сети&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2024-03-31T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>32.50.30.119</oos:code>
+                            <oos:name>Мебель медицинская прочая, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>171720</oos:code>
+                            <oos:name>Стол для офтальмологических инструментов, с питанием от сети</oos:name>
+                            <oos:descriptionValue>Устройство с питанием от сети переменного тока, представляющее собой рабочую поверхность, с приспособлениями для установки офтальмологических приборов (например, щелевой лампы, кератометра, рефрактометра и ручных приборов) или без них, для обследования/лечения глаз пациента. Оно имеет электрический привод для регулировки высоты, позволяющий специалисту поднимать/опускать поверхность или сидящего пациента, чтобы расположить приборы на уровне глаз пациента. Некоторые модели могут включать встроенное кресло для пациента и даже иметь специальные механизмы для удобства пациентов, пользующихся креслом-коляской. С помощью элементов управления можно осуществлять регулировку устройств, находящихся в кабинете для обследования.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=3F5E2A37F4AF4FA186A3FB0877A600C0</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>D5ED9C77E80243D0A4FE251D6C070276</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000069</oos:code>
+        <oos:versionCode>32.50.30.110-000000692</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-03-23T13:45:28+03:00</oos:inclusionDate>
+        <oos:publishDate>2022-10-31T10:01:34+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T21:00:00+03:00</oos:updateDate>
+        <oos:name>Кресло офтальмологическое, с электропитанием&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>171910</oos:code>
+                            <oos:name>Кресло офтальмологическое, с электропитанием</oos:name>
+                            <oos:descriptionValue>Устройство, работающее от сети переменного тока, предназначенное для позиционирования пациента в положении сидя или полулежа для облегчения доступа и удобства пациента при офтальмологическом обследовании, лечении или хирургическом вмешательстве. Оно обычно имеет функции подъема/опускания с помощью электропривода и может быть автономным или подсоединено к другому устройству или системе. Не предназначено для размещения пациента горизонтально во время операции (то есть не является операционным столом).</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2022-10-31T10:12:26+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:nsiDescription>Устройство, работающее от сети переменного тока, предназначенное для позиционирования пациента в положении сидя или полулежа для облегчения доступа и удобства пациента при офтальмологическом обследовании, лечении или хирургическом вмешательстве. Оно обычно имеет функции подъема/опускания с помощью электропривода и может быть автономным или подсоединено к другому устройству или системе. Не предназначено для размещения пациента горизонтально во время операции (то есть не является операционным столом).&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=3518642B28B8432A92984CDE480C6794</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>43E8B2B2DFC84BFD9FCE292FF82F0571</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000068</oos:code>
+        <oos:versionCode>32.50.30.110-000000681</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-23T13:45:25+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-23T13:45:25+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:45:00+03:00</oos:updateDate>
+        <oos:name>Стол для офтальмологических инструментов, механический&#13;
+</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>171970</oos:code>
+                            <oos:name>Стол для офтальмологических инструментов, механический</oos:name>
+                            <oos:descriptionValue>Устройство, представляющее собой рабочую поверхность с отделениями для хранения офтальмологических приборов (например, щелевой лампы, кератометра, рефрактометра и ручных приборов) или без них, для обследования/лечения глаз пациента. Может иметь механический привод для регулировки высоты, позволяя клиницисту поднимать/опускать поверхность, чтобы расположить приборы на уровне глаз пациента.</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Устройство, представляющее собой рабочую поверхность с отделениями для хранения офтальмологических приборов (например, щелевой лампы, кератометра, рефрактометра и ручных приборов) или без них, для обследования/лечения глаз пациента. Может иметь механический привод для регулировки высоты, позволяя клиницисту поднимать/опускать поверхность, чтобы расположить приборы на уровне глаз пациента.&#13;
+</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=49060132B1394BC69113D0F4633505D8</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>433B3331BF8C45FBB72F0217BC480CF8</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>32.50.30.110-00000067</oos:code>
+        <oos:versionCode>32.50.30.110-000000671</oos:versionCode>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2019-03-23T13:44:58+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-03-23T13:44:58+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T15:30:00+03:00</oos:updateDate>
+        <oos:name>Стол инверсионный</oos:name>
+        <oos:OKPD2>
+            <oos:code>32.50.30.110</oos:code>
+            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>НОМЕНКЛАТУРНАЯ КЛАССИФИКАЦИЯ МЕДИЦИНСКИХ ИЗДЕЛИЙ ПО ВИДАМ</oos:name>
+                    <oos:NSIcode>nsiNKMI</oos:NSIcode>
+                    <oos:code>b49f180b-7</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>269520</oos:code>
+                            <oos:name>Стол инверсионный</oos:name>
+                            <oos:descriptionValue>"Фиксированная рама с наклонной платформой, на которой лежит пациент и растягивает мышцы спины, когда пациент лежит на спине в обратном положении (ноги вверх, голова вниз). Пациент фиксирует ступни на поперечном элементе или в петлях и изгибается назад, поворачивая центральный болт стола, снимая компрессию, ослабляя силу тяжести и давая отдых мышцам и связкам; также может использоваться для увеличения расстояния между позвонками. Прибор можно использовать в медицинских учреждениях или в быту для снятия/смягчения боли в спине."</oos:descriptionValue>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>32.50.30.110</oos:code>
+                            <oos:name>Мебель медицинская, включая хирургическую, стоматологическую или ветеринарную, и ее части</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>100</oos:code>
+                <oos:name>Медицинские изделия</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:nsiDescription>Фиксированная рама с наклонной платформой, на которой лежит пациент и растягивает мышцы спины, когда пациент лежит на спине в обратном положении (ноги вверх, голова вниз). Пациент фиксирует ступни на поперечном элементе или в петлях и изгибается назад, поворачивая центральный болт стола, снимая компрессию, ослабляя силу тяжести и давая отдых мышцам и связкам; также может использоваться для увеличения расстояния между позвонками. Прибор можно использовать в медицинских учреждениях или в быту для снятия/смягчения боли в спине.</oos:nsiDescription>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=7AF43F7FF14A43C394A41DF7283C5B16</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>A6476F80300F451E88A327C11BCC9A4F</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+</nsiKTRUs></export>

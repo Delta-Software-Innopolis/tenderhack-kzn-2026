@@ -1,0 +1,1779 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>14.11.10.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:24:13+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:32:04+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:32:04+03:00</oos:updateDate>
+        <oos:name>Одежда из натуральной или композиционной кожи</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.11.1</oos:code>
+            <oos:name>Одежда из натуральной или композиционной кожи</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.11.1</oos:code>
+                            <oos:name>Одежда из натуральной или композиционной кожи</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.10.000-00000001</oos:code>
+        <oos:version>11</oos:version>
+        <oos:inclusionDate>2018-09-04T21:24:10+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:33:42+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:33:42+03:00</oos:updateDate>
+        <oos:name>Спецодежда мужская</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.1</oos:code>
+            <oos:name>Спецодежда мужская</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.1</oos:code>
+                            <oos:name>Спецодежда мужская</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.11</oos:code>
+                            <oos:name>Комплекты, костюмы, куртки (пиджаки) и блейзеры мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.12.110</oos:code>
+                            <oos:name>Брюки мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.12.120</oos:code>
+                            <oos:name>Комбинезоны мужские с нагрудниками и лямками (полукомбинезоны) производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.11.110</oos:code>
+                            <oos:name>Комплекты мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.11.120</oos:code>
+                            <oos:name>Костюмы мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.11.130</oos:code>
+                            <oos:name>Куртки (пиджаки) и блейзеры мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.12.130</oos:code>
+                            <oos:name>Бриджи и шорты мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.10.000-00000002</oos:code>
+        <oos:version>11</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:55+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:34:03+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:34:03+03:00</oos:updateDate>
+        <oos:name>Спецодежда мужская</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.1</oos:code>
+            <oos:name>Спецодежда мужская</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.1</oos:code>
+                            <oos:name>Спецодежда мужская</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.11</oos:code>
+                            <oos:name>Комплекты, костюмы, куртки (пиджаки) и блейзеры мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.12.110</oos:code>
+                            <oos:name>Брюки мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.12.120</oos:code>
+                            <oos:name>Комбинезоны мужские с нагрудниками и лямками (полукомбинезоны) производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.11.110</oos:code>
+                            <oos:name>Комплекты мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.11.120</oos:code>
+                            <oos:name>Костюмы мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.11.130</oos:code>
+                            <oos:name>Куртки (пиджаки) и блейзеры мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.12.130</oos:code>
+                            <oos:name>Бриджи и шорты мужские производственные и профессиональные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.20.000-00000002</oos:code>
+        <oos:version>10</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:54+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:34:42+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:34:42+03:00</oos:updateDate>
+        <oos:name>Спецодежда женская</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.2</oos:code>
+            <oos:name>Спецодежда женская</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.22.130</oos:code>
+                            <oos:name>Бриджи и шорты женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.22.120</oos:code>
+                            <oos:name>Комбинезоны с нагрудниками и лямками (полукомбинезоны) женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.21.130</oos:code>
+                            <oos:name>Куртки (жакеты) и блейзеры женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.22.110</oos:code>
+                            <oos:name>Брюки женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.21.120</oos:code>
+                            <oos:name>Костюмы женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.21.110</oos:code>
+                            <oos:name>Комплекты женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.2</oos:code>
+                            <oos:name>Спецодежда женская</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.20.000-00000001</oos:code>
+        <oos:version>10</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:54+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:34:23+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:34:23+03:00</oos:updateDate>
+        <oos:name>Спецодежда женская</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.2</oos:code>
+            <oos:name>Спецодежда женская</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.22.130</oos:code>
+                            <oos:name>Бриджи и шорты женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.22.120</oos:code>
+                            <oos:name>Комбинезоны с нагрудниками и лямками (полукомбинезоны) женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.21.130</oos:code>
+                            <oos:name>Куртки (жакеты) и блейзеры женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.21.120</oos:code>
+                            <oos:name>Костюмы женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.22.110</oos:code>
+                            <oos:name>Брюки женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.21.110</oos:code>
+                            <oos:name>Комплекты женские производственные и профессиональные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.12.2</oos:code>
+                            <oos:name>Спецодежда женская</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.000-00000003</oos:code>
+        <oos:versionCode>14.12.30.000-000000032</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:53+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-04-16T09:54:56+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:15:00+03:00</oos:updateDate>
+        <oos:name>Спецодежда прочая</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.3</oos:code>
+            <oos:name>Спецодежда прочая</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.3</oos:code>
+                            <oos:name>Спецодежда прочая</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2019-04-16T09:54:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=CD595963025D420E891A7AB0DA0F312B</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>38D77F2145334AB8896A4423F74F916B</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.000-00000002</oos:code>
+        <oos:versionCode>14.12.30.000-000000022</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:53+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-04-16T09:55:59+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:15:00+03:00</oos:updateDate>
+        <oos:name>Спецодежда прочая</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.3</oos:code>
+            <oos:name>Спецодежда прочая</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.3</oos:code>
+                            <oos:name>Спецодежда прочая</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2019-04-16T09:55:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=CCEDCF513C1F4E7FA9C7A50021852EA0</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>FB81C62B9B6B4EC5A458736D63DE867C</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.000-00000001</oos:code>
+        <oos:versionCode>14.12.30.000-000000012</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:52+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-04-16T09:59:54+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T16:15:00+03:00</oos:updateDate>
+        <oos:name>Спецодежда прочая</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.3</oos:code>
+            <oos:name>Спецодежда прочая</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.3</oos:code>
+                            <oos:name>Спецодежда прочая</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2019-04-16T09:59:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=78B56FB325C14446888BEBE6C17EF2BC</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>04E045A64C7D4B0D9A2008C39A68C51F</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.13.10.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:50+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:36:08+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:36:08+03:00</oos:updateDate>
+        <oos:name>Одежда верхняя трикотажная или вязаная</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.13.1</oos:code>
+            <oos:name>Одежда верхняя трикотажная или вязаная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.13.1</oos:code>
+                            <oos:name>Одежда верхняя трикотажная или вязаная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.13.10.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:50+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:36:26+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:36:26+03:00</oos:updateDate>
+        <oos:name>Одежда верхняя трикотажная или вязаная</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.13.1</oos:code>
+            <oos:name>Одежда верхняя трикотажная или вязаная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.13.1</oos:code>
+                            <oos:name>Одежда верхняя трикотажная или вязаная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.13.20.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:49+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:37:14+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:37:14+03:00</oos:updateDate>
+        <oos:name>Одежда верхняя прочая мужская или для мальчиков</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.13.2</oos:code>
+            <oos:name>Одежда верхняя прочая мужская или для мальчиков</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.13.2</oos:code>
+                            <oos:name>Одежда верхняя прочая мужская или для мальчиков</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.13.20.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:49+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:37:32+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:37:32+03:00</oos:updateDate>
+        <oos:name>Одежда верхняя прочая мужская или для мальчиков</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.13.2</oos:code>
+            <oos:name>Одежда верхняя прочая мужская или для мальчиков</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.13.2</oos:code>
+                            <oos:name>Одежда верхняя прочая мужская или для мальчиков</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.13.30.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:48+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:37:52+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:37:52+03:00</oos:updateDate>
+        <oos:name>Одежда верхняя прочая женская или для девочек</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.13.3</oos:code>
+            <oos:name>Одежда верхняя прочая женская или для девочек</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.13.3</oos:code>
+                            <oos:name>Одежда верхняя прочая женская или для девочек</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.13.30.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:48+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:38:10+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:38:10+03:00</oos:updateDate>
+        <oos:name>Одежда верхняя прочая женская или для девочек</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.13.3</oos:code>
+            <oos:name>Одежда верхняя прочая женская или для девочек</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.13.3</oos:code>
+                            <oos:name>Одежда верхняя прочая женская или для девочек</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.13.40.000-00000002</oos:code>
+        <oos:versionCode>14.13.40.000-000000029</oos:versionCode>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:47+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-09-15T13:17:36+03:00</oos:publishDate>
+        <oos:updateDate>2025-09-15T13:17:36+03:00</oos:updateDate>
+        <oos:name>Одежда ношеная и прочие изделия, бывшие в употреблении</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.13.4</oos:code>
+            <oos:name>Одежда ношеная и прочие изделия, бывшие в употреблении</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2026-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.13.4</oos:code>
+                            <oos:name>Одежда ношеная и прочие изделия, бывшие в употреблении</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2025-09-15T13:17:49+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=01994CE149D57BD09AB42FB62469DED1</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>01994CE149D57BD09AB42FB62469DED2</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.13.40.000-00000001</oos:code>
+        <oos:versionCode>14.13.40.000-000000019</oos:versionCode>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:47+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-09-12T14:27:43+03:00</oos:publishDate>
+        <oos:updateDate>2025-09-12T14:27:43+03:00</oos:updateDate>
+        <oos:name>Одежда ношеная и прочие изделия, бывшие в употреблении</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.13.4</oos:code>
+            <oos:name>Одежда ношеная и прочие изделия, бывшие в употреблении</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2026-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.13.4</oos:code>
+                            <oos:name>Одежда ношеная и прочие изделия, бывшие в употреблении</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2025-09-12T14:42:53+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=01993DAE692F7770860130BC83DB2299</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>01993DAE692F7770860130BC83DB229A</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.14.10.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:31+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:40:22+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:40:22+03:00</oos:updateDate>
+        <oos:name>Белье нательное трикотажное или вязаное</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.14.1</oos:code>
+            <oos:name>Белье нательное трикотажное или вязаное</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.14.1</oos:code>
+                            <oos:name>Белье нательное трикотажное или вязаное</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.14.10.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:29+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:40:43+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:40:43+03:00</oos:updateDate>
+        <oos:name>Белье нательное трикотажное или вязаное</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.14.1</oos:code>
+            <oos:name>Белье нательное трикотажное или вязаное</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.14.1</oos:code>
+                            <oos:name>Белье нательное трикотажное или вязаное</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.14.20.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:28+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:41:05+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:41:05+03:00</oos:updateDate>
+        <oos:name>Белье нательное, кроме трикотажного или вязаного</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.14.2</oos:code>
+            <oos:name>Белье нательное, кроме трикотажного или вязаного</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.14.2</oos:code>
+                            <oos:name>Белье нательное, кроме трикотажного или вязаного</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.14.20.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:26+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:41:26+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:41:26+03:00</oos:updateDate>
+        <oos:name>Белье нательное, кроме трикотажного или вязаного</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.14.2</oos:code>
+            <oos:name>Белье нательное, кроме трикотажного или вязаного</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.14.2</oos:code>
+                            <oos:name>Белье нательное, кроме трикотажного или вязаного</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.14.30.000-00000001</oos:code>
+        <oos:version>10</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:24+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:42:09+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:42:09+03:00</oos:updateDate>
+        <oos:name>Футболки, майки и прочие нижние рубашки трикотажные или вязаные</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.14.3</oos:code>
+            <oos:name>Футболки, майки и прочие нижние рубашки трикотажные или вязаные</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.14.30.110</oos:code>
+                            <oos:name>Футболки трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.14.30.120</oos:code>
+                            <oos:name>Майки и прочие нижние рубашки трикотажные или вязаные</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.14.3</oos:code>
+                            <oos:name>Футболки, майки и прочие нижние рубашки трикотажные или вязаные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.10.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:20+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:44:16+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:44:16+03:00</oos:updateDate>
+        <oos:name>Одежда для детей младшего возраста, спортивная и прочая одежда, аксессуары и детали одежды трикотажные или вязаные</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.1</oos:code>
+            <oos:name>Одежда для детей младшего возраста, спортивная и прочая одежда, аксессуары и детали одежды трикотажные или вязаные</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.1</oos:code>
+                            <oos:name>Одежда для детей младшего возраста, спортивная и прочая одежда, аксессуары и детали одежды трикотажные или вязаные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.10.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:19+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:43:52+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:43:52+03:00</oos:updateDate>
+        <oos:name>Одежда для детей младшего возраста, спортивная и прочая одежда, аксессуары и детали одежды трикотажные или вязаные</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.1</oos:code>
+            <oos:name>Одежда для детей младшего возраста, спортивная и прочая одежда, аксессуары и детали одежды трикотажные или вязаные</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.1</oos:code>
+                            <oos:name>Одежда для детей младшего возраста, спортивная и прочая одежда, аксессуары и детали одежды трикотажные или вязаные</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.20.000-00000002</oos:code>
+        <oos:version>10</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:17+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:44:59+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:44:59+03:00</oos:updateDate>
+        <oos:name>Одежда для детей младшего возраста, прочая одежда и прочие аксессуары одежды из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.2</oos:code>
+            <oos:name>Одежда для детей младшего возраста, прочая одежда и прочие аксессуары одежды из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.21.110</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из хлопчатобумажных тканей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.210</oos:code>
+                            <oos:name>Аксессуары одежды для детей младшего возраста из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.23.140</oos:code>
+                            <oos:name>Перчатки из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.150</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из синтетических нитей (тканей)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.140</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из шелковых тканей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.23.120</oos:code>
+                            <oos:name>Шали, шарфы, вуали, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.130</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из шерстяных тканей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.23.110</oos:code>
+                            <oos:name>Платки носовые из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.120</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из льняных тканей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.23.210</oos:code>
+                            <oos:name>Детали одежды или аксессуаров одежды из текстильных материалов, кроме трикотажных или вязаных, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.160</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из искусственных нитей (тканей)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.22.120</oos:code>
+                            <oos:name>Костюмы лыжные из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.22.110</oos:code>
+                            <oos:name>Костюмы спортивные из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.2</oos:code>
+                            <oos:name>Одежда для детей младшего возраста, прочая одежда и прочие аксессуары одежды из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.22.190</oos:code>
+                            <oos:name>Одежда прочая из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.20.000-00000001</oos:code>
+        <oos:version>10</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:15+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-06T17:44:39+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-06T17:44:39+03:00</oos:updateDate>
+        <oos:name>Одежда для детей младшего возраста, прочая одежда и прочие аксессуары одежды из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.2</oos:code>
+            <oos:name>Одежда для детей младшего возраста, прочая одежда и прочие аксессуары одежды из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.21.110</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из хлопчатобумажных тканей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.210</oos:code>
+                            <oos:name>Аксессуары одежды для детей младшего возраста из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.23.140</oos:code>
+                            <oos:name>Перчатки из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.150</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из синтетических нитей (тканей)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.140</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из шелковых тканей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.23.120</oos:code>
+                            <oos:name>Шали, шарфы, вуали, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.130</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из шерстяных тканей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.23.110</oos:code>
+                            <oos:name>Платки носовые из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.120</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из льняных тканей</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.23.210</oos:code>
+                            <oos:name>Детали одежды или аксессуаров одежды из текстильных материалов, кроме трикотажных или вязаных, не включенные в другие группировки</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.21.160</oos:code>
+                            <oos:name>Одежда для детей младшего возраста и аксессуары одежды из искусственных нитей (тканей)</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.22.120</oos:code>
+                            <oos:name>Костюмы лыжные из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.22.110</oos:code>
+                            <oos:name>Костюмы спортивные из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.2</oos:code>
+                            <oos:name>Одежда для детей младшего возраста, прочая одежда и прочие аксессуары одежды из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.22.190</oos:code>
+                            <oos:name>Одежда прочая из текстильных материалов, кроме трикотажных или вязаных</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.30.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:13+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-10T15:50:40+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-10T15:50:40+03:00</oos:updateDate>
+        <oos:name>Аксессуары одежды из кожи; одежда из фетра или нетканых материалов; одежда из текстильных материалов с покрытием</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.3</oos:code>
+            <oos:name>Аксессуары одежды из кожи; одежда из фетра или нетканых материалов; одежда из текстильных материалов с покрытием</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.3</oos:code>
+                            <oos:name>Аксессуары одежды из кожи; одежда из фетра или нетканых материалов; одежда из текстильных материалов с покрытием</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.30.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:12+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-10T15:51:00+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-10T15:51:00+03:00</oos:updateDate>
+        <oos:name>Аксессуары одежды из кожи; одежда из фетра или нетканых материалов; одежда из текстильных материалов с покрытием</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.3</oos:code>
+            <oos:name>Аксессуары одежды из кожи; одежда из фетра или нетканых материалов; одежда из текстильных материалов с покрытием</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>839</oos:code>
+                <oos:name>Комплект</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.3</oos:code>
+                            <oos:name>Аксессуары одежды из кожи; одежда из фетра или нетканых материалов; одежда из текстильных материалов с покрытием</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.19.40.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:10+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-10T15:51:20+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-10T15:51:20+03:00</oos:updateDate>
+        <oos:name>Шляпы и прочие головные уборы</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.19.4</oos:code>
+            <oos:name>Шляпы и прочие головные уборы</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.4</oos:code>
+                            <oos:name>Шляпы и прочие головные уборы</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.20.10.000-00000002</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:07+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-10T15:57:00+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-10T15:57:00+03:00</oos:updateDate>
+        <oos:name>Предметы одежды, аксессуары одежды и изделия прочие из меха, кроме головных уборов</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.20.1</oos:code>
+            <oos:name>Предметы одежды, аксессуары одежды и изделия прочие из меха, кроме головных уборов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.20.1</oos:code>
+                            <oos:name>Предметы одежды, аксессуары одежды и изделия прочие из меха, кроме головных уборов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.20.10.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:26:05+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-10T15:57:21+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-10T15:57:21+03:00</oos:updateDate>
+        <oos:name>Предметы одежды, аксессуары одежды и изделия прочие из меха, кроме головных уборов</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.20.1</oos:code>
+            <oos:name>Предметы одежды, аксессуары одежды и изделия прочие из меха, кроме головных уборов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.20.1</oos:code>
+                            <oos:name>Предметы одежды, аксессуары одежды и изделия прочие из меха, кроме головных уборов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>115</oos:code>
+                <oos:name>Прочее</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>15.20.10.000-00000001</oos:code>
+        <oos:version>9</oos:version>
+        <oos:inclusionDate>2018-09-04T21:29:02+03:00</oos:inclusionDate>
+        <oos:publishDate>2025-11-10T16:05:49+03:00</oos:publishDate>
+        <oos:updateDate>2025-11-10T16:05:49+03:00</oos:updateDate>
+        <oos:name>Обувь, кроме спортивной, защитной и ортопедической</oos:name>
+        <oos:OKPD2>
+            <oos:code>15.20.1</oos:code>
+            <oos:name>Обувь, кроме спортивной, защитной и ортопедической</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2027-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>15.20.1</oos:code>
+                            <oos:name>Обувь, кроме спортивной, защитной и ортопедической</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>15.20.20.000-00000001</oos:code>
+        <oos:versionCode>15.20.20.000-000000018</oos:versionCode>
+        <oos:version>8</oos:version>
+        <oos:inclusionDate>2018-09-04T21:29:01+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-09-09T12:38:27+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T13:30:00+03:00</oos:updateDate>
+        <oos:name>Обувь спортивная</oos:name>
+        <oos:OKPD2>
+            <oos:code>15.20.2</oos:code>
+            <oos:name>Обувь спортивная</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2025-01-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>15.20.2</oos:code>
+                            <oos:name>Обувь спортивная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2024-09-09T00:41:14+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=C012E1BCE8B34675BC414755915DBD74</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>C19C7341529D411B929E935F72FE4728</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>15.20.30.000-00000001</oos:code>
+        <oos:versionCode>15.20.30.000-000000012</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2018-09-04T21:29:00+03:00</oos:inclusionDate>
+        <oos:publishDate>2019-04-16T10:05:19+03:00</oos:publishDate>
+        <oos:updateDate>2025-01-31T17:00:00+03:00</oos:updateDate>
+        <oos:name>Обувь защитная и прочая, не включенная в другие группировки</oos:name>
+        <oos:OKPD2>
+            <oos:code>15.20.3</oos:code>
+            <oos:name>Обувь защитная и прочая, не включенная в другие группировки</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2019-07-01T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>715</oos:code>
+                <oos:name>Пара (2 шт.)</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>15.20.3</oos:code>
+                            <oos:name>Обувь защитная и прочая, не включенная в другие группировки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:cancelInfo>
+            <oos:cancelDate>2019-04-16T10:04:00+03:00</oos:cancelDate>
+            <oos:cancelReason>Техническая ошибка</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=176B9A9B06D94E9C9E835243189F0C3B</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>B859BBFB0E1A4C8F950070BEB6D965FB</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+</nsiKTRUs></export>

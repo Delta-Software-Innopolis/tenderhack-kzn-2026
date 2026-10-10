@@ -1,0 +1,656 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000517</oos:code>
+        <oos:versionCode>14.12.30.160-000005172</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-04-09T17:50:05+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-05-08T12:01:30+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T12:30:00+03:00</oos:updateDate>
+        <oos:name>Одежда специальная повышенной видимости</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2024-06-07T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.281-2021 (ISO 20471:2013 + Amd 1:2016). Межгосударственный стандарт. Система стандартов безопасности труда. Одежда специальная повышенной видимости. Технические требования и методы испытаний" (введен в действие Приказом Росстандарта от 27.10.2021 N 1344-ст)</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>a3e13680-d</oos:code>
+                <oos:name>Вид одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>20ad282d-e</oos:valueCode>
+                        <oos:qualityDescription>Брюки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4e6d4654-9</oos:code>
+                <oos:name>Половая принадлежность</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>fb329e0a-7</oos:valueCode>
+                        <oos:qualityDescription>Мужской</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>3865a589-b</oos:code>
+                <oos:name>Класс одежды в зависимости от площади сигнальных элементов</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>63f897f0-2</oos:valueCode>
+                        <oos:qualityDescription>1</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000450</oos:code>
+            <oos:version>3</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=D33CF57205E2485F968D2E8C74E98BA2</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>6FFB13C4E66E4BA38947490C5872DB58</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000518</oos:code>
+        <oos:versionCode>14.12.30.160-000005182</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-04-09T17:51:10+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-05-08T12:04:37+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T12:30:00+03:00</oos:updateDate>
+        <oos:name>Одежда специальная повышенной видимости</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2024-06-07T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.281-2021 (ISO 20471:2013 + Amd 1:2016). Межгосударственный стандарт. Система стандартов безопасности труда. Одежда специальная повышенной видимости. Технические требования и методы испытаний" (введен в действие Приказом Росстандарта от 27.10.2021 N 1344-ст)</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>a3e13680-d</oos:code>
+                <oos:name>Вид одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>93d010c7-a</oos:valueCode>
+                        <oos:qualityDescription>Брюки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4e6d4654-9</oos:code>
+                <oos:name>Половая принадлежность</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>34175aca-4</oos:valueCode>
+                        <oos:qualityDescription>Женский</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>3865a589-b</oos:code>
+                <oos:name>Класс одежды в зависимости от площади сигнальных элементов</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>ada6666b-3</oos:valueCode>
+                        <oos:qualityDescription>1</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000450</oos:code>
+            <oos:version>3</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=7AE01637729D4AB7BAE956BA3575CD31</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>FA695E6AA9B344B098F17D88CB26232E</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000519</oos:code>
+        <oos:versionCode>14.12.30.160-000005192</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-04-09T17:52:10+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-05-08T12:08:33+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T12:30:00+03:00</oos:updateDate>
+        <oos:name>Одежда специальная повышенной видимости</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2024-06-07T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.281-2021 (ISO 20471:2013 + Amd 1:2016). Межгосударственный стандарт. Система стандартов безопасности труда. Одежда специальная повышенной видимости. Технические требования и методы испытаний" (введен в действие Приказом Росстандарта от 27.10.2021 N 1344-ст)</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>a3e13680-d</oos:code>
+                <oos:name>Вид одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>48dabb67-b</oos:valueCode>
+                        <oos:qualityDescription>Брюки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4e6d4654-9</oos:code>
+                <oos:name>Половая принадлежность</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>fb329e0a-7</oos:valueCode>
+                        <oos:qualityDescription>Мужской</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>3865a589-b</oos:code>
+                <oos:name>Класс одежды в зависимости от площади сигнальных элементов</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>2990a043-3</oos:valueCode>
+                        <oos:qualityDescription>2</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000450</oos:code>
+            <oos:version>3</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=F69FB9C5B50F49098EEFFBC4EF556893</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>1D5878B05A80408D9FA495688DF470B0</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000520</oos:code>
+        <oos:versionCode>14.12.30.160-000005202</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-04-09T17:53:16+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-05-08T12:07:27+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T12:00:00+03:00</oos:updateDate>
+        <oos:name>Одежда специальная повышенной видимости</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2024-06-07T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.281-2021 (ISO 20471:2013 + Amd 1:2016). Межгосударственный стандарт. Система стандартов безопасности труда. Одежда специальная повышенной видимости. Технические требования и методы испытаний" (введен в действие Приказом Росстандарта от 27.10.2021 N 1344-ст)</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>a3e13680-d</oos:code>
+                <oos:name>Вид одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>32b514c9-4</oos:valueCode>
+                        <oos:qualityDescription>Брюки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4e6d4654-9</oos:code>
+                <oos:name>Половая принадлежность</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>34175aca-4</oos:valueCode>
+                        <oos:qualityDescription>Женский</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>3865a589-b</oos:code>
+                <oos:name>Класс одежды в зависимости от площади сигнальных элементов</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>20179d75-5</oos:valueCode>
+                        <oos:qualityDescription>2</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000450</oos:code>
+            <oos:version>3</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=4C7F365A007A49F7808ACF3624CCD845</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>08D277EDD1104932AE2D8E68CFB6AAB0</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000521</oos:code>
+        <oos:versionCode>14.12.30.160-000005212</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-04-09T17:54:28+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-05-08T12:11:21+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T12:00:00+03:00</oos:updateDate>
+        <oos:name>Одежда специальная повышенной видимости</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2024-06-07T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.281-2021 (ISO 20471:2013 + Amd 1:2016). Межгосударственный стандарт. Система стандартов безопасности труда. Одежда специальная повышенной видимости. Технические требования и методы испытаний" (введен в действие Приказом Росстандарта от 27.10.2021 N 1344-ст)</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>a3e13680-d</oos:code>
+                <oos:name>Вид одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>a43547c8-3</oos:valueCode>
+                        <oos:qualityDescription>Брюки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4e6d4654-9</oos:code>
+                <oos:name>Половая принадлежность</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>fb329e0a-7</oos:valueCode>
+                        <oos:qualityDescription>Мужской</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>3865a589-b</oos:code>
+                <oos:name>Класс одежды в зависимости от площади сигнальных элементов</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>d29ec95a-1</oos:valueCode>
+                        <oos:qualityDescription>3</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000450</oos:code>
+            <oos:version>3</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=2B00C42E8C65447EA58D0735B5DD80E6</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>B2619E1A88BE4312AF14A325DABB4DC3</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000522</oos:code>
+        <oos:versionCode>14.12.30.160-000005222</oos:versionCode>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2019-04-09T17:55:35+03:00</oos:inclusionDate>
+        <oos:publishDate>2024-05-08T12:12:13+03:00</oos:publishDate>
+        <oos:updateDate>2025-02-01T12:00:00+03:00</oos:updateDate>
+        <oos:name>Одежда специальная повышенной видимости</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2024-06-07T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.281-2021 (ISO 20471:2013 + Amd 1:2016). Межгосударственный стандарт. Система стандартов безопасности труда. Одежда специальная повышенной видимости. Технические требования и методы испытаний" (введен в действие Приказом Росстандарта от 27.10.2021 N 1344-ст)</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>a3e13680-d</oos:code>
+                <oos:name>Вид одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>e2138e8d-1</oos:valueCode>
+                        <oos:qualityDescription>Брюки</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4e6d4654-9</oos:code>
+                <oos:name>Половая принадлежность</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>34175aca-4</oos:valueCode>
+                        <oos:qualityDescription>Женский</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>3865a589-b</oos:code>
+                <oos:name>Класс одежды в зависимости от площади сигнальных элементов</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0ea7acaf-2</oos:valueCode>
+                        <oos:qualityDescription>3</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000450</oos:code>
+            <oos:version>3</oos:version>
+        </oos:parentPositionInfo>
+        <oos:noNewFeatures>false</oos:noNewFeatures>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=0A4E2E1B78DF4FA88FB7EF9B4987C6B9</cmn:url>
+        <cmn:signatureInfo>
+            <cmn:dsUid>025F52DC0F9041D898E7B707DC86B288</cmn:dsUid>
+        </cmn:signatureInfo>
+    </oos:printForm>
+</oos:position>
+</nsiKTRUs></export>

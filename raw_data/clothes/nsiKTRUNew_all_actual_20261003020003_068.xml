@@ -1,0 +1,693 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000607</oos:code>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2020-10-21T13:28:32+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-06-02T16:57:39+03:00</oos:publishDate>
+        <oos:updateDate>2026-06-02T16:57:39+03:00</oos:updateDate>
+        <oos:name>Одежда специальная для защиты от радиационной пыли, химических и бактериологических воздействий</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-07-02T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ EN ISO 13982-1-2012</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ ISO 16602-2019</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.103-2020</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.258-2023</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.259-2024</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>14fb6ac9-0</oos:code>
+                <oos:name>Материал</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>7b66e24a-d</oos:valueCode>
+                        <oos:qualityDescription>УНКЛ-3</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>dbb51e42-a</oos:valueCode>
+                        <oos:qualityDescription>Т-15</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>01df815c-b</oos:valueCode>
+                        <oos:qualityDescription>Т-15к</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>41cf2870-0</oos:valueCode>
+                        <oos:qualityDescription>Спанбонд ламинированный</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>286cfb53-a</oos:valueCode>
+                        <oos:qualityDescription>Полотно нетканое</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4f1f496f-3</oos:code>
+                <oos:name>Типоразмер</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>6f0269db-3</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>1</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>dd4f669b-3</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>2</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>cd656494-b</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>3</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>e5a524e5-8</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>4</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>c028587c-3</oos:code>
+                <oos:name>Вид одежды специальной</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>86f4215d-0</oos:valueCode>
+                        <oos:qualityDescription>Костюм</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4bc5d814-9</oos:valueCode>
+                        <oos:qualityDescription>Комбинезон</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>a8ad6974-a</oos:code>
+                <oos:name>Вид защиты</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>e0b154dc-1</oos:valueCode>
+                        <oos:qualityDescription>Защита от жидких химических веществ</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6abbf0a1-d</oos:valueCode>
+                        <oos:qualityDescription>Защита от аэрозолей с жидкой дисперсной фазой</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>66f890c1-1</oos:valueCode>
+                        <oos:qualityDescription>Защита от твердых аэрозолей</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>1e14da7f-1</oos:valueCode>
+                        <oos:qualityDescription>Ограниченная защита от жидких химических веществ</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>16b91456-a</oos:valueCode>
+                        <oos:qualityDescription>Защита от вредных биологических факторов</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>fe0ae86b-6</oos:valueCode>
+                        <oos:qualityDescription>Защита от радиоактивных загрязнений</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000606</oos:code>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2020-10-21T13:27:55+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-06-02T16:58:52+03:00</oos:publishDate>
+        <oos:updateDate>2026-06-02T16:58:52+03:00</oos:updateDate>
+        <oos:name>Одежда специальная для защиты от радиационной пыли, химических и бактериологических воздействий</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-07-02T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:standarts>
+                <oos:standart>
+                    <oos:docName>ГОСТ EN ISO 13982-1-2012</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ ISO 16602-2019</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.103-2020</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.258-2023</oos:docName>
+                </oos:standart>
+                <oos:standart>
+                    <oos:docName>ГОСТ 12.4.259-2024</oos:docName>
+                </oos:standart>
+            </oos:standarts>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>14fb6ac9-0</oos:code>
+                <oos:name>Материал</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>7f35088f-2</oos:valueCode>
+                        <oos:qualityDescription>УНКЛ-3</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c52549a1-e</oos:valueCode>
+                        <oos:qualityDescription>Т-15</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>bf5d4ea5-e</oos:valueCode>
+                        <oos:qualityDescription>Т-15к</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>6afc01ea-a</oos:valueCode>
+                        <oos:qualityDescription>Спанбонд ламинированный</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>91d2bf19-0</oos:valueCode>
+                        <oos:qualityDescription>Полотно нетканое</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4f1f496f-3</oos:code>
+                <oos:name>Типоразмер</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>09b1d069-d</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>1</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>955b29e1-8</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>2</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>ba2ba3b5-9</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>3</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d9260833-1</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>4</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>c028587c-3</oos:code>
+                <oos:name>Вид одежды специальной</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>31fe8966-7</oos:valueCode>
+                        <oos:qualityDescription>Костюм</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>cfc021d0-3</oos:valueCode>
+                        <oos:qualityDescription>Комбинезон</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>a8ad6974-a</oos:code>
+                <oos:name>Вид защиты</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>d804d58a-7</oos:valueCode>
+                        <oos:qualityDescription>Защита от жидких химических веществ</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>21c075bd-5</oos:valueCode>
+                        <oos:qualityDescription>Защита от аэрозолей с жидкой дисперсной фазой</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>e706a008-f</oos:valueCode>
+                        <oos:qualityDescription>Защита от твердых аэрозолей</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>ec5adb48-9</oos:valueCode>
+                        <oos:qualityDescription>Ограниченная защита от жидких химических веществ</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>8c135ab9-2</oos:valueCode>
+                        <oos:qualityDescription>Защита от вредных биологических факторов</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b164e349-5</oos:valueCode>
+                        <oos:qualityDescription>Защита от радиоактивных загрязнений</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000607</oos:code>
+            <oos:version>3</oos:version>
+        </oos:parentPositionInfo>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000605</oos:code>
+        <oos:versionCode>14.12.30.160-000006052</oos:versionCode>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2020-10-21T13:27:55+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-06-02T17:00:10+03:00</oos:publishDate>
+        <oos:updateDate>2026-06-02T17:00:11+03:00</oos:updateDate>
+        <oos:name>Костюм защитный легкий для защиты от радиационной пыли, химических и бактериологических воздействий</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2025-10-31T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>14fb6ac9-0</oos:code>
+                <oos:name>Ткань костюма</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>df66de6e-b</oos:valueCode>
+                        <oos:qualityDescription>Спанбонд ламинированный</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>07d080b8-4</oos:valueCode>
+                        <oos:qualityDescription>Т-15</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>bab74513-9</oos:valueCode>
+                        <oos:qualityDescription>Т-15к</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b3f1dff1-6</oos:valueCode>
+                        <oos:qualityDescription>УНКЛ-3</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4f1f496f-3</oos:code>
+                <oos:name>Типоразмер</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>5c1dc910-e</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>2</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:cancelInfo>
+            <oos:cancelDate>2026-06-02T16:59:22+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000607</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=019E88A279EA7A32B2F5FFEDBD8DD9FD</cmn:url>
+        
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000604</oos:code>
+        <oos:versionCode>14.12.30.160-000006042</oos:versionCode>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2020-10-21T13:27:54+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-06-02T17:00:12+03:00</oos:publishDate>
+        <oos:updateDate>2026-06-02T17:00:12+03:00</oos:updateDate>
+        <oos:name>Костюм защитный легкий для защиты от радиационной пыли, химических и бактериологических воздействий</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2025-10-31T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>14fb6ac9-0</oos:code>
+                <oos:name>Ткань костюма</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>df66de6e-b</oos:valueCode>
+                        <oos:qualityDescription>Спанбонд ламинированный</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b3f1dff1-6</oos:valueCode>
+                        <oos:qualityDescription>УНКЛ-3</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>07d080b8-4</oos:valueCode>
+                        <oos:qualityDescription>Т-15</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>bab74513-9</oos:valueCode>
+                        <oos:qualityDescription>Т-15к</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4f1f496f-3</oos:code>
+                <oos:name>Типоразмер</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>a83dfe8e-9</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>3</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:cancelInfo>
+            <oos:cancelDate>2026-06-02T16:59:22+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000607</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+    </oos:data>
+    <oos:printForm>
+        <cmn:url>https://zakupki.gov.ru/epz/ktru/position/printForm.html?dsUid=019E88A281D370C7BE01E989CB953B12</cmn:url>
+        
+    </oos:printForm>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00000603</oos:code>
+        <oos:versionCode>14.12.30.160-000006032</oos:versionCode>
+        <oos:version>3</oos:version>
+        <oos:inclusionDate>2020-10-21T13:27:54+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-06-02T17:00:08+03:00</oos:publishDate>
+        <oos:updateDate>2026-06-02T17:00:09+03:00</oos:updateDate>
+        <oos:name>Костюм защитный легкий для защиты от радиационной пыли, химических и бактериологических воздействий</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>TERMINATED</oos:status>
+        <oos:applicationDateStart>2025-10-31T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.160</oos:code>
+                            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>14fb6ac9-0</oos:code>
+                <oos:name>Ткань костюма</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>false</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>df66de6e-b</oos:valueCode>
+                        <oos:qualityDescription>Спанбонд ламинированный</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>b3f1dff1-6</oos:valueCode>
+                        <oos:qualityDescription>УНКЛ-3</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>07d080b8-4</oos:valueCode>
+                        <oos:qualityDescription>Т-15</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>bab74513-9</oos:valueCode>
+                        <oos:qualityDescription>Т-15к</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4f1f496f-3</oos:code>
+                <oos:name>Типоразмер</oos:name>
+                <oos:type>2</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>473aac11-9</oos:valueCode>
+                        <oos:valueFormat>N</oos:valueFormat>
+                        <oos:valueSet>
+                            <oos:concreteValue>4</oos:concreteValue>
+                        </oos:valueSet>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:cancelInfo>
+            <oos:cancelDate>2026-06-02T16:59:22+03:00</oos:cancelDate>
+            <oos:cancelReason>переутверждение Экспертным советом</oos:cancelReason>
+        </oos:cancelInfo>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000607</oos:code>
+            <oos:version>2</oos:version>
+        </oos:parentPositionInfo>
+    </oos:data>
+</oos:position>
+</nsiKTRUs></export>

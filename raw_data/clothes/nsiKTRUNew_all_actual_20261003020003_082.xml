@@ -1,0 +1,972 @@
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://zakupki.gov.ru/oos/export/1" xmlns:oos="http://zakupki.gov.ru/oos/types/1" xmlns:cmn="http://zakupki.gov.ru/oos/common/1"><nsiKTRUs>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.170-00010</oos:code>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2026-07-21T12:12:09+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-07-21T12:12:09+03:00</oos:publishDate>
+        <oos:updateDate>2026-07-21T12:12:10+03:00</oos:updateDate>
+        <oos:name>Рукавицы утепленные кожаные на меху (для инвалидов, пользующихся малогабаритными креслами-колясками)</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.170</oos:code>
+            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-09-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>12-01-03</oos:code>
+                            <oos:name>Рукавицы утепленные кожаные на меху (для инвалидов, пользующихся малогабаритными креслами-колясками)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.170</oos:code>
+                            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>4aa66c06-3</oos:code>
+                <oos:name>Тип одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>71126dcb-1</oos:valueCode>
+                        <oos:qualityDescription>Взрослая</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>9b37ed03-a</oos:valueCode>
+                        <oos:qualityDescription>Детская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>2717e394-4</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>17cd2196-c</oos:valueCode>
+                        <oos:qualityDescription>Мужская</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>0ae48022-b</oos:valueCode>
+                        <oos:qualityDescription>Женская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.170-00000009</oos:code>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2026-07-21T12:11:53+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-07-21T12:11:53+03:00</oos:publishDate>
+        <oos:updateDate>2026-07-21T12:11:53+03:00</oos:updateDate>
+        <oos:name>Рукавицы утепленные кожаные на меху (для инвалидов, пользующихся малогабаритными креслами-колясками)</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.170</oos:code>
+            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-09-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>12-01-03</oos:code>
+                            <oos:name>Рукавицы утепленные кожаные на меху (для инвалидов, пользующихся малогабаритными креслами-колясками)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.170</oos:code>
+                            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>4aa66c06-3</oos:code>
+                <oos:name>Тип одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>bbe21397-6</oos:valueCode>
+                        <oos:qualityDescription>Взрослая</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>8b2490ec-9</oos:valueCode>
+                        <oos:qualityDescription>Детская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>2717e394-4</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>e89005e4-5</oos:valueCode>
+                        <oos:qualityDescription>Мужская</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>7383aaa6-d</oos:valueCode>
+                        <oos:qualityDescription>Женская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.170-00012</oos:code>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2026-07-21T16:09:53+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-07-21T16:09:53+03:00</oos:publishDate>
+        <oos:updateDate>2026-07-21T16:09:54+03:00</oos:updateDate>
+        <oos:name>Пара кожаных или трикотажных перчаток (на протез верхней конечности и сохраненную конечность)</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.170</oos:code>
+            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-09-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>12-01-05</oos:code>
+                            <oos:name>Пара кожаных или трикотажных перчаток (на протез верхней конечности и сохраненную конечность)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.170</oos:code>
+                            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>83649041-0</oos:code>
+                <oos:name>Тип одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>c63e625c-0</oos:valueCode>
+                        <oos:qualityDescription>Взрослая</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>5faf2f56-d</oos:valueCode>
+                        <oos:qualityDescription>Детская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>a90278e4-d</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>153f2bd9-7</oos:valueCode>
+                        <oos:qualityDescription>Мужская</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d1b2e318-c</oos:valueCode>
+                        <oos:qualityDescription>Женская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.170-00000011</oos:code>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2026-07-21T16:09:23+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-07-21T16:09:23+03:00</oos:publishDate>
+        <oos:updateDate>2026-07-21T16:09:23+03:00</oos:updateDate>
+        <oos:name>Пара кожаных или трикотажных перчаток (на протез верхней конечности и сохраненную конечность)</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.170</oos:code>
+            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-09-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>12-01-05</oos:code>
+                            <oos:name>Пара кожаных или трикотажных перчаток (на протез верхней конечности и сохраненную конечность)</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.170</oos:code>
+                            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>83649041-0</oos:code>
+                <oos:name>Тип одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>4d571754-2</oos:valueCode>
+                        <oos:qualityDescription>Взрослая</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>31c8290d-3</oos:valueCode>
+                        <oos:qualityDescription>Детская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>a90278e4-d</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>88cc6e52-7</oos:valueCode>
+                        <oos:qualityDescription>Мужская</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>969dd48e-6</oos:valueCode>
+                        <oos:qualityDescription>Женская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.170-00014</oos:code>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2026-07-21T16:19:31+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-07-21T16:19:31+03:00</oos:publishDate>
+        <oos:updateDate>2026-07-21T16:19:31+03:00</oos:updateDate>
+        <oos:name>Ортопедические брюки</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.170</oos:code>
+            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-09-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>12-01-02</oos:code>
+                            <oos:name>Ортопедические брюки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.170</oos:code>
+                            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>858af6e2-a</oos:code>
+                <oos:name>Тип одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>11fdd96e-9</oos:valueCode>
+                        <oos:qualityDescription>Взрослая</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>3a82b4cc-7</oos:valueCode>
+                        <oos:qualityDescription>Детская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>b7adb304-e</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>207b0964-0</oos:valueCode>
+                        <oos:qualityDescription>Мужская</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>1e7d8586-8</oos:valueCode>
+                        <oos:qualityDescription>Женская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.170-00000013</oos:code>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2026-07-21T16:19:16+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-07-21T16:19:16+03:00</oos:publishDate>
+        <oos:updateDate>2026-07-21T16:19:16+03:00</oos:updateDate>
+        <oos:name>Ортопедические брюки</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.170</oos:code>
+            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-09-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>12-01-02</oos:code>
+                            <oos:name>Ортопедические брюки</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.170</oos:code>
+                            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>858af6e2-a</oos:code>
+                <oos:name>Тип одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>f9c4f212-a</oos:valueCode>
+                        <oos:qualityDescription>Взрослая</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d24bcec0-9</oos:valueCode>
+                        <oos:qualityDescription>Детская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>b7adb304-e</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>f221869e-7</oos:valueCode>
+                        <oos:qualityDescription>Мужская</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>8499b5f9-b</oos:valueCode>
+                        <oos:qualityDescription>Женская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.170-00016</oos:code>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2026-07-21T16:31:44+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-07-21T16:31:44+03:00</oos:publishDate>
+        <oos:updateDate>2026-07-21T16:31:44+03:00</oos:updateDate>
+        <oos:name>Комплект функционально-эстетической одежды для инвалидов, в том числе с парной ампутацией верхних конечностей</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.170</oos:code>
+            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-09-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>12-01-01</oos:code>
+                            <oos:name>Комплект функционально-эстетической одежды для инвалидов с парной ампутацией верхних конечностей</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.170</oos:code>
+                            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>ef361fe3-2</oos:code>
+                <oos:name>Тип одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>b2ab5172-8</oos:valueCode>
+                        <oos:qualityDescription>Взрослая</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>eaa5596e-0</oos:valueCode>
+                        <oos:qualityDescription>Детская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>d9bb2365-1</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>2f93c442-a</oos:valueCode>
+                        <oos:qualityDescription>Мужская</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>d41c9c52-d</oos:valueCode>
+                        <oos:qualityDescription>Женская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>70fd631e-9</oos:code>
+                <oos:name>Комплектность</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>fc7a2eb4-4</oos:valueCode>
+                        <oos:qualityDescription>Пальтово-костюмный ассортимент</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>a79fc801-9</oos:valueCode>
+                        <oos:qualityDescription>Пальтово-блузочный ассортимент</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>54f5082f-0</oos:valueCode>
+                        <oos:qualityDescription>Верхние сорочки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>a1a274f9-a</oos:valueCode>
+                        <oos:qualityDescription>Нательное белье</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>true</oos:isTemplate>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.170-00000015</oos:code>
+        <oos:version>2</oos:version>
+        <oos:inclusionDate>2026-07-21T16:29:59+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-07-21T16:35:04+03:00</oos:publishDate>
+        <oos:updateDate>2026-07-21T16:35:04+03:00</oos:updateDate>
+        <oos:name>Комплект функционально-эстетической одежды для инвалидов, в том числе с парной ампутацией верхних конечностей</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.170</oos:code>
+            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-09-28T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Классификация технических средств реабилитации (изделий)</oos:name>
+                    <oos:NSIcode>nsiManualClassifier</oos:NSIcode>
+                    <oos:code>eae9b91b-5</oos:code>
+                    <oos:source>M</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>12-01-01</oos:code>
+                            <oos:name>Комплект функционально-эстетической одежды для инвалидов с парной ампутацией верхних конечностей</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.12.30.170</oos:code>
+                            <oos:name>Одежда для поддержания физической формы (противоперегрузочные, профилактико-нагрузочные, профилактические костюмы) специальная</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>ef361fe3-2</oos:code>
+                <oos:name>Тип одежды</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>1da1183f-0</oos:valueCode>
+                        <oos:qualityDescription>Взрослая</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>039b3054-7</oos:valueCode>
+                        <oos:qualityDescription>Детская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>d9bb2365-1</oos:code>
+                <oos:name>Половозрастная группа</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>d8a4a384-8</oos:valueCode>
+                        <oos:qualityDescription>Мужская</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4f4bcfe1-d</oos:valueCode>
+                        <oos:qualityDescription>Женская</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>70fd631e-9</oos:code>
+                <oos:name>Комплектность</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>fa0d637a-0</oos:valueCode>
+                        <oos:qualityDescription>Пальтово-костюмный ассортимент</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>fb711fda-c</oos:valueCode>
+                        <oos:qualityDescription>Пальтово-блузочный ассортимент</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>3f8e37b7-1</oos:valueCode>
+                        <oos:qualityDescription>Верхние сорочки</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>1e86183c-e</oos:valueCode>
+                        <oos:qualityDescription>Нательное белье</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>101</oos:code>
+                <oos:name>Технические средства реабилитации</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.170-00016</oos:code>
+            <oos:version>1</oos:version>
+        </oos:parentPositionInfo>
+    </oos:data>
+</oos:position>
+<oos:position>
+    <oos:data>
+        <oos:code>14.12.30.160-00648</oos:code>
+        <oos:version>1</oos:version>
+        <oos:inclusionDate>2026-09-08T13:51:58+03:00</oos:inclusionDate>
+        <oos:publishDate>2026-09-08T13:51:58+03:00</oos:publishDate>
+        <oos:updateDate>2026-09-08T13:51:58+03:00</oos:updateDate>
+        <oos:name>Одежда специальная для защиты от общих производственных загрязнений и механических воздействий</oos:name>
+        <oos:OKPD2>
+            <oos:code>14.12.30.160</oos:code>
+            <oos:name>Средства защиты от радиации и воздействия других неблагоприятных факторов внешней среды специализированные, не содержащие встроенных дыхательных аппаратов</oos:name>
+        </oos:OKPD2>
+        <oos:status>ACTIVE</oos:status>
+        <oos:applicationDateStart>2026-10-08T00:00:00+03:00</oos:applicationDateStart>
+        <oos:OKEIs>
+            <oos:OKEI>
+                <oos:code>796</oos:code>
+                <oos:name>Штука</oos:name>
+            </oos:OKEI>
+        </oos:OKEIs>
+        <oos:NSI>
+            <oos:classifiers>
+                <oos:classifier>
+                    <oos:name>Общероссийский классификатор продукции по видам экономической деятельности (ОКПД2)</oos:name>
+                    <oos:NSIcode>nsiOKPD2</oos:NSIcode>
+                    <oos:code>OKPD2</oos:code>
+                    <oos:source>N_OKPD2</oos:source>
+                    <oos:values>
+                        <oos:value>
+                            <oos:code>14.19.42.151</oos:code>
+                            <oos:name>Фуражки и кепи швейные женские или для девочек</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.42.141</oos:code>
+                            <oos:name>Фуражки и кепи швейные мужские или для мальчиков</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.42.152</oos:code>
+                            <oos:name>Шапки швейные женские или для девочек</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.42.142</oos:code>
+                            <oos:name>Шапки швейные мужские или для мальчиков</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.42.159</oos:code>
+                            <oos:name>Уборы головные швейные прочие женские или для девочек</oos:name>
+                        </oos:value>
+                        <oos:value>
+                            <oos:code>14.19.42.149</oos:code>
+                            <oos:name>Уборы головные швейные прочие мужские или для мальчиков</oos:name>
+                        </oos:value>
+                    </oos:values>
+                </oos:classifier>
+            </oos:classifiers>
+        </oos:NSI>
+        <oos:characteristics>
+            <oos:characteristic>
+                <oos:code>cf56f736-3</oos:code>
+                <oos:name>Вид защиты</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>3</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>88991215-a</oos:valueCode>
+                        <oos:qualityDescription>Защита от захвата движущимися частями механизмов</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>4418cddf-8</oos:valueCode>
+                        <oos:qualityDescription>Защита от общих производственных загрязнений</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>feb7c157-6</oos:valueCode>
+                        <oos:qualityDescription>Защита от механических воздействий истирания</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>c09521ec-8</oos:valueCode>
+                        <oos:qualityDescription>Защита от механических воздействий прокола и пореза</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>cdf10657-a</oos:code>
+                <oos:name>Наименование изделия</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>1</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>1</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0e20f6a5-9</oos:valueCode>
+                        <oos:qualityDescription>Головной убор</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+            <oos:characteristic>
+                <oos:code>4cef5c67-f</oos:code>
+                <oos:name>Вид головного убора</oos:name>
+                <oos:type>1</oos:type>
+                <oos:kind>2</oos:kind>
+                <oos:actual>true</oos:actual>
+                <oos:isRequired>true</oos:isRequired>
+                <oos:choiceType>2</oos:choiceType>
+                <oos:values>
+                    <oos:value>
+                        <oos:valueCode>0d22ad08-d</oos:valueCode>
+                        <oos:qualityDescription>Колпак</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>621a48c6-c</oos:valueCode>
+                        <oos:qualityDescription>Кепи</oos:qualityDescription>
+                    </oos:value>
+                    <oos:value>
+                        <oos:valueCode>22893516-b</oos:valueCode>
+                        <oos:qualityDescription>Шапка</oos:qualityDescription>
+                    </oos:value>
+                </oos:values>
+            </oos:characteristic>
+        </oos:characteristics>
+        <oos:rubricators>
+            <oos:rubricatorInfo>
+                <oos:code>116</oos:code>
+                <oos:name>Одежда и обувь</oos:name>
+            </oos:rubricatorInfo>
+        </oos:rubricators>
+        <oos:isTemplate>false</oos:isTemplate>
+        <oos:parentPositionInfo>
+            <oos:code>14.12.30.160-00000321</oos:code>
+            <oos:version>5</oos:version>
+        </oos:parentPositionInfo>
+    </oos:data>
+</oos:position>
+</nsiKTRUs></export>
