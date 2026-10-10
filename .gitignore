@@ -7,3 +7,4 @@ very_raw_data
 *.db-shm
 *.db-wal
 .DS_Store
+tenderhack-kzn-2026.code-workspace

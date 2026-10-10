@@ -1,0 +1,1167 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Characteristics Extractor",
+    "description": "Stateless-извлечение характеристик КТРУ. Принимает ответ поиска целиком. При уточнении принимает собственный ответ с изменёнными attributes. Кандидаты не фильтруются.",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "Состояние"
+        ],
+        "summary": "Проверить доступность сервиса",
+        "description": "Проверяет только HTTP-процесс. Не обращается к LM Studio и базе КТРУ.",
+        "operationId": "getHealth",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/extract": {
+      "post": {
+        "tags": [
+          "Характеристики"
+        ],
+        "summary": "Извлечь характеристики или обработать уточнение",
+        "description": "**Первый вызов:** передайте JSON-ответ поиска целиком: `query`, `canonical_query`,\n`lemmatized_query`, `candidates`. Поле `attributes` отсутствует или равно `null`.\nСервис загрузит справочник по кодам кандидатов и один раз вызовет LM Studio.\nПоле `search_target` в ответе — название искомого товара без характеристик:\nнапример, для «Молоток с рукоятью 15 см» оно равно «Молоток».\nЕсли товар не назван однозначно, `search_target=null`; первый кандидат не подставляется.\nИзвлекаются явные и неявные свойства с конкретными значениями. Кандидаты не фильтруются.\n\n**Уточнение:** отправьте весь полученный документ на этот же endpoint.\nВ нужном атрибуте заполните `characteristic_id` из вариантов либо исправьте\n`original_value` / `original_value.unit`, поставьте `resolution_source: user`\nи очистите `clarifications`. Сохраните `search_target`, `characteristic_options`, исходные запросы,\nкандидатов и `input_fingerprint`. Повторный вызов не использует LLM или сессии.\nСервер заново вычислит названия, нормализованные значения и оставшиеся вопросы.\nПустой `attributes: []` означает продолжение без свойств, а не новый разбор.\n\n**HTTP 200** может содержать `status: needs_clarification`: показывайте\n`clarifications` и блокирующие `issues`. Неизвестное свойство помечается\n`status: unknown` и сообщением «Неизвестная характеристика».\nНеравенства, отрицания, диапазоны и альтернативы возвращаются как\n`unsupported_constraint`; для них исправьте исходный запрос и начните новый разбор.\n\nДля нового текста/набора кандидатов сбросьте `attributes` и `input_fingerprint`\nв `null`, `clarifications` и `issues` в `[]`. Контрольная сумма не является\nподписью или токеном авторизации. Межполевые проверки выполняются Python\nдополнительно к JSON Schema.",
+        "operationId": "extractCharacteristics",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExtractRequest"
+              },
+              "examples": {
+                "initial": {
+                  "summary": "Первичный запрос из сервиса поиска",
+                  "description": "Минимальный пример с одним кандидатом. Можно передать весь список кандидатов.",
+                  "value": {
+                    "query": "Молоток рукоять 15 см",
+                    "canonical_query": "Молоток рукоять 15 см",
+                    "lemmatized_query": "молоток рукоять 15 см",
+                    "candidates": [
+                      {
+                        "ktru_code": "25.73.30.141-00000001",
+                        "name": "Молоток",
+                        "status": "ACTIVE",
+                        "okpd2_code": "25.73.30.141",
+                        "rrf_score": 0.02967032967032967,
+                        "is_template": false
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Разбор завершён или требуется пользовательское уточнение; смотрите status, clarifications и issues.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExtractResponse"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Неполный справочник КТРУ; detail.code=incomplete_catalog, причины в detail.issues.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServiceError"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Ошибка структуры входа (detail — массив) или состояния уточнения (detail — объект с code=invalid_state).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/components/schemas/ServiceError"
+                    },
+                    {
+                      "$ref": "#/components/schemas/RequestValidationErrorResponse"
+                    }
+                  ],
+                  "title": "Response 422 Extractcharacteristics"
+                },
+                "examples": {
+                  "invalid_state": {
+                    "summary": "Изменён контекст уточнения",
+                    "value": {
+                      "detail": {
+                        "code": "invalid_state",
+                        "message": "Изменился запрос/список кандидатов или отсутствует input_fingerprint. Отправьте attributes=null."
+                      }
+                    }
+                  },
+                  "validation": {
+                    "summary": "Нет обязательного поля",
+                    "value": {
+                      "detail": [
+                        {
+                          "loc": [
+                            "body",
+                            "query"
+                          ],
+                          "msg": "Field required",
+                          "type": "missing",
+                          "input": {}
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "Некорректный/обрезанный ответ LLM или превышение лимита: llm_invalid_output, llm_output_truncated, llm_size_limit.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServiceError"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "LM Studio или КТРУ недоступны либо модель не настроена: llm_unavailable, catalog_unavailable, configuration_error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServiceError"
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "Истёк срок ожидания LM Studio: llm_timeout.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServiceError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Attribute": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Id"
+          },
+          "source_text": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Source Text",
+            "description": "Дословный фрагмент исходного query"
+          },
+          "source_span": {
+            "$ref": "#/components/schemas/SourceSpan",
+            "description": "Позиции [start, end) в символах Python Unicode исходного query"
+          },
+          "mention_type": {
+            "type": "string",
+            "enum": [
+              "explicit",
+              "implicit"
+            ],
+            "title": "Mention Type",
+            "description": "Характеристика названа явно или восстановлена из контекста"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "resolved",
+              "unknown",
+              "needs_clarification"
+            ],
+            "title": "Status"
+          },
+          "original_value": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/OriginalNumber"
+              },
+              {
+                "$ref": "#/components/schemas/OriginalString"
+              },
+              {
+                "$ref": "#/components/schemas/OriginalBoolean"
+              }
+            ],
+            "title": "Original Value",
+            "description": "Исходное значение; при уточнении фронт меняет его или его unit",
+            "discriminator": {
+              "propertyName": "type",
+              "mapping": {
+                "boolean": "#/components/schemas/OriginalBoolean",
+                "number": "#/components/schemas/OriginalNumber",
+                "string": "#/components/schemas/OriginalString"
+              }
+            }
+          },
+          "characteristic_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Characteristic Id"
+          },
+          "characteristic_name": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Characteristic Name"
+          },
+          "normalized_value": {
+            "anyOf": [
+              {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/NormalizedNumber"
+                  },
+                  {
+                    "$ref": "#/components/schemas/NormalizedString"
+                  },
+                  {
+                    "$ref": "#/components/schemas/NormalizedBoolean"
+                  }
+                ],
+                "discriminator": {
+                  "propertyName": "type",
+                  "mapping": {
+                    "boolean": "#/components/schemas/NormalizedBoolean",
+                    "number": "#/components/schemas/NormalizedNumber",
+                    "string": "#/components/schemas/NormalizedString"
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Normalized Value",
+            "description": "Вычисляется сервером по выбранной характеристике КТРУ"
+          },
+          "extracted_name": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Extracted Name"
+          },
+          "message": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Message"
+          },
+          "resolution_source": {
+            "type": "string",
+            "enum": [
+              "model",
+              "user"
+            ],
+            "title": "Resolution Source",
+            "default": "model"
+          },
+          "characteristic_options": {
+            "items": {
+              "$ref": "#/components/schemas/CharacteristicOption"
+            },
+            "type": "array",
+            "title": "Characteristic Options",
+            "description": "Варианты выбора. Обязательно сохранять при повторной отправке, даже если clarifications очищен"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "source_text",
+          "source_span",
+          "mention_type",
+          "status",
+          "original_value"
+        ],
+        "title": "Attribute"
+      },
+      "CharacteristicOption": {
+        "properties": {
+          "characteristic_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Characteristic Id"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Name"
+          },
+          "product_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Product Name"
+          },
+          "unit_names": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Unit Names"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "characteristic_id",
+          "name"
+        ],
+        "title": "CharacteristicOption",
+        "description": "Select by characteristic_id; name is for presentation only."
+      },
+      "Clarification": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Id"
+          },
+          "attribute_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Attribute Id"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "choose_characteristic",
+              "specify_unit",
+              "specify_value"
+            ],
+            "title": "Kind"
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Question"
+          },
+          "options": {
+            "items": {
+              "$ref": "#/components/schemas/CharacteristicOption"
+            },
+            "type": "array",
+            "title": "Options"
+          },
+          "suggested_values": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Suggested Values"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "attribute_id",
+          "kind",
+          "question"
+        ],
+        "title": "Clarification"
+      },
+      "ErrorDetail": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code",
+            "description": "Машиночитаемый код ошибки, например llm_timeout или invalid_state"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message",
+            "description": "Описание причины ошибки"
+          },
+          "issues": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/Issue"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Issues",
+            "description": "Причины неполноты справочника при HTTP 409"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "title": "ErrorDetail"
+      },
+      "ExtractRequest": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "search_target": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Search Target",
+            "description": "Цель поиска: краткое название товара, например Молоток. Извлекается при первом вызове; возвращать при уточнениях. null — товар не указан однозначно"
+          },
+          "query": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Query",
+            "description": "Исходный запрос пользователя; источник смысла и координат цитат"
+          },
+          "canonical_query": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Canonical Query",
+            "description": "Канонический запрос из сервиса поиска"
+          },
+          "lemmatized_query": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Lemmatized Query",
+            "description": "Лемматизированный запрос из сервиса поиска"
+          },
+          "candidates": {
+            "items": {
+              "$ref": "#/components/schemas/SearchCandidate"
+            },
+            "type": "array",
+            "title": "Candidates",
+            "description": "Все кандидаты из поиска; сохраняются без фильтрации и перестановки"
+          },
+          "attributes": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/Attribute"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Attributes",
+            "description": "Отсутствует/null — первичное извлечение с LLM; массив, включая [], — продолжение без LLM"
+          },
+          "clarifications": {
+            "items": {
+              "$ref": "#/components/schemas/Clarification"
+            },
+            "type": "array",
+            "title": "Clarifications",
+            "description": "Фронт может очистить вопросы; сервер восстановит неотвеченные"
+          },
+          "issues": {
+            "items": {
+              "$ref": "#/components/schemas/Issue"
+            },
+            "type": "array",
+            "title": "Issues",
+            "description": "Диагностика; сохранять при уточнении, очистить при новом разборе"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "completed",
+              "needs_clarification"
+            ],
+            "title": "Status",
+            "default": "pending"
+          },
+          "input_fingerprint": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Input Fingerprint",
+            "description": "Возвращать неизменённым при уточнениях; защита от случайной смены контекста, не подпись"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "query",
+          "canonical_query",
+          "lemmatized_query",
+          "candidates"
+        ],
+        "title": "ExtractRequest"
+      },
+      "ExtractResponse": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "search_target": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Search Target",
+            "description": "Название искомого товара без характеристик, например Молоток. null — цель не определена однозначно"
+          },
+          "query": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Query",
+            "description": "Исходный запрос пользователя; источник смысла и координат цитат"
+          },
+          "canonical_query": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Canonical Query",
+            "description": "Канонический запрос из сервиса поиска"
+          },
+          "lemmatized_query": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Lemmatized Query",
+            "description": "Лемматизированный запрос из сервиса поиска"
+          },
+          "candidates": {
+            "items": {
+              "$ref": "#/components/schemas/SearchCandidate"
+            },
+            "type": "array",
+            "title": "Candidates",
+            "description": "Все кандидаты из поиска; сохраняются без фильтрации и перестановки"
+          },
+          "attributes": {
+            "items": {
+              "$ref": "#/components/schemas/Attribute"
+            },
+            "type": "array",
+            "title": "Attributes",
+            "description": "Извлечённые характеристики, включая неизвестные и требующие уточнения"
+          },
+          "clarifications": {
+            "items": {
+              "$ref": "#/components/schemas/Clarification"
+            },
+            "type": "array",
+            "title": "Clarifications",
+            "description": "Фронт может очистить вопросы; сервер восстановит неотвеченные"
+          },
+          "issues": {
+            "items": {
+              "$ref": "#/components/schemas/Issue"
+            },
+            "type": "array",
+            "title": "Issues",
+            "description": "Диагностика; сохранять при уточнении, очистить при новом разборе"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "completed",
+              "needs_clarification"
+            ],
+            "title": "Status",
+            "description": "completed — нет вопросов/блокирующих issues; needs_clarification — нужен ввод пользователя"
+          },
+          "input_fingerprint": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Input Fingerprint",
+            "description": "Возвращать неизменённым при уточнениях; защита от случайной смены контекста, не подпись"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "search_target",
+          "query",
+          "canonical_query",
+          "lemmatized_query",
+          "candidates",
+          "attributes",
+          "status"
+        ],
+        "title": "ExtractResponse",
+        "description": "Validated server result; stricter than the client-editable request."
+      },
+      "HealthResponse": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "const": "ok",
+            "title": "Status"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "HealthResponse"
+      },
+      "Issue": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Id"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "unsupported_constraint",
+              "candidate_not_found",
+              "incomplete_catalog",
+              "incompatible_unit",
+              "unmapped_value",
+              "invalid_selection"
+            ],
+            "title": "Code"
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Message"
+          },
+          "blocking": {
+            "type": "boolean",
+            "title": "Blocking"
+          },
+          "attribute_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Attribute Id"
+          },
+          "candidate_code": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Candidate Code"
+          },
+          "source_text": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Text"
+          },
+          "source_span": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/SourceSpan"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "code",
+          "message",
+          "blocking"
+        ],
+        "title": "Issue"
+      },
+      "NormalizedBoolean": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "boolean",
+            "title": "Type"
+          },
+          "value": {
+            "type": "boolean",
+            "title": "Value"
+          },
+          "unit": {
+            "type": "null",
+            "title": "Unit"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "type",
+          "value"
+        ],
+        "title": "NormalizedBoolean"
+      },
+      "NormalizedNumber": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "number",
+            "title": "Type"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "title": "Value"
+          },
+          "unit": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/OkeiUnit"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "type",
+          "value"
+        ],
+        "title": "NormalizedNumber"
+      },
+      "NormalizedString": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "string",
+            "title": "Type"
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Value"
+          },
+          "unit": {
+            "type": "null",
+            "title": "Unit"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "type",
+          "value"
+        ],
+        "title": "NormalizedString"
+      },
+      "OkeiUnit": {
+        "properties": {
+          "okei_code": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Okei Code"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Name"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "okei_code",
+          "name"
+        ],
+        "title": "OkeiUnit"
+      },
+      "OriginalBoolean": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "boolean",
+            "title": "Type"
+          },
+          "value": {
+            "type": "boolean",
+            "title": "Value"
+          },
+          "unit": {
+            "type": "null",
+            "title": "Unit"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "type",
+          "value"
+        ],
+        "title": "OriginalBoolean"
+      },
+      "OriginalNumber": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "number",
+            "title": "Type"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "title": "Value"
+          },
+          "unit": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Unit"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "type",
+          "value"
+        ],
+        "title": "OriginalNumber"
+      },
+      "OriginalString": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "string",
+            "title": "Type"
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Value"
+          },
+          "unit": {
+            "type": "null",
+            "title": "Unit"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "type",
+          "value"
+        ],
+        "title": "OriginalString"
+      },
+      "RequestValidationErrorResponse": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationProblem"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "RequestValidationErrorResponse"
+      },
+      "SearchCandidate": {
+        "properties": {
+          "ktru_code": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Ktru Code"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Name"
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Status"
+          },
+          "okpd2_code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Okpd2 Code"
+          },
+          "rrf_score": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "title": "Rrf Score"
+          },
+          "is_template": {
+            "type": "boolean",
+            "title": "Is Template"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "ktru_code",
+          "name",
+          "status",
+          "okpd2_code",
+          "rrf_score",
+          "is_template"
+        ],
+        "title": "SearchCandidate"
+      },
+      "ServiceError": {
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/ErrorDetail"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ServiceError"
+      },
+      "SourceSpan": {
+        "properties": {
+          "start": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Start"
+          },
+          "end": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "End"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "start",
+          "end"
+        ],
+        "title": "SourceSpan",
+        "description": "Half-open Python character offsets in the original `query`, not lemmas."
+      },
+      "ValidationProblem": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Loc"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Msg"
+          },
+          "type": {
+            "type": "string",
+            "title": "Type"
+          },
+          "input": {
+            "title": "Input"
+          }
+        },
+        "additionalProperties": true,
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationProblem"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Характеристики",
+      "description": "Извлечение, нормализация и stateless-уточнения."
+    },
+    {
+      "name": "Состояние",
+      "description": "Доступность HTTP-процесса."
+    }
+  ]
+}

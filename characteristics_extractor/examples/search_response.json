@@ -1,0 +1,87 @@
+{
+  "query": "Молоток с деревянной ручкой 15 см",
+  "canonical_query": "Молоток с деревянной ручкой 15 см",
+  "lemmatized_query": "молоток деревянный ручка 15 см",
+  "candidates": [
+    {
+      "ktru_code": "25.73.30.141-00000001",
+      "name": "Молоток",
+      "status": "ACTIVE",
+      "okpd2_code": "25.73.30.141",
+      "rrf_score": 0.02967032967032967,
+      "is_template": false
+    },
+    {
+      "ktru_code": "25.73.30.141-00000003",
+      "name": "Молоток",
+      "status": "ACTIVE",
+      "okpd2_code": "25.73.30.141",
+      "rrf_score": 0.029631255487269532,
+      "is_template": false
+    },
+    {
+      "ktru_code": "25.73.30.141-00000002",
+      "name": "Молоток",
+      "status": "ACTIVE",
+      "okpd2_code": "25.73.30.141",
+      "rrf_score": 0.029631255487269532,
+      "is_template": false
+    },
+    {
+      "ktru_code": "25.73.30.141-00000005",
+      "name": "Молоток",
+      "status": "ACTIVE",
+      "okpd2_code": "25.73.30.141",
+      "rrf_score": 0.028949545078577336,
+      "is_template": false
+    },
+    {
+      "ktru_code": "25.99.29.120-00000003",
+      "name": "Лопата",
+      "status": "ACTIVE",
+      "okpd2_code": "25.99.29.120",
+      "rrf_score": 0.0287391216352965,
+      "is_template": false
+    },
+    {
+      "ktru_code": "25.73.30.141-00000004",
+      "name": "Молоток",
+      "status": "ACTIVE",
+      "okpd2_code": "25.73.30.141",
+      "rrf_score": 0.028665028665028666,
+      "is_template": false
+    },
+    {
+      "ktru_code": "25.73.30.141-00000010",
+      "name": "Молоток",
+      "status": "ACTIVE",
+      "okpd2_code": "25.73.30.141",
+      "rrf_score": 0.028283227848101264,
+      "is_template": false
+    },
+    {
+      "ktru_code": "25.99.29.120-00000002",
+      "name": "Лопата",
+      "status": "ACTIVE",
+      "okpd2_code": "25.99.29.120",
+      "rrf_score": 0.028283227848101264,
+      "is_template": false
+    },
+    {
+      "ktru_code": "25.73.30.141-00000008",
+      "name": "Молоток",
+      "status": "ACTIVE",
+      "okpd2_code": "25.73.30.141",
+      "rrf_score": 0.02817460317460317,
+      "is_template": false
+    },
+    {
+      "ktru_code": "25.99.29.120-00000001",
+      "name": "Лопата",
+      "status": "ACTIVE",
+      "okpd2_code": "25.99.29.120",
+      "rrf_score": 0.027972027972027972,
+      "is_template": false
+    }
+  ]
+}
