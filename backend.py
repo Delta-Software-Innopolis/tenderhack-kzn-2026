@@ -7,8 +7,24 @@ from pathlib import Path
 from typing import Literal
 
 from fastapi import FastAPI, HTTPException, Query
+from fastapi import Path as PathParameter
+from pydantic import BaseModel, Field
 
-app = FastAPI()
+app = FastAPI(
+    title="API каталога КТРУ",
+    version="0.1.0",
+    description=(
+        "Получение карточек товаров по полному коду КТРУ и просмотр каталога "
+        "с пагинацией и фильтрацией по категориям хакатона. "
+        "Карточки включают рубрики, характеристики, допустимые значения и единицы измерения. "
+        "Неизвестные значения полей возвращаются как null. "
+        "Ошибки параметров запроса возвращаются с HTTP 422."
+    ),
+    openapi_tags=[
+        {"name": "Каталог", "description": "Позиции КТРУ и их характеристики."},
+        {"name": "Сервис", "description": "Служебные эндпоинты."},
+    ],
+)
 DB_PATH = Path(__file__).with_name("ktru.db")
 RAW_DATA_PATH = Path(__file__).with_name("raw_data")
 CATEGORY_DIRECTORIES = {
@@ -23,6 +39,71 @@ POSITION_FIELDS = """
     p.code, p.version, p.version_code, p.name, p.okpd2_code, p.okpd2_name,
     p.status, p.is_template, p.publish_date, p.update_date, p.date_start, p.date_end
 """
+
+
+class Rubric(BaseModel):
+    """Рубрика справочника КТРУ; отличается от категории хакатона."""
+
+    code: str | None = Field(description="Код рубрики", examples=["128"])
+    name: str | None = Field(description="Название рубрики", examples=["Мебель"])
+
+
+class CharacteristicValue(BaseModel):
+    """Текстовое значение, числовой диапазон или конкретное число из КТРУ."""
+
+    value_code: str | None = Field(description="Код допустимого значения")
+    quality_description: str | None = Field(description="Текстовое значение", examples=["Круглый"])
+    okei_code: str | None = Field(description="Код единицы измерения по ОКЕИ", examples=["003"])
+    okei_name: str | None = Field(description="Название единицы измерения", examples=["Миллиметр"])
+    min_value: float | None = Field(description="Нижняя граница диапазона", examples=[100.0])
+    min_notation: str | None = Field(
+        description="Условие нижней границы: greater (>) или greaterOrEqual (>=)",
+        examples=["greaterOrEqual"],
+    )
+    max_value: float | None = Field(description="Верхняя граница диапазона", examples=[150.0])
+    max_notation: str | None = Field(
+        description="Условие верхней границы: less (<) или lessOrEqual (<=)",
+        examples=["less"],
+    )
+    concrete_value: float | None = Field(description="Конкретное числовое значение")
+
+
+class Characteristic(BaseModel):
+    """Характеристика товара и все её допустимые значения."""
+
+    id: int = Field(description="Внутренний идентификатор характеристики в базе")
+    code: str | None = Field(description="Код характеристики КТРУ")
+    name: str | None = Field(description="Название характеристики", examples=["Длина рукоятки"])
+    type: int | None = Field(description="Тип: 1 — качественная, 2 — количественная")
+    is_required: int | None = Field(description="Обязательность: 1 — обязательная, 0 — необязательная")
+    values: list[CharacteristicValue] = Field(description="Допустимые значения; пустой массив, если их нет")
+
+
+class Item(BaseModel):
+    """Полная карточка позиции КТРУ без служебных полей поискового индекса."""
+
+    code: str = Field(description="Полный код КТРУ", examples=["25.73.30.141-00000012"])
+    version: int = Field(description="Номер версии позиции", examples=[2])
+    version_code: str | None = Field(description="Код версии позиции")
+    name: str | None = Field(description="Наименование товара", examples=["Молоток"])
+    okpd2_code: str | None = Field(description="Код ОКПД2", examples=["25.73.30.141"])
+    okpd2_name: str | None = Field(description="Наименование по ОКПД2", examples=["Молотки"])
+    status: str | None = Field(description="Статус позиции: ACTIVE, INACTIVE или TERMINATED", examples=["ACTIVE"])
+    is_template: int = Field(description="Признак шаблона: 1 — шаблон, 0 — обычная позиция")
+    publish_date: str | None = Field(description="Дата публикации в исходном формате КТРУ", examples=["2026-06-03T13:07:16+03:00"])
+    update_date: str | None = Field(description="Дата обновления в исходном формате КТРУ")
+    date_start: str | None = Field(description="Дата начала применения в исходном формате КТРУ")
+    date_end: str | None = Field(description="Дата окончания применения в исходном формате КТРУ")
+    rubrics: list[Rubric] = Field(description="Рубрики КТРУ; пустой массив, если их нет")
+    characteristics: list[Characteristic] = Field(description="Характеристики товара; пустой массив, если их нет")
+
+
+class ErrorResponse(BaseModel):
+    detail: str = Field(description="Описание ошибки")
+
+
+class RootResponse(BaseModel):
+    message: str = Field(description="Приветственное сообщение", examples=["Hello World"])
 
 
 def connect_db() -> sqlite3.Connection:
@@ -102,14 +183,42 @@ def serialize_items(conn: sqlite3.Connection, rows: list[sqlite3.Row]) -> list[d
     return items
 
 
-@app.get("/")
+@app.get(
+    "/",
+    response_model=RootResponse,
+    tags=["Сервис"],
+    summary="Приветствие сервера",
+    operation_id="getRoot",
+)
 async def root():
     return {"message": "Hello World"}
 
 
-@app.get("/item/{item_id}")
-def get_item(item_id: str):
-    """Получить позицию по полному коду КТРУ, например 31.01.10.000-00000001."""
+@app.get(
+    "/item/{item_id}",
+    response_model=Item,
+    tags=["Каталог"],
+    summary="Получить товар по коду КТРУ",
+    operation_id="getItem",
+    response_description="Полная карточка найденного товара",
+    responses={
+        404: {
+            "model": ErrorResponse,
+            "description": "Товар с указанным кодом КТРУ отсутствует в базе",
+            "content": {"application/json": {"example": {"detail": "Товар не найден"}}},
+        },
+    },
+)
+def get_item(
+    item_id: str = PathParameter(
+        description="Полный код КТРУ с точками и дефисом. Поиск по точному совпадению.",
+        examples=["25.73.30.141-00000012"],
+    ),
+):
+    """Возвращает товар вместе с рубриками, характеристиками и допустимыми значениями.
+
+    Поиск охватывает все статусы позиций. Если код отсутствует, возвращается HTTP 404.
+    """
     with closing(connect_db()) as conn:
         row = conn.execute(
             f"SELECT {POSITION_FIELDS} FROM ktru_position p WHERE p.code = ?",
@@ -120,17 +229,44 @@ def get_item(item_id: str):
         return serialize_items(conn, [row])[0]
 
 
-@app.get("/items", include_in_schema=False)
-@app.get("/items/")
+@app.get("/items", response_model=list[Item], include_in_schema=False)
+@app.get(
+    "/items/",
+    response_model=list[Item],
+    tags=["Каталог"],
+    summary="Получить список товаров",
+    operation_id="listItems",
+    response_description="Массив полных карточек товаров; пустой массив, если страница пуста",
+    responses={
+        503: {
+            "model": ErrorResponse,
+            "description": "Исходные XML выбранной категории отсутствуют на сервере",
+            "content": {"application/json": {"example": {"detail": "Исходные данные категории недоступны"}}},
+        },
+    },
+)
 def get_items(
-    offset: int = Query(default=0, ge=0, le=SQLITE_MAX_INTEGER),
-    limit: int = Query(default=20, ge=1, le=SQLITE_MAX_INTEGER),
-    category: Literal["мебель", "одежда", "инструменты"] | None = Query(default=None),
+    offset: int = Query(
+        default=0, ge=0, le=SQLITE_MAX_INTEGER,
+        description="Сколько товаров пропустить после фильтрации по категории", examples=[0, 20],
+    ),
+    limit: int = Query(
+        default=20, ge=1, le=SQLITE_MAX_INTEGER,
+        description="Максимальное количество товаров в ответе", examples=[20],
+    ),
+    category: Literal["мебель", "одежда", "инструменты"] | None = Query(
+        default=None,
+        description="Категория хакатона. Не передавайте параметр для просмотра всего каталога.",
+        examples=["мебель"],
+    ),
 ):
     """Список полных карточек, отсортированных по коду КТРУ.
 
     Без category выборка включает все позиции базы, в том числе неактивные.
     offset и limit применяются после фильтрации по категории хакатона.
+    Категория определяется по исходной XML-выгрузке, а не по рубрике КТРУ.
+    Если offset выходит за пределы выборки, возвращается пустой массив с HTTP 200.
+    Также поддерживается путь /items без завершающего слеша.
     """
     where = ""
     parameters = []
