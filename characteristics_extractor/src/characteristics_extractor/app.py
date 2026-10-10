@@ -21,7 +21,8 @@ def create_app(*, repository: KtruRepository | None = None, client: LMStudioClie
     service = ExtractionService(repository or KtruRepository.from_env(), client)
     app = FastAPI(title="Characteristics Extractor", version="0.1.0", description=(
         "Stateless-извлечение характеристик КТРУ. Принимает ответ поиска целиком. "
-        "При уточнении принимает собственный ответ с изменёнными attributes. Кандидаты не фильтруются."
+        "При уточнении принимает собственный ответ с изменёнными attributes и добавленным исходным candidates. "
+        "Кандидаты не фильтруются и не возвращаются в ответе."
     ), docs_url="/docs", redoc_url="/redoc", openapi_url="/openapi.json",
         openapi_tags=[
             {"name": "Характеристики", "description": "Извлечение, нормализация и stateless-уточнения."},

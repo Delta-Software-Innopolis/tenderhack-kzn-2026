@@ -3,7 +3,8 @@
 Самостоятельный Python 3.12+ сервис: получает ответ поиска, извлекает явные и
 неявные характеристики через локальную модель LM Studio, приводит их к
 справочнику КТРУ и обрабатывает уточнения без серверных сессий.
-Кандидаты сохраняются целиком и в исходном порядке. Фильтрации товаров нет.
+Кандидаты используются для построения справочника и не возвращаются в ответе.
+Фильтрации товаров нет.
 
 ## Запуск
 
@@ -94,15 +95,18 @@ uv run python -m characteristics_extractor examples/search_response.json --initi
 
 `--dry-run` выводит payload без обращения к модели; `--initial-only` возвращает
 промежуточные `facts` до нормализации. Оба режима предназначены для первичного
-запроса. Обычный CLI также принимает сохранённый документ уточнений.
+запроса. Обычный CLI также принимает сохранённый документ уточнений с добавленным
+исходным списком `candidates`.
 
 ## Контракт
 
 Входные `query`, `canonical_query`, `lemmatized_query`, `candidates` соответствуют
 формату сервиса поиска. Полный пример с десятью кандидатами находится в
-`examples/search_response.json`. Все шесть полей кандидата сохраняются.
+`examples/search_response.json`. `candidates` обязателен в каждом запросе,
+включая уточнения. Фронт сохраняет исходный список после этапа поиска.
 
-Ответ содержит те же входные поля и:
+Ответ содержит `query`, `canonical_query`, `lemmatized_query` и поля ниже.
+Поля `candidates` в ответе нет.
 
 | Поле | Назначение |
 | --- | --- |
@@ -152,15 +156,24 @@ uv run python -m characteristics_extractor examples/search_response.json --initi
 Поддерживается только конкретное значение. Неравенства, отрицания, диапазоны и
 альтернативы (`или`) попадают в `issues` с `code: unsupported_constraint`.
 `operator` и списки альтернативных значений в атрибутах запрещены схемой.
+Числовые интервалы (`100-120 см`, `100–120 см`, `от 100 до 120 см`)
+дополнительно распознаются в Python: даже если модель выдаёт границы как два
+равенства, сервис возвращает HTTP 200, `status: needs_clarification` и
+блокирующий `unsupported_constraint`. Другие конкретные характеристики
+обрабатываются обычным образом. Для исправления диапазона измените запрос
+и начните новый разбор (`attributes: null`).
 
 ## Stateless-уточнения на фронте
 
-1. Сохранить ответ целиком.
+1. Сохранить ответ целиком и отдельно исходный список `candidates` из сервиса поиска.
 2. Для `choose_characteristic` записать выбранный `options[].characteristic_id`
    в соответствующий атрибут. Для `specify_unit` изменить `original_value.unit`;
    для `specify_value` — `original_value` (включая корректный `type`).
 3. Установить `resolution_source: user` у изменённых атрибутов.
-4. Очистить `clarifications` и отправить весь документ снова на `POST /extract`.
+4. Очистить `clarifications`, добавить сохранённый `candidates` и отправить документ снова на `POST /extract`.
+
+Без `candidates` повторный запрос вернёт HTTP 422: сервис stateless и не хранит
+список кандидатов между обращениями.
 
 Поле `search_target` также возвращается целиком и сохраняется без повторного
 извлечения. Для старого документа без этого поля результат будет `null`;
@@ -170,6 +183,7 @@ uv run python -m characteristics_extractor examples/search_response.json --initi
 
 ```javascript
 const next = structuredClone(response);
+next.candidates = structuredClone(searchResponse.candidates); // сохранённый ответ поиска
 const attribute = next.attributes.find(a => a.id === question.attribute_id);
 attribute.characteristic_id = selectedOption.characteristic_id;
 attribute.resolution_source = 'user';

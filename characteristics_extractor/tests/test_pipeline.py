@@ -85,11 +85,11 @@ class PipelineTests(unittest.IsolatedAsyncioTestCase):
     async def resume(self, document):
         # New service, no model configured: all continuation state comes from JSON.
         with patch.dict("os.environ", {}, clear=True):
-            return await ExtractionService(self.repository).process(ExtractRequest.model_validate(document))
+            return await ExtractionService(self.repository).process(ExtractRequest.model_validate({**document, "candidates": [c.model_dump() for c in self.request.candidates]}))
 
-    async def test_initial_result_normalizes_preserves_candidates_and_marks_unknown(self):
+    async def test_initial_result_normalizes_omits_candidates_and_marks_unknown(self):
         result = await self.initial()
-        self.assertEqual(result.candidates, self.request.candidates)
+        self.assertNotIn("candidates", result.model_dump())
         self.assertEqual(result.search_target, "Молоток")
         self.assertEqual(result.attributes[0].normalized_value.value, 150)
         self.assertEqual(result.attributes[0].normalized_value.unit.okei_code, "003")
@@ -189,7 +189,7 @@ class PipelineTests(unittest.IsolatedAsyncioTestCase):
         self.response = envelope(output)
         result = await self.initial()
         self.assertEqual(result.search_target, "Топор")
-        self.assertEqual(result.candidates, self.request.candidates)
+        self.assertNotIn("candidates", result.model_dump())
 
     async def test_unsupported_constraints_survive_cleared_questions(self):
         output = model_output()
@@ -207,17 +207,26 @@ class PipelineTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual((await http.get("/health")).status_code, 200)
             schema = (await http.get("/openapi.json")).json()
             self.assertIn("/extract", schema["paths"])
+            self.assertNotIn("candidates", schema["components"]["schemas"]["ExtractResponse"]["properties"])
             first = await http.post("/extract", json=self.request.model_dump())
         self.assertEqual(first.status_code, 200, first.text)
         document = first.json()
+        self.assertNotIn("candidates", document)
+        document["candidates"] = [c.model_dump() for c in self.request.candidates]
         document["attributes"][1]["characteristic_id"] = "mass_head"
         document["clarifications"] = []
         async with httpx.AsyncClient(transport=httpx.ASGITransport(app=create_app(repository=self.repository)), base_url="http://test") as http:
+            missing_candidates = {key: value for key, value in document.items() if key != "candidates"}
+            missing = await http.post("/extract", json=missing_candidates)
+            self.assertEqual(missing.status_code, 422)
+            self.assertTrue(any(error["loc"] == ["body", "candidates"] for error in missing.json()["detail"]))
             second = await http.post("/extract", json=document)
             self.assertEqual(second.status_code, 200, second.text)
             self.assertEqual(second.json()["status"], "completed")
+            self.assertNotIn("candidates", second.json())
             document["attributes"][1]["characteristic_id"] = "invented"
             self.assertEqual((await http.post("/extract", json=document)).status_code, 422)
+        self.assertEqual(len(self.calls), 1)
 
     async def test_http_model_errors_have_explicit_statuses(self):
         for error, code in ((LLMTimeoutError("timeout"), 504), (LLMUnavailableError("offline"), 503),
@@ -227,6 +236,36 @@ class PipelineTests(unittest.IsolatedAsyncioTestCase):
                     result = await http.post("/extract", json=self.request.model_dump())
             with self.subTest(error=error):
                 self.assertEqual(result.status_code, code)
+
+    async def test_http_range_returns_clarification_preserves_scalar_and_resumes(self):
+        query = "Молоток рукоятка 100-120 см, масса 500 г"
+        self.request, _ = setup_context(query)
+        facts = []
+        for value in (100, 120):
+            fact = model_output()["facts"][0]
+            fact.update(source_text="рукоятка 100-120 см",
+                        original_value={"type": "number", "value": value, "unit": "см"})
+            facts.append(fact)
+        mass = model_output()["facts"][1]
+        mass["characteristic_ids"] = ["c2"]
+        mass["occurrence"] = 1  # Real 4B response uses the fact index here.
+        self.response = envelope({"search_target": "Молоток", "facts": facts + [mass], "unsupported": []})
+        app = create_app(repository=self.repository, client=self.client)
+        async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app), base_url="http://test") as http:
+            response = await http.post("/extract", json=self.request.model_dump())
+        self.assertEqual(response.status_code, 200, response.text)
+        document = response.json()
+        self.assertEqual(document["status"], "needs_clarification")
+        self.assertEqual(len(document["attributes"]), 1)
+        self.assertEqual(document["attributes"][0]["normalized_value"]["value"], 0.5)
+        self.assertEqual(document["issues"][0]["source_text"], "100-120 см")
+        self.assertEqual(document["issues"][0]["code"], "unsupported_constraint")
+        self.assertNotIn("candidates", document)
+        document["clarifications"] = []
+        resumed = await self.resume(document)
+        self.assertEqual(resumed.status, "needs_clarification")
+        self.assertEqual(len(resumed.issues), 1)
+        self.assertEqual(len(self.calls), 1)
 
     async def test_http_catalog_failures_do_not_call_model(self):
         incomplete = self.context.model_copy(update={"issues": [Issue(

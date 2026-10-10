@@ -88,10 +88,11 @@ class ExtractionTests(unittest.IsolatedAsyncioTestCase):
         _, schema, _ = prepare_extraction(self.request, self.catalog)
         self.assertIn("search_target", schema["required"])
 
-    async def test_full_initial_path_uses_schema_and_preserves_values_and_candidates(self):
+    async def test_full_initial_path_uses_schema_preserves_values_and_omits_candidates(self):
         result = await extract_initial(self.request, self.catalog, self.client())
         self.assertEqual(result.stage, "initial_extraction")
-        self.assertEqual(result.candidates, self.request.candidates)
+        self.assertNotIn("candidates", result.model_dump())
+        self.assertEqual(self.request.candidates, self.catalog.candidates)
         self.assertEqual([fact.mapping_status for fact in result.facts], ["matched", "ambiguous", "unknown"])
         self.assertEqual(result.facts[0].original_value.value, 15)
         self.assertEqual(result.facts[0].original_value.unit, "см")
@@ -191,10 +192,61 @@ class ExtractionTests(unittest.IsolatedAsyncioTestCase):
         with self.assertRaises(LLMInvalidOutputError):
             await extract_initial(request, catalog, self.client(envelope(output)))
 
+    async def test_unique_verbatim_quote_recovers_wrong_occurrence(self):
+        output = model_output()
+        output["facts"][1]["occurrence"] = 1
+        result = await extract_initial(self.request, self.catalog, self.client(envelope(output)))
+        mass = result.facts[1]
+        self.assertEqual(mass.source_text, "500 г")
+        self.assertEqual(mass.source_span.start, self.request.query.index("500 г"))
+
     async def test_empty_extraction_is_valid(self):
         result = await extract_initial(self.request, self.catalog, self.client(envelope({"search_target": "Молоток", "facts": [], "unsupported": []})))
         self.assertEqual(result.facts, [])
         self.assertEqual(result.issues, [])
+
+    async def test_range_endpoints_are_issues_even_when_model_emits_duplicate_facts(self):
+        request, catalog = setup_context("Молоток рукоятка 100-120 см, гравировка дракон")
+        endpoints = []
+        for value in (100, 120):
+            fact = model_output()["facts"][0]
+            fact.update(source_text="рукоятка 100-120 см",
+                        original_value={"type": "number", "value": value, "unit": "см"})
+            endpoints.append(fact)
+        output = {"search_target": "Молоток", "facts": endpoints + [model_output()["facts"][2]], "unsupported": []}
+        result = await extract_initial(request, catalog, self.client(envelope(output)))
+        self.assertEqual([fact.source_text for fact in result.facts], ["гравировка дракон"])
+        self.assertEqual(result.facts[0].mapping_status, "unknown")
+        self.assertEqual(len(result.issues), 1)
+        self.assertEqual(result.issues[0].source_text, "100-120 см")
+        self.assertEqual(result.issues[0].code, "unsupported_constraint")
+        self.assertTrue(result.issues[0].blocking)
+        self.assertEqual(result.search_target, "Молоток")
+        self.assertEqual(len(self.calls), 1)
+
+    async def test_range_is_detected_when_model_omits_it_or_emits_only_one_boundary(self):
+        request, catalog = setup_context("Молоток рукоятка от 100 до 120 см")
+        fact = model_output()["facts"][0]
+        fact.update(source_text="120 см", original_value={"type": "number", "value": 120, "unit": "см"})
+        for facts in ([], [fact]):
+            with self.subTest(facts=facts):
+                output = {"search_target": "Молоток", "facts": facts, "unsupported": []}
+                result = await extract_initial(request, catalog, self.client(envelope(output)))
+                self.assertEqual(result.facts, [])
+                self.assertEqual(len(result.issues), 1)
+                self.assertEqual(result.issues[0].source_text, "от 100 до 120 см")
+
+    async def test_model_range_diagnostics_are_deduplicated_per_occurrence(self):
+        request, catalog = setup_context("Молоток рукоятка 100–120 см, головка 100–120 см")
+        output = {"search_target": "Молоток", "facts": [], "unsupported": [
+            {"source_text": "100–120 см", "occurrence": occurrence, "reason": "range"}
+            for occurrence in (0, 1)
+        ]}
+        result = await extract_initial(request, catalog, self.client(envelope(output)))
+        self.assertEqual(len(result.issues), 2)
+        self.assertNotEqual(result.issues[0].id, result.issues[1].id)
+        for issue in result.issues:
+            self.assertEqual(request.query[issue.source_span.start:issue.source_span.end], issue.source_text)
 
     async def test_truncated_even_valid_json_is_rejected_without_retry(self):
         with self.assertRaises(LLMTruncatedError):

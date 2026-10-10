@@ -17,9 +17,19 @@ def search_document(query="Молоток 500 г"):
     return document
 
 
+def response_document(query="Молоток 500 г"):
+    document = search_document(query)
+    del document["candidates"]
+    return document
+
+
+def with_candidates(document):
+    return {**document, "candidates": search_document()["candidates"]}
+
+
 def pending_response():
     return {
-        **search_document(),
+        **response_document(),
         "status": "needs_clarification",
         "attributes": [{
             "id": "fact_1",
@@ -68,18 +78,18 @@ class ContractTests(unittest.TestCase):
 
     def test_missing_and_null_attributes_mean_initial_but_empty_list_does_not(self):
         document = search_document()
-        self.assertTrue(ExtractRequest.model_validate(document).is_initial)
+        self.assertTrue(ExtractRequest.model_validate(with_candidates(document)).is_initial)
         document["attributes"] = None
-        self.assertTrue(ExtractRequest.model_validate(document).is_initial)
+        self.assertTrue(ExtractRequest.model_validate(with_candidates(document)).is_initial)
         document["attributes"] = []
-        self.assertFalse(ExtractRequest.model_validate(document).is_initial)
+        self.assertFalse(ExtractRequest.model_validate(with_candidates(document)).is_initial)
 
     def test_server_document_roundtrips_through_client_request(self):
         for document in (pending_response(), completed_response()):
             with self.subTest(status=document["status"]):
                 response = ExtractResponse.model_validate(document)
-                request = ExtractRequest.model_validate_json(response.model_dump_json())
-                self.assertEqual(request.model_dump(), response.model_dump())
+                request = ExtractRequest.model_validate_json(json.dumps(with_candidates(response.model_dump())))
+                self.assertEqual(request.model_dump(exclude={"candidates"}), response.model_dump())
 
     def test_client_can_select_id_without_filling_derived_fields(self):
         document = pending_response()
@@ -87,7 +97,7 @@ class ContractTests(unittest.TestCase):
         document["attributes"][0].update(
             status="resolved", characteristic_id="mass_head", resolution_source="user",
         )
-        request = ExtractRequest.model_validate(document)
+        request = ExtractRequest.model_validate(with_candidates(document))
         self.assertFalse(request.is_initial)
         self.assertIsNone(request.attributes[0].normalized_value)
         # The same client edit cannot be exposed as a finished server response.
@@ -97,7 +107,7 @@ class ContractTests(unittest.TestCase):
     def test_clearing_questions_does_not_produce_valid_completed_response(self):
         document = pending_response()
         document.update(status="completed", clarifications=[])
-        ExtractRequest.model_validate(document)
+        ExtractRequest.model_validate(with_candidates(document))
         with self.assertRaises(ValidationError):
             ExtractResponse.model_validate(document)
 
@@ -107,16 +117,16 @@ class ContractTests(unittest.TestCase):
         ExtractResponse.model_validate(document)
         document["attributes"][0]["source_text"] = "500 грамм"
         with self.assertRaises(ValidationError):
-            ExtractRequest.model_validate(document)
+            ExtractRequest.model_validate(with_candidates(document))
 
     def test_changed_query_cannot_reuse_old_source_references(self):
         document = completed_response()
         document["query"] = "Молоток 600 г"
         with self.assertRaises(ValidationError):
-            ExtractRequest.model_validate(document)
+            ExtractRequest.model_validate(with_candidates(document))
 
     def test_unknown_is_a_completed_result_with_exact_message(self):
-        document = search_document("Молоток гравировка дракон")
+        document = response_document("Молоток гравировка дракон")
         document.update(status="completed", attributes=[{
             "id": "fact_1",
             "source_text": "гравировка дракон",
@@ -139,13 +149,13 @@ class ContractTests(unittest.TestCase):
                 ExtractResponse.model_validate(invalid)
 
     def test_no_characteristics_is_valid_completed_result(self):
-        document = {**search_document("Молоток"), "attributes": [], "status": "completed"}
+        document = {**response_document("Молоток"), "attributes": [], "status": "completed"}
         response = ExtractResponse.model_validate(document)
-        self.assertFalse(ExtractRequest.model_validate(response.model_dump()).is_initial)
+        self.assertFalse(ExtractRequest.model_validate(with_candidates(response.model_dump())).is_initial)
 
     def test_unsupported_constraint_blocks_completion_without_equality_fact(self):
         document = {
-            **search_document("Молоток не больше 500 г"),
+            **response_document("Молоток не больше 500 г"),
             "attributes": [],
             "status": "needs_clarification",
             "issues": [{
@@ -171,7 +181,7 @@ class ContractTests(unittest.TestCase):
             else:
                 document["clarifications"][0]["options"].pop()
             with self.subTest(change=change), self.assertRaises(ValidationError):
-                ExtractRequest.model_validate(document)
+                ExtractRequest.model_validate(with_candidates(document))
 
     def test_resolved_attributes_cannot_have_pending_questions(self):
         document = completed_response()
@@ -184,7 +194,7 @@ class ContractTests(unittest.TestCase):
             document = pending_response()
             document["attributes"][0]["original_value"]["value"] = value
             with self.subTest(value=value), self.assertRaises(ValidationError):
-                ExtractRequest.model_validate(document)
+                ExtractRequest.model_validate(with_candidates(document))
 
     def test_intervals_and_operators_are_not_allowed_in_attributes(self):
         document = pending_response()
@@ -192,11 +202,11 @@ class ContractTests(unittest.TestCase):
             "type": "interval", "min": 100, "max": 500, "unit": "г",
         }
         with self.assertRaises(ValidationError):
-            ExtractRequest.model_validate(document)
+            ExtractRequest.model_validate(with_candidates(document))
         document = pending_response()
         document["attributes"][0]["operator"] = "lte"
         with self.assertRaises(ValidationError):
-            ExtractRequest.model_validate(document)
+            ExtractRequest.model_validate(with_candidates(document))
 
     def test_okei_code_retains_leading_zeroes(self):
         document = completed_response()
@@ -218,7 +228,10 @@ class ContractTests(unittest.TestCase):
         for model in (ExtractRequest, ExtractResponse):
             schema = model.model_json_schema()
             self.assertFalse(schema["additionalProperties"])
-            self.assertIn("candidates", schema["required"])
+            if model is ExtractRequest:
+                self.assertIn("candidates", schema["required"])
+            else:
+                self.assertNotIn("candidates", schema["properties"])
             json.dumps(schema)
 
 

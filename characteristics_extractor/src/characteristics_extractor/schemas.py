@@ -167,13 +167,13 @@ class Issue(ContractModel):
         return self
 
 
-class ExtractRequest(ContractModel):
+class ExtractionDocument(ContractModel):
+    """Shared extraction state, without the input-only candidate list."""
     schema_version: Literal["1.0"] = "1.0"
     search_target: NonEmpty | None = Field(default=None, description="Цель поиска: краткое название товара, например Молоток. Извлекается при первом вызове; возвращать при уточнениях. null — товар не указан однозначно")
     query: NonEmpty = Field(description="Исходный запрос пользователя; источник смысла и координат цитат")
     canonical_query: NonEmpty = Field(description="Канонический запрос из сервиса поиска")
     lemmatized_query: NonEmpty = Field(description="Лемматизированный запрос из сервиса поиска")
-    candidates: list[SearchCandidate] = Field(description="Все кандидаты из поиска; сохраняются без фильтрации и перестановки")
     attributes: list[Attribute] | None = Field(default=None, description="Отсутствует/null — первичное извлечение с LLM; массив, включая [], — продолжение без LLM")
     clarifications: list[Clarification] = Field(default_factory=list, description="Фронт может очистить вопросы; сервер восстановит неотвеченные")
     issues: list[Issue] = Field(default_factory=list, description="Диагностика; сохранять при уточнении, очистить при новом разборе")
@@ -181,10 +181,6 @@ class ExtractRequest(ContractModel):
     status: Literal["pending", "completed", "needs_clarification"] = "pending"
     # Detects accidental context changes; not a signature or an authorization token.
     input_fingerprint: NonEmpty | None = Field(default=None, description="Возвращать неизменённым при уточнениях; защита от случайной смены контекста, не подпись")
-
-    @property
-    def is_initial(self) -> bool:
-        return self.attributes is None
 
     @model_validator(mode="after")
     def consistent_references(self) -> Self:
@@ -209,7 +205,15 @@ class ExtractRequest(ContractModel):
         return self
 
 
-class ExtractResponse(ExtractRequest):
+class ExtractRequest(ExtractionDocument):
+    candidates: list[SearchCandidate] = Field(description="Все кандидаты из поиска. Обязательны при каждом вызове, включая уточнения; в ответе не возвращаются")
+
+    @property
+    def is_initial(self) -> bool:
+        return self.attributes is None
+
+
+class ExtractResponse(ExtractionDocument):
     """Validated server result; stricter than the client-editable request."""
 
     attributes: list[Attribute] = Field(description="Извлечённые характеристики, включая неизвестные и требующие уточнения")

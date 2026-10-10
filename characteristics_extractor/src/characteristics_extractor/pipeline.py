@@ -123,7 +123,6 @@ def finish_document(request: ExtractRequest, catalog: CatalogContext, attributes
         search_target=search_target,
         query=request.query, canonical_query=request.canonical_query,
         lemmatized_query=request.lemmatized_query,
-        candidates=[candidate.model_copy(deep=True) for candidate in request.candidates],
         attributes=output, clarifications=questions, issues=issues,
         status="needs_clarification" if questions or any(issue.blocking for issue in issues) else "completed",
         input_fingerprint=input_fingerprint(request),

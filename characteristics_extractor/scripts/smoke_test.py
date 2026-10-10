@@ -33,7 +33,7 @@ async def main(url: str, only: list[str]):
             result = response.json()
             checks = {"http_200": response.status_code == 200}
             if response.status_code == 200:
-                checks["candidates_preserved"] = result["candidates"] == fixture["candidates"]
+                checks["candidates_omitted"] = "candidates" not in result
                 checks["search_target"] = result["search_target"] == ("Лопата" if label == "ambiguous" else "Молоток")
                 attributes = result["attributes"]
                 if label in {"explicit", "implicit", "mass"}:
@@ -53,6 +53,7 @@ async def main(url: str, only: list[str]):
                     checks["has_choice"] = bool(questions)
                     if questions:
                         continuation = json.loads(json.dumps(result))
+                        continuation["candidates"] = fixture["candidates"]
                         continuation["clarifications"] = []
                         repeated = await client.post("/extract", json=continuation)
                         checks["unanswered_repeated"] = repeated.status_code == 200 and repeated.json()["clarifications"] == result["clarifications"]

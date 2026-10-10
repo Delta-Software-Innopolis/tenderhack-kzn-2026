@@ -7,11 +7,12 @@ from typing import Annotated, Literal
 from pydantic import Field, ValidationError
 
 from .catalog import CatalogContext
+from .constraints import numeric_range_spans, overlaps
 from .llm import LLMInvalidOutputError, LMStudioClient
 from .prompts import build_messages
 from .schemas import (
     CharacteristicOption, ContractModel, ExtractRequest, Issue, NonEmpty,
-    OriginalValue, SearchCandidate, SourceSpan,
+    OriginalValue, SourceSpan,
 )
 
 
@@ -56,7 +57,6 @@ class InitialExtraction(ContractModel):
     query: str
     canonical_query: str
     lemmatized_query: str
-    candidates: list[SearchCandidate]
     facts: list[ExtractedFact]
     issues: list[Issue]
 
@@ -112,6 +112,11 @@ def _span(query: str, text: str, occurrence: int) -> SourceSpan:
     for _ in range(occurrence + 1):
         start = query.find(text, offset)
         if start < 0:
+            # Models may confuse occurrence with the fact's array index. A
+            # unique verbatim quote still has an unambiguous source position.
+            unique_start = query.find(text)
+            if unique_start >= 0 and query.find(text, unique_start + 1) < 0:
+                return SourceSpan(start=unique_start, end=unique_start + len(text))
             raise LLMInvalidOutputError("Модель указала фрагмент, которого нет в исходном query")
         offset = start + len(text)
     return SourceSpan(start=start, end=offset)
@@ -128,10 +133,16 @@ def bind_extraction(raw: dict, request: ExtractRequest, catalog: CatalogContext,
     except ValidationError as error:
         raise LLMInvalidOutputError("Ответ модели не соответствует схеме извлечения") from error
 
+    ranges = numeric_range_spans(request.query)
     facts = []
     identities = set()
     for fact in extracted.facts:
         span = _span(request.query, fact.source_text, fact.occurrence)
+        # Small models sometimes emit both endpoints as scalar facts (or only
+        # one endpoint). Never normalize them as equalities or reject duplicate
+        # endpoints with HTTP 502: preserve the interval as a blocking issue.
+        if any(overlaps(span, interval) for interval in ranges):
+            continue
         if len(fact.characteristic_ids) != len(set(fact.characteristic_ids)):
             raise LLMInvalidOutputError("Модель повторила вариант характеристики")
         options = []
@@ -159,10 +170,17 @@ def bind_extraction(raw: dict, request: ExtractRequest, catalog: CatalogContext,
         ))
 
     labels = {"inequality": "неравенство", "negation": "отрицание", "range": "диапазон", "alternatives": "альтернативы"}
-    issues = []
+    issues = [Issue(
+        id=_stable_id("issue", [request.query, span.start, span.end, "range"]),
+        code="unsupported_constraint", blocking=True,
+        message="Укажите конкретное значение: диапазон не поддерживается.",
+        source_text=request.query[span.start:span.end], source_span=span,
+    ) for span in ranges]
     seen_issues = set()
     for unsupported in extracted.unsupported:
         span = _span(request.query, unsupported.source_text, unsupported.occurrence)
+        if unsupported.reason == "range" and any(overlaps(span, interval) for interval in ranges):
+            continue
         for fact in facts:
             if max(span.start, fact.source_span.start) < min(span.end, fact.source_span.end):
                 raise LLMInvalidOutputError("Неподдерживаемое ограничение одновременно выдано как равенство")
@@ -181,7 +199,6 @@ def bind_extraction(raw: dict, request: ExtractRequest, catalog: CatalogContext,
         search_target=extracted.search_target.strip() if extracted.search_target is not None else None,
         query=request.query, canonical_query=request.canonical_query,
         lemmatized_query=request.lemmatized_query,
-        candidates=[candidate.model_copy(deep=True) for candidate in request.candidates],
         facts=facts, issues=issues,
     )
 
