@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Catalogue from './components/Catalogue'
 import CatalogueItemRoute from './components/CatalogueItemRoute'
-import CategoryFilters, { type Category } from './components/CategoryFilters'
+import { type Category } from './components/CategoryFilters'
 import SearchBar from './components/SearchBar'
 import ThemeSwitcher, { type ThemePreference } from './components/ThemeSwitcher'
 
@@ -160,8 +160,12 @@ export default function App() {
               </p>
             </div>
 
-            <CategoryFilters value={category} onChange={handleCategoryChange} />
-            <Catalogue category={category} page={page} onPageChange={handlePageChange} />
+            <Catalogue
+              category={category}
+              page={page}
+              onCategoryChange={handleCategoryChange}
+              onPageChange={handlePageChange}
+            />
           </section>
         </div>
       </main>

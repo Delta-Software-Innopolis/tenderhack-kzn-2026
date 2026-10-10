@@ -20,6 +20,13 @@ export function listItems(params: { offset: number; limit: number; category?: Kt
   return apiRequest<CatalogueItem[]>(`/items/?${searchParams}`)
 }
 
+export function countItems(category?: KtruCategory) {
+  const searchParams = new URLSearchParams()
+  if (category) searchParams.set('category', category)
+  const query = searchParams.size > 0 ? `?${searchParams}` : ''
+  return apiRequest<{ count: number }>(`/items/count${query}`)
+}
+
 export function getItem(code: string) {
   return apiRequest<CatalogueItem>(`/item/${encodeURIComponent(code)}`)
 }
