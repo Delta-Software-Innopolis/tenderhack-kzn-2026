@@ -2,14 +2,18 @@
 
 from hashlib import sha256
 import json
+import re
 from typing import Annotated, Literal
 
 from pydantic import Field, ValidationError
 
 from .catalog import CatalogContext
 from .constraints import numeric_range_spans, overlaps
+from .debug import debug_print
 from .llm import LLMInvalidOutputError, LMStudioClient
+from .normalization import text_key
 from .prompts import build_messages
+from .units import unit_mentioned
 from .schemas import (
     CharacteristicOption, ContractModel, ExtractRequest, Issue, NonEmpty,
     OriginalValue, SourceSpan,
@@ -112,6 +116,14 @@ def prepare_extraction(request: ExtractRequest, catalog: CatalogContext) -> tupl
 
 
 def _span(query: str, text: str, occurrence: int) -> SourceSpan:
+    if text not in query:
+        # Match on the original string: lower()/casefold() can change Unicode
+        # string length and would make calculated source offsets incorrect.
+        matches = list(re.finditer(re.escape(text), query, flags=re.IGNORECASE))
+        if len(matches) == 1 or occurrence < len(matches):
+            match = matches[0] if len(matches) == 1 else matches[occurrence]
+            return SourceSpan(start=match.start(), end=match.end())
+        raise LLMInvalidOutputError("Модель указала фрагмент, которого нет в исходном query")
     offset = 0
     for _ in range(occurrence + 1):
         start = query.find(text, offset)
@@ -165,10 +177,17 @@ def bind_extraction(raw: dict, request: ExtractRequest, catalog: CatalogContext,
             raise LLMInvalidOutputError("Модель повторила один и тот же факт")
         identities.add(fact_id)
         status = "unknown" if not options else "matched" if len(options) == 1 else "ambiguous"
+        original_value = fact.original_value
+        if (original_value.type == "number" and original_value.unit is not None
+                and not unit_mentioned(original_value.unit, request.query)
+                and not unit_mentioned(original_value.unit, text_key(request.query))):
+            debug_print("extraction.invented_unit_removed", source_text=request.query[span.start:span.end],
+                        unit=original_value.unit)
+            original_value = original_value.model_copy(update={"unit": None})
         facts.append(ExtractedFact(
-            id=fact_id, source_text=fact.source_text, source_span=span,
+            id=fact_id, source_text=request.query[span.start:span.end], source_span=span,
             mention_type=fact.mention_type, extracted_name=fact.extracted_name,
-            original_value=fact.original_value, mapping_status=status,
+            original_value=original_value, mapping_status=status,
             characteristic_options=options,
             message="Неизвестная характеристика" if status == "unknown" else None,
         ))
@@ -195,7 +214,7 @@ def bind_extraction(raw: dict, request: ExtractRequest, catalog: CatalogContext,
         issues.append(Issue(
             id=issue_id, code="unsupported_constraint", blocking=True,
             message=f"Укажите конкретное значение: {labels[unsupported.reason]} не поддерживается.",
-            source_text=unsupported.source_text, source_span=span,
+            source_text=request.query[span.start:span.end], source_span=span,
         ))
     facts.sort(key=lambda fact: (fact.source_span.start, fact.source_span.end, fact.id))
     issues.sort(key=lambda issue: (issue.source_span.start, issue.id))

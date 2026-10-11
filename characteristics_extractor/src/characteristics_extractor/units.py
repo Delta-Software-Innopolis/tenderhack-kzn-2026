@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from decimal import Decimal
 from functools import lru_cache
 import math
+import re
 
 import pint
 
@@ -48,6 +49,22 @@ EXTRA_INPUT_UNITS = (
     UnitSpec("revolution/second", "rotation", ("об/с", "оборот в секунду", "rps")),
 )
 ALIASES = {unit_key(alias): spec for spec in (*OKEI.values(), *EXTRA_INPUT_UNITS) for alias in spec.aliases}
+
+
+def unit_mentioned(unit: str, query: str) -> bool:
+    """Conservative evidence check for a unit supplied by the model.
+
+    Unknown unit vocabulary is left untouched. If another known unit is
+    present, keep the value for normal validation instead of silently losing
+    an explicit measurement. Aliases may be attached to a number (15см).
+    """
+    spec = ALIASES.get(unit_key(unit))
+    if spec is None:
+        return True
+    aliases = {alias for known in (*OKEI.values(), *EXTRA_INPUT_UNITS) for alias in known.aliases}
+    aliases.add(unit)
+    return any(re.search(r"(?<![^\W\d_])" + re.escape(alias) + r"(?!\w)", query,
+                         flags=re.IGNORECASE) for alias in aliases)
 
 
 class UnitConversionError(ValueError):

@@ -6,9 +6,10 @@ import json
 
 from .catalog import CatalogContext, CharacteristicDefinition, prepare_catalog
 from .config import LMStudioSettings
+from .debug import debug_print
 from .extraction import IncompleteCatalogError, extract_initial
 from .llm import LMStudioClient
-from .normalization import NormalizationProblem, normalize_value
+from .normalization import NormalizationProblem, normalize_value, text_key
 from .repository import KtruRepository
 from .schemas import Attribute, CharacteristicOption, Clarification, ExtractRequest, ExtractResponse, Issue
 
@@ -44,8 +45,41 @@ def _canonical_options(attribute: Attribute, catalog: CatalogContext) -> list[Ch
     return sorted(options, key=lambda option: option.characteristic_id)
 
 
+def _option_for_target(options: list[CharacteristicOption], search_target: str | None, query: str) -> str | None:
+    """Disambiguate product scopes, never choose between properties of one product.
+
+    Compare full lemmatized names; word order may differ ("спортивные брюки"
+    vs "брюки спортивные"). No substring, score or attribute-value matching.
+    """
+    if not search_target:
+        return None
+    target = sorted(text_key(search_target).split())
+    if not target:
+        return None
+    matches = [option for option in options if option.product_name
+               and sorted(text_key(option.product_name).split()) == target]
+    if matches:
+        return matches[0].characteristic_id if len(matches) == 1 else None
+    # The model may shorten "Зимняя шапка" to "Шапка". Recover the product
+    # scope only when its complete name is explicitly present in the query.
+    # Do not infer missing modifiers such as "детская" or prefer a top candidate.
+    words = text_key(query).split()
+    if set(words) & {"не", "ни", "без", "или", "либо"}:
+        return None
+    explicit = []
+    for option in options:
+        name = sorted(text_key(option.product_name).split()) if option.product_name else []
+        if not name or not set(target).issubset(name):
+            continue
+        if any(sorted(words[start:start + len(name)]) == name
+               for start in range(len(words) - len(name) + 1)):
+            explicit.append(option)
+    return explicit[0].characteristic_id if len(explicit) == 1 else None
+
+
 def finish_document(request: ExtractRequest, catalog: CatalogContext, attributes: list[Attribute],
                     source_issues: list[Issue], *, search_target: str | None) -> ExtractResponse:
+    debug_print("normalization.start", attributes=len(attributes))
     output = []
     questions = []
     # Rebuild catalog warnings on every request, including continuations.
@@ -69,6 +103,20 @@ def finish_document(request: ExtractRequest, catalog: CatalogContext, attributes
         attribute.normalized_value = None
         attribute.message = None
         selected = attribute.characteristic_id
+        if selected is None and len(options) > 1:
+            # LLM aliases are suggestions, not an exhaustive dictionary. It may
+            # omit the same named characteristic for the explicitly named product.
+            # Recheck all definitions with these names before choosing a scope.
+            names = {text_key(option.name) for option in options}
+            scope_options = [option_for(definition) for definition in catalog.definitions
+                             if text_key(definition.name) in names]
+            selected = _option_for_target(scope_options, search_target, request.query)
+            if selected is not None:
+                if selected not in {option.characteristic_id for option in options}:
+                    options.append(next(option for option in scope_options if option.characteristic_id == selected))
+                    options.sort(key=lambda option: option.characteristic_id)
+                debug_print("characteristic.selected_by_target", attribute_id=attribute.id,
+                            characteristic_id=selected, search_target=search_target)
         if selected:
             definition = catalog.get_definition(selected)
             if definition is None:
@@ -109,6 +157,7 @@ def finish_document(request: ExtractRequest, catalog: CatalogContext, attributes
             attribute.normalized_value = normalize_value(attribute.original_value, definition)
             attribute.status = "resolved"
         except NormalizationProblem as error:
+            debug_print("normalization.clarification", attribute_id=attribute.id, code=error.code, message=str(error))
             attribute.status = "needs_clarification"
             attribute.message = str(error)
             questions.append(Clarification(
@@ -136,14 +185,20 @@ class ExtractionService:
         self.client = client
 
     async def process(self, request: ExtractRequest) -> ExtractResponse:
+        debug_print("pipeline.start", mode="initial" if request.is_initial else "continuation",
+                    candidates=len(request.candidates))
         if not request.is_initial and request.input_fingerprint != input_fingerprint(request):
             raise RequestStateError("Изменился запрос/список кандидатов или отсутствует input_fingerprint. Отправьте attributes=null.")
         catalog = await asyncio.to_thread(prepare_catalog, request.candidates, self.repository)
+        debug_print("catalog.loaded", definitions=len(catalog.definitions), complete=catalog.complete,
+                    issues=[issue.model_dump() for issue in catalog.issues])
         if not catalog.complete:
             raise IncompleteCatalogError(catalog.issues)
         if request.is_initial:
             client = self.client or LMStudioClient(LMStudioSettings.from_env())
             draft = await extract_initial(request, catalog, client)
+            debug_print("extraction.completed", search_target=draft.search_target,
+                        facts=len(draft.facts), issues=[issue.model_dump() for issue in draft.issues])
             attributes = [Attribute(
                 id=fact.id, source_text=fact.source_text, source_span=fact.source_span,
                 mention_type=fact.mention_type, extracted_name=fact.extracted_name,

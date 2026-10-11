@@ -205,6 +205,72 @@ class ExtractionTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(result.facts, [])
         self.assertEqual(result.issues, [])
 
+    async def test_case_changed_quote_restores_original_text_offsets_and_id(self):
+        for query, quote, original in (
+            ("Мужские спортивные брюки", "мужские", "Мужские"),
+            ("🧵 İ Брюки с надписью STRASSE", "strasse", "STRASSE"),
+            ("Брюки с надписью A+B (XL)", "a+b (xl)", "A+B (XL)"),
+        ):
+            with self.subTest(query=query):
+                request, catalog = setup_context(query)
+                _, _, aliases = prepare_extraction(request, catalog)
+                fact = model_output()["facts"][2]
+                fact["source_text"] = quote
+                output = {"search_target": "Брюки", "facts": [fact], "unsupported": []}
+                result = bind_extraction(output, request, catalog, aliases)
+                actual = result.facts[0]
+                self.assertEqual(actual.source_text, original)
+                self.assertEqual(actual.source_span.start, query.index(original))
+                self.assertEqual(query[actual.source_span.start:actual.source_span.end], original)
+                fact["source_text"] = original
+                self.assertEqual(bind_extraction(output, request, catalog, aliases), result)
+
+    async def test_case_insensitive_repeated_quotes_require_valid_occurrence(self):
+        request, catalog = setup_context("Мужские брюки, МУЖСКИЕ шорты")
+        fact = model_output()["facts"][2]
+        fact.update(source_text="мужские", occurrence=1)
+        output = {"search_target": "Одежда", "facts": [fact], "unsupported": []}
+        result = await extract_initial(request, catalog, self.client(envelope(output)))
+        self.assertEqual(result.facts[0].source_text, "МУЖСКИЕ")
+        self.assertEqual(result.facts[0].source_span.start, request.query.index("МУЖСКИЕ"))
+        fact["occurrence"] = 2
+        with self.assertRaises(LLMInvalidOutputError):
+            await extract_initial(request, catalog, self.client(envelope(output)))
+        # Existing exact matches keep their original priority and numbering.
+        fact.update(source_text="МУЖСКИЕ", occurrence=0)
+        exact = await extract_initial(request, catalog, self.client(envelope(output)))
+        self.assertEqual(exact, result)
+
+    async def test_case_changed_unsupported_quote_restores_original_source(self):
+        request, catalog = setup_context("Молоток НЕ больше 500 г")
+        output = {"search_target": "Молоток", "facts": [], "unsupported": [{
+            "source_text": "не больше 500 г", "occurrence": 0, "reason": "inequality",
+        }]}
+        result = await extract_initial(request, catalog, self.client(envelope(output)))
+        self.assertEqual(result.issues[0].source_text, "НЕ больше 500 г")
+        span = result.issues[0].source_span
+        self.assertEqual(request.query[span.start:span.end], result.issues[0].source_text)
+
+    async def test_invented_unit_is_removed_but_explicit_units_are_preserved(self):
+        for query, unit, expected in (
+            ("Шапка размер 56", "см", None),
+            ("Шапка из смесового материала, размер 56", "см", None),
+            ("Шапка размер 56 см", "см", "см"),
+            ("Шапка размер 56см", "см", "см"),
+            ("Шапка размер 56 сантиметров", "см", "см"),
+            ("Шапка размер в сантиметрах 56", "см", "см"),
+            ("Шапка размер 56 мм", "см", "см"),
+            ("Шапка размер 56 попугаев", "попугай", "попугай"),
+        ):
+            with self.subTest(query=query):
+                request, catalog = setup_context(query)
+                fact = model_output()["facts"][0]
+                fact.update(source_text="56", original_value={"type": "number", "value": 56, "unit": unit})
+                output = {"search_target": "Шапка", "facts": [fact], "unsupported": []}
+                result = await extract_initial(request, catalog, self.client(envelope(output)))
+                self.assertEqual(result.facts[0].original_value.unit, expected)
+                self.assertEqual(result.facts[0].original_value.value, 56)
+
     async def test_range_endpoints_are_issues_even_when_model_emits_duplicate_facts(self):
         request, catalog = setup_context("Молоток рукоятка 100-120 см, гравировка дракон")
         endpoints = []

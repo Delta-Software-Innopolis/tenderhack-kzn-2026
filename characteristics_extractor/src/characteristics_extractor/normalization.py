@@ -1,6 +1,7 @@
 """Normalize one selected definition; never compare a value with product ranges."""
 
 from functools import lru_cache
+from decimal import Decimal
 import re
 
 import pymorphy3
@@ -43,6 +44,19 @@ def normalize_value(value: OriginalValue, definition: CharacteristicDefinition):
             raw = "Да" if value.value else "Нет"
         elif value.type == "string":
             raw = value.value
+        elif value.type == "number" and value.unit is None:
+            # KTRU may encode a size as a qualitative label ("56"). Preserve
+            # that official representation when the supplied number matches
+            # exactly; never round, choose a range, or silently discard units.
+            matches = [variant for variant in variants
+                       if re.fullmatch(r"[+-]?\d+(?:[.,]\d+)?", variant.strip())
+                       and Decimal(variant.strip().replace(",", ".")) == Decimal(str(value.value))]
+            if len(matches) == 1:
+                return NormalizedString(type="string", value=matches[0])
+            raise NormalizationProblem(
+                "Не удалось однозначно привести число к текстовому значению справочника. Уточните значение характеристики.",
+                suggestions=variants,
+            )
         else:
             raise NormalizationProblem("Для этой характеристики требуется текстовое значение", suggestions=variants)
         key = text_key(raw)

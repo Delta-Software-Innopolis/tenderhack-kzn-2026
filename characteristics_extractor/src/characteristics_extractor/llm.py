@@ -6,6 +6,7 @@ import json
 import httpx
 
 from .config import LMStudioSettings
+from .debug import body_for_debug, debug_enabled, debug_print
 
 
 class LLMError(RuntimeError):
@@ -77,6 +78,7 @@ class LMStudioClient:
         if self.settings.reasoning_effort is not None:
             payload["reasoning_effort"] = self.settings.reasoning_effort
         size = len(json.dumps(payload, ensure_ascii=False, allow_nan=False))
+        debug_print("llm.request", payload=payload, chars=size, max_prompt_chars=self.settings.max_prompt_chars)
         if size > self.settings.max_prompt_chars:
             raise LLMLimitError("Запрос превышает лимит размера контекста; данные не были обрезаны")
         return payload
@@ -96,10 +98,20 @@ class LMStudioClient:
                 ) as client:
                     async with client.stream("POST", self.settings.base_url + "/chat/completions", json=payload) as response:
                         if response.status_code != 200:
+                            if debug_enabled():
+                                error_body = bytearray()
+                                async for chunk in response.aiter_bytes():
+                                    error_body.extend(chunk[:max(0, 65536 - len(error_body))])
+                                    if len(error_body) >= 65536:
+                                        break
+                                debug_print("llm.http_error", status=response.status_code,
+                                            body=body_for_debug(bytes(error_body)), truncated=len(error_body) >= 65536)
                             raise LLMUnavailableError(f"LM Studio вернул HTTP {response.status_code}")
                         content = bytearray()
                         async for chunk in response.aiter_bytes():
                             if len(content) + len(chunk) > self.settings.max_response_bytes:
+                                debug_print("llm.response_limit", received_bytes=len(content) + len(chunk),
+                                            max_response_bytes=self.settings.max_response_bytes)
                                 raise LLMLimitError("Ответ LM Studio превышает лимит размера")
                             content.extend(chunk)
         except (TimeoutError, httpx.TimeoutException) as error:
@@ -107,6 +119,8 @@ class LMStudioClient:
         except httpx.RequestError as error:
             raise LLMUnavailableError("Не удалось подключиться к LM Studio") from error
 
+        if debug_enabled():
+            debug_print("llm.response", status=200, body=body_for_debug(bytes(content)))
         envelope = parse_json(bytes(content))
         if not isinstance(envelope, dict) or not isinstance(envelope.get("choices"), list) or len(envelope["choices"]) != 1:
             raise LLMInvalidOutputError("Ожидался один ответ модели в choices")

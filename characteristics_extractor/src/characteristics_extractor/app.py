@@ -9,6 +9,7 @@ from pydantic import ValidationError
 
 from .api_docs import EXTRACT_DESCRIPTION, EXTRACT_RESPONSES, REQUEST_EXAMPLES, HealthResponse
 from .config import load_environment
+from .debug import DebugPrintMiddleware, debug_exception
 from .extraction import IncompleteCatalogError
 from .llm import LLMError, LLMTimeoutError, LLMUnavailableError, LMStudioClient
 from .pipeline import ExtractionService, RequestStateError
@@ -31,6 +32,8 @@ def create_app(*, repository: KtruRepository | None = None, client: LMStudioClie
     origins = os.getenv("EXTRACTOR_CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",")
     app.add_middleware(CORSMiddleware, allow_origins=[origin.strip() for origin in origins if origin.strip()],
                        allow_methods=["GET", "POST"], allow_headers=["Content-Type"], allow_credentials=False)
+    app.add_middleware(DebugPrintMiddleware,
+                       enabled=os.getenv("EXTRACTOR_DEBUG_PRINT", "false").strip().lower() in {"1", "true", "yes", "on"})
 
     @app.get("/health", response_model=HealthResponse, operation_id="getHealth", tags=["Состояние"],
              summary="Проверить доступность сервиса",
@@ -45,13 +48,17 @@ def create_app(*, repository: KtruRepository | None = None, client: LMStudioClie
         try:
             return await service.process(request)
         except RequestStateError as error:
+            debug_exception(error)
             raise HTTPException(422, detail={"code": "invalid_state", "message": str(error)}) from error
         except IncompleteCatalogError as error:
+            debug_exception(error)
             raise HTTPException(409, detail={"code": "incomplete_catalog", "message": str(error),
                                             "issues": [issue.model_dump() for issue in error.issues]}) from error
         except CatalogUnavailableError as error:
+            debug_exception(error)
             raise HTTPException(503, detail={"code": "catalog_unavailable", "message": str(error)}) from error
         except LLMError as error:
+            debug_exception(error)
             status = 504 if isinstance(error, LLMTimeoutError) else 503 if isinstance(error, LLMUnavailableError) else 502
             raise HTTPException(status, detail={"code": error.code, "message": str(error)}) from error
         except ValidationError as error:
@@ -59,6 +66,7 @@ def create_app(*, repository: KtruRepository | None = None, client: LMStudioClie
             # must not be misreported as user input errors or expose source data.
             if error.title != "LMStudioSettings":
                 raise
+            debug_exception(error)
             raise HTTPException(503, detail={"code": "configuration_error", "message": "Проверьте переменные LM_STUDIO_*"}) from error
 
     return app

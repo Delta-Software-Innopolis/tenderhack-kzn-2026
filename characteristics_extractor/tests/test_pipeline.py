@@ -5,7 +5,7 @@ from unittest.mock import patch
 import httpx
 
 from characteristics_extractor.app import create_app
-from characteristics_extractor.catalog import CatalogValue
+from characteristics_extractor.catalog import CatalogUnit, CatalogValue
 from characteristics_extractor.config import LMStudioSettings
 from characteristics_extractor.llm import LMStudioClient, LLMTimeoutError, LLMTruncatedError, LLMUnavailableError
 from characteristics_extractor.normalization import NormalizationProblem, normalize_value
@@ -18,6 +18,31 @@ from test_extraction import setup_context, envelope, model_output
 
 
 class UnitTests(unittest.TestCase):
+    def text_definition(self, variants):
+        _, context = setup_context()
+        definition = context.definitions[0].model_copy(update={"name": "Размер", "ktru_type": 1, "units": [None]})
+        definition.values = [CatalogValue(quality_description=value, concrete_value=None,
+            min_value=None, max_value=None, min_notation=None, max_notation=None, value_format="S", unit=None)
+            for value in variants]
+        return definition
+
+    def test_numeric_sizes_match_exact_text_labels_without_changing_original(self):
+        for number, label in ((56, "56"), (56.0, "56"), (56.5, "56,5")):
+            with self.subTest(number=number, label=label):
+                original = OriginalNumber(type="number", value=number, unit=None)
+                result = normalize_value(original, self.text_definition([label, "60"]))
+                self.assertEqual(result.type, "string")
+                self.assertEqual(result.value, label)
+                self.assertEqual(original.value, number)
+                self.assertIsNone(original.unit)
+
+    def test_numeric_text_conversion_does_not_guess_or_discard_units(self):
+        for variants, number, unit in ((["55", "57"], 56, None), (["54-56"], 56, None),
+                                       (["56", "56.0"], 56, None), (["56"], 56, "см"),
+                                       (["56"], 56.1, None), (["56 см"], 56, None)):
+            with self.subTest(variants=variants, number=number, unit=unit), self.assertRaises(NormalizationProblem):
+                normalize_value(OriginalNumber(type="number", value=number, unit=unit), self.text_definition(variants))
+
     def test_conversions_include_decimal_area_offset_and_charge(self):
         for value, source, code, expected in (
             (15, "см", "003", 150), (0.1, "см", "003", 1),
@@ -105,6 +130,148 @@ class PipelineTests(unittest.IsolatedAsyncioTestCase):
         resumed = await self.resume(document)
         self.assertEqual(resumed, result)
         self.assertEqual(len(self.calls), 1)
+
+    def prepare_size_options(self, search_target="Брюки спортивные"):
+        self.request, _ = setup_context("Спортивные брюки размер 50")
+        base = self.context.definitions[0]
+        self.context.definitions = [
+            base.model_copy(update={"id": "generic_size", "name": "Российский размер",
+                                    "product_name": "Брюки", "units": [None]}),
+            base.model_copy(update={"id": "sports_size", "name": "Российский размер",
+                                    "product_name": "Брюки спортивные", "units": [None]}),
+        ]
+        self.response = envelope({"search_target": search_target, "facts": [{
+            "source_text": "размер 50", "occurrence": 0, "mention_type": "explicit",
+            "extracted_name": "Российский размер",
+            "original_value": {"type": "number", "value": 50, "unit": None},
+            "characteristic_ids": ["c1", "c2"],
+        }], "unsupported": []})
+
+    async def test_size_selects_unique_product_scope_and_preserves_state(self):
+        self.prepare_size_options()
+        candidates_before = [c.model_dump() for c in self.request.candidates]
+        first = await self.initial()
+        self.assertEqual(first.status, "completed")
+        self.assertEqual(first.clarifications, [])
+        attribute = first.attributes[0]
+        self.assertEqual(attribute.characteristic_id, "sports_size")
+        self.assertEqual(attribute.characteristic_name, "Российский размер")
+        self.assertEqual(attribute.normalized_value.value, 50)
+        self.assertIsNone(attribute.normalized_value.unit)
+        self.assertEqual(len(attribute.characteristic_options), 2)
+        self.assertEqual([c.model_dump() for c in self.request.candidates], candidates_before)
+        self.assertEqual(await self.resume(first.model_dump()), first)
+        self.assertEqual(len(self.calls), 1)
+        # Previously returned ambiguous documents can also be completed without LLM.
+        document = first.model_dump()
+        document["attributes"][0].update(characteristic_id=None, status="needs_clarification", normalized_value=None)
+        recovered = await self.resume(document)
+        self.assertEqual(recovered, first)
+
+    async def test_product_scope_uses_full_lemmas_and_allows_word_order(self):
+        for target in ("Спортивные брюки", "спортивных брюк", "БРЮКИ СПОРТИВНЫЕ"):
+            with self.subTest(target=target):
+                self.prepare_size_options(target)
+                result = await self.initial()
+                self.assertEqual(result.attributes[0].characteristic_id, "sports_size")
+                self.assertEqual(result.clarifications, [])
+
+    async def test_unknown_or_nonmatching_product_target_keeps_question(self):
+        for target in (None, "Одежда", "Брюки спортивные детские"):
+            with self.subTest(target=target):
+                self.prepare_size_options(target)
+                result = await self.initial()
+                self.assertEqual(result.status, "needs_clarification")
+                self.assertIsNone(result.attributes[0].characteristic_id)
+                self.assertEqual(result.clarifications[0].kind, "choose_characteristic")
+
+    async def test_multiple_characteristics_of_target_still_require_selection(self):
+        self.prepare_size_options()
+        self.context.definitions[0].product_name = "Брюки спортивные"
+        self.context.definitions[0].name = "Размер по другой шкале"
+        result = await self.initial()
+        self.assertEqual(result.status, "needs_clarification")
+        self.assertEqual(len(result.clarifications[0].options), 2)
+
+    async def test_explicit_user_selection_is_not_overridden_by_target(self):
+        self.prepare_size_options()
+        result = await self.initial()
+        document = result.model_dump()
+        document["attributes"][0].update(characteristic_id="generic_size", resolution_source="user")
+        resumed = await self.resume(document)
+        self.assertEqual(resumed.attributes[0].characteristic_id, "generic_size")
+        self.assertEqual(resumed.status, "completed")
+
+    def prepare_hat_options(self, query="Зимняя шапка унисекс из текстиля, размер 56"):
+        self.request, _ = setup_context(query)
+        size = UnitTests().text_definition(["54", "55", "56", "57"])
+        self.context.definitions = [
+            size.model_copy(update={"id": "winter_size", "product_name": "Шапка зимняя"}),
+            size.model_copy(update={"id": "child_size", "product_name": "Шапка зимняя детская"}),
+            size.model_copy(update={"id": "head_size", "name": "Размер (обхват головы)",
+                                    "product_name": "Шапка-шлем детская", "ktru_type": 2,
+                                    "units": [CatalogUnit(okei_code="004", name="Сантиметр")]}),
+        ]
+        self.response = envelope({"search_target": "Шапка", "facts": [{
+            "source_text": "размер 56", "occurrence": 0, "mention_type": "explicit",
+            "extracted_name": "Размер", "original_value": {"type": "number", "value": 56, "unit": None},
+            "characteristic_ids": ["c2", "c1", "c3"],
+        }], "unsupported": []})
+
+    async def test_hat_size_uses_explicit_query_scope_and_never_appends_number(self):
+        self.prepare_hat_options()
+        before = self.request.model_dump()
+        first = await self.initial()
+        self.assertEqual(first.status, "completed")
+        self.assertEqual(first.clarifications, [])
+        attribute = first.attributes[0]
+        self.assertEqual(attribute.characteristic_id, "winter_size")
+        self.assertEqual(attribute.original_value.value, 56)
+        self.assertEqual(attribute.normalized_value.type, "string")
+        self.assertEqual(attribute.normalized_value.value, "56")
+        self.assertIsNone(attribute.normalized_value.unit)
+        for field in ("query", "canonical_query", "lemmatized_query"):
+            self.assertEqual(getattr(first, field), before[field])
+        document = first.model_dump()
+        document["attributes"][0].update(characteristic_id=None, normalized_value=None, status="needs_clarification")
+        self.assertEqual(await self.resume(document), first)
+        self.assertEqual(len(self.calls), 1)
+
+    async def test_query_scope_fallback_does_not_guess_missing_or_negated_modifiers(self):
+        for query in ("Шапка размер 56", "Не зимняя шапка размер 56", "Зимняя шапка или летняя, размер 56",
+                      "Шапка из текстиля, размер 56"):
+            with self.subTest(query=query):
+                self.prepare_hat_options(query)
+                result = await self.initial()
+                self.assertEqual(result.status, "needs_clarification")
+                self.assertIsNone(result.attributes[0].characteristic_id)
+
+    async def test_query_scope_fallback_keeps_ambiguity_within_same_product(self):
+        self.prepare_hat_options()
+        self.context.definitions[1].product_name = "Шапка зимняя"
+        result = await self.initial()
+        self.assertEqual(result.status, "needs_clarification")
+        self.assertEqual(result.clarifications[0].kind, "choose_characteristic")
+
+    async def test_size_is_stable_when_llm_invents_unit_or_omits_product_option(self):
+        import json
+        for unit in (None, "см"):
+            for ids in (["c1", "c2", "c3"], ["c2", "c3"]):
+                with self.subTest(unit=unit, ids=ids):
+                    self.prepare_hat_options()
+                    output = json.loads(self.response["choices"][0]["message"]["content"])
+                    output["facts"][0]["original_value"]["unit"] = unit
+                    output["facts"][0]["characteristic_ids"] = ids
+                    self.response = envelope(output)
+                    result = await self.initial()
+                    self.assertEqual(result.status, "completed")
+                    self.assertEqual(result.clarifications, [])
+                    attribute = result.attributes[0]
+                    self.assertEqual(attribute.characteristic_id, "winter_size")
+                    self.assertEqual(attribute.normalized_value.value, "56")
+                    self.assertIsNone(attribute.original_value.unit)
+                    self.assertEqual(result.query, self.request.query)
+                    self.assertEqual(await self.resume(result.model_dump()), result)
 
     async def test_user_choice_completes_on_new_service_and_derived_fields_are_recomputed(self):
         document = (await self.initial()).model_dump()
@@ -236,6 +403,23 @@ class PipelineTests(unittest.IsolatedAsyncioTestCase):
                     result = await http.post("/extract", json=self.request.model_dump())
             with self.subTest(error=error):
                 self.assertEqual(result.status_code, code)
+
+    async def test_http_case_changed_quote_returns_valid_document_and_resumes(self):
+        self.request, _ = setup_context("Мужские спортивные брюки")
+        fact = model_output()["facts"][2]
+        fact.update(source_text="мужские", extracted_name="Назначение",
+                    original_value={"type": "string", "value": "мужские", "unit": None})
+        self.response = envelope({"search_target": "Брюки спортивные", "facts": [fact], "unsupported": []})
+        app = create_app(repository=self.repository, client=self.client)
+        async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app), base_url="http://test") as http:
+            response = await http.post("/extract", json=self.request.model_dump())
+        self.assertEqual(response.status_code, 200, response.text)
+        document = response.json()
+        self.assertEqual(document["attributes"][0]["source_text"], "Мужские")
+        self.assertEqual(document["attributes"][0]["source_span"], {"start": 0, "end": 7})
+        resumed = await self.resume(document)
+        self.assertEqual(resumed.model_dump(), document)
+        self.assertEqual(len(self.calls), 1)
 
     async def test_http_range_returns_clarification_preserves_scalar_and_resumes(self):
         query = "Молоток рукоятка 100-120 см, масса 500 г"
