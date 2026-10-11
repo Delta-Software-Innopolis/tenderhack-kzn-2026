@@ -1,19 +1,3 @@
-export type SearchCandidate = {
-  ktru_code: string
-  name?: string | null
-  status?: string | null
-  okpd2_code?: string | null
-  rrf_score?: number
-  is_template: boolean
-}
-
-export type SearchResponse = {
-  query: string
-  canonical_query: string
-  lemmatized_query: string
-  candidates: SearchCandidate[]
-}
-
 export type SourceSpan = { start: number; end: number }
 
 export type OriginalValue =
@@ -49,43 +33,56 @@ export type ExtractedAttribute = {
   characteristic_options?: CharacteristicOption[]
 }
 
-export type Clarification = {
-  id: string
-  attribute_id: string
-  kind: 'choose_characteristic' | 'specify_unit' | 'specify_value'
-  question: string
-  options?: CharacteristicOption[]
-  suggested_values?: string[]
+export type Fact = {
+  name: string
+  type: 'string' | 'number' | 'boolean'
+  value: string | number | boolean
+  unit?: string | null
 }
 
-export type ExtractionIssue = {
-  id: string
-  code: string
+export type FunnelStep = { step: string; before: number; after: number }
+
+export type HintOption = { label: string; fact: Fact; remaining: number }
+
+export type AmbiguousHint = {
+  name: string
+  required: boolean
+  avg: number
+  options: HintOption[]
+}
+
+export type ConflictFix = {
+  fact: Fact
+  label: string
+  drop: { remaining: number }
+  options: Record<string, unknown>[]
+  blocked_by_other_conflict: boolean
+}
+
+export type ConflictHint = {
+  kind: 'conflict'
+  facts: Fact[]
   message: string
-  blocking: boolean
-  attribute_id?: string | null
-  candidate_code?: string | null
-  source_text?: string | null
-  source_span?: SourceSpan | null
+  suggestions: unknown[]
+  fixes: ConflictFix[]
 }
 
-export type ExtractApiResponse = {
-  schema_version: '1.0'
-  search_target: string | null
-  query: string
-  canonical_query: string
-  lemmatized_query: string
+export type Hint = ConflictHint | AmbiguousHint | Record<string, unknown>
+
+export const isConflictHint = (h: Hint): h is ConflictHint =>
+  'kind' in h && h.kind === 'conflict'
+
+export const isAmbiguousHint = (h: Hint): h is AmbiguousHint =>
+  'options' in h && 'required' in h && !('kind' in h)
+
+export type AnalyzeStatus = 'resolved' | 'ambiguous' | 'conflict'
+
+export type AnalyzeResponse = {
+  funnel: FunnelStep[]
+  candidates: string[]
+  status: AnalyzeStatus
+  result_code: string | null
+  culprit: string | null
+  hints: Hint[]
   attributes: ExtractedAttribute[]
-  clarifications?: Clarification[]
-  issues?: ExtractionIssue[]
-  status: 'completed' | 'needs_clarification'
-  input_fingerprint?: string | null
 }
-
-export type ExtractResponse = ExtractApiResponse & {
-  candidates: SearchCandidate[]
-}
-
-export type ClarificationSelection =
-  | { type: 'characteristic'; characteristicId: string }
-  | { type: 'suggested_value'; value: string }

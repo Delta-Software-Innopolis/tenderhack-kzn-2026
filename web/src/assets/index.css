@@ -2064,3 +2064,5 @@ h1,
     animation-iteration-count: 1 !important;
   }
 }
+
+.funnel ol { margin: 0; padding-left: 1.25rem; display: grid; gap: .35rem; }

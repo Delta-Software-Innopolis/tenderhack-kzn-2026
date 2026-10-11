@@ -2,11 +2,18 @@ import requests
 from fastapi import FastAPI, HTTPException
 from typing import Any, Literal
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware   # <-- add
 
 from repo import load_positions
 from analyze import analyze
 
 app = FastAPI()
+app.add_middleware(                                   # <-- add
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 DB = "../ktru.db"
 

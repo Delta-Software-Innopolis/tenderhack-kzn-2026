@@ -5,7 +5,7 @@ import { type Category } from './components/CategoryFilters'
 import SearchBar from './components/SearchBar'
 import SearchResults from './components/SearchResults'
 import ThemeSwitcher, { type ThemePreference } from './components/ThemeSwitcher'
-import { useRefineSearch, useSearch } from './hooks/useSearch'
+import { useSearch } from './hooks/useSearch'
 
 const categoryByQueryValue: Record<string, Category> = {
   instruments: 'tools',
@@ -47,8 +47,6 @@ export default function App() {
     window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light',
   )
   const search = useSearch()
-  const refinement = useRefineSearch()
-  const searchResult = refinement.data ?? search.data
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
@@ -84,10 +82,10 @@ export default function App() {
     }
   }, [])
 
-  const handleSearch = () => {
-    const normalizedQuery = query.trim()
+  const runSearch = (rawQuery: string) => {
+    const normalizedQuery = rawQuery.trim()
     if (!normalizedQuery) return
-    refinement.reset()
+    setQuery(normalizedQuery)
     search.mutate(normalizedQuery, {
       onSuccess: () => {
         window.setTimeout(() => {
@@ -96,6 +94,8 @@ export default function App() {
       },
     })
   }
+
+  const handleSearch = () => runSearch(query)
 
   const handleCategoryChange = (nextCategory: Category) => {
     const url = new URL(window.location.href)
@@ -169,23 +169,24 @@ export default function App() {
               value={query}
               onChange={setQuery}
               onSubmit={handleSearch}
-              isLoading={search.isPending || refinement.isPending}
+              isLoading={search.isPending}
             />
           </section>
 
-          {(search.isError || refinement.isError) && (
+          {search.isError && (
             <div className="search-error" role="alert">
               <strong>Не удалось выполнить поиск.</strong>
-              <span>{(search.error ?? refinement.error)?.message}</span>
+              <span>{search.error.message}</span>
             </div>
           )}
 
-          {searchResult && (
+          {search.data && (
             <SearchResults
-              key={`${searchResult.input_fingerprint ?? searchResult.query}-${refinement.submittedAt}`}
-              result={searchResult}
-              isRefining={refinement.isPending}
-              onRefine={(selections) => refinement.mutate({ result: searchResult, selections })}
+              key={search.submittedAt}
+              result={search.data}
+              query={search.variables ?? ''}
+              isLoading={search.isPending}
+              onRequery={runSearch}
             />
           )}
 

@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import type {
-  ClarificationSelection,
-  ExtractResponse,
-  NormalizedValue,
-  OriginalValue,
-  SearchCandidate,
+import { useQueries } from '@tanstack/react-query'
+import { getItem } from '../api/ktru'
+import {
+  isAmbiguousHint,
+  isConflictHint,
+  type AnalyzeResponse,
+  type ExtractedAttribute,
+  type Fact,
+  type NormalizedValue,
+  type OriginalValue,
 } from '../types/search'
-import { useCatalogueItem } from '../hooks/useCatalogue'
 import CatalogueCard from './CatalogueCard'
 
-const statusLabels: Record<string, string> = {
-  ACTIVE: 'Действует',
-  INACTIVE: 'Не действует',
-  TERMINATED: 'Прекращена',
+const statusTitles: Record<AnalyzeResponse['status'], string> = {
+  resolved: 'Позиция найдена',
+  ambiguous: 'Запрос слишком общий',
+  conflict: 'Характеристики конфликтуют',
 }
 
 const attributeStatusLabels = {
@@ -32,48 +34,55 @@ function formatNormalizedValue(value: NormalizedValue): string {
   return value.value
 }
 
-type SearchResultsProps = {
-  result: ExtractResponse
-  isRefining: boolean
-  onRefine: (selections: Record<string, ClarificationSelection>) => void
+// --- query rewriting (backend only accepts a plain query string) ---
+
+function appendFact(query: string, fact: Fact): string {
+  if (fact.type === 'string') return `${query} ${fact.value}`.trim()
+  if (fact.type === 'number') return `${query} ${fact.name} ${fact.value}`.trim()
+  return `${query} ${fact.name}`.trim()
 }
 
-function SearchCandidateCard({ candidate }: { candidate: SearchCandidate }) {
-  const itemQuery = useCatalogueItem(candidate.ktru_code)
-  const relevance = candidate.rrf_score === undefined
-    ? 'Результат поиска'
-    : `Релевантность ${(candidate.rrf_score * 100).toFixed(2)}`
+function cutSpan(query: string, start: number, end: number): string {
+  return `${query.slice(0, start)} ${query.slice(end)}`.replace(/\s+/g, ' ').trim()
+}
 
-  if (itemQuery.data) {
-    return <CatalogueCard item={itemQuery.data} secondaryLabel={relevance} />
-  }
-
-  return (
-    <article className="catalogue-card search-result-card">
-      <div className="catalogue-card__topline">
-        <span className={`catalogue-card__status catalogue-card__status--${candidate.status?.toLowerCase() ?? 'unknown'}`}>
-          {candidate.status ? statusLabels[candidate.status] ?? candidate.status : 'Статус неизвестен'}
-        </span>
-        <span className="catalogue-card__version">{relevance}</span>
-      </div>
-      <h3>{candidate.name ?? 'Без наименования'}</h3>
-      <p className="catalogue-card__code"><span>Код КТРУ</span>{candidate.ktru_code}</p>
-      <p className="catalogue-card__okpd"><span>ОКПД-2</span>{candidate.okpd2_code ?? 'Не указан'}</p>
-      <div className="catalogue-card__bottom">
-        <span>{itemQuery.isError ? 'Характеристики недоступны' : 'Загружаем характеристики…'}</span>
-        <a href={`#/catalogue/${encodeURIComponent(candidate.ktru_code)}`}>Подробнее <span aria-hidden="true">→</span></a>
-      </div>
-    </article>
+function dropFact(query: string, fact: Fact, attributes: ExtractedAttribute[]): string {
+  const wanted = String(fact.value).toLowerCase()
+  const attribute = attributes.find(
+    (a) => String(a.normalized_value?.value ?? '').toLowerCase() === wanted,
   )
+  if (attribute) {
+    const { start, end } = attribute.source_span
+    if (query.slice(start, end).toLowerCase() === attribute.source_text.toLowerCase()) {
+      return cutSpan(query, start, end)
+    }
+  }
+  const index = query.toLowerCase().indexOf(wanted)
+  return index >= 0 ? cutSpan(query, index, index + wanted.length) : query
 }
 
-export default function SearchResults({ result, isRefining, onRefine }: SearchResultsProps) {
-  const candidates = result.candidates.filter((candidate) => !candidate.is_template)
-  const clarifications = result.clarifications ?? []
-  const issues = result.issues ?? []
-  const [selections, setSelections] = useState<Record<string, ClarificationSelection>>({})
-  const canRefine = clarifications.length > 0
-    && clarifications.every((clarification) => selections[clarification.id] !== undefined)
+type SearchResultsProps = {
+  result: AnalyzeResponse
+  query: string
+  isLoading: boolean
+  onRequery: (query: string) => void
+}
+
+export default function SearchResults({ result, query, isLoading, onRequery }: SearchResultsProps) {
+  const itemQueries = useQueries({
+    queries: result.candidates.map((code) => ({
+      queryKey: ['catalogue-item', code],
+      queryFn: () => getItem(code),
+      staleTime: 5 * 60_000,
+    })),
+  })
+
+  const candidates = result.candidates
+    .map((code, index) => ({ code, query: itemQueries[index] }))
+    .filter(({ query: q }) => q.data?.is_template !== 1)
+
+  const conflictHints = result.hints.filter(isConflictHint)
+  const ambiguousHints = result.hints.filter(isAmbiguousHint)
 
   return (
     <section className="search-results" id="search-results" aria-labelledby="search-results-title">
@@ -83,22 +92,13 @@ export default function SearchResults({ result, isRefining, onRefine }: SearchRe
           <h2 id="search-results-title">Мы поняли ваш запрос</h2>
         </div>
         <div className={`extraction-status extraction-status--${result.status}`}>
-          {result.status === 'completed' ? 'Разбор завершён' : 'Требуется уточнение'}
+          {statusTitles[result.status]}
         </div>
       </div>
 
       <div className="query-understanding">
         <span>Исходный запрос</span>
-        <strong>«{result.query}»</strong>
-        {result.search_target && (
-          <div className="query-understanding__target">
-            <span>Искомый товар</span>
-            <strong>{result.search_target}</strong>
-          </div>
-        )}
-        {result.canonical_query !== result.query && (
-          <p>Каноническая формулировка: {result.canonical_query}</p>
-        )}
+        <strong>«{query}»</strong>
       </div>
 
       {result.attributes.length > 0 && (
@@ -129,93 +129,97 @@ export default function SearchResults({ result, isRefining, onRefine }: SearchRe
         </div>
       )}
 
-      {clarifications.length > 0 && (
+      {result.funnel.length > 0 && (
+        <div className="funnel">
+          <div className="results-subheading"><h3>Как сужался поиск</h3><span>{result.funnel.length}</span></div>
+          <ol>
+            {result.funnel.map((step, index) => (
+              <li key={`${step.step}-${index}`}>
+                <strong>{step.step}</strong> — {step.before} → {step.after}
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
+
+      {result.status === 'ambiguous' && ambiguousHints.length > 0 && (
         <div className="clarifications" role="status">
-          <div className="results-subheading"><h3>Нужно уточнить</h3><span>{clarifications.length}</span></div>
-          {clarifications.map((clarification) => (
-            <article className="clarification" key={clarification.id}>
-              <strong>{clarification.question}</strong>
-              {clarification.options && clarification.options.length > 0 && (
-                <div className="clarification__options">
-                  {clarification.options.map((option) => {
-                    const selected = selections[clarification.id]
-                    const isSelected = selected?.type === 'characteristic'
-                      && selected.characteristicId === option.characteristic_id
-                    return (
-                      <button
-                        className={isSelected ? 'is-selected' : ''}
-                        type="button"
-                        aria-pressed={isSelected}
-                        key={option.characteristic_id}
-                        onClick={() => setSelections((current) => ({
-                          ...current,
-                          [clarification.id]: {
-                            type: 'characteristic',
-                            characteristicId: option.characteristic_id,
-                          },
-                        }))}
-                      >
-                        {option.name}
-                      </button>
-                    )
-                  })}
-                </div>
-              )}
-              {clarification.suggested_values && clarification.suggested_values.length > 0 && (
-                <div className="clarification__options">
-                  {clarification.suggested_values.map((value) => {
-                    const selected = selections[clarification.id]
-                    const isSelected = selected?.type === 'suggested_value' && selected.value === value
-                    return (
-                      <button
-                        className={isSelected ? 'is-selected' : ''}
-                        type="button"
-                        aria-pressed={isSelected}
-                        key={value}
-                        onClick={() => setSelections((current) => ({
-                          ...current,
-                          [clarification.id]: { type: 'suggested_value', value },
-                        }))}
-                      >
-                        {value}
-                      </button>
-                    )
-                  })}
-                </div>
-              )}
+          <div className="results-subheading">
+            <h3>Уточните запрос</h3><span>{ambiguousHints.length}</span>
+          </div>
+          {ambiguousHints.map((hint) => (
+            <article className="clarification" key={hint.name}>
+              <strong>{hint.name}{hint.required ? ' (обязательная)' : ''}</strong>
+              <div className="clarification__options">
+                {hint.options.map((option) => (
+                  <button
+                    type="button"
+                    key={option.label}
+                    disabled={isLoading}
+                    title={`Останется позиций: ${option.remaining}`}
+                    onClick={() => onRequery(appendFact(query, option.fact))}
+                  >
+                    {option.label} · {option.remaining}
+                  </button>
+                ))}
+              </div>
             </article>
           ))}
-          <button
-            className="clarifications__submit"
-            type="button"
-            disabled={!canRefine || isRefining}
-            onClick={() => onRefine(selections)}
-          >
-            {isRefining ? 'Применяем уточнения…' : 'Применить уточнения'}
-          </button>
         </div>
       )}
 
-      {issues.length > 0 && (
-        <div className="extraction-issues" role="alert">
-          {issues.map((issue) => <p className={issue.blocking ? 'is-blocking' : ''} key={issue.id}>{issue.message}</p>)}
+      {result.status === 'conflict' && conflictHints.map((hint, hintIndex) => (
+        <div className="clarifications" role="alert" key={hintIndex}>
+          <div className="results-subheading"><h3>Конфликт характеристик</h3></div>
+          <p>{hint.message}</p>
+          <div className="clarification__options">
+            {hint.fixes.map((fix) => (
+              <button
+                type="button"
+                key={fix.label}
+                disabled={isLoading || fix.blocked_by_other_conflict}
+                onClick={() => onRequery(dropFact(query, fix.fact, result.attributes))}
+              >
+                Убрать: {fix.label} · останется {fix.drop.remaining}
+              </button>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      {result.status !== 'conflict' && (
+        <div className="candidate-results">
+          <div className="results-subheading">
+            <h3>{result.status === 'resolved' ? 'Найденная позиция КТРУ' : 'Подходящие позиции КТРУ'}</h3>
+            <span>{candidates.length}</span>
+          </div>
+          {candidates.length === 0 ? (
+            <div className="catalogue-empty" role="status">
+              <span className="catalogue-empty__icon" aria-hidden="true">∅</span>
+              <h3>Подходящие позиции не найдены</h3>
+              <p>Попробуйте изменить формулировку или добавить характеристики товара.</p>
+            </div>
+          ) : (
+            <div className="catalogue-grid">
+              {candidates.map(({ code, query: itemQuery }) => {
+                const label = code === result.result_code ? 'Лучшее совпадение' : undefined
+                if (itemQuery.data) {
+                  return <CatalogueCard item={itemQuery.data} secondaryLabel={label} key={code} />
+                }
+                return (
+                  <article className="catalogue-card search-result-card" key={code}>
+                    <p className="catalogue-card__code"><span>Код КТРУ</span>{code}</p>
+                    <div className="catalogue-card__bottom">
+                      <span>{itemQuery.isError ? 'Характеристики недоступны' : 'Загружаем характеристики…'}</span>
+                      <a href={`#/catalogue/${encodeURIComponent(code)}`}>Подробнее <span aria-hidden="true">→</span></a>
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
+          )}
         </div>
       )}
-
-      <div className="candidate-results">
-        <div className="results-subheading"><h3>Подходящие позиции КТРУ</h3><span>{candidates.length}</span></div>
-        {candidates.length === 0 ? (
-          <div className="catalogue-empty" role="status">
-            <span className="catalogue-empty__icon" aria-hidden="true">∅</span>
-            <h3>Подходящие позиции не найдены</h3>
-            <p>Попробуйте изменить формулировку или добавить характеристики товара.</p>
-          </div>
-        ) : (
-          <div className="catalogue-grid">
-            {candidates.map((candidate) => <SearchCandidateCard candidate={candidate} key={candidate.ktru_code} />)}
-          </div>
-        )}
-      </div>
     </section>
   )
 }
