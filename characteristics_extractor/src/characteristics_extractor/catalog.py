@@ -154,7 +154,7 @@ def build_catalog(candidates: Sequence[SearchCandidate], loaded: LoadedCatalog) 
     candidate_ids = {code: [] for code in requested}
     issues: dict[str, Issue] = {}
 
-    def incomplete(code: str, detail: str) -> None:
+    def incomplete(code: str, detail: str, blocking: bool = True) -> None:
         issue_id = _id("issue", ["incomplete_catalog", code, detail])
         issues[issue_id] = Issue(id=issue_id, code="incomplete_catalog", blocking=True,
                                  candidate_code=code, message=detail)
@@ -172,8 +172,11 @@ def build_catalog(candidates: Sequence[SearchCandidate], loaded: LoadedCatalog) 
                                      candidate_code=code, message=f"Кандидат {code} не найден в базе КТРУ")
             continue
         if not position.characteristics:
-            incomplete(code, "У кандидата нет определений характеристик в загруженной базе")
+            incomplete(code, "У кандидата нет определений характеристик в загруженной базе", blocking=False)
         for characteristic in position.characteristics:
+          if not characteristic.values:
+                incomplete(code, f"Нет значений и единиц характеристики: {characteristic.name}", blocking=False)
+                continue
             definition_id = _definition_id(position, characteristic)
             source = CharacteristicSource(
                 candidate_code=code, characteristic_row_id=characteristic.id,
