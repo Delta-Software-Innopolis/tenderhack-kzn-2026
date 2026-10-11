@@ -1,0 +1,87 @@
+{
+  "query": "кровать",
+  "canonical_query": "кровать",
+  "lemmatized_query": "кровать",
+  "candidates": [
+    {
+      "ktru_code": "32.50.30.110-00000040",
+      "name": "Кровать ортопедическая",
+      "status": "ACTIVE",
+      "okpd2_code": "32.50.30.110",
+      "rrf_score": 0.029857397504456328,
+      "is_template": false
+    },
+    {
+      "ktru_code": "32.50.50.190-00002198",
+      "name": "Кровать педиатрическая",
+      "status": "ACTIVE",
+      "okpd2_code": "32.50.50.190",
+      "rrf_score": 0.02619736419157827,
+      "is_template": false
+    },
+    {
+      "ktru_code": "32.50.50.190-00002193",
+      "name": "Кровать педиатрическая",
+      "status": "ACTIVE",
+      "okpd2_code": "32.50.50.190",
+      "rrf_score": 0.026182294223531334,
+      "is_template": false
+    },
+    {
+      "ktru_code": "32.50.50.190-00002192",
+      "name": "Кровать педиатрическая",
+      "status": "ACTIVE",
+      "okpd2_code": "32.50.50.190",
+      "rrf_score": 0.02580128205128205,
+      "is_template": false
+    },
+    {
+      "ktru_code": "32.50.50.190-00002199",
+      "name": "Кровать педиатрическая",
+      "status": "ACTIVE",
+      "okpd2_code": "32.50.50.190",
+      "rrf_score": 0.02533373786407767,
+      "is_template": false
+    },
+    {
+      "ktru_code": "32.50.50.190-00002201",
+      "name": "Кровать педиатрическая",
+      "status": "ACTIVE",
+      "okpd2_code": "32.50.50.190",
+      "rrf_score": 0.024449182658137884,
+      "is_template": false
+    },
+    {
+      "ktru_code": "32.50.50.190-00002191",
+      "name": "Кровать педиатрическая",
+      "status": "ACTIVE",
+      "okpd2_code": "32.50.50.190",
+      "rrf_score": 0.02441520467836257,
+      "is_template": false
+    },
+    {
+      "ktru_code": "32.50.50.190-00002197",
+      "name": "Кровать педиатрическая",
+      "status": "ACTIVE",
+      "okpd2_code": "32.50.50.190",
+      "rrf_score": 0.024186704384724186,
+      "is_template": false
+    },
+    {
+      "ktru_code": "32.50.50.190-00002196",
+      "name": "Кровать педиатрическая",
+      "status": "ACTIVE",
+      "okpd2_code": "32.50.50.190",
+      "rrf_score": 0.023698630136986303,
+      "is_template": false
+    },
+    {
+      "ktru_code": "32.50.50.190-00002195",
+      "name": "Кровать педиатрическая",
+      "status": "ACTIVE",
+      "okpd2_code": "32.50.50.190",
+      "rrf_score": 0.023614523614523618,
+      "is_template": false
+    }
+  ]
+}
