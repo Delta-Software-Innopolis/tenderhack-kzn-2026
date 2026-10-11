@@ -174,7 +174,7 @@ def build_catalog(candidates: Sequence[SearchCandidate], loaded: LoadedCatalog) 
         if not position.characteristics:
             incomplete(code, "У кандидата нет определений характеристик в загруженной базе", blocking=False)
         for characteristic in position.characteristics:
-          if not characteristic.values:
+            if not characteristic.values:
                 incomplete(code, f"Нет значений и единиц характеристики: {characteristic.name}", blocking=False)
                 continue
             definition_id = _definition_id(position, characteristic)
