@@ -1,5 +1,6 @@
 import requests
 from fastapi import FastAPI, HTTPException
+from typing import Any, Literal
 from pydantic import BaseModel
 
 from repo import load_positions
@@ -34,7 +35,116 @@ def convert_facts(api_result):
 class AnalyzeRequest(BaseModel):
     query: str
 
-@app.post("/analyze")
+# ── общие куски ──────────────────────────────────────────────
+
+class Fact(BaseModel):
+    name: str
+    type: Literal["string", "number", "boolean"]
+    value: str | bool | float
+    unit: str | None = None          # в hints у ambiguous-опций unit может отсутствовать
+
+
+class FunnelStep(BaseModel):
+    step: str
+    before: int
+    after: int
+
+
+# ── hints ────────────────────────────────────────────────────
+
+class HintOption(BaseModel):
+    label: str
+    fact: Fact
+    remaining: int
+
+
+class AmbiguousHint(BaseModel):
+    name: str
+    required: bool
+    avg: float
+    options: list[HintOption]
+
+
+class DropInfo(BaseModel):
+    remaining: int
+
+
+class ConflictFix(BaseModel):
+    fact: Fact
+    label: str
+    drop: DropInfo
+    options: list[dict[str, Any]]    # в примерах пустой, форма неизвестна
+    blocked_by_other_conflict: bool
+
+
+class ConflictHint(BaseModel):
+    kind: Literal["conflict"]
+    facts: list[Fact]
+    message: str
+    suggestions: list[Any]
+    fixes: list[ConflictFix]
+
+
+# ── attributes (копия схемы экстрактора) ─────────────────────
+
+class OkeiUnit(BaseModel):
+    okei_code: str
+    name: str
+
+
+class OriginalValue(BaseModel):
+    type: Literal["string", "number", "boolean"]
+    value: str | bool | float
+    unit: str | None = None
+
+
+class NormalizedValue(BaseModel):
+    type: Literal["string", "number", "boolean"]
+    value: str | bool | float
+    unit: OkeiUnit | None = None
+
+
+class CharacteristicOption(BaseModel):
+    characteristic_id: str
+    name: str
+    product_name: str | None = None
+    unit_names: list[str] = []
+
+
+class SourceSpan(BaseModel):
+    start: int
+    end: int
+
+
+class Attribute(BaseModel):
+    id: str
+    source_text: str
+    source_span: SourceSpan
+    mention_type: Literal["explicit", "implicit"]
+    status: Literal["resolved", "unknown", "needs_clarification"]
+    original_value: OriginalValue
+    characteristic_id: str | None = None
+    characteristic_name: str | None = None
+    normalized_value: NormalizedValue | None = None
+    extracted_name: str | None = None
+    message: str | None = None
+    resolution_source: Literal["model", "user"] = "model"
+    characteristic_options: list[CharacteristicOption] = []
+
+
+# ── ответ ────────────────────────────────────────────────────
+
+class AnalyzeResponse(BaseModel):
+    funnel: list[FunnelStep]
+    candidates: list[str]
+    status: Literal["resolved", "ambiguous", "conflict"]
+    result_code: str | None
+    culprit: str | None
+    hints: list[ConflictHint | AmbiguousHint | dict[str, Any]]
+    attributes: list[Attribute]
+
+
+@app.post("/analyze", response_model=AnalyzeResponse)
 def analyze_query(request: AnalyzeRequest):
     try:
         search_response = requests.post(
