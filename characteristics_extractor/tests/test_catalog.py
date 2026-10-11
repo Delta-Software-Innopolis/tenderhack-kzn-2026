@@ -1,3 +1,4 @@
+import asyncio
 import json
 from contextlib import closing
 import os
@@ -7,7 +8,12 @@ from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import patch
 
+import httpx
+
+from characteristics_extractor.app import create_app
 from characteristics_extractor.catalog import build_catalog, prepare_catalog
+from characteristics_extractor.config import LMStudioSettings
+from characteristics_extractor.llm import LMStudioClient
 from characteristics_extractor.repository import CatalogUnavailableError, KtruRepository
 from characteristics_extractor.schemas import ExtractRequest, SearchCandidate
 
@@ -146,13 +152,75 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(KtruRepository.from_env().db_path, self.path.resolve())
 
     def test_empty_candidates_and_missing_candidates_are_diagnostics(self):
-        for inputs in ([], [candidate("absent")], [candidate("empty")]):
+        for inputs in ([], [candidate("absent")]):
             with self.subTest(inputs=inputs):
                 context = prepare_catalog(inputs, self.repository)
                 self.assertFalse(context.complete)
                 self.assertTrue(context.issues)
                 self.assertTrue(all(issue.blocking for issue in context.issues))
                 self.assertEqual(context.candidates, inputs)
+
+    def test_candidates_without_characteristics_are_nonblocking(self):
+        for inputs in ([candidate("empty")], [candidate("empty"), candidate("A")]):
+            with self.subTest(inputs=inputs):
+                context = prepare_catalog(inputs, self.repository)
+                self.assertTrue(context.complete)
+                self.assertEqual(len(context.issues), 1)
+                self.assertFalse(context.issues[0].blocking)
+                self.assertEqual(context.issues[0].candidate_code, "empty")
+                self.assertEqual(context.candidate_characteristic_ids["empty"], [])
+
+    def test_http_empty_definitions_allow_extraction_and_stateless_continuation(self):
+        async def check():
+            for codes in (["empty"], ["empty", "A"]):
+                for with_property in (False, True):
+                    with self.subTest(codes=codes, with_property=with_property):
+                        calls = []
+                        query = "Кровать с надписью Альфа" if with_property else "Кровать"
+                        facts = [{"source_text": "надписью Альфа", "occurrence": 0,
+                                  "mention_type": "explicit", "extracted_name": "Надпись",
+                                  "original_value": {"type": "string", "value": "Альфа", "unit": None},
+                                  "characteristic_ids": []}] if with_property else []
+
+                        def handle(request):
+                            calls.append(request)
+                            payload = json.loads(request.content)
+                            if codes == ["empty"]:
+                                ids = payload["response_format"]["json_schema"]["schema"]["$defs"]["ModelFact"]["properties"]["characteristic_ids"]
+                                self.assertEqual(ids["maxItems"], 0)
+                                self.assertNotIn("enum", ids["items"])
+                            return httpx.Response(200, json={"choices": [{"finish_reason": "stop", "message": {
+                                "content": json.dumps({"search_target": "Кровать", "facts": facts, "unsupported": []}),
+                            }}]})
+
+                        client = LMStudioClient(LMStudioSettings(model="test"), transport=httpx.MockTransport(handle))
+                        body = {"query": query, "canonical_query": query, "lemmatized_query": query.lower(),
+                                "candidates": [candidate(code).model_dump() for code in codes]}
+                        app = create_app(repository=self.repository, client=client)
+                        async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app), base_url="http://test") as http:
+                            response = await http.post("/extract", json=body)
+                        self.assertEqual(response.status_code, 200, response.text)
+                        result = response.json()
+                        self.assertEqual(result["status"], "completed")
+                        self.assertEqual(result["search_target"], "Кровать")
+                        self.assertEqual(result["clarifications"], [])
+                        self.assertEqual(len(result["issues"]), 1)
+                        self.assertFalse(result["issues"][0]["blocking"])
+                        if with_property:
+                            self.assertEqual(result["attributes"][0]["status"], "unknown")
+                            self.assertEqual(result["attributes"][0]["message"], "Неизвестная характеристика")
+                        else:
+                            self.assertEqual(result["attributes"], [])
+                        # Fresh server, no model configured, same warning exactly once.
+                        app = create_app(repository=self.repository)
+                        async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app), base_url="http://test") as http:
+                            resumed = await http.post("/extract", json={**result, "candidates": body["candidates"]})
+                        self.assertEqual(resumed.status_code, 200, resumed.text)
+                        self.assertEqual(resumed.json(), result)
+                        self.assertEqual(len(calls), 1)
+
+        with patch("characteristics_extractor.app.load_environment"), patch.dict(os.environ, {}, clear=True):
+            asyncio.run(check())
 
     def test_original_candidates_and_order_are_preserved_including_duplicates(self):
         inputs = [candidate("B"), candidate("C", "Лопата"), candidate("A"), candidate("B")]

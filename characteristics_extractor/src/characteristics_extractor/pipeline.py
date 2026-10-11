@@ -48,7 +48,8 @@ def finish_document(request: ExtractRequest, catalog: CatalogContext, attributes
                     source_issues: list[Issue], *, search_target: str | None) -> ExtractResponse:
     output = []
     questions = []
-    issues = []
+    # Rebuild catalog warnings on every request, including continuations.
+    issues = [issue.model_copy(deep=True) for issue in catalog.issues if not issue.blocking]
     # Derived diagnostics (unit errors etc.) are recomputed. Unsupported query
     # fragments persist until the query is edited and extraction starts anew.
     for issue in source_issues:

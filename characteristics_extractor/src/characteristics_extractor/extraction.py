@@ -89,7 +89,7 @@ def prepare_extraction(request: ExtractRequest, catalog: CatalogContext) -> tupl
         raise ExtractionInputError("Первичное извлечение допустимо только при attributes=null")
     if request.candidates != catalog.candidates:
         raise ExtractionInputError("Контекст собран для другого списка кандидатов")
-    if not catalog.complete or not catalog.definitions:
+    if not catalog.complete:
         raise IncompleteCatalogError(catalog.issues)
     # Short aliases avoid making the model copy 64-character hashes. These are
     # request-local; only authoritative stable IDs leave this extraction layer.
@@ -100,9 +100,13 @@ def prepare_extraction(request: ExtractRequest, catalog: CatalogContext) -> tupl
         for characteristic in product["characteristics"]:
             characteristic["id"] = reverse[characteristic["id"]]
     schema = _strict_schema(ModelExtraction.model_json_schema())
-    schema["$defs"]["ModelFact"]["properties"]["characteristic_ids"]["items"] = {
-        "type": "string", "enum": list(aliases),
-    }
+    ids_schema = schema["$defs"]["ModelFact"]["properties"]["characteristic_ids"]
+    if aliases:
+        ids_schema["items"] = {"type": "string", "enum": list(aliases)}
+    else:
+        # Empty enum is invalid JSON Schema. With no definitions, all extracted
+        # properties are unknown and only an empty selection is allowed.
+        ids_schema["maxItems"] = 0
     messages = build_messages(request.query, request.canonical_query, request.lemmatized_query, prompt_catalog)
     return messages, schema, aliases
 
