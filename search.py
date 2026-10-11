@@ -487,7 +487,7 @@ def search(conn, query, limit=10, query_embedding=None) -> list[dict]:
             "status": row["status"],
             "okpd2_code": row["okpd2_code"],
             "rrf_score": rrf[row["ktru_code"]],
-            "cosine": cosine.get(row["ktru_code"]),  # None = lexical-only hit
+            # "cosine": cosine.get(row["ktru_code"]),  # None = lexical-only hit
             "is_template": bool(row["is_template"]),
         }
         for row in rows
