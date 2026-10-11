@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+import os
 import sqlite3
 from dataclasses import dataclass
 from datetime import date
@@ -46,6 +47,9 @@ DEFAULT_EMBEDDING_VERSION = "1"
 BM25_CANDIDATE_LIMIT = 50
 BM25_MIN_STRICT_RESULTS = 10
 
+# PLACEHOLDERS: calibrate with calibrate.py (e5 scores sit in a narrow high band)
+SEMANTIC_MIN_SCORE = float(os.getenv("SEMANTIC_MIN_SCORE", "0.80"))
+SEMANTIC_MARGIN = float(os.getenv("SEMANTIC_MARGIN", "0.06"))
 
 @dataclass(frozen=True)
 class Token:
@@ -313,13 +317,19 @@ def bm25_search(
     return _merge_ranked_codes(strict, broad, limit=limit)
 
 
-def semantic_search(
+def semantic_search_scored(
     conn: sqlite3.Connection,
     query_embedding,
     limit: int = 50,
     model_name: str = DEFAULT_EMBEDDING_MODEL,
     model_version: str = DEFAULT_EMBEDDING_VERSION,
-) -> list[str]:
+    min_score: float = SEMANTIC_MIN_SCORE,
+    margin: float = SEMANTIC_MARGIN,
+) -> list[tuple[str, float]]:
+    """Return (code, cosine) pairs, keeping only genuinely close hits.
+
+    A hit survives if cosine >= min_score AND within `margin` of the best hit.
+    """
     if np is None or query_embedding is None:
         return []
     rows = conn.execute(
@@ -338,7 +348,23 @@ def semantic_search(
     vector = np.asarray(query_embedding, dtype=np.float32)
     vector /= max(float(np.linalg.norm(vector)), 1e-12)
     scores = matrix @ vector
-    return [codes[index] for index in np.argsort(-scores)[:limit]]
+
+    order = np.argsort(-scores)[:limit]
+    best = float(scores[order[0]])
+    hits: list[tuple[str, float]] = []
+    for index in order:
+        score = float(scores[index])
+        if score < min_score or score < best - margin:
+            break  # sorted descending, so everything after is worse
+        hits.append((codes[index], score))
+    return hits
+
+
+def semantic_search(conn, query_embedding, limit=50,
+                    model_name=DEFAULT_EMBEDDING_MODEL,
+                    model_version=DEFAULT_EMBEDDING_VERSION) -> list[str]:
+    return [code for code, _ in semantic_search_scored(
+        conn, query_embedding, limit, model_name, model_version)]
 
 
 @lru_cache(maxsize=2)
@@ -430,20 +456,18 @@ def encode_query(
     return np.asarray(vector[0], dtype=np.float32)
 
 
-def search(
-    conn: sqlite3.Connection,
-    query: str,
-    limit: int = 10,
-    query_embedding=None,
-) -> list[dict]:
+def search(conn, query, limit=10, query_embedding=None) -> list[dict]:
     lexical = bm25_search(conn, query)
-    semantic = semantic_search(conn, query_embedding)
+    semantic_hits = semantic_search_scored(conn, query_embedding)
+    semantic = [code for code, _ in semantic_hits]
+    cosine = dict(semantic_hits)
     rrf: dict[str, float] = {}
     for ranked in (lexical, semantic):
         for rank, code in enumerate(ranked, 1):
             rrf[code] = rrf.get(code, 0.0) + 1 / (60 + rank)
     if not rrf:
         return []
+
     candidates = ", ".join("?" for _ in rrf)
     clause, params = _active_clause()
     rows = conn.execute(
@@ -455,6 +479,7 @@ def search(
         """,
         [*rrf.keys(), *params],
     ).fetchall()
+ 
     result = [
         {
             "ktru_code": row["ktru_code"],
@@ -462,7 +487,8 @@ def search(
             "status": row["status"],
             "okpd2_code": row["okpd2_code"],
             "rrf_score": rrf[row["ktru_code"]],
-            "is_template": bool(row["is_template"])
+            "cosine": cosine.get(row["ktru_code"]),  # None = lexical-only hit
+            "is_template": bool(row["is_template"]),
         }
         for row in rows
     ]
