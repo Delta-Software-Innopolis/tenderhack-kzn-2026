@@ -48,7 +48,7 @@ BM25_CANDIDATE_LIMIT = 50
 BM25_MIN_STRICT_RESULTS = 10
 
 # PLACEHOLDERS: calibrate with calibrate.py (e5 scores sit in a narrow high band)
-SEMANTIC_MIN_SCORE = float(os.getenv("SEMANTIC_MIN_SCORE", "0.80"))
+SEMANTIC_MIN_SCORE = float(os.getenv("SEMANTIC_MIN_SCORE", "0.835"))
 SEMANTIC_MARGIN = float(os.getenv("SEMANTIC_MARGIN", "0.06"))
 
 @dataclass(frozen=True)
