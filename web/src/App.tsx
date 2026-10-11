@@ -5,7 +5,7 @@ import { type Category } from './components/CategoryFilters'
 import SearchBar from './components/SearchBar'
 import SearchResults from './components/SearchResults'
 import ThemeSwitcher, { type ThemePreference } from './components/ThemeSwitcher'
-import { useSearch } from './hooks/useSearch'
+import { useRefineSearch, useSearch } from './hooks/useSearch'
 
 const categoryByQueryValue: Record<string, Category> = {
   instruments: 'tools',
@@ -47,6 +47,8 @@ export default function App() {
     window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light',
   )
   const search = useSearch()
+  const refinement = useRefineSearch()
+  const searchResult = refinement.data ?? search.data
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
@@ -85,6 +87,7 @@ export default function App() {
   const handleSearch = () => {
     const normalizedQuery = query.trim()
     if (!normalizedQuery) return
+    refinement.reset()
     search.mutate(normalizedQuery, {
       onSuccess: () => {
         window.setTimeout(() => {
@@ -166,18 +169,25 @@ export default function App() {
               value={query}
               onChange={setQuery}
               onSubmit={handleSearch}
-              isLoading={search.isPending}
+              isLoading={search.isPending || refinement.isPending}
             />
           </section>
 
-          {search.isError && (
+          {(search.isError || refinement.isError) && (
             <div className="search-error" role="alert">
               <strong>Не удалось выполнить поиск.</strong>
-              <span>{search.error.message}</span>
+              <span>{(search.error ?? refinement.error)?.message}</span>
             </div>
           )}
 
-          {search.data && <SearchResults result={search.data} />}
+          {searchResult && (
+            <SearchResults
+              key={`${searchResult.input_fingerprint ?? searchResult.query}-${refinement.submittedAt}`}
+              result={searchResult}
+              isRefining={refinement.isPending}
+              onRefine={(selections) => refinement.mutate({ result: searchResult, selections })}
+            />
+          )}
 
           <section className="catalogue-section" id="catalogue" aria-labelledby="catalogue-title">
             <div className="catalogue-section__heading">
