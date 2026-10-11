@@ -206,7 +206,7 @@ class ExtractionDocument(ContractModel):
 
 
 class ExtractRequest(ExtractionDocument):
-    candidates: list[SearchCandidate] = Field(description="Все кандидаты из поиска. Обязательны при каждом вызове, включая уточнения; в ответе не возвращаются")
+    candidates: list[SearchCandidate] = Field(description="Все кандидаты из поиска. Поле обязательно при каждом вызове, включая уточнения; пустой массив разрешён. В ответе не возвращается")
 
     @property
     def is_initial(self) -> bool:

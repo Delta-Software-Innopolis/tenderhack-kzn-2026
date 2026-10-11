@@ -161,8 +161,8 @@ def build_catalog(candidates: Sequence[SearchCandidate], loaded: LoadedCatalog) 
 
     if not requested:
         issue_id = _id("issue", ["incomplete_catalog", "empty_candidates"])
-        issues[issue_id] = Issue(id=issue_id, code="incomplete_catalog", blocking=True,
-                                 message="Не переданы кандидаты для построения справочника")
+        issues[issue_id] = Issue(id=issue_id, code="incomplete_catalog", blocking=False,
+                                 message="Список кандидатов пуст; свойства извлекаются без справочника КТРУ")
 
     for code in requested:
         position = positions.get(code)

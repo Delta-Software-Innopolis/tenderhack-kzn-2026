@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_Ktru" targetNamespace="https://tenderhack.local/bpmn/ktru" name="Подбор КТРУ по описанию товара" exporter="Codex" exporterVersion="1.0">
+  <!-- BPMN 2.0; descriptive model; repository revision 1473edef775040f57ed19d12730ad5ac7198eb00; reviewed 2026-10-11. -->
+  <bpmn:dataStore id="DataStore_Ktru" name="Каталог КТРУ и поисковые индексы" isUnlimited="true">
+    <bpmn:documentation>ktru.db: позиции, характеристики, допустимые значения, ОКЕИ, FTS5 и эмбеддинги. XML и индексы подготавливаются заранее; загрузка каталога не выполняется при пользовательском запросе.</bpmn:documentation>
+  </bpmn:dataStore>
+  <bpmn:process id="Process_Ktru" name="Подбор позиции КТРУ и уточнение описания" isExecutable="false">
+    <bpmn:documentation>Описательная BPMN-модель текущей реализации на коммите 1473edef775040f57ed19d12730ad5ac7198eb00, 11 октября 2026 года.
+Область: основной сценарий поиска по описанию, результат анализа и повторный запрос. Независимый просмотр каталога и подготовка XML/эмбеддингов не входят в этот процесс.
+Изменение относительно прежней реализации: React вызывает POST /analyze; сервер последовательно выполняет /search, /extract и сужение. UI отображает funnel, candidates и result_code.
+Уточнение не продолжает прежний документ экстрактора: фронтенд изменяет строку query и повторяет весь POST /analyze, включая LLM.
+Модель показывает фактическое поведение. Она не добавляет проверку физического смысла чисел, проверку всех обязательных характеристик, исправление опечаток или блокировку финального результата по issues экстрактора: этих проверок в текущем основном процессе нет.
+Источники: web/src/App.tsx; web/src/api/search.ts; web/src/components/SearchResults.tsx; narrowing_candidates/api.py; search_service.py; search.py; characteristics_extractor/src/characteristics_extractor/{pipeline,extraction,normalization,app,llm}.py; narrowing_candidates/{analyze,funnel,narrow,match,hints,conflict_hints,repo}.py.
+Техническая справка формата: https://www.omg.org/spec/BPMN/2.0/About-BPMN .</bpmn:documentation>
+    <bpmn:laneSet id="Main_LaneSet">
+      <bpmn:lane id="Lane_User" name="Пользователь">
+        <bpmn:flowNodeRef>Main_Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Input</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Read</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_End</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Clarify</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Web" name="Веб-интерфейс · React">
+        <bpmn:flowNodeRef>Main_Merge</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Send</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_ShowError</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Display</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Status</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Resolved</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Ambiguous</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Conflict</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Rewrite</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Server" name="Сервис анализа · FastAPI">
+        <bpmn:flowNodeRef>SubProcess_Analyze</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Main_Error</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Main_Start" name="Нужен код КТРУ">
+      <bpmn:outgoing>M01</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Main_Input" name="Ввести описание товара">
+      <bpmn:documentation>web/src/components/SearchBar.tsx; web/src/App.tsx: runSearch. Пустая после trim строка не отправляется; во время обработки кнопка поиска заблокирована.</bpmn:documentation>
+      <bpmn:incoming>M01</bpmn:incoming>
+      <bpmn:incoming>M17</bpmn:incoming>
+      <bpmn:outgoing>M02</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Main_Merge" name="" gatewayDirection="Converging">
+      <bpmn:incoming>M02</bpmn:incoming>
+      <bpmn:incoming>M15</bpmn:incoming>
+      <bpmn:outgoing>M03</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:serviceTask id="Main_Send" name="Отправить описание&#10;POST /analyze">
+      <bpmn:documentation>web/src/api/search.ts: analyzeQuery. Передаётся только JSON {query}; web/src/App.tsx: runSearch сохраняет строку и вызывает mutation.</bpmn:documentation>
+      <bpmn:incoming>M03</bpmn:incoming>
+      <bpmn:outgoing>M04</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:subProcess id="SubProcess_Analyze" name="Подобрать КТРУ&#10;по описанию">
+      <bpmn:documentation>narrowing_candidates/api.py: analyze_query. Развёрнутая схема находится на второй BPMN-плоскости Diagram_Analyze. Последовательность /search → /extract → загрузка позиций → convert_facts → analyze. Все изменения query проходят этот подпроцесс заново.</bpmn:documentation>
+      <bpmn:incoming>M04</bpmn:incoming>
+      <bpmn:outgoing>M05</bpmn:outgoing>
+      <bpmn:laneSet id="Analyze_LaneSet">
+        <bpmn:lane id="Lane_Api" name="Оркестратор · POST /analyze">
+          <bpmn:flowNodeRef>Analyze_Start</bpmn:flowNodeRef>
+          <bpmn:flowNodeRef>Analyze_Return</bpmn:flowNodeRef>
+          <bpmn:flowNodeRef>Analyze_End</bpmn:flowNodeRef>
+        </bpmn:lane>
+        <bpmn:lane id="Lane_Search" name="Поиск · POST /search">
+          <bpmn:flowNodeRef>Analyze_Search</bpmn:flowNodeRef>
+        </bpmn:lane>
+        <bpmn:lane id="Lane_Extract" name="Характеристики · POST /extract">
+          <bpmn:flowNodeRef>Analyze_Context</bpmn:flowNodeRef>
+          <bpmn:flowNodeRef>Analyze_Llm</bpmn:flowNodeRef>
+          <bpmn:flowNodeRef>Analyze_Normalize</bpmn:flowNodeRef>
+        </bpmn:lane>
+        <bpmn:lane id="Lane_Narrow" name="Сужение кандидатов · analyze">
+          <bpmn:flowNodeRef>Analyze_Facts</bpmn:flowNodeRef>
+          <bpmn:flowNodeRef>Analyze_Narrow</bpmn:flowNodeRef>
+          <bpmn:flowNodeRef>Analyze_Count</bpmn:flowNodeRef>
+          <bpmn:flowNodeRef>Analyze_Resolved</bpmn:flowNodeRef>
+          <bpmn:flowNodeRef>Analyze_Ambiguous</bpmn:flowNodeRef>
+          <bpmn:flowNodeRef>Analyze_Conflict</bpmn:flowNodeRef>
+          <bpmn:flowNodeRef>Analyze_Merge</bpmn:flowNodeRef>
+        </bpmn:lane>
+      </bpmn:laneSet>
+      <bpmn:startEvent id="Analyze_Start" name="Получен запрос">
+        <bpmn:outgoing>A01</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:serviceTask id="Analyze_Search" name="Найти до 10 кандидатов&#10;BM25 + эмбеддинги + RRF">
+        <bpmn:documentation>search_service.py; search.py. Канонизация по словарю, эмбеддинг intfloat/multilingual-e5-small; BM25 сначала AND, затем при недостатке результатов OR; семантический поиск; RRF; фильтр ACTIVE, actual=1, is_template=0 и дат применения; limit=10. Это последовательная реализация, поэтому параллельный шлюз не используется. Отсутствие эмбеддингов или сбой поискового HTTP-сервиса завершает запрос ошибкой.</bpmn:documentation>
+        <bpmn:incoming>A01</bpmn:incoming>
+        <bpmn:outgoing>A02</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="Analyze_Context" name="Собрать справочник&#10;характеристик кандидатов">
+        <bpmn:documentation>repository.py и catalog.py: prepare_catalog. Загрузка определений только переданных кандидатов из SQLite, объединение эквивалентных определений, проверка полноты. Пустой список кандидатов или неполный справочник приводит к HTTP 409 экстрактора и затем HTTP 502 оркестратора, а не обязательно к бизнес-статусу conflict.</bpmn:documentation>
+        <bpmn:incoming>A02</bpmn:incoming>
+        <bpmn:outgoing>A03</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="Analyze_Llm" name="Извлечь свойства&#10;локальной LLM">
+        <bpmn:documentation>extraction.py и llm.py. Вызов LM Studio /v1/chat/completions с JSON Schema. Модель задаётся LM_STUDIO_MODEL. Вход: исходное описание и ограниченный контекст КТРУ. Выход: search_target, facts, unsupported. Автоматических повторов LLM нет. Неравенства, диапазоны, отрицания и альтернативы считаются неподдерживаемыми ограничениями.</bpmn:documentation>
+        <bpmn:incoming>A03</bpmn:incoming>
+        <bpmn:outgoing>A04</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="Analyze_Normalize" name="Проверить ответ и привести&#10;значения к справочнику">
+        <bpmn:documentation>extraction.bind_extraction, pipeline.finish_document, normalization.normalize_value, units.convert. Проверка JSON, выбранных ID и исходных фрагментов; качественные значения по справочнику; числа и ОКЕИ через Decimal/Pint. Атрибуты получают resolved, unknown или needs_clarification. Возвращаются attributes, clarifications, issues, status. Проверки диапазонов товара на этой стадии нет.</bpmn:documentation>
+        <bpmn:incoming>A04</bpmn:incoming>
+        <bpmn:outgoing>A05</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="Analyze_Facts" name="Загрузить позиции и отобрать&#10;сопоставленные факты">
+        <bpmn:documentation>narrowing_candidates/api.py: load_positions(DB, codes), convert_facts. Позиции берутся из SQLite по найденным кодам и status=ACTIVE. Для сужения используются лишь attributes со status=resolved и непустыми normalized_value, characteristic_name. clarifications, issues и общий status экстрактора не участвуют в принятии решения и не передаются в AnalyzeResponse.</bpmn:documentation>
+        <bpmn:incoming>A05</bpmn:incoming>
+        <bpmn:outgoing>A06</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:businessRuleTask id="Analyze_Narrow" name="Применить очередной факт&#10;и записать before → after">
+        <bpmn:documentation>analyze.py → run_funnel → narrow → value_matches. known_chars вычисляется до сужения. Факты применяются последовательно; на каждом шаге записывается число до и после. Неизвестное имя исключает все позиции; отсутствие характеристики/значений у конкретной позиции сохраняет её. Текст сравнивается точно, числа — с диапазонами; единицы внутри value_matches не конвертируются. При пустом facts воронка пуста, кандидаты сохраняются.</bpmn:documentation>
+        <bpmn:incoming>A06</bpmn:incoming>
+        <bpmn:outgoing>A07</bpmn:outgoing>
+        <bpmn:multiInstanceLoopCharacteristics isSequential="true">
+          <bpmn:loopCardinality xsi:type="bpmn:tFormalExpression">count(facts)</bpmn:loopCardinality>
+        </bpmn:multiInstanceLoopCharacteristics>
+      </bpmn:businessRuleTask>
+      <bpmn:exclusiveGateway id="Analyze_Count" name="Сколько позиций&#10;осталось?" gatewayDirection="Diverging">
+        <bpmn:incoming>A07</bpmn:incoming>
+        <bpmn:outgoing>A08</bpmn:outgoing>
+        <bpmn:outgoing>A09</bpmn:outgoing>
+        <bpmn:outgoing>A10</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:scriptTask id="Analyze_Resolved" name="resolved&#10;Записать конечный код">
+        <bpmn:documentation>analyze.py: len(left)==1 → status=resolved, result_code=left[0][code]. Дополнительная проверка неизвестных/неразрешённых атрибутов или полноты обязательных характеристик на этом шаге не выполняется.</bpmn:documentation>
+        <bpmn:incoming>A08</bpmn:incoming>
+        <bpmn:outgoing>A11</bpmn:outgoing>
+      </bpmn:scriptTask>
+      <bpmn:businessRuleTask id="Analyze_Ambiguous" name="ambiguous&#10;Подготовить уточнения">
+        <bpmn:documentation>analyze.py; hints.py; conflict_hints.py. При len(left)&gt;1 result_code=null. Для неиспользованных характеристик генерируются допустимые варианты с remaining; сначала обязательные, затем минимальный средний остаток. Если разделяющих характеристик нет, возвращается kind=indistinguishable. Не все типы этих подсказок отображаются текущим UI.</bpmn:documentation>
+        <bpmn:incoming>A09</bpmn:incoming>
+        <bpmn:outgoing>A12</bpmn:outgoing>
+      </bpmn:businessRuleTask>
+      <bpmn:businessRuleTask id="Analyze_Conflict" name="conflict&#10;Найти причины и исправления">
+        <bpmn:documentation>При len(left)==0: result_code=null, culprit — первый шаг обнуления. make_conflict_hints ищет минимальные конфликтующие наборы до трёх фактов, оценивает удаление/замену и выдаёт fixes, suggestions. Возможны kind=conflict, out_of_range, unit_mismatch, unknown_characteristic, value_not_allowed, no_candidates.</bpmn:documentation>
+        <bpmn:incoming>A10</bpmn:incoming>
+        <bpmn:outgoing>A13</bpmn:outgoing>
+      </bpmn:businessRuleTask>
+      <bpmn:exclusiveGateway id="Analyze_Merge" name="" gatewayDirection="Converging">
+        <bpmn:incoming>A11</bpmn:incoming>
+        <bpmn:incoming>A12</bpmn:incoming>
+        <bpmn:incoming>A13</bpmn:incoming>
+        <bpmn:outgoing>A14</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:serviceTask id="Analyze_Return" name="Вернуть результат анализа&#10;и извлечённые характеристики">
+        <bpmn:documentation>AnalyzeResponse: funnel, candidates, status, result_code, culprit, hints, attributes. Исходные clarifications и issues экстрактора отсутствуют в данном ответе.</bpmn:documentation>
+        <bpmn:incoming>A14</bpmn:incoming>
+        <bpmn:outgoing>A15</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:endEvent id="Analyze_End" name="Ответ готов">
+        <bpmn:incoming>A15</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:dataStoreReference id="DataRef_Ktru" name="КТРУ · SQLite&#10;индексы и характеристики" dataStoreRef="DataStore_Ktru"/>
+      <bpmn:sequenceFlow id="A01" sourceRef="Analyze_Start" targetRef="Analyze_Search"/>
+      <bpmn:sequenceFlow id="A02" sourceRef="Analyze_Search" targetRef="Analyze_Context"/>
+      <bpmn:sequenceFlow id="A03" sourceRef="Analyze_Context" targetRef="Analyze_Llm"/>
+      <bpmn:sequenceFlow id="A04" sourceRef="Analyze_Llm" targetRef="Analyze_Normalize"/>
+      <bpmn:sequenceFlow id="A05" sourceRef="Analyze_Normalize" targetRef="Analyze_Facts"/>
+      <bpmn:sequenceFlow id="A06" sourceRef="Analyze_Facts" targetRef="Analyze_Narrow"/>
+      <bpmn:sequenceFlow id="A07" sourceRef="Analyze_Narrow" targetRef="Analyze_Count"/>
+      <bpmn:sequenceFlow id="A08" sourceRef="Analyze_Count" targetRef="Analyze_Resolved" name="Одна">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">count(candidates) = 1</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:sequenceFlow id="A09" sourceRef="Analyze_Count" targetRef="Analyze_Ambiguous" name="Несколько">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">count(candidates) &gt; 1</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:sequenceFlow id="A10" sourceRef="Analyze_Count" targetRef="Analyze_Conflict" name="Ни одной">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">count(candidates) = 0</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:sequenceFlow id="A11" sourceRef="Analyze_Resolved" targetRef="Analyze_Merge"/>
+      <bpmn:sequenceFlow id="A12" sourceRef="Analyze_Ambiguous" targetRef="Analyze_Merge"/>
+      <bpmn:sequenceFlow id="A13" sourceRef="Analyze_Conflict" targetRef="Analyze_Merge"/>
+      <bpmn:sequenceFlow id="A14" sourceRef="Analyze_Merge" targetRef="Analyze_Return"/>
+      <bpmn:sequenceFlow id="A15" sourceRef="Analyze_Return" targetRef="Analyze_End"/>
+      <bpmn:textAnnotation id="Analyze_UnitsNote">
+        <bpmn:text>Нормализация выполняется в Python.
+LLM выделяет свойства и связывает
+их с определениями КТРУ.</bpmn:text>
+      </bpmn:textAnnotation>
+      <bpmn:textAnnotation id="Analyze_FactsNote">
+        <bpmn:text>В сужение передаются только
+атрибуты со статусом resolved.
+Неизвестные и неоднозначные
+атрибуты остаются в ответе.</bpmn:text>
+      </bpmn:textAnnotation>
+      <bpmn:association id="Analyze_FactsNoteLink" sourceRef="Analyze_Facts" targetRef="Analyze_FactsNote" associationDirection="None"/>
+      <bpmn:association id="Data_Search" sourceRef="DataRef_Ktru" targetRef="Analyze_Search" associationDirection="One"/>
+      <bpmn:association id="Data_Context" sourceRef="DataRef_Ktru" targetRef="Analyze_Context" associationDirection="One"/>
+    </bpmn:subProcess>
+    <bpmn:boundaryEvent id="Main_Error" name="Ошибка запроса" attachedToRef="SubProcess_Analyze" cancelActivity="true">
+      <bpmn:documentation>Обобщённое отображение неуспешного HTTP-запроса или сетевого сбоя. requests.RequestException от /search или /extract преобразуется в HTTP 502. Входная валидация может вернуть 422; остальные ошибки также попадают в isError клиента.</bpmn:documentation>
+      <bpmn:outgoing>M16</bpmn:outgoing>
+      <bpmn:errorEventDefinition id="Main_ErrorDefinition"/>
+    </bpmn:boundaryEvent>
+    <bpmn:serviceTask id="Main_ShowError" name="Показать сообщение&#10;об ошибке запроса">
+      <bpmn:documentation>web/src/App.tsx: search.isError. Пользователь может исправить строку либо повторно отправить исходный запрос. Автоматический цикл повтора в этой схеме не предполагается.</bpmn:documentation>
+      <bpmn:incoming>M16</bpmn:incoming>
+      <bpmn:outgoing>M17</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Main_Display" name="Показать характеристики&#10;и шаги сужения">
+      <bpmn:documentation>SearchResults.tsx: attributes и funnel показываются после ответа /analyze. Изменение числа кандидатов отображается как before → after. Это итоговая воронка, а не поток промежуточных событий в реальном времени.</bpmn:documentation>
+      <bpmn:incoming>M05</bpmn:incoming>
+      <bpmn:outgoing>M06</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Main_Status" name="Результат анализа?" gatewayDirection="Diverging">
+      <bpmn:incoming>M06</bpmn:incoming>
+      <bpmn:outgoing>M07</bpmn:outgoing>
+      <bpmn:outgoing>M08</bpmn:outgoing>
+      <bpmn:outgoing>M09</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:serviceTask id="Main_Resolved" name="Показать найденную&#10;позицию КТРУ">
+      <bpmn:documentation>status=resolved. Карточка загружается GET /item/{code}; кандидат с code=result_code получает метку «Лучшее совпадение». Пока карточка загружается или недоступна, показаны код и соответствующее сообщение; код результата не теряется.</bpmn:documentation>
+      <bpmn:incoming>M07</bpmn:incoming>
+      <bpmn:outgoing>M10</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Main_Ambiguous" name="Показать кандидатов&#10;и доступные уточнения">
+      <bpmn:documentation>status=ambiguous. Карточки запрашиваются через GET /item/{code}. isAmbiguousHint пропускает подсказки с options и required без kind. Кнопка добавляет выбранное свойство в query. Подсказки kind=indistinguishable пока не выводятся отдельным блоком.</bpmn:documentation>
+      <bpmn:incoming>M08</bpmn:incoming>
+      <bpmn:outgoing>M12</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Main_Conflict" name="Показать конфликт&#10;и доступные действия">
+      <bpmn:documentation>status=conflict. Заголовок конфликта показывается всегда. Блок объяснения и кнопки «Убрать» показываются только для hint.kind=conflict; прочие kinds, например out_of_range и no_candidates, этим блоком не отображаются. Кнопка заблокирована при blocked_by_other_conflict; карточки кандидатов скрыты.</bpmn:documentation>
+      <bpmn:incoming>M09</bpmn:incoming>
+      <bpmn:outgoing>M13</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="Main_Read" name="Просмотреть код&#10;и карточку товара">
+      <bpmn:incoming>M10</bpmn:incoming>
+      <bpmn:outgoing>M11</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="Main_End" name="Результат получен">
+      <bpmn:incoming>M11</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="Main_Clarify" name="Изменить описание&#10;или выбрать доступную&#10;подсказку">
+      <bpmn:documentation>Пользователь может вручную изменить запрос. Если отрисована подходящая подсказка, её выбор сразу вызывает onRequery; отдельного шага подтверждения структурированных атрибутов больше нет.</bpmn:documentation>
+      <bpmn:incoming>M12</bpmn:incoming>
+      <bpmn:incoming>M13</bpmn:incoming>
+      <bpmn:outgoing>M14</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:scriptTask id="Main_Rewrite" name="Обновить текст запроса&#10;и повторить анализ">
+      <bpmn:documentation>SearchResults.tsx: appendFact / dropFact → onRequery → App.runSearch. Факт добавляется к тексту или исходный фрагмент удаляется. Передаётся строка, а не структура facts. Текущий appendFact для number не переносит unit, для string добавляет только value; interval отдельно не поддержан. Схема не предполагает сохранение прежних candidates или stateless-продолжение /extract.</bpmn:documentation>
+      <bpmn:incoming>M14</bpmn:incoming>
+      <bpmn:outgoing>M15</bpmn:outgoing>
+    </bpmn:scriptTask>
+    <bpmn:sequenceFlow id="M01" sourceRef="Main_Start" targetRef="Main_Input"/>
+    <bpmn:sequenceFlow id="M02" sourceRef="Main_Input" targetRef="Main_Merge"/>
+    <bpmn:sequenceFlow id="M03" sourceRef="Main_Merge" targetRef="Main_Send"/>
+    <bpmn:sequenceFlow id="M04" sourceRef="Main_Send" targetRef="SubProcess_Analyze"/>
+    <bpmn:sequenceFlow id="M05" sourceRef="SubProcess_Analyze" targetRef="Main_Display"/>
+    <bpmn:sequenceFlow id="M06" sourceRef="Main_Display" targetRef="Main_Status"/>
+    <bpmn:sequenceFlow id="M07" sourceRef="Main_Status" targetRef="Main_Resolved" name="resolved">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">status = 'resolved'</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="M08" sourceRef="Main_Status" targetRef="Main_Ambiguous" name="ambiguous">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">status = 'ambiguous'</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="M09" sourceRef="Main_Status" targetRef="Main_Conflict" name="conflict">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">status = 'conflict'</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="M10" sourceRef="Main_Resolved" targetRef="Main_Read"/>
+    <bpmn:sequenceFlow id="M11" sourceRef="Main_Read" targetRef="Main_End"/>
+    <bpmn:sequenceFlow id="M12" sourceRef="Main_Ambiguous" targetRef="Main_Clarify"/>
+    <bpmn:sequenceFlow id="M13" sourceRef="Main_Conflict" targetRef="Main_Clarify"/>
+    <bpmn:sequenceFlow id="M14" sourceRef="Main_Clarify" targetRef="Main_Rewrite"/>
+    <bpmn:sequenceFlow id="M15" sourceRef="Main_Rewrite" targetRef="Main_Merge" name="Новый запрос"/>
+    <bpmn:sequenceFlow id="M16" sourceRef="Main_Error" targetRef="Main_ShowError"/>
+    <bpmn:sequenceFlow id="M17" sourceRef="Main_ShowError" targetRef="Main_Input" name="Повторить или исправить"/>
+    <bpmn:textAnnotation id="Main_Note">
+      <bpmn:text>Уточнение запускает весь анализ заново: поиск → LLM → нормализация → сужение.
+Знак «+» раскрывает обработку запроса.</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Main_NoteLink" sourceRef="SubProcess_Analyze" targetRef="Main_Note" associationDirection="None"/>
+  </bpmn:process>
+  <bpmn:collaboration id="Collaboration_Ktru" name="Подбор КТРУ">
+    <bpmn:participant id="Participant_Ktru" name="Сервис подбора КТРУ" processRef="Process_Ktru"/>
+  </bpmn:collaboration>
+  <bpmndi:BPMNDiagram id="Diagram_Main" name="01 · Пользовательский сценарий">
+    <bpmndi:BPMNPlane id="Diagram_Main_Plane" bpmnElement="Collaboration_Ktru">
+      <bpmndi:BPMNShape id="Participant_Ktru_di" bpmnElement="Participant_Ktru" isHorizontal="true">
+        <dc:Bounds x="60" y="80" width="2160" height="980"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_User_di" bpmnElement="Lane_User" isHorizontal="true">
+        <dc:Bounds x="90" y="80" width="2130" height="300"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Web_di" bpmnElement="Lane_Web" isHorizontal="true">
+        <dc:Bounds x="90" y="380" width="2130" height="440"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Server_di" bpmnElement="Lane_Server" isHorizontal="true">
+        <dc:Bounds x="90" y="820" width="2130" height="240"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Start_di" bpmnElement="Main_Start">
+        <dc:Bounds x="140" y="172" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="90" y="216" width="136" height="42"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Input_di" bpmnElement="Main_Input">
+        <dc:Bounds x="230" y="145" width="190" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Merge_di" bpmnElement="Main_Merge" isMarkerVisible="true">
+        <dc:Bounds x="485" y="420" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="435" y="478" width="150" height="42"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Send_di" bpmnElement="Main_Send">
+        <dc:Bounds x="580" y="400" width="195" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="SubProcess_Analyze_di" bpmnElement="SubProcess_Analyze" isExpanded="false">
+        <dc:Bounds x="580" y="875" width="195" height="95"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Error_di" bpmnElement="Main_Error">
+        <dc:Bounds x="729" y="952" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="779" y="1006" width="140" height="40"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_ShowError_di" bpmnElement="Main_ShowError">
+        <dc:Bounds x="240" y="675" width="195" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Display_di" bpmnElement="Main_Display">
+        <dc:Bounds x="880" y="400" width="200" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Status_di" bpmnElement="Main_Status" isMarkerVisible="true">
+        <dc:Bounds x="1140" y="420" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1083" y="367" width="165" height="42"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Resolved_di" bpmnElement="Main_Resolved">
+        <dc:Bounds x="1260" y="400" width="200" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Ambiguous_di" bpmnElement="Main_Ambiguous">
+        <dc:Bounds x="1260" y="550" width="200" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Conflict_di" bpmnElement="Main_Conflict">
+        <dc:Bounds x="1260" y="690" width="200" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Read_di" bpmnElement="Main_Read">
+        <dc:Bounds x="1560" y="145" width="205" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_End_di" bpmnElement="Main_End">
+        <dc:Bounds x="1850" y="172" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1800" y="216" width="136" height="42"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Clarify_di" bpmnElement="Main_Clarify">
+        <dc:Bounds x="1560" y="270" width="230" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Rewrite_di" bpmnElement="Main_Rewrite">
+        <dc:Bounds x="1850" y="550" width="225" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Main_Note_di" bpmnElement="Main_Note">
+        <dc:Bounds x="930" y="875" width="380" height="110"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="M01_di" bpmnElement="M01">
+        <di:waypoint x="176" y="190"/>
+        <di:waypoint x="230" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M02_di" bpmnElement="M02">
+        <di:waypoint x="325" y="235"/>
+        <di:waypoint x="325" y="315"/>
+        <di:waypoint x="510" y="315"/>
+        <di:waypoint x="510" y="420"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M03_di" bpmnElement="M03">
+        <di:waypoint x="535" y="445"/>
+        <di:waypoint x="580" y="445"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M04_di" bpmnElement="M04">
+        <di:waypoint x="677" y="490"/>
+        <di:waypoint x="677" y="875"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M05_di" bpmnElement="M05">
+        <di:waypoint x="775" y="922"/>
+        <di:waypoint x="825" y="922"/>
+        <di:waypoint x="825" y="445"/>
+        <di:waypoint x="880" y="445"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M06_di" bpmnElement="M06">
+        <di:waypoint x="1080" y="445"/>
+        <di:waypoint x="1140" y="445"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M07_di" bpmnElement="M07">
+        <di:waypoint x="1190" y="445"/>
+        <di:waypoint x="1260" y="445"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1190" y="417" width="70" height="22"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M08_di" bpmnElement="M08">
+        <di:waypoint x="1165" y="470"/>
+        <di:waypoint x="1165" y="595"/>
+        <di:waypoint x="1260" y="595"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1169" y="564" width="90" height="22"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M09_di" bpmnElement="M09">
+        <di:waypoint x="1165" y="470"/>
+        <di:waypoint x="1165" y="515"/>
+        <di:waypoint x="1120" y="515"/>
+        <di:waypoint x="1120" y="735"/>
+        <di:waypoint x="1260" y="735"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1160" y="708" width="75" height="22"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M10_di" bpmnElement="M10">
+        <di:waypoint x="1360" y="400"/>
+        <di:waypoint x="1360" y="190"/>
+        <di:waypoint x="1560" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M11_di" bpmnElement="M11">
+        <di:waypoint x="1765" y="190"/>
+        <di:waypoint x="1850" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M12_di" bpmnElement="M12">
+        <di:waypoint x="1460" y="595"/>
+        <di:waypoint x="1500" y="595"/>
+        <di:waypoint x="1500" y="315"/>
+        <di:waypoint x="1560" y="315"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M13_di" bpmnElement="M13">
+        <di:waypoint x="1460" y="735"/>
+        <di:waypoint x="1525" y="735"/>
+        <di:waypoint x="1525" y="345"/>
+        <di:waypoint x="1560" y="345"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M14_di" bpmnElement="M14">
+        <di:waypoint x="1790" y="315"/>
+        <di:waypoint x="1962" y="315"/>
+        <di:waypoint x="1962" y="550"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M15_di" bpmnElement="M15">
+        <di:waypoint x="2075" y="595"/>
+        <di:waypoint x="2150" y="595"/>
+        <di:waypoint x="2150" y="800"/>
+        <di:waypoint x="510" y="800"/>
+        <di:waypoint x="510" y="470"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1750" y="772" width="130" height="22"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M16_di" bpmnElement="M16">
+        <di:waypoint x="747" y="988"/>
+        <di:waypoint x="747" y="1035"/>
+        <di:waypoint x="550" y="1035"/>
+        <di:waypoint x="550" y="720"/>
+        <di:waypoint x="435" y="720"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="M17_di" bpmnElement="M17">
+        <di:waypoint x="337" y="675"/>
+        <di:waypoint x="337" y="365"/>
+        <di:waypoint x="275" y="365"/>
+        <di:waypoint x="275" y="235"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="135" y="500" width="185" height="40"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Main_NoteLink_di" bpmnElement="Main_NoteLink">
+        <di:waypoint x="775" y="922"/>
+        <di:waypoint x="850" y="922"/>
+        <di:waypoint x="930" y="922"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="Diagram_Analyze" name="02 · Обработка запроса">
+    <bpmndi:BPMNPlane id="Diagram_Analyze_Plane" bpmnElement="SubProcess_Analyze">
+      <bpmndi:BPMNShape id="Lane_Api_di" bpmnElement="Lane_Api" isHorizontal="true">
+        <dc:Bounds x="60" y="70" width="2310" height="180"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Search_di" bpmnElement="Lane_Search" isHorizontal="true">
+        <dc:Bounds x="60" y="250" width="2310" height="205"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Extract_di" bpmnElement="Lane_Extract" isHorizontal="true">
+        <dc:Bounds x="60" y="455" width="2310" height="250"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Narrow_di" bpmnElement="Lane_Narrow" isHorizontal="true">
+        <dc:Bounds x="60" y="705" width="2310" height="520"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Start_di" bpmnElement="Analyze_Start">
+        <dc:Bounds x="120" y="142" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="70" y="186" width="136" height="42"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Search_di" bpmnElement="Analyze_Search">
+        <dc:Bounds x="240" y="295" width="230" height="105"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Context_di" bpmnElement="Analyze_Context">
+        <dc:Bounds x="540" y="510" width="215" height="105"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Llm_di" bpmnElement="Analyze_Llm">
+        <dc:Bounds x="800" y="510" width="200" height="105"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Normalize_di" bpmnElement="Analyze_Normalize">
+        <dc:Bounds x="1045" y="510" width="225" height="105"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Facts_di" bpmnElement="Analyze_Facts">
+        <dc:Bounds x="1045" y="770" width="225" height="100"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Narrow_di" bpmnElement="Analyze_Narrow">
+        <dc:Bounds x="1330" y="770" width="230" height="100"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Count_di" bpmnElement="Analyze_Count" isMarkerVisible="true">
+        <dc:Bounds x="1620" y="795" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1563" y="743" width="165" height="40"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Resolved_di" bpmnElement="Analyze_Resolved">
+        <dc:Bounds x="1750" y="760" width="220" height="95"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Ambiguous_di" bpmnElement="Analyze_Ambiguous">
+        <dc:Bounds x="1750" y="910" width="220" height="95"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Conflict_di" bpmnElement="Analyze_Conflict">
+        <dc:Bounds x="1750" y="1060" width="220" height="95"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Merge_di" bpmnElement="Analyze_Merge" isMarkerVisible="true">
+        <dc:Bounds x="2070" y="932" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2020" y="990" width="150" height="42"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_Return_di" bpmnElement="Analyze_Return">
+        <dc:Bounds x="1750" y="110" width="240" height="100"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_End_di" bpmnElement="Analyze_End">
+        <dc:Bounds x="2150" y="142" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2100" y="186" width="136" height="42"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_UnitsNote_di" bpmnElement="Analyze_UnitsNote">
+        <dc:Bounds x="530" y="775" width="370" height="100"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Analyze_FactsNote_di" bpmnElement="Analyze_FactsNote">
+        <dc:Bounds x="1045" y="975" width="300" height="110"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="A01_di" bpmnElement="A01">
+        <di:waypoint x="156" y="160"/>
+        <di:waypoint x="195" y="160"/>
+        <di:waypoint x="195" y="347"/>
+        <di:waypoint x="240" y="347"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A02_di" bpmnElement="A02">
+        <di:waypoint x="470" y="347"/>
+        <di:waypoint x="505" y="347"/>
+        <di:waypoint x="505" y="562"/>
+        <di:waypoint x="540" y="562"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A03_di" bpmnElement="A03">
+        <di:waypoint x="755" y="562"/>
+        <di:waypoint x="800" y="562"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A04_di" bpmnElement="A04">
+        <di:waypoint x="1000" y="562"/>
+        <di:waypoint x="1045" y="562"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A05_di" bpmnElement="A05">
+        <di:waypoint x="1157" y="615"/>
+        <di:waypoint x="1157" y="770"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A06_di" bpmnElement="A06">
+        <di:waypoint x="1270" y="820"/>
+        <di:waypoint x="1330" y="820"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A07_di" bpmnElement="A07">
+        <di:waypoint x="1560" y="820"/>
+        <di:waypoint x="1620" y="820"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A08_di" bpmnElement="A08">
+        <di:waypoint x="1670" y="820"/>
+        <di:waypoint x="1710" y="820"/>
+        <di:waypoint x="1710" y="807"/>
+        <di:waypoint x="1750" y="807"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1680" y="773" width="65" height="23"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A09_di" bpmnElement="A09">
+        <di:waypoint x="1645" y="845"/>
+        <di:waypoint x="1645" y="957"/>
+        <di:waypoint x="1750" y="957"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1648" y="930" width="100" height="23"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A10_di" bpmnElement="A10">
+        <di:waypoint x="1645" y="845"/>
+        <di:waypoint x="1645" y="890"/>
+        <di:waypoint x="1600" y="890"/>
+        <di:waypoint x="1600" y="1107"/>
+        <di:waypoint x="1750" y="1107"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1630" y="1079" width="110" height="23"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A11_di" bpmnElement="A11">
+        <di:waypoint x="1970" y="807"/>
+        <di:waypoint x="2095" y="807"/>
+        <di:waypoint x="2095" y="932"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A12_di" bpmnElement="A12">
+        <di:waypoint x="1970" y="957"/>
+        <di:waypoint x="2070" y="957"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A13_di" bpmnElement="A13">
+        <di:waypoint x="1970" y="1107"/>
+        <di:waypoint x="2095" y="1107"/>
+        <di:waypoint x="2095" y="982"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A14_di" bpmnElement="A14">
+        <di:waypoint x="2120" y="957"/>
+        <di:waypoint x="2250" y="957"/>
+        <di:waypoint x="2250" y="225"/>
+        <di:waypoint x="1870" y="225"/>
+        <di:waypoint x="1870" y="210"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="A15_di" bpmnElement="A15">
+        <di:waypoint x="1990" y="160"/>
+        <di:waypoint x="2150" y="160"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Analyze_FactsNoteLink_di" bpmnElement="Analyze_FactsNoteLink">
+        <di:waypoint x="1157" y="870"/>
+        <di:waypoint x="1157" y="975"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="DataRef_Ktru_di" bpmnElement="DataRef_Ktru">
+        <dc:Bounds x="270" y="525" width="65" height="65"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="195" y="597" width="220" height="55"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Data_Search_di" bpmnElement="Data_Search">
+        <di:waypoint x="302" y="525"/>
+        <di:waypoint x="302" y="400"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Data_Context_di" bpmnElement="Data_Context">
+        <di:waypoint x="335" y="557"/>
+        <di:waypoint x="540" y="557"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

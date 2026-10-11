@@ -151,14 +151,25 @@ class CatalogTests(unittest.TestCase):
         with patch.dict(os.environ, {"KTRU_DB_PATH": str(self.path)}):
             self.assertEqual(KtruRepository.from_env().db_path, self.path.resolve())
 
-    def test_empty_candidates_and_missing_candidates_are_diagnostics(self):
-        for inputs in ([], [candidate("absent")]):
+    def test_missing_candidates_are_blocking_diagnostics(self):
+        for inputs in ([candidate("absent")],):
             with self.subTest(inputs=inputs):
                 context = prepare_catalog(inputs, self.repository)
                 self.assertFalse(context.complete)
                 self.assertTrue(context.issues)
                 self.assertTrue(all(issue.blocking for issue in context.issues))
                 self.assertEqual(context.candidates, inputs)
+
+    def test_empty_candidates_are_allowed_without_reading_database(self):
+        with patch("characteristics_extractor.repository.sqlite3.connect") as connect:
+            context = prepare_catalog([], KtruRepository(self.path.parent / "absent.db"))
+        connect.assert_not_called()
+        self.assertTrue(context.complete)
+        self.assertEqual(context.candidates, [])
+        self.assertEqual(context.definitions, [])
+        self.assertEqual(context.candidate_characteristic_ids, {})
+        self.assertEqual(len(context.issues), 1)
+        self.assertFalse(context.issues[0].blocking)
 
     def test_candidates_without_characteristics_are_nonblocking(self):
         for inputs in ([candidate("empty")], [candidate("empty"), candidate("A")]):
@@ -172,7 +183,7 @@ class CatalogTests(unittest.TestCase):
 
     def test_http_empty_definitions_allow_extraction_and_stateless_continuation(self):
         async def check():
-            for codes in (["empty"], ["empty", "A"]):
+            for codes in ([], ["empty"], ["empty", "A"]):
                 for with_property in (False, True):
                     with self.subTest(codes=codes, with_property=with_property):
                         calls = []
@@ -185,7 +196,7 @@ class CatalogTests(unittest.TestCase):
                         def handle(request):
                             calls.append(request)
                             payload = json.loads(request.content)
-                            if codes == ["empty"]:
+                            if not codes or codes == ["empty"]:
                                 ids = payload["response_format"]["json_schema"]["schema"]["$defs"]["ModelFact"]["properties"]["characteristic_ids"]
                                 self.assertEqual(ids["maxItems"], 0)
                                 self.assertNotIn("enum", ids["items"])
