@@ -11,10 +11,22 @@ import {
 } from '../types/search'
 import CatalogueCard from './CatalogueCard'
 
-const statusTitles: Record<AnalyzeResponse['status'], string> = {
-  resolved: 'Позиция найдена',
-  ambiguous: 'Запрос слишком общий',
-  conflict: 'Характеристики конфликтуют',
+const banners: Record<AnalyzeResponse['status'], { icon: string; title: string; text: string }> = {
+  resolved: {
+    icon: '✓',
+    title: 'Позиция найдена',
+    text: 'По вашему запросу нашлась одна подходящая позиция КТРУ.',
+  },
+  ambiguous: {
+    icon: '?',
+    title: 'Запрос слишком общий',
+    text: 'Подходит сразу несколько позиций. Уточните запрос, выбрав характеристики ниже.',
+  },
+  conflict: {
+    icon: '!',
+    title: 'Характеристики конфликтуют',
+    text: 'Ни одна позиция не подходит под все указанные характеристики. Уберите или измените одну из них.',
+  },
 }
 
 const attributeStatusLabels = {
@@ -32,6 +44,22 @@ function formatNormalizedValue(value: NormalizedValue): string {
   if (value.type === 'boolean') return value.value ? 'Да' : 'Нет'
   if (value.type === 'number') return `${value.value}${value.unit ? ` ${value.unit.name}` : ''}`
   return value.value
+}
+
+function isSameValue(original: OriginalValue, normalized: NormalizedValue): boolean {
+  if (original.type === 'number' && normalized.type === 'number') {
+    return original.value === normalized.value
+  }
+  return String(original.value).trim().toLowerCase() === String(normalized.value).trim().toLowerCase()
+}
+
+// backend sometimes stringifies a unit dict into the step text:
+// "Длина: 250 {'okei_code': '003', 'name': 'Миллиметр'}" -> "Длина: 250 Миллиметр"
+function cleanFunnelStep(step: string): string {
+  return step
+    .replace(/\{[^}]*['"]name['"]:\s*['"]([^'"]*)['"][^}]*\}/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 // --- query rewriting (backend only accepts a plain query string) ---
@@ -83,21 +111,22 @@ export default function SearchResults({ result, query, isLoading, onRequery }: S
 
   const conflictHints = result.hints.filter(isConflictHint)
   const ambiguousHints = result.hints.filter(isAmbiguousHint)
+  const banner = banners[result.status]
 
   return (
     <section className="search-results" id="search-results" aria-labelledby="search-results-title">
-      <div className="search-results__heading">
+      <p className="eyebrow">Результат поиска</p>
+
+      <div className={`result-banner result-banner--${result.status}`} role="status">
+        <span className="result-banner__icon" aria-hidden="true">{banner.icon}</span>
         <div>
-          <p className="eyebrow">Интеллектуальный разбор</p>
-          <h2 id="search-results-title">Мы поняли ваш запрос</h2>
-        </div>
-        <div className={`extraction-status extraction-status--${result.status}`}>
-          {statusTitles[result.status]}
+          <h2 className="result-banner__title" id="search-results-title">{banner.title}</h2>
+          <p className="result-banner__text">{banner.text}</p>
         </div>
       </div>
 
       <div className="query-understanding">
-        <span>Исходный запрос</span>
+        <span>Ваш запрос</span>
         <strong>«{query}»</strong>
       </div>
 
@@ -108,42 +137,62 @@ export default function SearchResults({ result, query, isLoading, onRequery }: S
             <span>{result.attributes.length}</span>
           </div>
           <div className="extracted-attributes__grid">
-            {result.attributes.map((attribute) => (
-              <article className={`extracted-attribute extracted-attribute--${attribute.status}`} key={attribute.id}>
-                <div className="extracted-attribute__topline">
-                  <span>{attribute.mention_type === 'explicit' ? 'Явно указано' : 'Определено из контекста'}</span>
-                  <span>{attributeStatusLabels[attribute.status]}</span>
-                </div>
-                <h4>{attribute.characteristic_name ?? attribute.extracted_name ?? attribute.source_text}</h4>
-                <div className="extracted-attribute__value">
-                  <span>{formatOriginalValue(attribute.original_value)}</span>
-                  {attribute.normalized_value && (
-                    <><span aria-hidden="true">→</span><strong>{formatNormalizedValue(attribute.normalized_value)}</strong></>
-                  )}
-                </div>
-                <p className="extracted-attribute__source">Фрагмент: «{attribute.source_text}»</p>
-                {attribute.message && <p className="extracted-attribute__message">{attribute.message}</p>}
-              </article>
-            ))}
+            {result.attributes.map((attribute) => {
+              const original = formatOriginalValue(attribute.original_value)
+              const normalized = attribute.normalized_value
+                ? formatNormalizedValue(attribute.normalized_value)
+                : null
+              const showBoth = attribute.normalized_value !== null
+                && attribute.normalized_value !== undefined
+                && !isSameValue(attribute.original_value, attribute.normalized_value)
+
+              return (
+                <article className={`extracted-attribute extracted-attribute--${attribute.status}`} key={attribute.id}>
+                  <div className="extracted-attribute__topline">
+                    <span>{attribute.mention_type === 'explicit' ? 'Явно указано' : 'Определено из контекста'}</span>
+                    <span>{attributeStatusLabels[attribute.status]}</span>
+                  </div>
+                  <h4>{attribute.characteristic_name ?? attribute.extracted_name ?? attribute.source_text}</h4>
+                  <div className="extracted-attribute__value">
+                    {showBoth ? (
+                      <>
+                        <span>{original}</span>
+                        <span aria-hidden="true">→</span>
+                        <strong>{normalized}</strong>
+                      </>
+                    ) : (
+                      <strong>{normalized ?? original}</strong>
+                    )}
+                  </div>
+                  {attribute.message && <p className="extracted-attribute__message">{attribute.message}</p>}
+                </article>
+              )
+            })}
           </div>
         </div>
       )}
 
       {result.funnel.length > 0 && (
         <div className="funnel">
-          <div className="results-subheading"><h3>Как сужался поиск</h3><span>{result.funnel.length}</span></div>
-          <ol>
+          <div className="results-subheading"><h3>Как сужался поиск</h3></div>
+          <ul className="funnel__list">
             {result.funnel.map((step, index) => (
-              <li key={`${step.step}-${index}`}>
-                <strong>{step.step}</strong> — {step.before} → {step.after}
+              <li
+                className={`funnel__row${step.after < step.before ? '' : ' is-neutral'}`}
+                key={`${step.step}-${index}`}
+              >
+                <span className="funnel__label">{cleanFunnelStep(step.step)}</span>
+                <span className="funnel__counts">
+                  {step.before} <span aria-hidden="true">→</span> <strong>{step.after}</strong>
+                </span>
               </li>
             ))}
-          </ol>
+          </ul>
         </div>
       )}
 
       {result.status === 'ambiguous' && ambiguousHints.length > 0 && (
-        <div className="clarifications" role="status">
+        <div className="clarifications">
           <div className="results-subheading">
             <h3>Уточните запрос</h3><span>{ambiguousHints.length}</span>
           </div>
@@ -169,8 +218,8 @@ export default function SearchResults({ result, query, isLoading, onRequery }: S
       )}
 
       {result.status === 'conflict' && conflictHints.map((hint, hintIndex) => (
-        <div className="clarifications" role="alert" key={hintIndex}>
-          <div className="results-subheading"><h3>Конфликт характеристик</h3></div>
+        <div className="clarifications" key={hintIndex}>
+          <div className="results-subheading"><h3>Что можно изменить</h3></div>
           <p>{hint.message}</p>
           <div className="clarification__options">
             {hint.fixes.map((fix) => (

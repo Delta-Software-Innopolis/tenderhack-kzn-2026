@@ -31,13 +31,11 @@ export default function CatalogueCard({ item, secondaryLabel }: CatalogueCardPro
 
   return (
     <article className="catalogue-card">
-      <div className="catalogue-card__topline">
-        <span className={`catalogue-card__status catalogue-card__status--${item.status?.toLowerCase() ?? 'unknown'}`}>
-          {item.status ? statusLabels[item.status] ?? item.status : 'Статус неизвестен'}
-        </span>
-        <span className="catalogue-card__version">{secondaryLabel ?? `Версия ${item.version}`}</span>
-      </div>
-
+      {secondaryLabel && (
+        <div className="catalogue-card__topline">
+          <span className="catalogue-card__version">{secondaryLabel}</span>
+        </div>
+      )}
       <h3>{item.name ?? 'Без наименования'}</h3>
       <p className="catalogue-card__code">
         <span>Код КТРУ</span>
